@@ -12,8 +12,12 @@ import json
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from debatebench import DebateRunner, OpenRouterClient, Debate, Speech, SpeechType
+from debatebench.storage import save_debate, load_debate, load_all_debates
 
 app = FastAPI(title="DebateBench API", version="1.0.0")
+
+# Load debates from disk on startup
+active_debates: Dict[str, Dict] = load_all_debates()
 
 # CORS middleware
 app.add_middleware(
@@ -46,9 +50,6 @@ class ConnectionManager:
 
 manager = ConnectionManager()
 
-# Store active debates
-active_debates: Dict[str, Dict] = {}
-
 
 @app.get("/")
 async def root():
@@ -73,7 +74,7 @@ async def start_debate(
     debate_id = str(uuid.uuid4())
     
     # Store debate info
-    active_debates[debate_id] = {
+    debate_data = {
         "id": debate_id,
         "resolution": resolution,
         "pro_model": pro_model,
@@ -83,6 +84,8 @@ async def start_debate(
         "status": "starting",
         "speeches": []
     }
+    active_debates[debate_id] = debate_data
+    save_debate(debate_id, debate_data)
     
     # Run debate in background
     asyncio.create_task(run_debate_task(debate_id, resolution, pro_model, con_model, temperature, prompt_style))
@@ -124,6 +127,7 @@ async def run_debate_task(
         active_debates[debate_id]["status"] = "running"
         active_debates[debate_id]["pro_model"] = pro_model
         active_debates[debate_id]["con_model"] = con_model
+        save_debate(debate_id, active_debates[debate_id])
         await manager.broadcast({
             "type": "debate_status",
             "debate_id": debate_id,
@@ -167,6 +171,7 @@ async def run_debate_task(
                 "side": side
             }
             active_debates[debate_id]["speeches"].append(speech_data)
+            save_debate(debate_id, active_debates[debate_id])
             
             # Broadcast speech complete
             await manager.broadcast({
@@ -193,6 +198,7 @@ async def run_debate_task(
                 for s in debate.speeches
             ]
         }
+        save_debate(debate_id, active_debates[debate_id])
         
         await manager.broadcast({
             "type": "debate_complete",
@@ -206,6 +212,7 @@ async def run_debate_task(
         traceback.print_exc()
         active_debates[debate_id]["status"] = "error"
         active_debates[debate_id]["error"] = error_msg
+        save_debate(debate_id, active_debates[debate_id])
         await manager.broadcast({
             "type": "debate_error",
             "debate_id": debate_id,
@@ -216,15 +223,24 @@ async def run_debate_task(
 @app.get("/api/debates/{debate_id}")
 async def get_debate(debate_id: str):
     """Get debate status"""
+    # Check in-memory first, then try loading from disk
     if debate_id not in active_debates:
-        raise HTTPException(status_code=404, detail="Debate not found")
+        loaded = load_debate(debate_id)
+        if loaded:
+            active_debates[debate_id] = loaded
+        else:
+            raise HTTPException(status_code=404, detail="Debate not found")
     return active_debates[debate_id]
 
 
 @app.get("/api/debates")
 async def list_debates():
     """List all debates"""
-    return {"debates": list(active_debates.values())}
+    # Reload from disk to get all saved debates
+    disk_debates = load_all_debates()
+    # Merge with active debates (active takes precedence)
+    all_debates = {**disk_debates, **active_debates}
+    return {"debates": list(all_debates.values())}
 
 
 @app.websocket("/ws")
