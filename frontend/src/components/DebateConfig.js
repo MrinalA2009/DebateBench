@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './DebateConfig.css';
 
-function DebateConfig({ onStart, onLoad, status }) {
+function DebateConfig({ onStart, onLoad, status, allDebates = [], currentDebateId = null }) {
   const [resolution, setResolution] = useState('Resolved: Social media does more harm than good');
   const [proModel, setProModel] = useState('openai/gpt-4');
   const [conModel, setConModel] = useState('anthropic/claude-3-opus');
@@ -115,23 +115,45 @@ function DebateConfig({ onStart, onLoad, status }) {
         <div className="divider">or</div>
 
         <div className="form-group">
-          <label htmlFor="load-id">Load Debate by ID</label>
-          <div className="load-input-group">
-            <input
-              id="load-id"
-              type="text"
-              value={debateIdToLoad}
-              onChange={(e) => setDebateIdToLoad(e.target.value)}
-              placeholder="Enter debate ID"
-            />
+          <label htmlFor="load-id">Load Debate</label>
+          <div className="debate-list">
+            {allDebates.length > 0 ? (
+              <select
+                id="load-id"
+                value={debateIdToLoad}
+                onChange={(e) => setDebateIdToLoad(e.target.value)}
+                className="debate-select"
+              >
+                <option value="">Select a debate...</option>
+                {allDebates.map((debate) => (
+                  <option key={debate.id} value={debate.id}>
+                    {debate.resolution} - {debate.status} {debate.id === currentDebateId ? '(current)' : ''}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <input
+                id="load-id"
+                type="text"
+                value={debateIdToLoad}
+                onChange={(e) => setDebateIdToLoad(e.target.value)}
+                placeholder="Enter debate ID"
+              />
+            )}
             <button
               type="button"
               className="btn btn-secondary"
               onClick={handleLoad}
+              disabled={!debateIdToLoad.trim()}
             >
               Load
             </button>
           </div>
+          {currentDebateId && (
+            <div className="current-debate-id">
+              <small>Current Debate ID: <code>{currentDebateId}</code></small>
+            </div>
+          )}
         </div>
 
         <div className="protocol-info">

@@ -43,6 +43,14 @@
   font-size: 0.95rem;
 }
 
+.debate-id-code {
+  font-family: monospace;
+  background: #ffffff;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #000000;
+  font-size: 0.85rem;
+}
+
 .speeches-container {
   display: flex;
   flex-direction: column;

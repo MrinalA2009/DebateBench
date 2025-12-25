@@ -1,0 +1,194 @@
+.history-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.history-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000000;
+}
+
+.history-header h1 {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.history-header p {
+  color: #000000;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.loading,
+.empty-history {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.debates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.debate-item {
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+
+.debate-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.debate-summary:hover {
+  background: #f9f9f9;
+}
+
+.debate-summary-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.debate-title {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.debate-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.debate-id code {
+  font-family: monospace;
+  background: #ffffff;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #000000;
+  font-size: 0.8rem;
+}
+
+.debate-models {
+  color: #000000;
+  opacity: 0.8;
+}
+
+.debate-summary-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.speech-count {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.expand-indicator {
+  color: #000000;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.debate-expanded {
+  border-top: 1px solid #000000;
+  background: #ffffff;
+}
+
+.transcript-container {
+  padding: 1.5rem;
+}
+
+.transcript {
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #000000;
+  max-height: 600px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.btn-copy {
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-copy:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.no-transcript {
+  padding: 2rem;
+  text-align: center;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #000000;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.status-idle {
+  background: #ffffff;
+  color: #000000;
+}
+
+.status-starting {
+  background: #ffffff;
+  color: #000000;
+  border-color: #666666;
+}
+
+.status-running {
+  background: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+.status-complete {
+  background: #000000;
+  color: #ffffff;
+}
+
+.status-error {
+  background: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  border-width: 2px;
+}
+

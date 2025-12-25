@@ -132,18 +132,53 @@
   right: 0;
 }
 
-.load-input-group {
+.load-input-group,
+.debate-list {
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
-.load-input-group input {
+.load-input-group input,
+.debate-list input,
+.debate-list select {
   flex: 1;
 }
 
-.load-input-group button {
-  width: auto;
+.load-input-group button,
+.debate-list button {
+  width: 100%;
   padding: 0.75rem 1rem;
+}
+
+.debate-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #000000;
+  background: #ffffff;
+  font-size: 0.95rem;
+}
+
+.debate-select:focus {
+  outline: none;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+.current-debate-id {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #000000;
+  font-size: 0.85rem;
+}
+
+.current-debate-id code {
+  font-family: monospace;
+  background: #ffffff;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #000000;
+  font-size: 0.8rem;
 }
 
 .protocol-info {

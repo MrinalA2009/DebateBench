@@ -10,7 +10,7 @@ const WORD_LIMITS = {
   con_summary: 200,
 };
 
-function DebateDisplay({ debate, status }) {
+function DebateDisplay({ debate, status, debateId }) {
   if (!debate) return null;
 
   const isPro = (speechType) => speechType?.startsWith('pro');
@@ -33,6 +33,14 @@ function DebateDisplay({ debate, status }) {
               {status}
             </span>
           </div>
+          {debateId && (
+            <div className="meta-item">
+              <span className="meta-label">ID:</span>
+              <span className="meta-value">
+                <code className="debate-id-code">{debateId}</code>
+              </span>
+            </div>
+          )}
         </div>
       </div>
 

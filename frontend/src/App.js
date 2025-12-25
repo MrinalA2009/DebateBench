@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import DebateConfig from './components/DebateConfig';
 import DebateDisplay from './components/DebateDisplay';
+import HistoryPage from './components/HistoryPage';
 
 const API_URL = 'http://localhost:8001';
 
@@ -10,6 +11,8 @@ function App() {
   const [debate, setDebate] = useState(null);
   const [debateId, setDebateId] = useState(null);
   const [status, setStatus] = useState('idle'); // idle, starting, running, complete, error
+  const [allDebates, setAllDebates] = useState([]);
+  const [currentPage, setCurrentPage] = useState('debate'); // 'debate' or 'history'
   const wsRef = useRef(null);
 
   const handleWebSocketMessage = useCallback((data) => {
@@ -90,6 +93,22 @@ function App() {
     };
   }, [debateId, handleWebSocketMessage]);
 
+  const fetchAllDebates = async () => {
+    try {
+      const response = await axios.get(`${API_URL}/api/debates`);
+      setAllDebates(response.data.debates || []);
+    } catch (error) {
+      console.error('Error fetching debates:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchAllDebates();
+    // Refresh debate list every 5 seconds
+    const interval = setInterval(fetchAllDebates, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   const startDebate = async (config) => {
     try {
       setStatus('starting');
@@ -103,6 +122,8 @@ function App() {
         }
       });
       setDebateId(response.data.debate_id);
+      // Refresh debate list after starting
+      setTimeout(fetchAllDebates, 1000);
     } catch (error) {
       console.error('Error starting debate:', error);
       setStatus('error');
@@ -127,23 +148,44 @@ function App() {
       <header className="App-header">
         <h1>DebateBench</h1>
         <p>A controlled, reproducible benchmark for AI-generated debates</p>
+        <nav className="main-nav">
+          <button
+            className={`nav-button ${currentPage === 'debate' ? 'active' : ''}`}
+            onClick={() => setCurrentPage('debate')}
+          >
+            Debate
+          </button>
+          <button
+            className={`nav-button ${currentPage === 'history' ? 'active' : ''}`}
+            onClick={() => setCurrentPage('history')}
+          >
+            History
+          </button>
+        </nav>
       </header>
       
       <main className="App-main">
-        <div className="container">
-          <DebateConfig 
-            onStart={startDebate} 
-            onLoad={loadDebate}
-            status={status}
-          />
-          
-          {debate && (
-            <DebateDisplay 
-              debate={debate}
+        {currentPage === 'debate' ? (
+          <div className="container">
+            <DebateConfig 
+              onStart={startDebate} 
+              onLoad={loadDebate}
               status={status}
+              allDebates={allDebates}
+              currentDebateId={debateId}
             />
-          )}
-        </div>
+            
+            {debate && (
+              <DebateDisplay 
+                debate={debate}
+                status={status}
+                debateId={debateId}
+              />
+            )}
+          </div>
+        ) : (
+          <HistoryPage />
+        )}
       </main>
     </div>
   );

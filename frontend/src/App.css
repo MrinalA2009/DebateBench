@@ -23,6 +23,32 @@
   opacity: 0.8;
 }
 
+.main-nav {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.nav-button {
+  padding: 0.5rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-button:hover {
+  background: #f9f9f9;
+}
+
+.nav-button.active {
+  background: #000000;
+  color: #ffffff;
+}
+
 .App-main {
   padding: 2rem;
   max-width: 1400px;
