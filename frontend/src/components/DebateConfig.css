@@ -1,0 +1,177 @@
+.debate-config {
+  position: sticky;
+  top: 2rem;
+}
+
+.config-card {
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+}
+
+.config-card h2 {
+  margin-bottom: 1.5rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #000000;
+  background: #ffffff;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+.form-group input[type="text"]:disabled,
+.form-group textarea:disabled,
+.form-group select:disabled {
+  background: #ffffff;
+  border-color: #666666;
+  cursor: not-allowed;
+}
+
+.form-group input[type="range"] {
+  width: 100%;
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #000000;
+  background: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #ffffff;
+  color: #000000;
+}
+
+.btn-primary:disabled {
+  background: #ffffff;
+  color: #666666;
+  border-color: #666666;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #000000;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #000000;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.load-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.load-input-group input {
+  flex: 1;
+}
+
+.load-input-group button {
+  width: auto;
+  padding: 0.75rem 1rem;
+}
+
+.protocol-info {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #000000;
+}
+
+.protocol-info h3 {
+  margin-bottom: 0.75rem;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.protocol-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.protocol-info li {
+  padding: 0.4rem 0;
+  color: #000000;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #000000;
+}
+
+.protocol-info li:last-child {
+  border-bottom: none;
+}
+

@@ -1,0 +1,73 @@
+Resolution: Resolved: Social media does more harm than good
+
+Pro: openai/gpt-4 | Con: anthropic/claude-3-opus
+
+================================================================================
+
+[PRO_CONSTRUCTIVE]
+Word count: 277/300
+Ladies and Gentlemen, the resolution before us today is that social media does more harm than good, and I stand in firm affirmation of this proposition.
+
+Firstly, my claim is that social media is detrimental to mental health. A study from the University of Pennsylvania found that high usage of platforms like Facebook, Snapchat, and Instagram increases feelings of depression and loneliness. The constant barrage of perfectly filtered photos can lead to feelings of inadequacy and low self-esteem, while cyberbullying on these platforms has led to severe emotional trauma, and tragically, even suicides.
+
+Secondly, social media undermines the essence of human interaction. According to Sherry Turkle from MIT, social media's promise of companionship without the demands of friendship or intimacy without the demands of time, leads to a flight from conversation. Indeed, a survey by the Pew Research Center showed that 55% of teens find it easier to interact through social media than face-to-face.
+
+Lastly, social media is a breeding ground for misinformation. During the 2016 U.S Presidential elections, false information received more engagement on Facebook than top stories from major news outlets, according to a study by Buzzfeed News. This rampant spread of falsehoods can have severe societal implications, such as the creation of divisive echo chambers and the undermining of democratic processes.
+
+In conclusion, we assert that the harms of social media- its impact on mental health, degradation of human interaction, and spread of misinformation- outweigh any perceived benefits. Thus, the framework for evaluating this debate should be a comparison of social media's tangible harms against its purported benefits. I urge the judges to affirm the resolution that social media does more harm than good.
+
+--------------------------------------------------------------------------------
+
+[CON_CONSTRUCTIVE]
+Word count: 293/300
+Ladies and Gentlemen, while my opponent has presented some valid concerns, I stand in firm opposition to the resolution that social media does more harm than good.
+
+Firstly, social media is an invaluable tool for connection and community building. In a study by the Pew Research Center, 81% of teens said social media makes them feel more connected to their friends. For marginalized groups, social media can provide a safe space to find support and solidarity. Moreover, social media has been instrumental in raising awareness and mobilizing people for important social and political causes, from the Arab Spring to the #MeToo movement.
+
+Secondly, social media has revolutionized access to information and education. Platforms like YouTube and Twitter have democratized knowledge, allowing people to learn from experts across the globe. In fact, a survey by the National Research Center found that 41% of teachers use social media to enhance their professional development. Social media has also been a lifeline for students during the pandemic, enabling remote learning and collaboration.
+
+Lastly, social media is a powerful tool for economic empowerment. Small businesses and entrepreneurs can reach a global audience through platforms like Instagram and Facebook, leveling the playing field with larger corporations. A survey by the Facebook Small Business Roundtable found that 81% of small businesses use social media, with 67% saying it helps them grow their business.
+
+In conclusion, while social media is not without its challenges, its benefits- fostering connection, democratizing knowledge, and driving economic growth- far outweigh its drawbacks. The framework for this debate should be a holistic assessment of social media's impact, not just a narrow focus on its potential harms. I urge the judges to negate the resolution and recognize the immense good that social media brings to our society.
+
+--------------------------------------------------------------------------------
+
+[PRO_REBUTTAL]
+Word count: 220/250
+Ladies and Gentlemen, while my opponent emphasizes the potential benefits of social media, they fail to address the severity of the harms we've articulated.
+
+Firstly, while they argue social media fosters connection, the quality of these connections is questionable. The University of Pennsylvania study I mentioned earlier suggests high usage of social media actually increases feelings of loneliness. Furthermore, the danger of cyberbullying undermines the claim of social media as a safe space for marginalized groups.
+
+Secondly, my opponent commends the democratization of information, but conveniently ignores the spread of misinformation. The Buzzfeed News study I cited earlier showed false information receiving more engagement than top news stories on Facebook during the 2016 elections. The unchecked spread of falsehoods can potentially contribute to the creation of divisive echo chambers and undermine democratic processes.
+
+Finally, while social media may be a tool for economic empowerment, it also facilitates the exploitation of consumers' data for profit. According to the Pew Research Center, 51% of Americans feel unclear about what is done with the data collected by companies on social media.
+
+In conclusion, while social media can offer certain benefits, these are dwarfed by the harms to mental health, human interaction, and the spread of misinformation. Therefore, I urge the judges to affirm the resolution that social media does more harm than good.
+
+--------------------------------------------------------------------------------
+
+[CON_REBUTTAL]
+Word count: 239/250
+Ladies and Gentlemen, my opponent's arguments, while impassioned, are based on a narrow and biased interpretation of the evidence.
+
+Firstly, the University of Pennsylvania study they cite only shows correlation, not causation, between social media usage and feelings of loneliness. In fact, a Harvard study found that it's the quality, not quantity, of social media interactions that predicts loneliness. Moreover, they ignore the countless examples of social media providing support and community for marginalized groups, from LGBT+ youth finding acceptance to disabled individuals connecting with others who share their experiences.
+
+Secondly, while misinformation is a concern, social media companies are actively working to combat it. Facebook has partnered with third-party fact-checkers and removed millions of fake accounts. Moreover, social media has also been a powerful tool for correcting misinformation, with experts and reliable sources able to directly reach the public.
+
+Finally, my opponent's claim about data exploitation is a red herring. Data privacy is a separate issue from the overall impact of social media. Furthermore, social media companies are increasingly giving users control over their data and working to improve transparency.
+
+In conclusion, my opponent's arguments are based on cherry-picked evidence and fail to consider the full scope of social media's impact. When weighing the immense benefits of connection, education, and economic empowerment against the challenges that are being actively addressed, it's clear that social media does more good than harm. I urge the judges to negate the resolution.
+
+--------------------------------------------------------------------------------
+
+[PRO_SUMMARY]
+Word count: 200/200
+Ladies and Gentlemen, throughout this debate, the clash has centered around the impact of social media on mental health, human interaction, the spread of misinformation, and economic empowerment. Regarding mental health, my opponent contests that the quality of interactions matter, not quantity. However, they dismiss our evidence showing that social media increases feelings of loneliness and depression. Furthermore, they overlook the reality of cyberbullying, which remains rampant despite the purported support systems in place. On human interaction, while social media may connect us superficially, it's clear that it fosters a flight from genuine conversation, as stated by Sherry Turkle from MIT. In terms of misinformation, my opponent trusts social media companies to regulate themselves. Yet, the evidence from the 2016 elections proves that these efforts are insufficient. Misinformation breeds divisiveness and threatens democracy, outweighing the benefit of supposed knowledge democratization. Lastly, while social media might economically empower some, this doesn't negate the fact that consumers' data is often exploited for profit. In conclusion, the harms of social media, from its detrimental impact on mental health, degradation of human interaction, and spread of misinformation, to data exploitation, far outweigh its potential benefits. Therefore, the resolution stands affirmed: social media does more
+
+--------------------------------------------------------------------------------
+
+[CON_SUMMARY]
+Word count: 200/200
+Ladies and Gentlemen, throughout this debate, we have demonstrated that social media's benefits far outweigh its drawbacks. My opponent's arguments, while emotionally compelling, are based on a biased and narrow interpretation of the evidence. On mental health, studies show it's the quality, not quantity, of interactions that matter. Social media provides vital support for marginalized groups. Regarding human interaction, social media has fostered global connections and sparked important social movements. While misinformation is a concern, companies are actively combating it, and social media also corrects falsehoods. Data privacy is a separate issue from social media's overall impact. Crucially, my opponent ignores the immense good of social media - connecting communities, democratizing education, and driving economic growth. These benefits are not just "potential," but real and transformative. In weighing impacts, we must consider the full scope of social media's influence. The harms my opponent cites are challenges being actively addressed. But the benefits - the connections formed, knowledge shared, businesses empowered - are vast and undeniable. In conclusion, when evaluating the evidence holistically, it's clear that social media does more good than harm. I urge you to negate the resolution and recognize the immense positive impact social media has on our
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,148 @@
+.debate-display {
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 2rem;
+  min-height: 400px;
+}
+
+.debate-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #000000;
+}
+
+.debate-header h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.debate-meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-label {
+  font-weight: 400;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.meta-value {
+  color: #000000;
+  font-size: 0.95rem;
+}
+
+.speeches-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.speech-item {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.speech-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+  border-left: 4px solid;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 1rem;
+}
+
+.speech-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.side-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid;
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.speech-type {
+  font-weight: 400;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.word-count {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.speech-content {
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #000000;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #000000;
+  white-space: pre-wrap;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #000000;
+}
+
+.progress-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

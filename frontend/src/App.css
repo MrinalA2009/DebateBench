@@ -1,0 +1,91 @@
+.App {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.App-header {
+  background: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+.App-header h1 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.App-header p {
+  color: #000000;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.App-main {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #000000;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-idle {
+  background: #ffffff;
+  color: #000000;
+}
+
+.status-starting {
+  background: #ffffff;
+  color: #000000;
+  border-color: #666666;
+}
+
+.status-running {
+  background: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+.status-complete {
+  background: #000000;
+  color: #ffffff;
+}
+
+.status-error {
+  background: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  border-width: 2px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
