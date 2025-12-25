@@ -167,13 +167,10 @@ function App() {
       <main className="App-main">
         {currentPage === 'debate' ? (
           <div className="container">
-            <DebateConfig 
-              onStart={startDebate} 
-              onLoad={loadDebate}
-              status={status}
-              allDebates={allDebates}
-              currentDebateId={debateId}
-            />
+          <DebateConfig 
+            onStart={startDebate}
+            status={status}
+          />
             
             {debate && (
               <DebateDisplay 

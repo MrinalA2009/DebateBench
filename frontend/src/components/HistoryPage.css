@@ -126,10 +126,14 @@
   line-height: 1.6;
   white-space: pre-wrap;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   color: #000000;
   max-height: 600px;
   overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100%;
   margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .btn-copy {

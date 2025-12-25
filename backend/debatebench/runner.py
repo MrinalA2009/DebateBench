@@ -81,6 +81,35 @@ class DebateRunner:
         
         # Clean and validate response
         response = response.strip()
+        
+        # Remove any LaTeX/markdown formatting that might cause issues
+        import re
+        # Remove LaTeX commands (e.g., \textbf{}, \textit{}, etc.)
+        response = re.sub(r'\\[a-zA-Z]+\{([^}]*)\}', r'\1', response)
+        # Remove markdown formatting
+        response = re.sub(r'\*\*([^*]+)\*\*', r'\1', response)  # Bold
+        response = re.sub(r'\*([^*]+)\*', r'\1', response)  # Italic
+        response = re.sub(r'#+\s*', '', response)  # Headers
+        # Ensure proper spacing (fix cases where words run together)
+        # Fix: number + lowercase word (e.g., "20million" -> "20 million")
+        response = re.sub(r'([0-9]+)([a-z]+)', r'\1 \2', response)
+        # Fix: lowercase word + number (e.g., "million20" -> "million 20")
+        response = re.sub(r'([a-z]+)([0-9]+)', r'\1 \2', response)
+        # Fix: word + uppercase word (camelCase, e.g., "socialmedia" -> "social media")
+        response = re.sub(r'([a-z]+)([A-Z][a-z]+)', r'\1 \2', response)
+        # Fix: common compound words that might have lost spaces
+        # This is a heuristic - insert space before common words when they appear merged
+        common_words = ['in', 'on', 'for', 'to', 'the', 'and', 'or', 'is', 'are', 'was', 'were', 'by', 'of', 'with']
+        for word in common_words:
+            # Fix: "wordin" or "wordIn" -> "word in"
+            pattern = r'([a-z]+)' + word + r'([^a-z\s])'
+            response = re.sub(pattern, r'\1 ' + word + r'\2', response, flags=re.IGNORECASE)
+            # Fix: "inword" or "inWord" -> "in word"  
+            pattern = r'([^a-z\s])' + word + r'([a-z]+)'
+            response = re.sub(pattern, r'\1' + word + r' \2', response, flags=re.IGNORECASE)
+        # Normalize whitespace
+        response = ' '.join(response.split())
+        
         word_count = self.protocol.count_words(response)
         
         # Truncate if needed (shouldn't happen, but safety)

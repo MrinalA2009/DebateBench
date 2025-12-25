@@ -38,6 +38,8 @@ Rules:
 - Make clear, well-structured arguments
 - Use evidence and reasoning
 - Respond to previous arguments when applicable
+- Write in plain text only (no markdown, LaTeX, or special formatting)
+- Use proper spacing between words and sentences
 """
 
     # Speech-specific instructions
@@ -115,6 +117,7 @@ def get_freeform_debate_prompt(
     prompt = f"""You are arguing the {side_name} side of this resolution: {resolution}
 
 Write a {speech_type.value} speech (max {word_limit} words) explaining why your side is correct.
+Write in plain text only (no markdown, LaTeX, or special formatting). Use proper spacing between words.
 """
     
     if previous_speeches:

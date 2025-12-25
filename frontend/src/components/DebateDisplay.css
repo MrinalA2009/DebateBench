@@ -3,6 +3,13 @@
   border: 1px solid #000000;
   padding: 2rem;
   min-height: 400px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  align-self: start;
 }
 
 .debate-header {
@@ -17,6 +24,9 @@
   font-size: 1.75rem;
   line-height: 1.4;
   font-weight: 400;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .debate-meta {
@@ -24,6 +34,8 @@
   gap: 2rem;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .meta-item {
@@ -120,6 +132,10 @@
   font-size: 1.05rem;
   color: #000000;
   white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .empty-state {

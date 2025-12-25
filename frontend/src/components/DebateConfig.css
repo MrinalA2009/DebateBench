@@ -1,12 +1,19 @@
 .debate-config {
   position: sticky;
-  top: 2rem;
+  top: 0;
+  min-width: 0;
+  max-width: 100%;
+  align-self: start;
 }
 
 .config-card {
   background: #ffffff;
   border: 1px solid #000000;
   padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .config-card h2 {
@@ -32,11 +39,15 @@
 .form-group textarea,
 .form-group select {
   width: 100%;
+  max-width: 100%;
   padding: 0.75rem;
   border: 1px solid #000000;
   background: #ffffff;
   font-size: 0.95rem;
   transition: border-color 0.2s;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .form-group input[type="text"]:focus,

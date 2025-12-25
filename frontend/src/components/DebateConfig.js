@@ -1,31 +1,60 @@
 import React, { useState } from 'react';
 import './DebateConfig.css';
 
-function DebateConfig({ onStart, onLoad, status, allDebates = [], currentDebateId = null }) {
+const POPULAR_MODELS = [
+  'openai/gpt-4',
+  'anthropic/claude-3-opus',
+  'google/gemini-pro-1.5'
+];
+
+function DebateConfig({ onStart, status }) {
   const [resolution, setResolution] = useState('Resolved: Social media does more harm than good');
   const [proModel, setProModel] = useState('openai/gpt-4');
+  const [proModelCustom, setProModelCustom] = useState('');
+  const [proModelIsCustom, setProModelIsCustom] = useState(false);
   const [conModel, setConModel] = useState('anthropic/claude-3-opus');
+  const [conModelCustom, setConModelCustom] = useState('');
+  const [conModelIsCustom, setConModelIsCustom] = useState(false);
   const [temperature, setTemperature] = useState(0.7);
   const [promptStyle, setPromptStyle] = useState('standard');
-  const [debateIdToLoad, setDebateIdToLoad] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (status === 'running' || status === 'starting') {
       return;
     }
+    const finalProModel = proModelIsCustom ? proModelCustom.trim() : proModel;
+    const finalConModel = conModelIsCustom ? conModelCustom.trim() : conModel;
+    
+    if (!finalProModel || !finalConModel) {
+      alert('Please select or enter both PRO and CON models');
+      return;
+    }
+    
     onStart({
       resolution,
-      pro_model: proModel,
-      con_model: conModel,
+      pro_model: finalProModel,
+      con_model: finalConModel,
       temperature,
       prompt_style: promptStyle
     });
   };
 
-  const handleLoad = () => {
-    if (debateIdToLoad.trim()) {
-      onLoad(debateIdToLoad.trim());
+  const handleProModelChange = (value) => {
+    if (value === 'custom') {
+      setProModelIsCustom(true);
+    } else {
+      setProModelIsCustom(false);
+      setProModel(value);
+    }
+  };
+
+  const handleConModelChange = (value) => {
+    if (value === 'custom') {
+      setConModelIsCustom(true);
+    } else {
+      setConModelIsCustom(false);
+      setConModel(value);
     }
   };
 
@@ -39,26 +68,68 @@ function DebateConfig({ onStart, onLoad, status, allDebates = [], currentDebateI
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="pro-model">PRO Model</label>
-            <input
-              id="pro-model"
-              type="text"
-              value={proModel}
-              onChange={(e) => setProModel(e.target.value)}
-              disabled={isRunning}
-              placeholder="openai/gpt-4"
-            />
+            {!proModelIsCustom ? (
+              <select
+                id="pro-model"
+                value={proModel}
+                onChange={(e) => handleProModelChange(e.target.value)}
+                disabled={isRunning}
+              >
+                {POPULAR_MODELS.map((model) => (
+                  <option key={model} value={model}>
+                    {model}
+                  </option>
+                ))}
+                <option value="custom">Custom...</option>
+              </select>
+            ) : (
+              <input
+                id="pro-model-custom"
+                type="text"
+                value={proModelCustom}
+                onChange={(e) => setProModelCustom(e.target.value)}
+                onBlur={() => {
+                  if (!proModelCustom.trim()) {
+                    setProModelIsCustom(false);
+                  }
+                }}
+                disabled={isRunning}
+                placeholder="Enter model ID (e.g., openai/gpt-4)"
+              />
+            )}
           </div>
 
           <div className="form-group">
             <label htmlFor="con-model">CON Model</label>
-            <input
-              id="con-model"
-              type="text"
-              value={conModel}
-              onChange={(e) => setConModel(e.target.value)}
-              disabled={isRunning}
-              placeholder="anthropic/claude-3-opus"
-            />
+            {!conModelIsCustom ? (
+              <select
+                id="con-model"
+                value={conModel}
+                onChange={(e) => handleConModelChange(e.target.value)}
+                disabled={isRunning}
+              >
+                {POPULAR_MODELS.map((model) => (
+                  <option key={model} value={model}>
+                    {model}
+                  </option>
+                ))}
+                <option value="custom">Custom...</option>
+              </select>
+            ) : (
+              <input
+                id="con-model-custom"
+                type="text"
+                value={conModelCustom}
+                onChange={(e) => setConModelCustom(e.target.value)}
+                onBlur={() => {
+                  if (!conModelCustom.trim()) {
+                    setConModelIsCustom(false);
+                  }
+                }}
+                disabled={isRunning}
+                placeholder="Enter model ID (e.g., anthropic/claude-3-opus)"
+              />
+            )}
           </div>
 
           <div className="form-group">
@@ -111,50 +182,6 @@ function DebateConfig({ onStart, onLoad, status, allDebates = [], currentDebateI
             {isRunning ? 'Running...' : 'Start Debate'}
           </button>
         </form>
-
-        <div className="divider">or</div>
-
-        <div className="form-group">
-          <label htmlFor="load-id">Load Debate</label>
-          <div className="debate-list">
-            {allDebates.length > 0 ? (
-              <select
-                id="load-id"
-                value={debateIdToLoad}
-                onChange={(e) => setDebateIdToLoad(e.target.value)}
-                className="debate-select"
-              >
-                <option value="">Select a debate...</option>
-                {allDebates.map((debate) => (
-                  <option key={debate.id} value={debate.id}>
-                    {debate.resolution} - {debate.status} {debate.id === currentDebateId ? '(current)' : ''}
-                  </option>
-                ))}
-              </select>
-            ) : (
-              <input
-                id="load-id"
-                type="text"
-                value={debateIdToLoad}
-                onChange={(e) => setDebateIdToLoad(e.target.value)}
-                placeholder="Enter debate ID"
-              />
-            )}
-            <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={handleLoad}
-              disabled={!debateIdToLoad.trim()}
-            >
-              Load
-            </button>
-          </div>
-          {currentDebateId && (
-            <div className="current-debate-id">
-              <small>Current Debate ID: <code>{currentDebateId}</code></small>
-            </div>
-          )}
-        </div>
 
         <div className="protocol-info">
           <h3>Debate Protocol</h3>
