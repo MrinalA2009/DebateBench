@@ -23,14 +23,21 @@ function App() {
         setDebate({
           resolution: data.resolution,
           speeches: [],
-          pro_model: null,
-          con_model: null
+          pro_model: data.pro_model || null,
+          con_model: data.con_model || null
         });
         break;
       
       case 'debate_status':
         if (data.debate_id === debateId) {
           setStatus(data.status);
+          if (data.pro_model || data.con_model) {
+            setDebate(prev => ({
+              ...prev,
+              pro_model: data.pro_model || prev?.pro_model,
+              con_model: data.con_model || prev?.con_model
+            }));
+          }
         }
         break;
       
