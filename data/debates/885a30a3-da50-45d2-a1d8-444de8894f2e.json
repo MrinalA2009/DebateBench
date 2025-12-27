@@ -1,0 +1,18 @@
+{
+  "id": "885a30a3-da50-45d2-a1d8-444de8894f2e",
+  "resolution": "Resolved: Third parties should have easier access to the ballot.",
+  "pro_model": "google/gemini-2.5-flash",
+  "con_model": "anthropic/claude-sonnet-4.5",
+  "temperature": 0.7,
+  "prompt_style": "standard",
+  "status": "running",
+  "speeches": [
+    {
+      "speech_type": "pro_constructive",
+      "content": "I affirm the resoluti on: Resolved: Third parties should have easier access to the ballot. Our current two-party system in the United States is failing its citizens, leading to a lack of diverse representation and voter disenfranchisement. Easing ballot access for third parties is a crucial step towards a more robust and responsive democracy. My first contention is that current ballot access laws stifle voter choice and representati on. The barriers for third parties, such as high signature requirements and filing fees, are often prohibitive. For example, in many states, independent or third-party candidates need significantly more signatures to get on the ballot than major party candidates, and these signatures often cannot be collected until after the major parties have already held their primaries. This creates an uneven playing field, effectively locking out alternative voices. A 2017 study by the National Conference of State Legislatures found that ballot access requirements vary wildly, but consistently favor established parties. This directly limits the options available to voters, forcing them to choose between two often unappealing major party candidates, leading to voter apathy and lower turnout. My second contention is that increased third-party access fosters greater accountability and responsiveness from major parties. When third parties can more easily compete, they introduce new ideas and policy proposals that the major parties are often compelled to address. Historically, many mainstream policies, from women\u2019s suffrage to environmental protecti on, were initially championed by third parties. Without the threat of losing votes to viable third-party alternatives, major parties become complacent and less responsive to the evolving needs and desires of the electorate. Easier ballot access incentivizes major parties to broaden their platforms and engage with a wider range of issues, ultimately benefiting all citizens. Finally, easier ballot access can mitigate political polarizati on. The two-party system often",
+      "word_count": 300,
+      "side": "PRO"
+    }
+  ],
+  "saved_at": "2025-12-27T14:02:19.388612"
+}

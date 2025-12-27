@@ -27,6 +27,39 @@ class DebateRunner:
         self.temperature = temperature
         self.prompt_style = prompt_style
     
+    def _truncate_to_word_limit(self, text: str, word_limit: int) -> str:
+        """Truncate text to word limit, trying to preserve sentence boundaries
+        
+        Args:
+            text: Text to truncate
+            word_limit: Maximum number of words
+            
+        Returns:
+            Truncated text that ends at a sentence boundary if possible, or word boundary
+        """
+        words = text.split()
+        if len(words) <= word_limit:
+            return text
+        
+        # Try to find a sentence boundary near the word limit
+        # Look for sentence endings (. ! ?) in the last 30% of allowed words
+        search_start = max(0, word_limit - int(word_limit * 0.3))
+        search_end = min(word_limit, len(words))
+        
+        # Look backwards from word_limit to find the last sentence ending
+        best_cut_point = word_limit
+        for i in range(search_end - 1, search_start - 1, -1):
+            # Check if this word ends with sentence punctuation (after stripping whitespace)
+            word = words[i].strip()
+            if word and len(word) > 0 and word[-1] in '.!?':
+                # Found a sentence boundary - use this as the cut point
+                best_cut_point = i + 1
+                break
+        
+        # Truncate at the best cut point (sentence boundary or word limit)
+        truncated_words = words[:best_cut_point]
+        return " ".join(truncated_words)
+    
     def generate_speech(
         self,
         speech_type: SpeechType,
@@ -62,9 +95,13 @@ class DebateRunner:
                 speech_type, debate.resolution, previous_speeches, model, side
             )
         
-        # Estimate max tokens (rough: 1 token ≈ 0.75 words, add buffer)
+        # Calculate max tokens with a buffer to allow complete responses
+        # We'll enforce word limits in post-processing, not at the API level
+        # This prevents mid-sentence cuts from token limits
         word_limit = WORD_LIMITS[speech_type]
-        max_tokens = int(word_limit / 0.75) + 50
+        # Allow more tokens (about 50% buffer) so model can finish sentences naturally
+        # Average is ~1.3 tokens per word, so we give plenty of headroom
+        max_tokens = int(word_limit * 2.0)  # 2x buffer allows natural sentence completion
         
         # Call model using LangChain format
         messages = [
@@ -72,51 +109,55 @@ class DebateRunner:
             {"role": "user", "content": prompt_text}
         ]
         
-        response = self.client.call_model(
-            model=model,
-            messages=messages,
-            temperature=self.temperature,
-            max_tokens=max_tokens
-        )
+        print(f"\n{'='*80}")
+        print(f"[SPEECH GENERATION] Starting {speech_type.value.upper()}")
+        print(f"  Model: {model}")
+        print(f"  Side: {side}")
+        print(f"  Word limit: {word_limit}")
+        print(f"  Max tokens: {max_tokens}")
+        print(f"{'='*80}\n")
         
-        # Clean and validate response
+        try:
+            response = self.client.call_model(
+                model=model,
+                messages=messages,
+                temperature=self.temperature,
+                max_tokens=max_tokens
+            )
+            
+            print(f"[RAW RESPONSE] Received response from {model}:")
+            print(f"  Length: {len(response)} characters")
+            print(f"  First 200 chars: {response[:200]}...")
+            print(f"  Last 200 chars: ...{response[-200:]}")
+            print()
+        except Exception as e:
+            print(f"[ERROR] Failed to call model {model}: {str(e)}")
+            print(f"  Error type: {type(e).__name__}")
+            import traceback
+            traceback.print_exc()
+            raise
+        
+        # Use raw response from model - no cleaning or processing
+        # Just strip leading/trailing whitespace
         response = response.strip()
-        
-        # Remove any LaTeX/markdown formatting that might cause issues
-        import re
-        # Remove LaTeX commands (e.g., \textbf{}, \textit{}, etc.)
-        response = re.sub(r'\\[a-zA-Z]+\{([^}]*)\}', r'\1', response)
-        # Remove markdown formatting
-        response = re.sub(r'\*\*([^*]+)\*\*', r'\1', response)  # Bold
-        response = re.sub(r'\*([^*]+)\*', r'\1', response)  # Italic
-        response = re.sub(r'#+\s*', '', response)  # Headers
-        # Ensure proper spacing (fix cases where words run together)
-        # Fix: number + lowercase word (e.g., "20million" -> "20 million")
-        response = re.sub(r'([0-9]+)([a-z]+)', r'\1 \2', response)
-        # Fix: lowercase word + number (e.g., "million20" -> "million 20")
-        response = re.sub(r'([a-z]+)([0-9]+)', r'\1 \2', response)
-        # Fix: word + uppercase word (camelCase, e.g., "socialmedia" -> "social media")
-        response = re.sub(r'([a-z]+)([A-Z][a-z]+)', r'\1 \2', response)
-        # Fix: common compound words that might have lost spaces
-        # This is a heuristic - insert space before common words when they appear merged
-        common_words = ['in', 'on', 'for', 'to', 'the', 'and', 'or', 'is', 'are', 'was', 'were', 'by', 'of', 'with']
-        for word in common_words:
-            # Fix: "wordin" or "wordIn" -> "word in"
-            pattern = r'([a-z]+)' + word + r'([^a-z\s])'
-            response = re.sub(pattern, r'\1 ' + word + r'\2', response, flags=re.IGNORECASE)
-            # Fix: "inword" or "inWord" -> "in word"  
-            pattern = r'([^a-z\s])' + word + r'([a-z]+)'
-            response = re.sub(pattern, r'\1' + word + r' \2', response, flags=re.IGNORECASE)
-        # Normalize whitespace
-        response = ' '.join(response.split())
         
         word_count = self.protocol.count_words(response)
         
-        # Truncate if needed (shouldn't happen, but safety)
+        # Intelligently truncate if needed, trying to preserve sentence boundaries
+        was_truncated = False
         if word_count > word_limit:
-            words = response.split()[:word_limit]
-            response = " ".join(words)
-            word_count = word_limit
+            print(f"[WARNING] Response exceeded word limit: {word_count} > {word_limit}, truncating intelligently...")
+            response = self._truncate_to_word_limit(response, word_limit)
+            word_count = self.protocol.count_words(response)
+            was_truncated = True
+        
+        print(f"[CLEANED RESPONSE] After processing:")
+        print(f"  Word count: {word_count}/{word_limit}")
+        print(f"  Was truncated: {was_truncated}")
+        print(f"  Full content ({len(response)} chars):")
+        print(f"{'-'*80}")
+        print(response)
+        print(f"{'-'*80}\n")
         
         # Create and validate speech
         speech = Speech(
@@ -124,6 +165,12 @@ class DebateRunner:
             content=response,
             word_count=word_count
         )
+        
+        print(f"[SPEECH CREATED] Successfully created speech object:")
+        print(f"  Speech type: {speech.speech_type.value}")
+        print(f"  Word count: {speech.word_count}")
+        print(f"  Content length: {len(speech.content)} chars")
+        print(f"{'='*80}\n")
         
         return speech
     

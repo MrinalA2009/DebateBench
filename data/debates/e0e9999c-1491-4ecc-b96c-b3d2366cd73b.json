@@ -1,0 +1,25 @@
+{
+  "id": "e0e9999c-1491-4ecc-b96c-b3d2366cd73b",
+  "resolution": "Resolved: Social media does more harm than good",
+  "pro_model": "openai/gpt-5.2",
+  "con_model": "anthropic/claude-sonnet-4.5",
+  "temperature": 0.7,
+  "prompt_style": "standard",
+  "status": "error",
+  "speeches": [
+    {
+      "speech_type": "pro_constructive",
+      "content": "Judge, the question is comparative: whether social media\u2019s net impact on human welfare is more harmful than beneficial. I offer this framework: prioritize magnitude and likelihood of harms affecting physical and mental health and the stability of democratic decision-making, because those are prerequisites for any other benefits.\n\nContention 1: Social media measurably worsens mental health, especially for teens. Platforms are engineered for engagement through infinite scroll, variable rewards, and social comparison, which intensify anxiety, sleep disruption, and depression. The U.S. Surgeon General\u2019s 2023 advisory warns that adolescents who spend more than three hours a day on social media face roughly double the risk of poor mental health outcomes, and the CDC has reported sharp rises in persistent sadness among high school students in recent years. Even if social media can provide community, the dominant design incentives push users toward compulsive use and status competition, creating widespread harm at scale.\n\nContention 2: Social media accelerates misinformation and polarization, undermining informed consent in a democracy. A major MIT study in Science (2018) found false news spreads faster and farther than true news on Twitter, because novelty and outrage drive sharing. Algorithmic feeds optimize for engagement, not accuracy, so extreme and misleading content is systematically promoted. This leads to real-world harms: vaccine hesitancy, election denial, harassment, and radicalization. The societal cost is enormous because it affects millions simultaneously and weakens collective problem-solving.\n\nContention 3: Social media enables exploitation and safety risks. Targeted advertising and data collection incentivize surveillance of users, including minors, while scammers and predators exploit easy access and anonymity. These harms are not rare edge cases; they are baked into the business model.\n\nBecause the most probable, large-scale effects are worsened mental health, degraded truth, and increased exploitation, social media does more harm than good.",
+      "word_count": 294,
+      "side": "PRO"
+    },
+    {
+      "speech_type": "con_constructive",
+      "content": "Judge, today's resolution asks us to weigh social media's total impact on society. We must look beyond isolated harms and recognize the transformative benefits that connect billions of people worldwide. Contention 1: Social media democratizes information and amplifies marginalized voices. Before these platforms, traditional media gatekeepers controlled public discourse. Now, movements like #MeToo and Black Lives Matter have exposed injustice and driven systemic change precisely because ordinary people can share their stories directly. The Arab Spring demonstrated how social media enables citizens under authoritarian regimes to organize and communicate when traditional channels are censored. This empowerment of previously silenced communities represents unprecedented progress for human rights and democratic participation. Contention 2: Social media creates vital social connections and support networks. For isolated individuals\u2014whether LGBTQ+ youth in conservative areas, rare disease patients, or elderly people with limited mobility\u2014these platforms provide lifesaving community and resources. Research from Pew shows 81% of teens report social media helps them feel more connected to friends. During COVID-19, these platforms became essential infrastructure for maintaining relationships, remote work, and education. The mental health concerns my opponent raises ignore that correlation doesn't prove causation, and overlook how social media provides crucial support for many struggling individuals. Contention 3: Social media drives economic opportunity and education. Small businesses reach customers without expensive advertising. Creators build careers sharing knowledge and entertainment. Free educational content on platforms like YouTube has democratized learning globally. These economic benefits disproportionately help those who previously lacked access to traditional markets. Regarding misinformation: platforms have increasingly invested in fact-checking and content moderation. The solution is improving these systems, not abandoning the technology entirely. The framework should prioritize breadth of impact. Social media connects over 4.5 billion users worldwide, enabling communication, commerce, education, and activism at unprecedented scale.",
+      "word_count": 292,
+      "side": "CON"
+    }
+  ],
+  "saved_at": "2025-12-27T14:31:28.730140",
+  "error": "Model openai/gpt-5.2 returned an empty response. The model may not exist or may have failed."
+}

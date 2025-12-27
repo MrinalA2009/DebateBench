@@ -7,6 +7,7 @@ import sys
 import asyncio
 from pathlib import Path
 import json
+from functools import partial
 
 # Add parent directory to path for debatebench import
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -102,8 +103,19 @@ async def run_debate_task(
     prompt_style: str
 ):
     """Run debate and broadcast updates via WebSocket"""
+    print(f"\n{'#'*80}")
+    print(f"[DEBATE TASK] Starting new debate task")
+    print(f"  Debate ID: {debate_id}")
+    print(f"  Resolution: {resolution}")
+    print(f"  PRO Model: {pro_model}")
+    print(f"  CON Model: {con_model}")
+    print(f"  Temperature: {temperature}")
+    print(f"  Prompt Style: {prompt_style}")
+    print(f"{'#'*80}\n")
+    
     try:
         # Broadcast start
+        print(f"[WEBSOCKET] Broadcasting debate_started event")
         await manager.broadcast({
             "type": "debate_started",
             "debate_id": debate_id,
@@ -152,6 +164,12 @@ async def run_debate_task(
                 model = con_model
                 side = "CON"
             
+            print(f"\n[DEBATE TASK] Starting speech generation:")
+            print(f"  Debate ID: {debate_id}")
+            print(f"  Speech type: {speech_type.value}")
+            print(f"  Model: {model}")
+            print(f"  Side: {side}\n")
+            
             # Broadcast speech start
             await manager.broadcast({
                 "type": "speech_started",
@@ -159,13 +177,24 @@ async def run_debate_task(
                 "speech_type": speech_type.value,
                 "side": side
             })
+            print(f"[WEBSOCKET] Broadcasted speech_started for {speech_type.value}")
             
             # Generate speech (run in executor since it's blocking I/O)
-            speech = await loop.run_in_executor(
-                executor,
-                lambda: runner.generate_speech(speech_type, debate, model, side)
-            )
+            # Use functools.partial to properly capture variables for the executor
+            try:
+                speech = await loop.run_in_executor(
+                    executor,
+                    partial(runner.generate_speech, speech_type, debate, model, side)
+                )
+                print(f"[DEBATE TASK] Speech generated successfully")
+            except Exception as e:
+                print(f"[ERROR] Failed to generate speech: {str(e)}")
+                import traceback
+                traceback.print_exc()
+                raise
+            
             debate.add_speech(speech)
+            print(f"[DEBATE TASK] Speech added to debate object")
             
             # Update active debates
             speech_data = {
@@ -176,6 +205,10 @@ async def run_debate_task(
             }
             active_debates[debate_id]["speeches"].append(speech_data)
             save_debate(debate_id, active_debates[debate_id])
+            print(f"[DEBATE TASK] Speech data saved to active_debates and disk")
+            print(f"  Speech data keys: {list(speech_data.keys())}")
+            print(f"  Content length: {len(speech_data['content'])} chars")
+            print(f"  Word count: {speech_data['word_count']}")
             
             # Broadcast speech complete
             await manager.broadcast({
@@ -183,10 +216,14 @@ async def run_debate_task(
                 "debate_id": debate_id,
                 "speech": speech_data
             })
+            print(f"[WEBSOCKET] Broadcasted speech_complete for {speech_type.value}")
+            print(f"  Broadcast payload size: {len(str(speech_data))} chars\n")
         
         executor.shutdown(wait=False)
+        print(f"[DEBATE TASK] All speeches generated, shutting down executor")
         
         # Debate complete
+        print(f"[DEBATE TASK] Marking debate as complete")
         active_debates[debate_id]["status"] = "complete"
         active_debates[debate_id]["debate"] = {
             "resolution": debate.resolution,
@@ -204,16 +241,25 @@ async def run_debate_task(
         }
         save_debate(debate_id, active_debates[debate_id])
         
+        print(f"[WEBSOCKET] Broadcasting debate_complete event")
         await manager.broadcast({
             "type": "debate_complete",
             "debate_id": debate_id,
             "debate": active_debates[debate_id]["debate"]
         })
+        print(f"[DEBATE TASK] Debate task completed successfully")
+        print(f"{'#'*80}\n")
         
     except Exception as e:
         import traceback
         error_msg = str(e)
+        print(f"\n{'#'*80}")
+        print(f"[ERROR] Debate task failed!")
+        print(f"  Debate ID: {debate_id}")
+        print(f"  Error: {error_msg}")
+        print(f"{'#'*80}")
         traceback.print_exc()
+        print(f"{'#'*80}\n")
         active_debates[debate_id]["status"] = "error"
         active_debates[debate_id]["error"] = error_msg
         save_debate(debate_id, active_debates[debate_id])

@@ -1,0 +1,11 @@
+{
+  "id": "0876eb0c-bfcc-4ccf-ab8b-8e6655f65362",
+  "resolution": "Resolved: Social media does more harm than good",
+  "pro_model": "openai/gpt-5.2",
+  "con_model": "anthropic/claude-sonnet-4.5",
+  "temperature": 0.7,
+  "prompt_style": "standard",
+  "status": "running",
+  "speeches": [],
+  "saved_at": "2025-12-27T14:34:03.538567"
+}

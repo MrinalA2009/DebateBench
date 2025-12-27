@@ -32,11 +32,13 @@ Resolution: {resolution}
 Your side: {side_name} ({side})
 Speech type: {speech_type.value}
 
-CRITICAL WORD LIMIT: {word_limit} words MAXIMUM
-⚠️ WARNING: You MUST write EXACTLY {word_limit} words or LESS. If you exceed {word_limit} words, your speech will be automatically TRUNCATED and cut off mid-sentence. Plan your speech carefully to stay within the limit.
+WORD LIMIT: {word_limit} words target (aim for approximately {word_limit} words)
+Please aim to write around {word_limit} words. While the system will handle minor overages, try to stay close to this limit for consistency.
 
-Rules:
-- ABSOLUTELY do not exceed {word_limit} words - stop before you reach the limit
+Guidelines:
+- Target approximately {word_limit} words in your response
+- Write a complete, coherent speech within this general length
+- Focus on making clear, well-structured arguments
 - Make clear, well-structured arguments
 - Use evidence and reasoning
 - Respond to previous arguments when applicable
@@ -118,10 +120,12 @@ def get_freeform_debate_prompt(
     
     prompt = f"""You are arguing the {side_name} side of this resolution: {resolution}
 
-CRITICAL WORD LIMIT: {word_limit} words MAXIMUM
-⚠️ WARNING: You MUST write EXACTLY {word_limit} words or LESS. If you exceed {word_limit} words, your speech will be automatically TRUNCATED and cut off mid-sentence. Plan your speech carefully to stay within the limit.
+WORD LIMIT: {word_limit} words target (aim for approximately {word_limit} words)
+Please aim to write around {word_limit} words. While the system will handle minor overages, try to stay close to this limit for consistency.
 
-Write a {speech_type.value} speech explaining why your side is correct. Remember: MAXIMUM {word_limit} words - if you exceed this limit, your speech will be cut off. Count your words and stop before reaching {word_limit} words.
+Write a {speech_type.value} speech explaining why your side is correct.
+- Target approximately {word_limit} words
+- Write a complete, coherent response
 
 Write in plain text only (no markdown, LaTeX, or special formatting). Use proper spacing between words.
 """

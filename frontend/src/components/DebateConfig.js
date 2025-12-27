@@ -3,17 +3,18 @@ import './DebateConfig.css';
 import topics from '../sortedtopics.json';
 
 const POPULAR_MODELS = [
-  'openai/gpt-4',
-  'anthropic/claude-3-opus',
-  'google/gemini-pro-1.5'
+  'openai/gpt-5.2',
+  'openai/gpt-4o-mini',
+  'anthropic/claude-sonnet-4.5',
+  'google/gemini-2.5-flash'
 ];
 
 function DebateConfig({ onStart, status }) {
   const [resolution, setResolution] = useState('Resolved: Social media does more harm than good');
-  const [proModel, setProModel] = useState('openai/gpt-4');
+  const [proModel, setProModel] = useState('openai/gpt-5.2');
   const [proModelCustom, setProModelCustom] = useState('');
   const [proModelIsCustom, setProModelIsCustom] = useState(false);
-  const [conModel, setConModel] = useState('anthropic/claude-3-opus');
+  const [conModel, setConModel] = useState('anthropic/claude-sonnet-4.5');
   const [conModelCustom, setConModelCustom] = useState('');
   const [conModelIsCustom, setConModelIsCustom] = useState(false);
   const [temperature, setTemperature] = useState(0.7);
@@ -103,7 +104,7 @@ function DebateConfig({ onStart, status }) {
                   }
                 }}
                 disabled={isRunning}
-                placeholder="Enter model ID (e.g., openai/gpt-4)"
+                placeholder="Enter model ID (e.g., openai/gpt-4o-mini)"
               />
             )}
           </div>
@@ -136,7 +137,7 @@ function DebateConfig({ onStart, status }) {
                   }
                 }}
                 disabled={isRunning}
-                placeholder="Enter model ID (e.g., anthropic/claude-3-opus)"
+                placeholder="Enter model ID (e.g., anthropic/claude-sonnet-4.5)"
               />
             )}
           </div>
