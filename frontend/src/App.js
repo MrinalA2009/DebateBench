@@ -160,10 +160,8 @@ function App() {
 
   const fetchAllDebates = async () => {
     try {
-      console.log('[API] Fetching all debates from:', `${API_URL}/api/debates`);
       const response = await axios.get(`${API_URL}/api/debates`);
       const debates = response.data.debates || [];
-      console.log('[API] Fetched debates:', debates.length, 'debates');
       setAllDebates(debates);
     } catch (error) {
       console.error('[API] Error fetching debates:', error);

@@ -38,8 +38,8 @@ Please aim to write around {word_limit} words. While the system will handle mino
 Guidelines:
 - Target approximately {word_limit} words in your response
 - Write a complete, coherent speech within this general length
+- Do NOT mention word count or say things like "This is X words" - just write your speech
 - Focus on making clear, well-structured arguments
-- Make clear, well-structured arguments
 - Use evidence and reasoning
 - Respond to previous arguments when applicable
 - Write in plain text only (no markdown, LaTeX, or special formatting)
@@ -75,7 +75,7 @@ This is your summary speech. Synthesize the debate and make your final case.
         for i, speech in enumerate(previous_speeches, 1):
             instructions += f"\n--- Speech {i} ---\n{speech}\n"
     
-    instructions += f"\nNow write your {speech_type.value} speech ({side} side). Remember: MAXIMUM {word_limit} words - if you exceed this limit, your speech will be cut off. Count your words and stop before reaching {word_limit} words."
+    instructions += f"\nNow write your {speech_type.value} speech ({side} side). Remember: target approximately {word_limit} words. Do NOT mention word count in your response - just write your speech."
     
     return instructions
 
@@ -123,8 +123,9 @@ def get_freeform_debate_prompt(
 WORD LIMIT: {word_limit} words target (aim for approximately {word_limit} words)
 Please aim to write around {word_limit} words. While the system will handle minor overages, try to stay close to this limit for consistency.
 
-Write a {speech_type.value} speech explaining why your side is correct.
+Write a {speech_type.value} speech explaining why your side is correct. 
 - Target approximately {word_limit} words
+- Do NOT mention word count or say things like "This is X words" - just write your speech
 - Write a complete, coherent response
 
 Write in plain text only (no markdown, LaTeX, or special formatting). Use proper spacing between words.

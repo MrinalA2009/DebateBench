@@ -3,7 +3,6 @@ import './DebateConfig.css';
 import topics from '../sortedtopics.json';
 
 const POPULAR_MODELS = [
-  'openai/gpt-5.2',
   'openai/gpt-4o-mini',
   'anthropic/claude-sonnet-4.5',
   'google/gemini-2.5-flash'
@@ -11,7 +10,7 @@ const POPULAR_MODELS = [
 
 function DebateConfig({ onStart, status }) {
   const [resolution, setResolution] = useState('Resolved: Social media does more harm than good');
-  const [proModel, setProModel] = useState('openai/gpt-5.2');
+  const [proModel, setProModel] = useState('openai/gpt-4o-mini');
   const [proModelCustom, setProModelCustom] = useState('');
   const [proModelIsCustom, setProModelIsCustom] = useState(false);
   const [conModel, setConModel] = useState('anthropic/claude-sonnet-4.5');
