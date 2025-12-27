@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './DebateDisplay.css';
 
 const WORD_LIMITS = {
@@ -11,6 +11,8 @@ const WORD_LIMITS = {
 };
 
 function DebateDisplay({ debate, status, debateId }) {
+  const [rawMode, setRawMode] = useState(false);
+
   if (!debate) return null;
 
   const isPro = (speechType) => speechType?.startsWith('pro');
@@ -41,6 +43,17 @@ function DebateDisplay({ debate, status, debateId }) {
               </span>
             </div>
           )}
+          <div className="meta-item">
+            <label className="toggle-label">
+              <input
+                type="checkbox"
+                checked={rawMode}
+                onChange={(e) => setRawMode(e.target.checked)}
+                className="toggle-checkbox"
+              />
+              <span className="toggle-text">Raw Output Mode</span>
+            </label>
+          </div>
         </div>
       </div>
 
@@ -76,9 +89,9 @@ function DebateDisplay({ debate, status, debateId }) {
                     {speech.word_count || 0}/{wordLimit} words
                   </span>
                 </div>
-                <div className="speech-content">
+                <pre className={rawMode ? "speech-content-raw" : "speech-content"}>
                   {speech.content || 'Generating...'}
-                </div>
+                </pre>
               </div>
             );
           })

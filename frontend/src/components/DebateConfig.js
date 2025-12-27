@@ -5,7 +5,10 @@ import topics from '../sortedtopics.json';
 const POPULAR_MODELS = [
   'openai/gpt-4o-mini',
   'anthropic/claude-sonnet-4.5',
-  'google/gemini-2.5-flash'
+  'google/gemini-2.5-flash',
+  'meta-llama/llama-3.3-70b-instruct',
+  'qwen/qwen3-235b-a22b-2507',
+  'x-ai/grok-4.1-fast'
 ];
 
 function DebateConfig({ onStart, status }) {
