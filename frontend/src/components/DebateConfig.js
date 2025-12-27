@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './DebateConfig.css';
+import topics from '../sortedtopics.json';
 
 const POPULAR_MODELS = [
   'openai/gpt-4',
@@ -38,6 +39,14 @@ function DebateConfig({ onStart, status }) {
       temperature,
       prompt_style: promptStyle
     });
+  };
+
+  const handleRandomTopic = () => {
+    const categories = Object.keys(topics);
+    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+    const categoryTopics = topics[randomCategory];
+    const randomTopic = categoryTopics[Math.floor(Math.random() * categoryTopics.length)];
+    setResolution(randomTopic);
   };
 
   const handleProModelChange = (value) => {
@@ -142,6 +151,14 @@ function DebateConfig({ onStart, status }) {
               rows="4"
               placeholder="Resolved: ..."
             />
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={handleRandomTopic}
+              disabled={isRunning}
+            >
+              Random Topic
+            </button>
           </div>
 
           <div className="form-group">
