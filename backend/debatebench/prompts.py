@@ -31,10 +31,12 @@ def get_debate_prompt(
 Resolution: {resolution}
 Your side: {side_name} ({side})
 Speech type: {speech_type.value}
-Word limit: {word_limit} words (STRICT - do not exceed)
+
+CRITICAL WORD LIMIT: {word_limit} words MAXIMUM
+⚠️ WARNING: You MUST write EXACTLY {word_limit} words or LESS. If you exceed {word_limit} words, your speech will be automatically TRUNCATED and cut off mid-sentence. Plan your speech carefully to stay within the limit.
 
 Rules:
-- Stay within the {word_limit} word limit
+- ABSOLUTELY do not exceed {word_limit} words - stop before you reach the limit
 - Make clear, well-structured arguments
 - Use evidence and reasoning
 - Respond to previous arguments when applicable
@@ -71,7 +73,7 @@ This is your summary speech. Synthesize the debate and make your final case.
         for i, speech in enumerate(previous_speeches, 1):
             instructions += f"\n--- Speech {i} ---\n{speech}\n"
     
-    instructions += f"\nNow write your {speech_type.value} speech ({side} side, {word_limit} words max):"
+    instructions += f"\nNow write your {speech_type.value} speech ({side} side). Remember: MAXIMUM {word_limit} words - if you exceed this limit, your speech will be cut off. Count your words and stop before reaching {word_limit} words."
     
     return instructions
 
@@ -116,7 +118,11 @@ def get_freeform_debate_prompt(
     
     prompt = f"""You are arguing the {side_name} side of this resolution: {resolution}
 
-Write a {speech_type.value} speech (max {word_limit} words) explaining why your side is correct.
+CRITICAL WORD LIMIT: {word_limit} words MAXIMUM
+⚠️ WARNING: You MUST write EXACTLY {word_limit} words or LESS. If you exceed {word_limit} words, your speech will be automatically TRUNCATED and cut off mid-sentence. Plan your speech carefully to stay within the limit.
+
+Write a {speech_type.value} speech explaining why your side is correct. Remember: MAXIMUM {word_limit} words - if you exceed this limit, your speech will be cut off. Count your words and stop before reaching {word_limit} words.
+
 Write in plain text only (no markdown, LaTeX, or special formatting). Use proper spacing between words.
 """
     

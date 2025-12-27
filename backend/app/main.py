@@ -107,7 +107,9 @@ async def run_debate_task(
         await manager.broadcast({
             "type": "debate_started",
             "debate_id": debate_id,
-            "resolution": resolution
+            "resolution": resolution,
+            "pro_model": pro_model,
+            "con_model": con_model
         })
         
         # Initialize
@@ -131,7 +133,9 @@ async def run_debate_task(
         await manager.broadcast({
             "type": "debate_status",
             "debate_id": debate_id,
-            "status": "running"
+            "status": "running",
+            "pro_model": pro_model,
+            "con_model": con_model
         })
         
         # Generate each speech (run in executor to avoid blocking)
