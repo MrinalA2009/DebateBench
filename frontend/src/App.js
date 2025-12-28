@@ -4,6 +4,7 @@ import './App.css';
 import DebateConfig from './components/DebateConfig';
 import DebateDisplay from './components/DebateDisplay';
 import HistoryPage from './components/HistoryPage';
+import JudgePage from './components/JudgePage';
 
 const API_URL = 'http://localhost:8001';
 
@@ -12,7 +13,7 @@ function App() {
   const [debateId, setDebateId] = useState(null);
   const [status, setStatus] = useState('idle'); // idle, starting, running, complete, error
   const [allDebates, setAllDebates] = useState([]);
-  const [currentPage, setCurrentPage] = useState('debate'); // 'debate' or 'history'
+  const [currentPage, setCurrentPage] = useState('debate'); // 'debate', 'history', or 'judge'
   const wsRef = useRef(null);
 
   const handleWebSocketMessage = useCallback((data) => {
@@ -255,27 +256,35 @@ function App() {
           >
             History
           </button>
+          <button
+            className={`nav-button ${currentPage === 'judge' ? 'active' : ''}`}
+            onClick={() => setCurrentPage('judge')}
+          >
+            Judge
+          </button>
         </nav>
       </header>
       
       <main className="App-main">
         {currentPage === 'debate' ? (
           <div className="container">
-          <DebateConfig 
+          <DebateConfig
             onStart={startDebate}
             status={status}
           />
-            
+
             {debate && (
-              <DebateDisplay 
+              <DebateDisplay
                 debate={debate}
                 status={status}
                 debateId={debateId}
               />
             )}
           </div>
-        ) : (
+        ) : currentPage === 'history' ? (
           <HistoryPage />
+        ) : (
+          <JudgePage />
         )}
       </main>
     </div>

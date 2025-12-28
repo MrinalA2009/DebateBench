@@ -4,10 +4,20 @@ import './HistoryPage.css';
 
 const API_URL = 'http://localhost:8001';
 
+const WORD_LIMITS = {
+  pro_constructive: 300,
+  con_constructive: 300,
+  pro_rebuttal: 250,
+  con_rebuttal: 250,
+  pro_summary: 200,
+  con_summary: 200,
+};
+
 function HistoryPage() {
   const [debates, setDebates] = useState([]);
   const [expandedId, setExpandedId] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [rawMode, setRawMode] = useState(false);
 
   useEffect(() => {
     fetchDebates();
@@ -104,16 +114,69 @@ function HistoryPage() {
                   <div className="debate-expanded">
                     {hasTranscript ? (
                       <div className="transcript-container">
-                        <pre className="transcript">{formatTranscript(debate)}</pre>
-                        <button
-                          className="btn-copy"
-                          onClick={() => {
-                            navigator.clipboard.writeText(formatTranscript(debate));
-                            alert('Transcript copied to clipboard!');
-                          }}
-                        >
-                          Copy Transcript
-                        </button>
+                        <div className="transcript-controls">
+                          <label className="toggle-label">
+                            <input
+                              type="checkbox"
+                              checked={rawMode}
+                              onChange={(e) => setRawMode(e.target.checked)}
+                              className="toggle-checkbox"
+                            />
+                            <span className="toggle-text">Raw Output Mode</span>
+                          </label>
+                          <button
+                            className="btn-copy"
+                            onClick={() => {
+                              navigator.clipboard.writeText(formatTranscript(debate));
+                              alert('Transcript copied to clipboard!');
+                            }}
+                          >
+                            Copy Transcript
+                          </button>
+                        </div>
+                        {debate.debate && debate.debate.speeches && debate.debate.speeches.length > 0 ? (
+                          <div className="speeches-container">
+                            {debate.debate.speeches.map((speech, index) => {
+                              const isPro = speech.speech_type?.startsWith('pro');
+                              const side = isPro ? 'PRO' : 'CON';
+                              const sideColor = side === 'PRO' ? '#00aa00' : '#aa0000';
+                              const speechName = speech.speech_type
+                                .replace(/_/g, ' ')
+                                .replace(/\b\w/g, l => l.toUpperCase());
+                              const wordLimit = WORD_LIMITS[speech.speech_type] || 0;
+
+                              return (
+                                <div key={index} className="speech-item">
+                                  <div 
+                                    className="speech-header"
+                                    style={{ borderLeftColor: sideColor }}
+                                  >
+                                    <div className="speech-title">
+                                      <span 
+                                        className="side-badge"
+                                        style={{ 
+                                          backgroundColor: sideColor,
+                                          color: '#ffffff'
+                                        }}
+                                      >
+                                        {side}
+                                      </span>
+                                      <span className="speech-type">{speechName}</span>
+                                    </div>
+                                    <span className="word-count">
+                                      {speech.word_count || 0}/{wordLimit} words
+                                    </span>
+                                  </div>
+                                  <pre className={rawMode ? "speech-content-raw" : "speech-content"}>
+                                    {speech.content}
+                                  </pre>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        ) : (
+                          <div className="no-transcript">No speeches available</div>
+                        )}
                       </div>
                     ) : (
                       <div className="no-transcript">

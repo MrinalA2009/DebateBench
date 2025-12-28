@@ -1,8 +1,9 @@
 """FastAPI backend for DebateBench"""
 
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException, Body
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, List, Optional
+from pydantic import BaseModel
 import sys
 import asyncio
 from pathlib import Path
@@ -14,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from debatebench import DebateRunner, OpenRouterClient, Debate, Speech, SpeechType
 from debatebench.storage import save_debate, load_debate, load_all_debates
+from debatebench.judge_prompts import get_judge_prompt
 
 app = FastAPI(title="DebateBench API", version="1.0.0")
 
@@ -305,4 +307,105 @@ async def websocket_endpoint(websocket: WebSocket):
             await websocket.send_json({"type": "pong", "message": data})
     except WebSocketDisconnect:
         manager.disconnect(websocket)
+
+
+class JudgeRequest(BaseModel):
+    debate_id: str
+    judge_model: str
+    judge_prompt: str
+
+
+@app.post("/api/judge")
+async def judge_debate(request: JudgeRequest):
+    """Judge a debate using an AI model
+
+    Args:
+        request: Judge request containing debate_id, judge_model, and judge_prompt
+
+    Returns:
+        Judgment result
+    """
+    debate_id = request.debate_id
+    judge_model = request.judge_model
+    judge_prompt = request.judge_prompt
+    print(f"\n{'#'*80}")
+    print(f"[JUDGE] Starting judgment")
+    print(f"  Debate ID: {debate_id}")
+    print(f"  Judge Model: {judge_model}")
+    print(f"  Judge Prompt: {judge_prompt}")
+    print(f"{'#'*80}\n")
+
+    try:
+        # Load debate
+        debate_data = load_debate(debate_id)
+        if not debate_data:
+            raise HTTPException(status_code=404, detail="Debate not found")
+
+        # Check if debate is complete
+        if debate_data.get('status') != 'complete':
+            raise HTTPException(status_code=400, detail="Debate is not complete")
+
+        # Get debate speeches
+        speeches = debate_data.get('speeches', [])
+        if not speeches:
+            raise HTTPException(status_code=400, detail="No speeches found in debate")
+
+        # Build transcript
+        resolution = debate_data.get('resolution', 'Unknown')
+        pro_model = debate_data.get('pro_model', 'Unknown')
+        con_model = debate_data.get('con_model', 'Unknown')
+
+        transcript = f"RESOLUTION: {resolution}\n\n"
+        transcript += f"PRO: {pro_model}\n"
+        transcript += f"CON: {con_model}\n"
+        transcript += f"\n{'='*80}\n\n"
+
+        for speech in speeches:
+            side = speech.get('side', 'UNKNOWN')
+            speech_type = speech.get('speech_type', 'unknown')
+            content = speech.get('content', '')
+
+            transcript += f"[{side}] {speech_type.upper().replace('_', ' ')}\n"
+            transcript += f"{'-'*80}\n"
+            transcript += f"{content}\n\n"
+            transcript += f"{'='*80}\n\n"
+
+        print(f"[JUDGE] Built transcript ({len(transcript)} chars)")
+
+        # Get judge prompt
+        prompt_text = get_judge_prompt(judge_prompt, transcript)
+        print(f"[JUDGE] Generated prompt ({len(prompt_text)} chars)")
+
+        # Call judge model
+        client = OpenRouterClient()
+        messages = [
+            {"role": "system", "content": "You are an experienced debate judge."},
+            {"role": "user", "content": prompt_text}
+        ]
+
+        print(f"[JUDGE] Calling {judge_model}...")
+        judgment = client.call_model(
+            model=judge_model,
+            messages=messages,
+            temperature=0.7,
+            max_tokens=2000
+        )
+
+        print(f"[JUDGE] Received judgment ({len(judgment)} chars)")
+        print(f"[JUDGE] Judgment complete\n")
+
+        return {
+            "judgment": judgment,
+            "judge_model": judge_model,
+            "judge_prompt": judge_prompt,
+            "debate_id": debate_id
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        print(f"[ERROR] Failed to judge debate: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to judge debate: {str(e)}")
 
