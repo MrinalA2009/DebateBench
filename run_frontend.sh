@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to run the DebateBench frontend
+# Script to run the DebateBench frontend with hot reloading
 
 cd frontend
-PORT=3001 npm start
+npm run dev

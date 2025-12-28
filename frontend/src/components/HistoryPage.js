@@ -135,6 +135,19 @@ function HistoryPage() {
     return transcript;
   };
 
+  const parseJudgment = (judgmentText) => {
+    try {
+      // Try to extract JSON from the judgment text
+      const jsonMatch = judgmentText.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        return JSON.parse(jsonMatch[0]);
+      }
+    } catch (e) {
+      console.error('Failed to parse judgment as JSON:', e);
+    }
+    return null;
+  };
+
   const renderDebateCard = (debate, debateNumber) => {
     if (!debate) return null;
 
@@ -249,6 +262,85 @@ function HistoryPage() {
 
                   {expandedSectionKey === `judge-${idx}` && (
                     <div className="branch-content">
+                      {(() => {
+                        const parsedJudgment = parseJudgment(judge.judgment);
+                        if (parsedJudgment) {
+                          return (
+                            <div className="judgment-summary">
+                              <div className="judgment-header">
+                                <div className="winner-section">
+                                  <span className="label">Winner:</span>
+                                  <span className={`winner-badge winner-${parsedJudgment.winner?.toLowerCase()}`}>
+                                    {parsedJudgment.winner}
+                                  </span>
+                                </div>
+                                <div className="confidence-section">
+                                  <span className="label">Confidence:</span>
+                                  <span className="confidence-value">
+                                    {(parsedJudgment.confidence * 100).toFixed(0)}%
+                                  </span>
+                                </div>
+                              </div>
+
+                              <div className="scores-grid">
+                                <div className="score-category">
+                                  <div className="category-name">Argument Quality</div>
+                                  <div className="score-row">
+                                    <span className="score-label">PRO:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.argument_quality?.PRO || 0}/5</span>
+                                  </div>
+                                  <div className="score-row">
+                                    <span className="score-label">CON:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.argument_quality?.CON || 0}/5</span>
+                                  </div>
+                                </div>
+
+                                <div className="score-category">
+                                  <div className="category-name">Evidence</div>
+                                  <div className="score-row">
+                                    <span className="score-label">PRO:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.evidence?.PRO || 0}/5</span>
+                                  </div>
+                                  <div className="score-row">
+                                    <span className="score-label">CON:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.evidence?.CON || 0}/5</span>
+                                  </div>
+                                </div>
+
+                                <div className="score-category">
+                                  <div className="category-name">Clash & Refutation</div>
+                                  <div className="score-row">
+                                    <span className="score-label">PRO:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.clash?.PRO || 0}/5</span>
+                                  </div>
+                                  <div className="score-row">
+                                    <span className="score-label">CON:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.clash?.CON || 0}/5</span>
+                                  </div>
+                                </div>
+
+                                <div className="score-category">
+                                  <div className="category-name">Impact Weighing</div>
+                                  <div className="score-row">
+                                    <span className="score-label">PRO:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.weighing?.PRO || 0}/5</span>
+                                  </div>
+                                  <div className="score-row">
+                                    <span className="score-label">CON:</span>
+                                    <span className="score-value">{parsedJudgment.scores?.weighing?.CON || 0}/5</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="reasoning-section">
+                                <div className="reasoning-label">Reasoning:</div>
+                                <div className="reasoning-text">{parsedJudgment.short_reason}</div>
+                              </div>
+                            </div>
+                          );
+                        }
+                        return null;
+                      })()}
                       <div className="judge-info">
                         <div className="judge-meta-item">
                           <strong>Model:</strong> {judge.judge_model}
