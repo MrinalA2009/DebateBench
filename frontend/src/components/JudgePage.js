@@ -22,17 +22,10 @@ const JUDGE_MODELS = [
   'x-ai/grok-4.1-fast'
 ];
 
-const JUDGE_PROMPTS = [
-  { id: 'prompt1', name: 'Prompt 1: Comprehensive Analysis' },
-  { id: 'prompt2', name: 'Prompt 2: Winner-Focused' },
-  { id: 'prompt3', name: 'Prompt 3: Argument Quality' }
-];
-
 function JudgePage() {
   const [debates, setDebates] = useState([]);
   const [selectedDebate, setSelectedDebate] = useState(null);
   const [judgeModel, setJudgeModel] = useState('anthropic/claude-sonnet-4.5');
-  const [judgePrompt, setJudgePrompt] = useState('prompt1');
   const [judgment, setJudgment] = useState(null);
   const [isJudging, setIsJudging] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -70,7 +63,7 @@ function JudgePage() {
       const response = await axios.post(`${API_URL}/api/judge`, {
         debate_id: selectedDebate.id,
         judge_model: judgeModel,
-        judge_prompt: judgePrompt
+        judge_prompt: 'curated' // Single curated prompt
       });
       setJudgment(response.data.judgment);
     } catch (error) {
@@ -79,6 +72,19 @@ function JudgePage() {
     } finally {
       setIsJudging(false);
     }
+  };
+
+  const parseJudgment = (judgmentText) => {
+    try {
+      // Try to extract JSON from the judgment text
+      const jsonMatch = judgmentText.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        return JSON.parse(jsonMatch[0]);
+      }
+    } catch (e) {
+      console.error('Failed to parse judgment as JSON:', e);
+    }
+    return null;
   };
 
   const renderDebateTranscript = (debate) => {
@@ -119,20 +125,6 @@ function JudgePage() {
             >
               {JUDGE_MODELS.map(model => (
                 <option key={model} value={model}>{model}</option>
-              ))}
-            </select>
-          </div>
-
-          <div className="config-item">
-            <label htmlFor="judge-prompt">Judge Prompt</label>
-            <select
-              id="judge-prompt"
-              value={judgePrompt}
-              onChange={(e) => setJudgePrompt(e.target.value)}
-              disabled={isJudging}
-            >
-              {JUDGE_PROMPTS.map(prompt => (
-                <option key={prompt.id} value={prompt.id}>{prompt.name}</option>
               ))}
             </select>
           </div>
@@ -272,9 +264,90 @@ function JudgePage() {
                 </div>
               )}
               {judgment && (
-                <pre className={judgeRawMode ? "judgment-content-raw" : "judgment-content"}>
-                  {judgment}
-                </pre>
+                <>
+                  {(() => {
+                    const parsedJudgment = parseJudgment(judgment);
+                    if (parsedJudgment) {
+                      return (
+                        <div className="judgment-summary">
+                          <div className="judgment-header">
+                            <div className="winner-section">
+                              <span className="label">Winner:</span>
+                              <span className={`winner-badge winner-${parsedJudgment.winner?.toLowerCase()}`}>
+                                {parsedJudgment.winner}
+                              </span>
+                            </div>
+                            <div className="confidence-section">
+                              <span className="label">Confidence:</span>
+                              <span className="confidence-value">
+                                {(parsedJudgment.confidence * 100).toFixed(0)}%
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="scores-grid">
+                            <div className="score-category">
+                              <div className="category-name">Argument Quality</div>
+                              <div className="score-row">
+                                <span className="score-label">PRO:</span>
+                                <span className="score-value">{parsedJudgment.scores?.argument_quality?.PRO || 0}/5</span>
+                              </div>
+                              <div className="score-row">
+                                <span className="score-label">CON:</span>
+                                <span className="score-value">{parsedJudgment.scores?.argument_quality?.CON || 0}/5</span>
+                              </div>
+                            </div>
+
+                            <div className="score-category">
+                              <div className="category-name">Evidence</div>
+                              <div className="score-row">
+                                <span className="score-label">PRO:</span>
+                                <span className="score-value">{parsedJudgment.scores?.evidence?.PRO || 0}/5</span>
+                              </div>
+                              <div className="score-row">
+                                <span className="score-label">CON:</span>
+                                <span className="score-value">{parsedJudgment.scores?.evidence?.CON || 0}/5</span>
+                              </div>
+                            </div>
+
+                            <div className="score-category">
+                              <div className="category-name">Clash & Refutation</div>
+                              <div className="score-row">
+                                <span className="score-label">PRO:</span>
+                                <span className="score-value">{parsedJudgment.scores?.clash?.PRO || 0}/5</span>
+                              </div>
+                              <div className="score-row">
+                                <span className="score-label">CON:</span>
+                                <span className="score-value">{parsedJudgment.scores?.clash?.CON || 0}/5</span>
+                              </div>
+                            </div>
+
+                            <div className="score-category">
+                              <div className="category-name">Impact Weighing</div>
+                              <div className="score-row">
+                                <span className="score-label">PRO:</span>
+                                <span className="score-value">{parsedJudgment.scores?.weighing?.PRO || 0}/5</span>
+                              </div>
+                              <div className="score-row">
+                                <span className="score-label">CON:</span>
+                                <span className="score-value">{parsedJudgment.scores?.weighing?.CON || 0}/5</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="reasoning-section">
+                            <div className="reasoning-label">Reasoning:</div>
+                            <div className="reasoning-text">{parsedJudgment.short_reason}</div>
+                          </div>
+                        </div>
+                      );
+                    }
+                    return null;
+                  })()}
+                  <pre className={judgeRawMode ? "judgment-content-raw" : "judgment-content"}>
+                    {judgment}
+                  </pre>
+                </>
               )}
             </div>
           </div>
