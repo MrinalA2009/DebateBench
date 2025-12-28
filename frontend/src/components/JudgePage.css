@@ -197,6 +197,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  grid-auto-rows: 1fr;
 }
 
 @media (max-width: 1024px) {
@@ -209,7 +210,6 @@
 .judgment-panel {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
 }
 
 .transcript-panel-header,

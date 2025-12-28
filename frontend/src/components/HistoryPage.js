@@ -347,6 +347,8 @@ function HistoryPage() {
                         </div>
                         <div className="judge-meta-item">
                           <strong>Prompt:</strong> {judge.judge_prompt}
+                        </div>
+                      </div>
                       <div className="speeches-container">
                         <div className="speech-item">
                           <div
