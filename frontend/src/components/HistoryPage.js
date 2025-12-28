@@ -143,7 +143,7 @@ function HistoryPage() {
     const expandedSectionKey = expandedSection[debate.id];
 
     return (
-      <div key={debate.id} className="debate-card">
+      <div key={debate.id} className={`debate-card ${isDebateExpanded ? 'expanded' : ''}`}>
         <div
           className="debate-card-header"
           onClick={() => toggleDebateExpand(debate.id)}
