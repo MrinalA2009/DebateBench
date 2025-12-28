@@ -245,7 +245,7 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
 }
 
@@ -255,10 +255,12 @@
   font-size: 0.85rem;
   border: 1px solid #000000;
   background: #ffffff;
-  min-height: 3rem;
+  min-height: 2.5rem;
   display: flex;
   align-items: center;
-  line-height: 1.4;
+  justify-content: center;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {

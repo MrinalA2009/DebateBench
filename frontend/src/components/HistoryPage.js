@@ -347,11 +347,32 @@ function HistoryPage() {
                         </div>
                         <div className="judge-meta-item">
                           <strong>Prompt:</strong> {judge.judge_prompt}
+                      <div className="speeches-container">
+                        <div className="speech-item">
+                          <div
+                            className="speech-header"
+                            style={{ borderLeftColor: '#546e7a' }}
+                          >
+                            <div className="speech-title">
+                              <span
+                                className="side-badge"
+                                style={{
+                                  backgroundColor: '#546e7a',
+                                  color: '#ffffff'
+                                }}
+                              >
+                                JUDGE
+                              </span>
+                              <span className="speech-type">
+                                {judge.judge_model} - {judge.judge_prompt}
+                              </span>
+                            </div>
+                          </div>
+                          <pre className={rawMode ? "speech-content-raw" : "speech-content"}>
+                            {judge.judgment}
+                          </pre>
                         </div>
                       </div>
-                      <pre className="judge-content">
-                        {judge.judgment}
-                      </pre>
                     </div>
                   )}
                 </div>

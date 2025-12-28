@@ -137,6 +137,7 @@
   font-weight: 400;
   color: #000000;
   font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 .word-count {
