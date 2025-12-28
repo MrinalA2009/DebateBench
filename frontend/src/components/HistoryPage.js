@@ -16,6 +16,8 @@ const WORD_LIMITS = {
 function HistoryPage() {
   const [debates, setDebates] = useState([]);
   const [expandedId, setExpandedId] = useState(null);
+  const [expandedDebateId, setExpandedDebateId] = useState(null);
+  const [expandedSection, setExpandedSection] = useState({}); // Track which section is expanded per debate
   const [loading, setLoading] = useState(true);
   const [rawMode, setRawMode] = useState(false);
 
@@ -82,6 +84,33 @@ function HistoryPage() {
 
   const toggleExpand = (debateId) => {
     setExpandedId(expandedId === debateId ? null : debateId);
+    // Reset expanded debate card when collapsing group
+    if (expandedId === debateId) {
+      setExpandedDebateId(null);
+      setExpandedSection({});
+    }
+  };
+
+  const toggleDebateExpand = (debateId) => {
+    setExpandedDebateId(expandedDebateId === debateId ? null : debateId);
+    // Reset expanded sections when collapsing debate
+    if (expandedDebateId === debateId) {
+      setExpandedSection(prev => {
+        const updated = { ...prev };
+        delete updated[debateId];
+        return updated;
+      });
+    }
+  };
+
+  const toggleSection = (debateId, sectionKey) => {
+    setExpandedSection(prev => {
+      const currentExpanded = prev[debateId];
+      return {
+        ...prev,
+        [debateId]: currentExpanded === sectionKey ? null : sectionKey
+      };
+    });
   };
 
   const formatTranscript = (debate) => {
@@ -104,6 +133,144 @@ function HistoryPage() {
     });
 
     return transcript;
+  };
+
+  const renderDebateCard = (debate, debateNumber) => {
+    if (!debate) return null;
+
+    const isDebateExpanded = expandedDebateId === debate.id;
+    const judges = debate.judges || [];
+    const expandedSectionKey = expandedSection[debate.id];
+
+    return (
+      <div key={debate.id} className="debate-card">
+        <div
+          className="debate-card-header"
+          onClick={() => toggleDebateExpand(debate.id)}
+        >
+          <div className="debate-card-title">
+            <strong>Debate {debateNumber}:</strong> {debate.pro_model} (PRO) vs {debate.con_model} (CON)
+          </div>
+          <div className="debate-card-meta">
+            <span className="debate-card-info">
+              {debate.debate?.speeches?.length || 0} speeches
+            </span>
+            {judges.length > 0 && (
+              <span className="debate-card-info">
+                {judges.length} judge{judges.length !== 1 ? 's' : ''}
+              </span>
+            )}
+            <span className="expand-indicator">
+              {isDebateExpanded ? '▼' : '▶'}
+            </span>
+          </div>
+        </div>
+
+        {isDebateExpanded && (
+          <div className="debate-card-content">
+            <div className="debate-branches">
+              {/* Transcript Branch */}
+              <div className="debate-branch">
+                <div
+                  className="branch-header"
+                  onClick={() => toggleSection(debate.id, 'transcript')}
+                >
+                  <div className="branch-title">
+                    <span className="branch-icon">📄</span>
+                    <span>Transcript</span>
+                  </div>
+                  <span className="expand-indicator">
+                    {expandedSectionKey === 'transcript' ? '▼' : '▶'}
+                  </span>
+                </div>
+
+                {expandedSectionKey === 'transcript' && (
+                  <div className="branch-content">
+                    {debate.debate?.speeches?.length > 0 ? (
+                      <div className="speeches-container">
+                        {debate.debate.speeches.map((speech, index) => {
+                          const isPro = speech.speech_type?.startsWith('pro');
+                          const side = isPro ? 'PRO' : 'CON';
+                          const sideColor = side === 'PRO' ? '#00aa00' : '#aa0000';
+                          const speechName = speech.speech_type
+                            .replace(/_/g, ' ')
+                            .replace(/\b\w/g, l => l.toUpperCase());
+                          const wordLimit = WORD_LIMITS[speech.speech_type] || 0;
+
+                          return (
+                            <div key={index} className="speech-item">
+                              <div
+                                className="speech-header"
+                                style={{ borderLeftColor: sideColor }}
+                              >
+                                <div className="speech-title">
+                                  <span
+                                    className="side-badge"
+                                    style={{
+                                      backgroundColor: sideColor,
+                                      color: '#ffffff'
+                                    }}
+                                  >
+                                    {side}
+                                  </span>
+                                  <span className="speech-type">{speechName}</span>
+                                </div>
+                                <span className="word-count">
+                                  {speech.word_count || 0}/{wordLimit} words
+                                </span>
+                              </div>
+                              <pre className={rawMode ? "speech-content-raw" : "speech-content"}>
+                                {speech.content}
+                              </pre>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <div className="no-content">No speeches available</div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* Judge Branches */}
+              {judges.map((judge, idx) => (
+                <div key={idx} className="debate-branch">
+                  <div
+                    className="branch-header"
+                    onClick={() => toggleSection(debate.id, `judge-${idx}`)}
+                  >
+                    <div className="branch-title">
+                      <span className="branch-icon">⚖️</span>
+                      <span>Judge {idx + 1}: {judge.judge_model}</span>
+                    </div>
+                    <span className="expand-indicator">
+                      {expandedSectionKey === `judge-${idx}` ? '▼' : '▶'}
+                    </span>
+                  </div>
+
+                  {expandedSectionKey === `judge-${idx}` && (
+                    <div className="branch-content">
+                      <div className="judge-info">
+                        <div className="judge-meta-item">
+                          <strong>Model:</strong> {judge.judge_model}
+                        </div>
+                        <div className="judge-meta-item">
+                          <strong>Prompt:</strong> {judge.judge_prompt}
+                        </div>
+                      </div>
+                      <pre className="judge-content">
+                        {judge.judgment}
+                      </pre>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
   };
 
   return (
@@ -159,11 +326,6 @@ function HistoryPage() {
                     </div>
                   </div>
                   <div className="debate-summary-right">
-                    {original?.debate?.speeches?.length > 0 && (
-                      <span className="speech-count">
-                        {original.debate.speeches.length} speeches
-                      </span>
-                    )}
                     <span className="expand-indicator">
                       {isExpanded ? '▼' : '▶'}
                     </span>
@@ -172,108 +334,11 @@ function HistoryPage() {
 
                 {isExpanded && (
                   <div className="debate-expanded-group">
-                    {/* Show both debates side-by-side if paired */}
+                    {/* Show both debates as cards if paired */}
                     {original && flipped ? (
-                      <div className="paired-debates-container">
-                        {/* Original Debate */}
-                        <div className="paired-debate">
-                          <h4 className="paired-debate-title">
-                            Debate 1: {original.pro_model} (PRO) vs {original.con_model} (CON)
-                          </h4>
-                          {original.debate?.speeches?.length > 0 ? (
-                            <div className="speeches-container">
-                              {original.debate.speeches.map((speech, index) => {
-                                const isPro = speech.speech_type?.startsWith('pro');
-                                const side = isPro ? 'PRO' : 'CON';
-                                const sideColor = side === 'PRO' ? '#00aa00' : '#aa0000';
-                                const speechName = speech.speech_type
-                                  .replace(/_/g, ' ')
-                                  .replace(/\b\w/g, l => l.toUpperCase());
-                                const wordLimit = WORD_LIMITS[speech.speech_type] || 0;
-
-                                return (
-                                  <div key={index} className="speech-item">
-                                    <div
-                                      className="speech-header"
-                                      style={{ borderLeftColor: sideColor }}
-                                    >
-                                      <div className="speech-title">
-                                        <span
-                                          className="side-badge"
-                                          style={{
-                                            backgroundColor: sideColor,
-                                            color: '#ffffff'
-                                          }}
-                                        >
-                                          {side}
-                                        </span>
-                                        <span className="speech-type">{speechName}</span>
-                                      </div>
-                                      <span className="word-count">
-                                        {speech.word_count || 0}/{wordLimit} words
-                                      </span>
-                                    </div>
-                                    <pre className={rawMode ? "speech-content-raw" : "speech-content"}>
-                                      {speech.content}
-                                    </pre>
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          ) : (
-                            <div className="no-transcript">No speeches available</div>
-                          )}
-                        </div>
-
-                        {/* Flipped Debate */}
-                        <div className="paired-debate">
-                          <h4 className="paired-debate-title">
-                            Debate 2: {flipped.pro_model} (PRO) vs {flipped.con_model} (CON)
-                          </h4>
-                          {flipped.debate?.speeches?.length > 0 ? (
-                            <div className="speeches-container">
-                              {flipped.debate.speeches.map((speech, index) => {
-                                const isPro = speech.speech_type?.startsWith('pro');
-                                const side = isPro ? 'PRO' : 'CON';
-                                const sideColor = side === 'PRO' ? '#00aa00' : '#aa0000';
-                                const speechName = speech.speech_type
-                                  .replace(/_/g, ' ')
-                                  .replace(/\b\w/g, l => l.toUpperCase());
-                                const wordLimit = WORD_LIMITS[speech.speech_type] || 0;
-
-                                return (
-                                  <div key={index} className="speech-item">
-                                    <div
-                                      className="speech-header"
-                                      style={{ borderLeftColor: sideColor }}
-                                    >
-                                      <div className="speech-title">
-                                        <span
-                                          className="side-badge"
-                                          style={{
-                                            backgroundColor: sideColor,
-                                            color: '#ffffff'
-                                          }}
-                                        >
-                                          {side}
-                                        </span>
-                                        <span className="speech-type">{speechName}</span>
-                                      </div>
-                                      <span className="word-count">
-                                        {speech.word_count || 0}/{wordLimit} words
-                                      </span>
-                                    </div>
-                                    <pre className={rawMode ? "speech-content-raw" : "speech-content"}>
-                                      {speech.content}
-                                    </pre>
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          ) : (
-                            <div className="no-transcript">No speeches available</div>
-                          )}
-                        </div>
+                      <div className="paired-debates-cards">
+                        {renderDebateCard(original, 1)}
+                        {renderDebateCard(flipped, 2)}
                       </div>
                     ) : (
                       /* Single debate (old format) */

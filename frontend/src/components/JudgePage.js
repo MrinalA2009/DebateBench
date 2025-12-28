@@ -171,7 +171,6 @@ function JudgePage() {
                     <span className="debate-models">
                       PRO: {debate.pro_model} vs CON: {debate.con_model}
                     </span>
-                    <span className="speech-count">{debate.speeches?.length || 0} speeches</span>
                   </div>
                 </div>
               ))}

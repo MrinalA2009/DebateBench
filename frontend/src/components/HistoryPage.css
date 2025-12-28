@@ -131,44 +131,141 @@
 }
 
 .debate-expanded {
-  border-top: 1px solid #000000;
   background: #ffffff;
 }
 
 .debate-expanded-group {
-  border-top: 1px solid #000000;
   background: #ffffff;
   padding: 1.5rem;
 }
 
-.paired-debates-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+.paired-debates-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.paired-debate {
-  min-width: 0;
+.debate-card {
+  border: 1px solid #000000;
+  background: #ffffff;
 }
 
-.paired-debate-title {
+.debate-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.debate-card-header:hover {
+  background: #f9f9f9;
+}
+
+.debate-card-title {
   color: #000000;
   font-size: 1rem;
   font-weight: 400;
+}
+
+.debate-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.debate-card-info {
+  font-size: 0.9rem;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.debate-card-content {
+  padding: 1rem;
+}
+
+.debate-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.debate-branch {
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+
+.branch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background-color 0.2s;
+}
+
+.branch-header:hover {
+  background: #f0f0f0;
+}
+
+.branch-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #000000;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.branch-icon {
+  font-size: 1.1rem;
+}
+
+.branch-content {
+  padding: 1rem;
+  border-top: 1px solid #000000;
+}
+
+.judge-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #000000;
+  padding: 0.75rem;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+}
+
+.judge-meta-item {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.no-content {
+  padding: 2rem;
+  text-align: center;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.judge-content {
+  background: #ffffff;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  font-family: inherit;
+  margin: 0;
 }
 
 .debate-pair-info {
   color: #000000;
   font-weight: 400;
-}
-
-@media (max-width: 1200px) {
-  .paired-debates-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 .transcript-container {

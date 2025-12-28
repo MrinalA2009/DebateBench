@@ -433,6 +433,26 @@ async def judge_debate(request: JudgeRequest):
         print(f"[JUDGE] Received judgment ({len(judgment)} chars)")
         print(f"[JUDGE] Judgment complete\n")
 
+        # Save judgment to debate
+        import time
+        judge_entry = {
+            "judge_model": judge_model,
+            "judge_prompt": judge_prompt,
+            "judgment": judgment,
+            "timestamp": time.time()
+        }
+
+        if "judges" not in debate_data:
+            debate_data["judges"] = []
+        debate_data["judges"].append(judge_entry)
+
+        # Save to disk and update active debates
+        save_debate(debate_id, debate_data)
+        if debate_id in active_debates:
+            active_debates[debate_id] = debate_data
+
+        print(f"[JUDGE] Saved judgment to debate (total judges: {len(debate_data['judges'])})")
+
         return {
             "judgment": judgment,
             "judge_model": judge_model,
