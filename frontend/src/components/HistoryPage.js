@@ -176,7 +176,6 @@ function HistoryPage() {
                   onClick={() => toggleSection(debate.id, 'transcript')}
                 >
                   <div className="branch-title">
-                    <span className="branch-icon">📄</span>
                     <span>Transcript</span>
                   </div>
                   <span className="expand-indicator">
@@ -241,7 +240,6 @@ function HistoryPage() {
                     onClick={() => toggleSection(debate.id, `judge-${idx}`)}
                   >
                     <div className="branch-title">
-                      <span className="branch-icon">⚖️</span>
                       <span>Judge {idx + 1}: {judge.judge_model}</span>
                     </div>
                     <span className="expand-indicator">
