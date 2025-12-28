@@ -72,28 +72,64 @@ async def start_debate(
     temperature: float = 0.7,
     prompt_style: str = "standard"
 ):
-    """Start a new debate"""
+    """Start two new debates with flipped model assignments"""
     import uuid
-    debate_id = str(uuid.uuid4())
-    
-    # Store debate info
-    debate_data = {
-        "id": debate_id,
+
+    import time
+    created_timestamp = time.time()
+
+    # Create first debate (original assignment)
+    debate_id_1 = str(uuid.uuid4())
+    debate_data_1 = {
+        "id": debate_id_1,
         "resolution": resolution,
         "pro_model": pro_model,
         "con_model": con_model,
         "temperature": temperature,
         "prompt_style": prompt_style,
         "status": "starting",
-        "speeches": []
+        "speeches": [],
+        "pair_id": None,  # Will link the paired debates
+        "model_assignment": "original",
+        "created_at": created_timestamp
     }
-    active_debates[debate_id] = debate_data
-    save_debate(debate_id, debate_data)
-    
-    # Run debate in background
-    asyncio.create_task(run_debate_task(debate_id, resolution, pro_model, con_model, temperature, prompt_style))
-    
-    return {"debate_id": debate_id, "status": "started"}
+
+    # Create second debate (flipped assignment)
+    debate_id_2 = str(uuid.uuid4())
+    debate_data_2 = {
+        "id": debate_id_2,
+        "resolution": resolution,
+        "pro_model": con_model,  # Flipped
+        "con_model": pro_model,  # Flipped
+        "temperature": temperature,
+        "prompt_style": prompt_style,
+        "status": "starting",
+        "speeches": [],
+        "pair_id": None,
+        "model_assignment": "flipped",
+        "created_at": created_timestamp
+    }
+
+    # Link the paired debates
+    debate_data_1["pair_id"] = debate_id_2
+    debate_data_2["pair_id"] = debate_id_1
+
+    # Store both debates
+    active_debates[debate_id_1] = debate_data_1
+    active_debates[debate_id_2] = debate_data_2
+    save_debate(debate_id_1, debate_data_1)
+    save_debate(debate_id_2, debate_data_2)
+
+    # Run both debates in background (in parallel)
+    asyncio.create_task(run_debate_task(debate_id_1, resolution, pro_model, con_model, temperature, prompt_style))
+    asyncio.create_task(run_debate_task(debate_id_2, resolution, con_model, pro_model, temperature, prompt_style))
+
+    return {
+        "debate_id": debate_id_1,
+        "debate_id_flipped": debate_id_2,
+        "status": "started",
+        "message": "Two debates started with flipped model assignments"
+    }
 
 
 async def run_debate_task(
@@ -118,12 +154,14 @@ async def run_debate_task(
     try:
         # Broadcast start
         print(f"[WEBSOCKET] Broadcasting debate_started event")
+        debate_data = active_debates.get(debate_id, {})
         await manager.broadcast({
             "type": "debate_started",
             "debate_id": debate_id,
             "resolution": resolution,
             "pro_model": pro_model,
-            "con_model": con_model
+            "con_model": con_model,
+            "model_assignment": debate_data.get("model_assignment", "unknown")
         })
         
         # Initialize
@@ -149,7 +187,8 @@ async def run_debate_task(
             "debate_id": debate_id,
             "status": "running",
             "pro_model": pro_model,
-            "con_model": con_model
+            "con_model": con_model,
+            "model_assignment": active_debates[debate_id].get("model_assignment", "unknown")
         })
         
         # Generate each speech (run in executor to avoid blocking)
