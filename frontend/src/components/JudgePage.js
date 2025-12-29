@@ -31,6 +31,8 @@ function JudgePage() {
   const [loading, setLoading] = useState(true);
   const [rawMode, setRawMode] = useState(false);
   const [judgeRawMode, setJudgeRawMode] = useState(false);
+  const [showFullJudgment, setShowFullJudgment] = useState(false);
+  const [expandedGroupId, setExpandedGroupId] = useState(null);
 
   useEffect(() => {
     fetchDebates();
@@ -40,9 +42,52 @@ function JudgePage() {
     try {
       const response = await axios.get(`${API_URL}/api/debates`);
       const allDebates = response.data.debates || [];
+
       // Only show completed debates
       const completedDebates = allDebates.filter(d => d.status === 'complete' && d.speeches?.length > 0);
-      setDebates(completedDebates);
+
+      // Group debates by pair_id
+      const debateGroups = new Map();
+
+      completedDebates.forEach(debate => {
+        if (debate.pair_id) {
+          // This debate is part of a pair
+          const groupKey = [debate.id, debate.pair_id].sort().join('-');
+          if (!debateGroups.has(groupKey)) {
+            debateGroups.set(groupKey, {
+              original: null,
+              flipped: null,
+              created_at: debate.created_at || 0,
+              resolution: debate.resolution,
+              status: debate.status
+            });
+          }
+
+          const group = debateGroups.get(groupKey);
+          if (debate.model_assignment === 'original') {
+            group.original = debate;
+          } else {
+            group.flipped = debate;
+          }
+        } else {
+          // Old debate without pairing - show individually
+          const groupKey = debate.id;
+          debateGroups.set(groupKey, {
+            original: debate,
+            flipped: null,
+            created_at: debate.created_at || 0,
+            resolution: debate.resolution,
+            status: debate.status
+          });
+        }
+      });
+
+      // Convert to array and sort by created_at (newest first)
+      const sortedGroups = Array.from(debateGroups.values()).sort((a, b) => {
+        return (b.created_at || 0) - (a.created_at || 0);
+      });
+
+      setDebates(sortedGroups);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching debates:', error);
@@ -53,6 +98,11 @@ function JudgePage() {
   const handleDebateSelect = (debate) => {
     setSelectedDebate(debate);
     setJudgment(null);
+    setShowFullJudgment(false);
+  };
+
+  const toggleGroup = (groupId) => {
+    setExpandedGroupId(expandedGroupId === groupId ? null : groupId);
   };
 
   const handleJudge = async () => {
@@ -148,24 +198,94 @@ function JudgePage() {
             <div className="empty-state">No completed debates found</div>
           ) : (
             <div className="debates-list">
-              {debates.map((debate) => (
-                <div
-                  key={debate.id}
-                  className="debate-card"
-                  onClick={() => handleDebateSelect(debate)}
-                >
-                  <div className="debate-card-header">
-                    <h4>{debate.resolution}</h4>
-                    <span className="status-badge status-complete">{debate.status}</span>
-                  </div>
-                  <div className="debate-card-meta">
-                    <span className="debate-id">ID: <code>{debate.id?.substring(0, 8)}</code></span>
-                    <span className="debate-models">
-                      PRO: {debate.pro_model} vs CON: {debate.con_model}
-                    </span>
-                  </div>
-                </div>
-              ))}
+              {debates.map((group, idx) => {
+                const original = group.original;
+                const flipped = group.flipped;
+                const groupId = original?.id || flipped?.id || idx;
+                const isPaired = original && flipped;
+                const isExpanded = expandedGroupId === groupId;
+
+                // Get models from both debates
+                const model1 = original?.pro_model || flipped?.con_model || 'N/A';
+                const model2 = original?.con_model || flipped?.pro_model || 'N/A';
+
+                if (isPaired) {
+                  // Paired debates - expandable group
+                  return (
+                    <div key={groupId} className="debate-group">
+                      <div
+                        className="debate-group-header"
+                        onClick={() => toggleGroup(groupId)}
+                      >
+                        <div className="debate-group-header-left">
+                          <h4>{group.resolution}</h4>
+                          <span className="debate-models">
+                            <strong>Paired Debates:</strong> {model1} vs {model2}
+                          </span>
+                        </div>
+                        <div className="debate-group-header-right">
+                          <span className="status-badge status-complete">{group.status}</span>
+                          <span className="expand-indicator">{isExpanded ? '▼' : '▶'}</span>
+                        </div>
+                      </div>
+                      {isExpanded && (
+                        <div className="debate-group-content">
+                          <div
+                            className="debate-card-nested"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleDebateSelect(original);
+                            }}
+                          >
+                            <div className="debate-card-header-nested">
+                              <div className="debate-assignment-badge">Original Assignment</div>
+                              <div className="debate-models-nested">
+                                <span className="model-badge model-pro">PRO: {original.pro_model}</span>
+                                <span className="model-badge model-con">CON: {original.con_model}</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className="debate-card-nested"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleDebateSelect(flipped);
+                            }}
+                          >
+                            <div className="debate-card-header-nested">
+                              <div className="debate-assignment-badge">Flipped Assignment</div>
+                              <div className="debate-models-nested">
+                                <span className="model-badge model-pro">PRO: {flipped.pro_model}</span>
+                                <span className="model-badge model-con">CON: {flipped.con_model}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                } else {
+                  // Non-paired debate - direct selection
+                  return (
+                    <div
+                      key={groupId}
+                      className="debate-card"
+                      onClick={() => handleDebateSelect(original || flipped)}
+                    >
+                      <div className="debate-card-header">
+                        <h4>{group.resolution}</h4>
+                        <span className="status-badge status-complete">{group.status}</span>
+                      </div>
+                      <div className="debate-card-meta">
+                        <span className="debate-id">ID: <code>{groupId.substring(0, 8)}...</code></span>
+                        <span className="debate-models">
+                          PRO: {original?.pro_model || 'N/A'} vs CON: {original?.con_model || 'N/A'}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
             </div>
           )}
         </div>
@@ -176,6 +296,15 @@ function JudgePage() {
               ← Back to Catalog
             </button>
             <h3>{selectedDebate.resolution}</h3>
+            <div className="debate-models-info">
+              <span className="model-info model-pro">
+                <strong>PRO:</strong> {selectedDebate.pro_model}
+              </span>
+              <span className="model-divider">vs</span>
+              <span className="model-info model-con">
+                <strong>CON:</strong> {selectedDebate.con_model}
+              </span>
+            </div>
           </div>
 
           <div className="judge-content">
@@ -339,14 +468,25 @@ function JudgePage() {
                             <div className="reasoning-label">Reasoning:</div>
                             <div className="reasoning-text">{parsedJudgment.short_reason}</div>
                           </div>
+
+                          <div className="full-output-toggle">
+                            <button
+                              className="btn-toggle-output"
+                              onClick={() => setShowFullJudgment(!showFullJudgment)}
+                            >
+                              {showFullJudgment ? '▼ Hide Full Output' : '▶ Show Full Output'}
+                            </button>
+                          </div>
                         </div>
                       );
                     }
                     return null;
                   })()}
-                  <pre className={judgeRawMode ? "judgment-content-raw" : "judgment-content"}>
-                    {judgment}
-                  </pre>
+                  {showFullJudgment && (
+                    <pre className={judgeRawMode ? "judgment-content-raw" : "judgment-content"}>
+                      {judgment}
+                    </pre>
+                  )}
                 </>
               )}
             </div>
