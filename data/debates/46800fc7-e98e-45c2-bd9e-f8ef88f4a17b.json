@@ -47,7 +47,7 @@
   "pair_id": "0ce48650-d41f-4385-99bb-6fa5f1138bba",
   "model_assignment": "original",
   "created_at": 1766965444.297556,
-  "saved_at": "2025-12-28T15:53:43.485049",
+  "saved_at": "2025-12-31T11:18:24.707912",
   "debate": {
     "resolution": "Resolved: Cigarettes and vaping products should be totally banned.",
     "pro_model": "openai/gpt-4o-mini",
@@ -127,6 +127,30 @@
       "judge_prompt": "curated",
       "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and impact weighing, directly refuting PRO's health claims with black market dangers and harm reduction benefits while comparatively showing prohibition worsens risks and eliminates quitting pathways.\"\n}",
       "timestamp": 1766966023.484662
+    },
+    {
+      "judge_model": "openai/gpt-4o-mini",
+      "judge_prompt": "p0",
+      "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON effectively argued against the practicality of a ban, highlighting the risks of a black market and the importance of personal autonomy, while also demonstrating the effectiveness of harm reduction strategies. Their points on economic impact and historical precedent were strong and well-supported, overshadowing PRO's health-focused arguments.\"\n}",
+      "timestamp": 1767208651.544383
+    },
+    {
+      "judge_model": "openai/gpt-4o-mini",
+      "judge_prompt": "p1",
+      "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON effectively countered PRO's health claims by emphasizing the risks of a black market and the importance of personal autonomy, while also arguing that harm reduction strategies are more beneficial. Their arguments were well-supported and addressed key points raised by PRO.\" \n}",
+      "timestamp": 1767208663.506923
+    },
+    {
+      "judge_model": "openai/gpt-4o-mini",
+      "judge_prompt": "p2",
+      "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON effectively demonstrated the risks of a black market and the importance of personal autonomy, while providing a viable alternative to prohibition through harm reduction strategies. PRO's arguments on public health were strong but did not sufficiently address the complexities raised by CON.\"\n}",
+      "timestamp": 1767208673.585858
+    },
+    {
+      "judge_model": "anthropic/claude-sonnet-4.5",
+      "judge_prompt": "p2",
+      "judgment": "I'll evaluate this debate systematically across all four criteria.\n\n**ARGUMENT QUALITY:**\nPRO presents clear, structured arguments around health impacts, youth protection, and economic costs. The logic is straightforward and internally consistent.\nCON offers well-developed arguments about prohibition failure, personal autonomy, harm reduction, and economic impacts. The arguments are nuanced and logically coherent.\nBoth sides present clear cases. PRO: 4, CON: 4\n\n**EVIDENCE & GROUNDING:**\nPRO cites WHO (8 million deaths), CDC (20% high school vaping rate, $300 billion economic cost), and Journal of American College of Cardiology. Evidence is specific and relevant.\nCON references Prohibition era, WHO illicit trade figures (600 billion cigarettes), Public Health England (95% less harmful), and Royal College of Physicians. Also provides context about 38 million American smokers.\nBoth provide substantive support. PRO: 4, CON: 4\n\n**CLASH & REFUTATION:**\nPRO's rebuttal addresses black market concerns but doesn't fully engage with the prohibition comparison or the harm reduction pathway argument. The autonomy response focuses on addiction but doesn't address why this differs from alcohol/food regulation.\nCON directly engages PRO's health statistics, reframes the youth argument to support targeted regulation, addresses the autonomy point by highlighting cessation tools, and challenges the economic dismissal. CON provides more direct, point-by-point refutation.\nPRO: 3, CON: 4\n\n**IMPACT WEIGHING:**\nPRO emphasizes magnitude of deaths (8 million) and economic costs ($300 billion), calling it a \"moral imperative.\" However, limited comparative analysis of why health impacts outweigh prohibition consequences.\nCON explicitly compares scenarios: \"more dangerous, not less\" under black market conditions, frames the choice as \"prohibition vs. regulation,\" and argues that economic devastation also creates health crises. Provides clearer comparative framework throughout.\nPRO: 3, CON: 4\n\n**WINNER DETERMINATION:**\nCON wins on clash and weighing, with equal performance on argument quality and evidence. The critical difference is CON's superior engagement with opposing arguments and clearer comparative framework. CON effectively argued that PRO's solution would worsen the problem through black markets and elimination of harm reduction pathways, while PRO didn't adequately respond to the prohibition precedent or explain why cigarettes should be treated differently from alcohol.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and comparative weighing. While both sides presented strong evidence, CON more effectively engaged PRO's arguments, particularly by demonstrating how prohibition creates worse outcomes than regulation. CON's harm reduction and black market arguments went largely unrefuted, and their comparative framework (prohibition vs. regulation) was clearer than PRO's health-focused but less comparative approach.\"\n}\n```",
+      "timestamp": 1767208704.7076008
     }
   ]
 }

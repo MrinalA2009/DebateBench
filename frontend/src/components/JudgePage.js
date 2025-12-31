@@ -26,6 +26,7 @@ function JudgePage() {
   const [debates, setDebates] = useState([]);
   const [selectedDebate, setSelectedDebate] = useState(null);
   const [judgeModel, setJudgeModel] = useState('anthropic/claude-sonnet-4.5');
+  const [judgePrompt, setJudgePrompt] = useState('p0');
   const [judgment, setJudgment] = useState(null);
   const [isJudging, setIsJudging] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -113,7 +114,7 @@ function JudgePage() {
       const response = await axios.post(`${API_URL}/api/judge`, {
         debate_id: selectedDebate.id,
         judge_model: judgeModel,
-        judge_prompt: 'curated' // Single curated prompt
+        judge_prompt: judgePrompt
       });
       setJudgment(response.data.judgment);
     } catch (error) {
@@ -176,6 +177,20 @@ function JudgePage() {
               {JUDGE_MODELS.map(model => (
                 <option key={model} value={model}>{model}</option>
               ))}
+            </select>
+          </div>
+
+          <div className="config-item">
+            <label htmlFor="judge-prompt">Judge Prompt</label>
+            <select
+              id="judge-prompt"
+              value={judgePrompt}
+              onChange={(e) => setJudgePrompt(e.target.value)}
+              disabled={isJudging}
+            >
+              <option value="p0">P0 - Main Prompt (Baseline)</option>
+              <option value="p1">P1 - Procedural (Two-Stage)</option>
+              <option value="p2">P2 - Weighing Emphasis</option>
             </select>
           </div>
 
