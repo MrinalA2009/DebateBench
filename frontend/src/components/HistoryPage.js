@@ -113,6 +113,136 @@ function HistoryPage() {
     });
   };
 
+  const openInNewTab = (content, title) => {
+    const newWindow = window.open('', '_blank');
+    newWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>${title}</title>
+          <style>
+            body {
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+              max-width: 1000px;
+              margin: 0 auto;
+              padding: 2rem;
+              line-height: 1.6;
+              color: #000000;
+            }
+            h1 {
+              border-bottom: 2px solid #000000;
+              padding-bottom: 1rem;
+              margin-bottom: 2rem;
+            }
+            h2 {
+              margin-top: 2rem;
+              color: #000000;
+            }
+            .speech {
+              margin: 2rem 0;
+              border: 1px solid #000000;
+              background: #ffffff;
+            }
+            .speech-header {
+              padding: 1rem;
+              background: #f5f5f5;
+              border-bottom: 1px solid #e0e0e0;
+              font-weight: 600;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+            .speech-header.pro {
+              border-left: 4px solid #0066cc;
+            }
+            .speech-header.con {
+              border-left: 4px solid #cc0000;
+            }
+            .speech-content {
+              padding: 1.5rem;
+              white-space: pre-wrap;
+            }
+            .metadata {
+              background: #f9f9f9;
+              padding: 1rem;
+              border: 1px solid #e0e0e0;
+              margin-bottom: 2rem;
+            }
+            .metadata strong {
+              display: inline-block;
+              min-width: 120px;
+            }
+          </style>
+        </head>
+        <body>
+          ${content}
+        </body>
+      </html>
+    `);
+    newWindow.document.close();
+  };
+
+  const openTranscriptInNewTab = (debate, debateNumber) => {
+    const speeches = debate.debate?.speeches || [];
+    let totalWords = 0;
+
+    const speechesHTML = speeches.map((speech, index) => {
+      const isPro = speech.speech_type?.startsWith('pro');
+      const side = isPro ? 'PRO' : 'CON';
+      const speechName = speech.speech_type
+        .replace(/_/g, ' ')
+        .replace(/\b\w/g, l => l.toUpperCase());
+
+      const wordCount = speech.content.trim().split(/\s+/).length;
+      totalWords += wordCount;
+
+      return `
+        <div class="speech">
+          <div class="speech-header ${side.toLowerCase()}">
+            <span>${side} - ${speechName}</span>
+            <span style="font-weight: normal; opacity: 0.8;">${wordCount} words</span>
+          </div>
+          <div class="speech-content">${speech.content}</div>
+        </div>
+      `;
+    }).join('');
+
+    const content = `
+      <h1>Debate ${debateNumber} Transcript</h1>
+      <div class="metadata">
+        <div><strong>Resolution:</strong> ${debate.resolution}</div>
+        <div><strong>PRO:</strong> ${debate.pro_model}</div>
+        <div><strong>CON:</strong> ${debate.con_model}</div>
+        <div><strong>Speeches:</strong> ${speeches.length}</div>
+        <div><strong>Total Words:</strong> ${totalWords.toLocaleString()}</div>
+      </div>
+      ${speechesHTML}
+    `;
+
+    openInNewTab(content, `Debate ${debateNumber} Transcript`);
+  };
+
+  const openJudgmentInNewTab = (debate, judge, debateNumber, judgeIndex) => {
+    const wordCount = judge.judgment.trim().split(/\s+/).length;
+
+    const content = `
+      <h1>Debate ${debateNumber} - Judge ${judgeIndex + 1}</h1>
+      <div class="metadata">
+        <div><strong>Resolution:</strong> ${debate.resolution}</div>
+        <div><strong>PRO:</strong> ${debate.pro_model}</div>
+        <div><strong>CON:</strong> ${debate.con_model}</div>
+        <div><strong>Judge Model:</strong> ${judge.judge_model}</div>
+        <div><strong>Judge Prompt:</strong> ${judge.judge_prompt}</div>
+        <div><strong>Word Count:</strong> ${wordCount.toLocaleString()}</div>
+      </div>
+      <h2>Judgment</h2>
+      <div class="speech-content">${judge.judgment}</div>
+    `;
+
+    openInNewTab(content, `Debate ${debateNumber} - Judge ${judgeIndex + 1}`);
+  };
+
   const formatTranscript = (debate) => {
     if (!debate.debate || !debate.debate.speeches) {
       return 'No transcript available';
@@ -184,16 +314,32 @@ function HistoryPage() {
             <div className="debate-branches">
               {/* Transcript Branch */}
               <div className="debate-branch">
-                <div
-                  className="branch-header"
-                  onClick={() => toggleSection(debate.id, 'transcript')}
-                >
-                  <div className="branch-title">
+                <div className="branch-header">
+                  <div
+                    className="branch-title"
+                    onClick={() => toggleSection(debate.id, 'transcript')}
+                    style={{ cursor: 'pointer' }}
+                  >
                     <span>Transcript</span>
                   </div>
-                  <span className="expand-indicator">
-                    {expandedSectionKey === 'transcript' ? '▼' : '▶'}
-                  </span>
+                  <div className="branch-actions">
+                    <button
+                      className="open-tab-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        openTranscriptInNewTab(debate, debateNumber);
+                      }}
+                    >
+                      Open in New Tab
+                    </button>
+                    <span
+                      className="expand-indicator"
+                      onClick={() => toggleSection(debate.id, 'transcript')}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      {expandedSectionKey === 'transcript' ? '▼' : '▶'}
+                    </span>
+                  </div>
                 </div>
 
                 {expandedSectionKey === 'transcript' && (
@@ -248,16 +394,32 @@ function HistoryPage() {
               {/* Judge Branches */}
               {judges.map((judge, idx) => (
                 <div key={idx} className="debate-branch">
-                  <div
-                    className="branch-header"
-                    onClick={() => toggleSection(debate.id, `judge-${idx}`)}
-                  >
-                    <div className="branch-title">
+                  <div className="branch-header">
+                    <div
+                      className="branch-title"
+                      onClick={() => toggleSection(debate.id, `judge-${idx}`)}
+                      style={{ cursor: 'pointer' }}
+                    >
                       <span>Judge {idx + 1}: {judge.judge_model}</span>
                     </div>
-                    <span className="expand-indicator">
-                      {expandedSectionKey === `judge-${idx}` ? '▼' : '▶'}
-                    </span>
+                    <div className="branch-actions">
+                      <button
+                        className="open-tab-btn"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          openJudgmentInNewTab(debate, judge, debateNumber, idx);
+                        }}
+                      >
+                        Open in New Tab
+                      </button>
+                      <span
+                        className="expand-indicator"
+                        onClick={() => toggleSection(debate.id, `judge-${idx}`)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        {expandedSectionKey === `judge-${idx}` ? '▼' : '▶'}
+                      </span>
+                    </div>
                   </div>
 
                   {expandedSectionKey === `judge-${idx}` && (
@@ -390,7 +552,7 @@ function HistoryPage() {
     <div className="history-page">
       <div className="history-header">
         <h1>Debate History</h1>
-        <p>All previous debates</p>
+        <p>All previous debates {debates.length > 0 && `(${debates.length} total)`}</p>
       </div>
 
       {loading ? (

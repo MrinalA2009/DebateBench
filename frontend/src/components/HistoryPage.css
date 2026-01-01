@@ -34,18 +34,23 @@
 .debates-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+  min-height: 800px;
 }
 
 .debate-item {
   border: 1px solid #000000;
   background: #ffffff;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 .debate-summary {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
   padding: 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -58,6 +63,7 @@
 .debate-summary-left {
   flex: 1;
   min-width: 0;
+  overflow: hidden;
 }
 
 .debate-title {
@@ -66,6 +72,8 @@
   font-weight: 400;
   margin-bottom: 0.75rem;
   line-height: 1.4;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .assignment-badge {
@@ -142,7 +150,7 @@
 .paired-debates-cards {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .debate-card {
@@ -153,7 +161,8 @@
 .debate-card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
   padding: 1rem;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -183,18 +192,24 @@
   color: #000000;
   font-size: 1rem;
   font-weight: 400;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .debate-card-meta {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-shrink: 0;
 }
 
 .debate-card-info {
   font-size: 0.9rem;
   color: #000000;
   opacity: 0.8;
+  white-space: nowrap;
 }
 
 .debate-card-content {
@@ -233,6 +248,29 @@
   color: #000000;
   font-size: 0.95rem;
   font-weight: 400;
+  flex: 1;
+}
+
+.branch-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.open-tab-btn {
+  padding: 0.25rem 0.75rem;
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.open-tab-btn:hover {
+  background: #000000;
+  color: #ffffff;
 }
 
 .branch-icon {
