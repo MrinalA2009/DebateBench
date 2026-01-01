@@ -25,9 +25,20 @@ def save_debate(debate_id: str, debate_data: Dict) -> None:
     """Save a debate to disk"""
     file_path = get_debate_file_path(debate_id)
     debate_data["saved_at"] = datetime.now().isoformat()
-    
+
     with open(file_path, 'w') as f:
         json.dump(debate_data, f, indent=2, default=str)
+
+    # Also save to JudgeBench if this is a JudgeBench debate
+    try:
+        from debatebench import judgebench
+        if judgebench.is_judgebench_debate(debate_id):
+            judgebench_file = judgebench.JUDGEBENCH_DEBATES_DIR / f"{debate_id}.json"
+            judgebench.ensure_judgebench_dirs()
+            with open(judgebench_file, 'w') as f:
+                json.dump(debate_data, f, indent=2, default=str)
+    except:
+        pass  # Silently fail if judgebench is not available
 
 
 def load_debate(debate_id: str) -> Optional[Dict]:

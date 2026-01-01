@@ -9,6 +9,7 @@ import asyncio
 from pathlib import Path
 import json
 from functools import partial
+from datetime import datetime
 
 # Add parent directory to path for debatebench import
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -16,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from debatebench import DebateRunner, OpenRouterClient, Debate, Speech, SpeechType
 from debatebench.storage import save_debate, load_debate, load_all_debates
 from debatebench.judge_prompts import get_judge_prompt
+from debatebench import judgebench
 
 app = FastAPI(title="DebateBench API", version="1.0.0")
 
@@ -467,4 +469,317 @@ async def judge_debate(request: JudgeRequest):
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Failed to judge debate: {str(e)}")
+
+
+# ============================================================================
+# JUDGEBENCH ENDPOINTS
+# ============================================================================
+
+@app.get("/api/judgebench/config")
+async def get_judgebench_config():
+    """Get JudgeBench configuration"""
+    try:
+        config = judgebench.load_judgebench_config()
+        return {"config": config}
+    except Exception as e:
+        print(f"[ERROR] Failed to get JudgeBench config: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to get config: {str(e)}")
+
+
+class JudgeBenchConfigRequest(BaseModel):
+    judge_models: List[str]
+    judge_prompts: List[str]
+    num_debates: int
+    runs_per_debate: int
+    temperature: float
+
+
+@app.post("/api/judgebench/config")
+async def set_judgebench_config(request: JudgeBenchConfigRequest):
+    """Set JudgeBench configuration"""
+    try:
+        config = {
+            "judge_models": request.judge_models,
+            "judge_prompts": request.judge_prompts,
+            "num_debates": request.num_debates,
+            "runs_per_debate": request.runs_per_debate,
+            "temperature": request.temperature,
+            "created_at": datetime.now().isoformat()
+        }
+        judgebench.save_judgebench_config(config)
+        return {"success": True, "config": config}
+    except Exception as e:
+        print(f"[ERROR] Failed to set JudgeBench config: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to set config: {str(e)}")
+
+
+@app.get("/api/judgebench/debates")
+async def get_judgebench_debates():
+    """Get all JudgeBench debates"""
+    try:
+        debates = judgebench.load_all_judgebench_debates()
+        return {"debates": debates, "count": len(debates)}
+    except Exception as e:
+        print(f"[ERROR] Failed to get JudgeBench debates: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to get debates: {str(e)}")
+
+
+class GenerateDebatesRequest(BaseModel):
+    temperature: float = 1.0
+    prompt_style: str = "analytical"
+
+
+@app.post("/api/judgebench/debates/generate")
+async def generate_judgebench_debates(request: GenerateDebatesRequest):
+    """Generate 25 paired debates for JudgeBench"""
+    try:
+        # Load topics
+        topics_path = Path(__file__).parent.parent.parent / "judgebench_topics.json"
+        with open(topics_path, 'r') as f:
+            topics_data = json.load(f)
+
+        topics = [t['resolution'] for t in topics_data['topics']]
+
+        # Model pairs with debate counts
+        model_pairs = [
+            ("openai/gpt-4o-mini", "meta-llama/llama-3.3-70b-instruct", 8),
+            ("openai/gpt-4o-mini", "google/gemini-2.5-flash", 8),
+            ("meta-llama/llama-3.3-70b-instruct", "google/gemini-2.5-flash", 9)
+        ]
+
+        debate_ids = []
+        topic_idx = 0
+
+        # Generate debates for each model pair
+        for pro_model, con_model, count in model_pairs:
+            for i in range(count):
+                if topic_idx >= len(topics):
+                    break
+
+                resolution = topics[topic_idx]
+                topic_idx += 1
+
+                # Start paired debates (original + flipped)
+                response = await start_debate(
+                    resolution=resolution,
+                    pro_model=pro_model,
+                    con_model=con_model,
+                    temperature=request.temperature,
+                    prompt_style=request.prompt_style
+                )
+
+                # Save both debate IDs
+                debate_ids.append({
+                    "original": response["debate_id"],
+                    "flipped": response["debate_id_flipped"],
+                    "resolution": resolution,
+                    "pro_model": pro_model,
+                    "con_model": con_model
+                })
+
+        return {
+            "success": True,
+            "total_pairs": len(debate_ids),
+            "debate_ids": debate_ids
+        }
+
+    except Exception as e:
+        print(f"[ERROR] Failed to generate debates: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to generate debates: {str(e)}")
+
+
+class SelectDebatesRequest(BaseModel):
+    debate_ids: List[str]
+
+
+@app.post("/api/judgebench/debates/select")
+async def select_judgebench_debates(request: SelectDebatesRequest):
+    """Copy selected debates to JudgeBench set"""
+    try:
+        count = 0
+        for debate_id in request.debate_ids:
+            debate_data = load_debate(debate_id)
+            if debate_data:
+                judgebench.save_judgebench_debate(debate_id, debate_data)
+                count += 1
+
+        return {"success": True, "count": count}
+    except Exception as e:
+        print(f"[ERROR] Failed to select debates: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to select debates: {str(e)}")
+
+
+@app.delete("/api/judgebench/debates/clear")
+async def clear_judgebench_debates():
+    """Clear all JudgeBench debates"""
+    try:
+        import shutil
+        # Clear debate IDs file
+        ids_file = judgebench.JUDGEBENCH_DIR / "debate_ids.json"
+        if ids_file.exists():
+            ids_file.unlink()
+
+        # Clear all debate files
+        debates_dir = judgebench.JUDGEBENCH_DEBATES_DIR
+        if debates_dir.exists():
+            shutil.rmtree(debates_dir)
+            judgebench.ensure_judgebench_dirs()
+
+        return {"success": True, "message": "All JudgeBench debates cleared"}
+    except Exception as e:
+        print(f"[ERROR] Failed to clear debates: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to clear debates: {str(e)}")
+
+
+class RunExperimentRequest(BaseModel):
+    judge_model: str
+    judge_prompt: str
+    temperature: float = 0.1
+
+
+@app.post("/api/judgebench/run")
+async def run_judgebench_experiment(request: RunExperimentRequest):
+    """Run JudgeBench experiment for one judge configuration"""
+    try:
+        import time
+
+        judge_config = f"{request.judge_model.replace('/', '_')}_{request.judge_prompt}"
+        debates = judgebench.load_all_judgebench_debates()
+        config = judgebench.load_judgebench_config()
+
+        if not config:
+            raise HTTPException(status_code=400, detail="JudgeBench config not set")
+
+        runs_per_debate = config.get("runs_per_debate", 3)
+        total_runs = 0
+        errors = 0
+
+        for debate in debates:
+            debate_id = debate.get("id")
+            if not debate_id:
+                continue
+
+            # Build transcript
+            resolution = debate.get('resolution', 'Unknown')
+            pro_model = debate.get('pro_model', 'Unknown')
+            con_model = debate.get('con_model', 'Unknown')
+            speeches = debate.get('speeches', [])
+
+            transcript = f"RESOLUTION: {resolution}\n\n"
+            transcript += f"PRO: {pro_model}\n"
+            transcript += f"CON: {con_model}\n"
+            transcript += f"\n{'='*80}\n\n"
+
+            for speech in speeches:
+                side = speech.get('side', 'UNKNOWN')
+                speech_type = speech.get('speech_type', 'unknown')
+                content = speech.get('content', '')
+                transcript += f"[{side}] {speech_type.upper().replace('_', ' ')}\n"
+                transcript += f"{'-'*80}\n"
+                transcript += f"{content}\n\n"
+                transcript += f"{'='*80}\n\n"
+
+            # Run multiple times
+            for run_num in range(runs_per_debate):
+                try:
+                    # Get judge prompt
+                    prompt_text = get_judge_prompt(request.judge_prompt, transcript)
+
+                    # Call judge model
+                    client = OpenRouterClient()
+                    messages = [
+                        {"role": "system", "content": "You are an experienced debate judge."},
+                        {"role": "user", "content": prompt_text}
+                    ]
+
+                    judgment = client.call_model(
+                        model=request.judge_model,
+                        messages=messages,
+                        temperature=request.temperature,
+                        max_tokens=2000
+                    )
+
+                    # Try to parse JSON
+                    import re
+                    json_match = re.search(r'\{[\s\S]*\}', judgment)
+                    parsed = None
+                    if json_match:
+                        try:
+                            parsed = json.loads(json_match.group(0))
+                        except:
+                            pass
+
+                    # Save result
+                    result = {
+                        "debate_id": debate_id,
+                        "judge_model": request.judge_model,
+                        "judge_prompt": request.judge_prompt,
+                        "run_number": run_num,
+                        "judgment": judgment,
+                        "winner": parsed.get("winner") if parsed else None,
+                        "scores": parsed.get("scores") if parsed else None,
+                        "confidence": parsed.get("confidence") if parsed else None,
+                        "short_reason": parsed.get("short_reason") if parsed else None,
+                        "timestamp": time.time()
+                    }
+
+                    judgebench.save_judgment_result(judge_config, debate_id, run_num, result)
+                    total_runs += 1
+
+                except Exception as e:
+                    print(f"[ERROR] Failed to judge debate {debate_id} run {run_num}: {str(e)}")
+                    errors += 1
+
+        return {
+            "success": True,
+            "judge_config": judge_config,
+            "total_runs": total_runs,
+            "errors": errors
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        print(f"[ERROR] Failed to run experiment: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to run experiment: {str(e)}")
+
+
+@app.get("/api/judgebench/results")
+async def get_judgebench_results():
+    """Get JudgeBench metrics and results"""
+    try:
+        config = judgebench.load_judgebench_config()
+        if not config:
+            return {"metrics": {}, "rankings": []}
+
+        # Load all results
+        all_results = {}
+        for judge_model in config.get("judge_models", []):
+            for judge_prompt in config.get("judge_prompts", []):
+                judge_config = f"{judge_model.replace('/', '_')}_{judge_prompt}"
+                results = judgebench.load_judgment_results(judge_config)
+                if results:
+                    all_results[judge_config] = results
+
+        # Compute metrics
+        metrics = judgebench.compute_all_metrics(all_results)
+
+        # Rank configurations
+        rankings = judgebench.rank_judge_configurations(metrics)
+
+        return {
+            "metrics": metrics,
+            "rankings": rankings,
+            "config": config
+        }
+
+    except Exception as e:
+        print(f"[ERROR] Failed to get results: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to get results: {str(e)}")
 

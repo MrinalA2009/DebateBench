@@ -5,6 +5,8 @@ import DebateConfig from './components/DebateConfig';
 import DebateDisplay from './components/DebateDisplay';
 import HistoryPage from './components/HistoryPage';
 import JudgePage from './components/JudgePage';
+import JudgeBenchPage from './components/JudgeBenchPage';
+import JudgeBenchDebatesPage from './components/JudgeBenchDebatesPage';
 
 const API_URL = 'http://localhost:8001';
 
@@ -16,7 +18,7 @@ function App() {
   const [status, setStatus] = useState('idle'); // idle, starting, running, complete, error
   const [statusFlipped, setStatusFlipped] = useState('idle');
   const [allDebates, setAllDebates] = useState([]);
-  const [currentPage, setCurrentPage] = useState('debate'); // 'debate', 'history', or 'judge'
+  const [currentPage, setCurrentPage] = useState('debate'); // 'debate', 'history', 'judge', 'judgebench', or 'judgebench-debates'
   const wsRef = useRef(null);
 
   const handleWebSocketMessage = useCallback((data) => {
@@ -331,6 +333,18 @@ function App() {
           >
             History
           </button>
+          <button
+            className={`nav-button ${currentPage === 'judgebench-debates' ? 'active' : ''}`}
+            onClick={() => setCurrentPage('judgebench-debates')}
+          >
+            JudgeBench Debates
+          </button>
+          <button
+            className={`nav-button ${currentPage === 'judgebench' ? 'active' : ''}`}
+            onClick={() => setCurrentPage('judgebench')}
+          >
+            JudgeBench
+          </button>
         </nav>
       </header>
       
@@ -362,6 +376,10 @@ function App() {
           </>
         ) : currentPage === 'judge' ? (
           <JudgePage />
+        ) : currentPage === 'judgebench-debates' ? (
+          <JudgeBenchDebatesPage />
+        ) : currentPage === 'judgebench' ? (
+          <JudgeBenchPage />
         ) : (
           <HistoryPage />
         )}

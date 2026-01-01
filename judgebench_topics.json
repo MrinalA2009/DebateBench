@@ -1,0 +1,105 @@
+{
+  "topics": [
+    {
+      "category": "Politics & Government",
+      "resolution": "Resolved: The voting age should be lowered to 16."
+    },
+    {
+      "category": "Law & Justice",
+      "resolution": "Resolved: Victims of crimes should have a say in the sentencing of offenders."
+    },
+    {
+      "category": "Politics & Government",
+      "resolution": "Resolved: Nationalism is a destructive force in modern politics."
+    },
+    {
+      "category": "Health & Bioethics",
+      "resolution": "Resolved: Telemedicine should replace most routine doctor visits."
+    },
+    {
+      "category": "Law & Justice",
+      "resolution": "Resolved: Police departments should be defunded and funds reallocated to social services."
+    },
+    {
+      "category": "Society & Culture",
+      "resolution": "Resolved: Gender identity should be protected under the law."
+    },
+    {
+      "category": "Technology & AI",
+      "resolution": "Resolved: Biological hacking and DIY gene editing should be strictly regulated."
+    },
+    {
+      "category": "Space & Future",
+      "resolution": "Resolved: We are likely living in a computer simulation."
+    },
+    {
+      "category": "Environment & Climate",
+      "resolution": "Resolved: Private jets should be banned."
+    },
+    {
+      "category": "Economy & Labor",
+      "resolution": "Resolved: Tipping culture should be abolished in favor of higher service wages."
+    },
+    {
+      "category": "Education",
+      "resolution": "Resolved: Computer programming should be a mandatory subject from primary school."
+    },
+    {
+      "category": "Space & Future",
+      "resolution": "Resolved: Ownership of celestial bodies (moons, planets) should be illegal."
+    },
+    {
+      "category": "Technology & AI",
+      "resolution": "Resolved: Social media algorithms should be subject to public audits."
+    },
+    {
+      "category": "Society & Culture",
+      "resolution": "Resolved: Gambling and lotteries should be banned."
+    },
+    {
+      "category": "Education",
+      "resolution": "Resolved: Bilingual education should be mandatory."
+    },
+    {
+      "category": "Technology & AI",
+      "resolution": "Resolved: Parents should be legally required to limit their children's screen time."
+    },
+    {
+      "category": "Economy & Labor",
+      "resolution": "Resolved: The gender pay gap should be closed through government mandates."
+    },
+    {
+      "category": "Health & Bioethics",
+      "resolution": "Resolved: All narcotics should be decriminalized and treated as a health issue."
+    },
+    {
+      "category": "International Relations & Defense",
+      "resolution": "Resolved: Diplomatic immunity should be limited."
+    },
+    {
+      "category": "Society & Culture",
+      "resolution": "Resolved: Religion does more harm than good in the modern world."
+    },
+    {
+      "category": "Law & Justice",
+      "resolution": "Resolved: Gun ownership should be strictly regulated."
+    },
+    {
+      "category": "International Relations & Defense",
+      "resolution": "Resolved: Countries should have the right to restrict tourism to protect their culture."
+    },
+    {
+      "category": "Environment & Climate",
+      "resolution": "Resolved: Air travel should be rationed to reduce emissions."
+    },
+    {
+      "category": "Health & Bioethics",
+      "resolution": "Resolved: Assisted suicide should be legalized for the terminally ill."
+    },
+    {
+      "category": "Environment & Climate",
+      "resolution": "Resolved: Deep-sea mining should be prohibited."
+    }
+  ],
+  "total": 25
+}

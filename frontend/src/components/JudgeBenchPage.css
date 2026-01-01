@@ -1,0 +1,484 @@
+.judgebench-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.judgebench-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #000000;
+}
+
+.judgebench-header h1 {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.judgebench-header p {
+  color: #000000;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.step-indicator {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.step-indicator span {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 400;
+}
+
+.step-indicator span.active {
+  background: #000000;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.config-section,
+.select-section,
+.run-section,
+.results-section {
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 2rem;
+}
+
+.config-section h2,
+.select-section h2,
+.run-section h2,
+.results-section h2 {
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.config-item {
+  margin-bottom: 2rem;
+}
+
+.config-warning {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  padding: 2rem;
+  text-align: center;
+}
+
+.config-warning h3 {
+  color: #856404;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.config-warning p {
+  color: #856404;
+  font-size: 1.1rem;
+}
+
+.config-item h3 {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.model-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.checkbox-label:hover {
+  background: #f9f9f9;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #000000;
+}
+
+.prompts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #000000;
+}
+
+.prompts-info div {
+  color: #000000;
+  font-weight: 400;
+}
+
+.config-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.config-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.config-field label {
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.config-field input {
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.config-summary {
+  background: #f9f9f9;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.config-summary h4 {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.config-summary div {
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 2rem;
+  border: 1px solid #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #333333;
+}
+
+.btn-primary:disabled {
+  background: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+  color: #666666;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #000000;
+  margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+  background: #f9f9f9;
+}
+
+.already-selected {
+  background: #f0f0f0;
+  border: 1px solid #000000;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.already-selected h3 {
+  color: #000000;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.debates-list {
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #000000;
+  margin-bottom: 1.5rem;
+}
+
+.debate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.debate-item:hover {
+  background: #f9f9f9;
+}
+
+.debate-item.selected {
+  background: #e8f5e9;
+  border-left: 4px solid #00aa00;
+}
+
+.debate-info {
+  flex: 1;
+}
+
+.debate-resolution {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.debate-meta {
+  color: #000000;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.check-mark {
+  color: #00aa00;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.experiment-info {
+  background: #f9f9f9;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.experiment-info h3 {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.experiment-info div {
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.progress-section {
+  background: #f9f9f9;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-section h4 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background: #e0e0e0;
+  border: 1px solid #000000;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #000000;
+  transition: width 0.3s ease;
+}
+
+.progress-section p {
+  color: #000000;
+  font-weight: 600;
+}
+
+.rankings-table {
+  margin-bottom: 2rem;
+}
+
+.rankings-table h3 {
+  color: #000000;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.rankings-table p {
+  color: #000000;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.rankings-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+
+.rankings-table th {
+  background: #000000;
+  color: #ffffff;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #000000;
+}
+
+.rankings-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #000000;
+}
+
+.rankings-table tr.best-config {
+  background: #e8f5e9;
+  font-weight: 600;
+}
+
+.metrics-details {
+  margin-bottom: 2rem;
+}
+
+.metrics-details h3 {
+  color: #000000;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-card {
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.metric-card h4 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+}
+
+.metric-label {
+  color: #000000;
+  font-weight: 600;
+}
+
+.metric-value {
+  color: #000000;
+}
+
+.score-variances {
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+}
+
+.score-variances h5 {
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.variance-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  color: #000000;
+}
+
+.recommendation {
+  background: #f0f8ff;
+  border: 2px solid #000000;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.recommendation h3 {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.recommended-config {
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+.recommended-config strong {
+  color: #000000;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.recommended-config p {
+  color: #000000;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .config-row {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-indicator {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
