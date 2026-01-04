@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException, Body
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from pydantic import BaseModel
 import sys
 import asyncio
@@ -633,6 +633,99 @@ async def clear_judgebench_debates():
         raise HTTPException(status_code=500, detail=f"Failed to clear debates: {str(e)}")
 
 
+def build_debate_transcript(debate: Dict) -> str:
+    """Build debate transcript from debate data"""
+    resolution = debate.get('resolution', 'Unknown')
+    pro_model = debate.get('pro_model', 'Unknown')
+    con_model = debate.get('con_model', 'Unknown')
+    speeches = debate.get('speeches', [])
+
+    transcript = f"RESOLUTION: {resolution}\n\n"
+    transcript += f"PRO: {pro_model}\n"
+    transcript += f"CON: {con_model}\n"
+    transcript += f"\n{'='*80}\n\n"
+
+    for speech in speeches:
+        side = speech.get('side', 'UNKNOWN')
+        speech_type = speech.get('speech_type', 'unknown')
+        content = speech.get('content', '')
+        transcript += f"[{side}] {speech_type.upper().replace('_', ' ')}\n"
+        transcript += f"{'-'*80}\n"
+        transcript += f"{content}\n\n"
+        transcript += f"{'='*80}\n\n"
+    
+    return transcript
+
+
+async def judge_single_debate_run(
+    debate: Dict,
+    judge_model: str,
+    judge_prompt: str,
+    judge_config: str,
+    run_number: int,
+    temperature: float,
+    skip_existing: bool = True
+) -> Tuple[bool, Optional[Dict]]:
+    """Judge a single debate run. Returns (success: bool, result: Optional[Dict])"""
+    debate_id = debate.get("id")
+    if not debate_id:
+        return False, None
+    
+    if skip_existing and judgebench.check_judgment_exists(judge_config, debate_id, run_number):
+        print(f"[SKIP] Judgment already exists: {judge_config}/{debate_id}_run{run_number}")
+        return True, None
+    
+    try:
+        import time
+        import re
+        
+        transcript = build_debate_transcript(debate)
+        prompt_text = get_judge_prompt(judge_prompt, transcript)
+        
+        client = OpenRouterClient()
+        messages = [
+            {"role": "system", "content": "You are an experienced debate judge."},
+            {"role": "user", "content": prompt_text}
+        ]
+        
+        judgment = client.call_model(
+            model=judge_model,
+            messages=messages,
+            temperature=temperature,
+            max_tokens=2000
+        )
+        
+        json_match = re.search(r'\{[\s\S]*\}', judgment)
+        parsed = None
+        if json_match:
+            try:
+                parsed = json.loads(json_match.group(0))
+            except:
+                pass
+        
+        result = {
+            "debate_id": debate_id,
+            "judge_model": judge_model,
+            "judge_prompt": judge_prompt,
+            "run_number": run_number,
+            "judgment": judgment,
+            "winner": parsed.get("winner") if parsed else None,
+            "scores": parsed.get("scores") if parsed else None,
+            "confidence": parsed.get("confidence") if parsed else None,
+            "short_reason": parsed.get("short_reason") if parsed else None,
+            "timestamp": time.time()
+        }
+        
+        judgebench.save_judgment_result(judge_config, debate_id, run_number, result)
+        return True, result
+        
+    except Exception as e:
+        print(f"[ERROR] Failed to judge debate {debate_id} run {run_number}: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return False, None
+
+
 class RunExperimentRequest(BaseModel):
     judge_model: str
     judge_prompt: str
@@ -643,8 +736,6 @@ class RunExperimentRequest(BaseModel):
 async def run_judgebench_experiment(request: RunExperimentRequest):
     """Run JudgeBench experiment for one judge configuration"""
     try:
-        import time
-
         judge_config = f"{request.judge_model.replace('/', '_')}_{request.judge_prompt}"
         debates = judgebench.load_all_judgebench_debates()
         config = judgebench.load_judgebench_config()
@@ -654,6 +745,7 @@ async def run_judgebench_experiment(request: RunExperimentRequest):
 
         runs_per_debate = config.get("runs_per_debate", 3)
         total_runs = 0
+        skipped = 0
         errors = 0
 
         for debate in debates:
@@ -661,81 +753,31 @@ async def run_judgebench_experiment(request: RunExperimentRequest):
             if not debate_id:
                 continue
 
-            # Build transcript
-            resolution = debate.get('resolution', 'Unknown')
-            pro_model = debate.get('pro_model', 'Unknown')
-            con_model = debate.get('con_model', 'Unknown')
-            speeches = debate.get('speeches', [])
-
-            transcript = f"RESOLUTION: {resolution}\n\n"
-            transcript += f"PRO: {pro_model}\n"
-            transcript += f"CON: {con_model}\n"
-            transcript += f"\n{'='*80}\n\n"
-
-            for speech in speeches:
-                side = speech.get('side', 'UNKNOWN')
-                speech_type = speech.get('speech_type', 'unknown')
-                content = speech.get('content', '')
-                transcript += f"[{side}] {speech_type.upper().replace('_', ' ')}\n"
-                transcript += f"{'-'*80}\n"
-                transcript += f"{content}\n\n"
-                transcript += f"{'='*80}\n\n"
-
             # Run multiple times
             for run_num in range(runs_per_debate):
-                try:
-                    # Get judge prompt
-                    prompt_text = get_judge_prompt(request.judge_prompt, transcript)
-
-                    # Call judge model
-                    client = OpenRouterClient()
-                    messages = [
-                        {"role": "system", "content": "You are an experienced debate judge."},
-                        {"role": "user", "content": prompt_text}
-                    ]
-
-                    judgment = client.call_model(
-                        model=request.judge_model,
-                        messages=messages,
-                        temperature=request.temperature,
-                        max_tokens=2000
-                    )
-
-                    # Try to parse JSON
-                    import re
-                    json_match = re.search(r'\{[\s\S]*\}', judgment)
-                    parsed = None
-                    if json_match:
-                        try:
-                            parsed = json.loads(json_match.group(0))
-                        except:
-                            pass
-
-                    # Save result
-                    result = {
-                        "debate_id": debate_id,
-                        "judge_model": request.judge_model,
-                        "judge_prompt": request.judge_prompt,
-                        "run_number": run_num,
-                        "judgment": judgment,
-                        "winner": parsed.get("winner") if parsed else None,
-                        "scores": parsed.get("scores") if parsed else None,
-                        "confidence": parsed.get("confidence") if parsed else None,
-                        "short_reason": parsed.get("short_reason") if parsed else None,
-                        "timestamp": time.time()
-                    }
-
-                    judgebench.save_judgment_result(judge_config, debate_id, run_num, result)
-                    total_runs += 1
-
-                except Exception as e:
-                    print(f"[ERROR] Failed to judge debate {debate_id} run {run_num}: {str(e)}")
+                success, result = await judge_single_debate_run(
+                    debate=debate,
+                    judge_model=request.judge_model,
+                    judge_prompt=request.judge_prompt,
+                    judge_config=judge_config,
+                    run_number=run_num,
+                    temperature=request.temperature,
+                    skip_existing=True
+                )
+                
+                if success:
+                    if result is None:
+                        skipped += 1
+                    else:
+                        total_runs += 1
+                else:
                     errors += 1
 
         return {
             "success": True,
             "judge_config": judge_config,
             "total_runs": total_runs,
+            "skipped": skipped,
             "errors": errors
         }
 
@@ -746,6 +788,147 @@ async def run_judgebench_experiment(request: RunExperimentRequest):
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Failed to run experiment: {str(e)}")
+
+
+class RunAllConfigurationsRequest(BaseModel):
+    skip_existing: bool = True
+    temperature: Optional[float] = None  # If None, uses config temperature
+
+
+@app.post("/api/judgebench/run-all")
+async def run_all_judge_configurations(request: RunAllConfigurationsRequest):
+    """Run repeated judging for all judge configurations. For each config, judges all debates R times."""
+    try:
+        import time
+        start_time = time.time()
+        
+        # Load configuration
+        config = judgebench.load_judgebench_config()
+        if not config:
+            raise HTTPException(status_code=400, detail="JudgeBench config not set. Please set config first.")
+        
+        judge_models = config.get("judge_models", [])
+        judge_prompts = config.get("judge_prompts", [])
+        runs_per_debate = config.get("runs_per_debate", 3)
+        temperature = request.temperature if request.temperature is not None else config.get("temperature", 0.1)
+        
+        if not judge_models or not judge_prompts:
+            raise HTTPException(
+                status_code=400, 
+                detail=f"Invalid config: judge_models={judge_models}, judge_prompts={judge_prompts}"
+            )
+        
+        configurations = judgebench.enumerate_judge_configurations(judge_models, judge_prompts)
+        num_configs = len(configurations)
+        
+        print(f"\n{'='*80}")
+        print(f"[JUDGEBENCH] Starting full experiment run")
+        print(f"[JUDGEBENCH] Judge models: {judge_models}")
+        print(f"[JUDGEBENCH] Judge prompts: {judge_prompts}")
+        print(f"[JUDGEBENCH] Total configurations: {num_configs}")
+        print(f"[JUDGEBENCH] Temperature: {temperature}")
+        print(f"[JUDGEBENCH] Runs per debate: {runs_per_debate}")
+        print(f"[JUDGEBENCH] Skip existing: {request.skip_existing}")
+        print(f"{'='*80}\n")
+        
+        # Load all debates
+        debates = judgebench.load_all_judgebench_debates()
+        num_debates = len(debates)
+        
+        if num_debates == 0:
+            raise HTTPException(status_code=400, detail="No JudgeBench debates found. Please generate debates first.")
+        
+        print(f"[JUDGEBENCH] Loaded {num_debates} debates")
+        print(f"[JUDGEBENCH] Total judgments to run: {num_configs} configs × {num_debates} debates × {runs_per_debate} runs = {num_configs * num_debates * runs_per_debate}\n")
+        
+        # Track progress
+        total_judgments = num_configs * num_debates * runs_per_debate
+        completed = 0
+        skipped = 0
+        errors = 0
+        config_results = {}
+        
+        for config_idx, (judge_model, judge_prompt, judge_config) in enumerate(configurations, 1):
+            print(f"\n[{config_idx}/{num_configs}] Processing configuration: {judge_config}")
+            print(f"  Model: {judge_model}")
+            print(f"  Prompt: {judge_prompt}")
+            
+            config_completed = 0
+            config_skipped = 0
+            config_errors = 0
+            
+            for debate_idx, debate in enumerate(debates, 1):
+                debate_id = debate.get("id", "unknown")
+                print(f"  [{debate_idx}/{num_debates}] Debate: {debate_id[:8]}...")
+                
+                for run_num in range(runs_per_debate):
+                    success, result = await judge_single_debate_run(
+                        debate=debate,
+                        judge_model=judge_model,
+                        judge_prompt=judge_prompt,
+                        judge_config=judge_config,
+                        run_number=run_num,
+                        temperature=temperature,
+                        skip_existing=request.skip_existing
+                    )
+                    
+                    if success:
+                        if result is None:
+                            skipped += 1
+                            config_skipped += 1
+                        else:
+                            completed += 1
+                            config_completed += 1
+                    else:
+                        errors += 1
+                        config_errors += 1
+                    
+                    total_processed = completed + skipped + errors
+                    if total_judgments > 0 and total_processed % 10 == 0:
+                        progress = total_processed / total_judgments * 100
+                        print(f"    Progress: {progress:.1f}% ({total_processed}/{total_judgments})")
+            
+            config_results[judge_config] = {
+                "completed": config_completed,
+                "skipped": config_skipped,
+                "errors": config_errors,
+                "total": num_debates * runs_per_debate
+            }
+            
+            print(f"  ✓ Configuration complete: {config_completed} new, {config_skipped} skipped, {config_errors} errors")
+        
+        elapsed_time = time.time() - start_time
+        
+        print(f"\n{'='*80}")
+        print(f"[JUDGEBENCH] Experiment complete!")
+        print(f"[JUDGEBENCH] Total time: {elapsed_time:.1f} seconds ({elapsed_time/60:.1f} minutes)")
+        print(f"[JUDGEBENCH] Completed: {completed} judgments")
+        print(f"[JUDGEBENCH] Skipped: {skipped} judgments")
+        print(f"[JUDGEBENCH] Errors: {errors} judgments")
+        print(f"{'='*80}\n")
+        
+        return {
+            "success": True,
+            "summary": {
+                "total_configurations": num_configs,
+                "total_debates": num_debates,
+                "runs_per_debate": runs_per_debate,
+                "total_judgments": total_judgments,
+                "completed": completed,
+                "skipped": skipped,
+                "errors": errors,
+                "elapsed_seconds": elapsed_time
+            },
+            "configurations": config_results
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        print(f"[ERROR] Failed to run all configurations: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to run all configurations: {str(e)}")
 
 
 @app.get("/api/judgebench/results")

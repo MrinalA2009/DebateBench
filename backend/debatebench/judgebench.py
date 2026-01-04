@@ -161,6 +161,25 @@ def load_judgment_results(judge_config: str) -> Dict[str, List[Dict]]:
     return results
 
 
+def check_judgment_exists(judge_config: str, debate_id: str, run_number: int) -> bool:
+    """Check if a judgment result already exists"""
+    config_dir = JUDGEBENCH_RESULTS_DIR / judge_config
+    if not config_dir.exists():
+        return False
+    
+    file_path = config_dir / f"{debate_id}_run{run_number}.json"
+    return file_path.exists()
+
+
+def enumerate_judge_configurations(judge_models: List[str], judge_prompts: List[str]) -> List[Tuple[str, str, str]]:
+    """Create Cartesian product of judge models × judge prompts"""
+    configurations = []
+    for judge_model in judge_models:
+        for judge_prompt in judge_prompts:
+            judge_config = f"{judge_model.replace('/', '_')}_{judge_prompt}"
+            configurations.append((judge_model, judge_prompt, judge_config))
+    return configurations
+
 def compute_flip_rate(results: Dict[str, List[Dict]]) -> float:
     """Compute winner flip rate across repeated runs
 
