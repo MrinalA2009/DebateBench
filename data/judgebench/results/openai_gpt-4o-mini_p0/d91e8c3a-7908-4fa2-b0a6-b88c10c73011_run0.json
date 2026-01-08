@@ -1,0 +1,30 @@
+{
+  "debate_id": "d91e8c3a-7908-4fa2-b0a6-b88c10c73011",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the risks of telemedicine, particularly regarding diagnostic accuracy and patient-doctor relationships, which outweighed PRO's arguments on accessibility and efficiency. The depth of CON's rebuttals and evidence provided a stronger overall case.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the risks of telemedicine, particularly regarding diagnostic accuracy and patient-doctor relationships, which outweighed PRO's arguments on accessibility and efficiency. The depth of CON's rebuttals and evidence provided a stronger overall case.",
+  "timestamp": 1767862476.712378,
+  "saved_at": "2026-01-08T00:54:36.712628"
+}

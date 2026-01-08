@@ -1,0 +1,30 @@
+{
+  "debate_id": "89d26b1b-7135-4d9c-96c4-00264ba3f07f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and impact weighing. PRO's central claim that audits can evaluate algorithms without accessing data mechanisms was effectively refuted by CON's argument that algorithms are inseparable from their data processing logic. CON successfully weighed concrete harms (privacy breaches, IP theft, innovation stagnation) against PRO's more abstract benefits. PRO failed to adequately defend how audits would work practically or address the reverse-engineering vulnerability, leaving CON's core arguments largely standing.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash and impact weighing. PRO's central claim that audits can evaluate algorithms without accessing data mechanisms was effectively refuted by CON's argument that algorithms are inseparable from their data processing logic. CON successfully weighed concrete harms (privacy breaches, IP theft, innovation stagnation) against PRO's more abstract benefits. PRO failed to adequately defend how audits would work practically or address the reverse-engineering vulnerability, leaving CON's core arguments largely standing.",
+  "timestamp": 1767853812.062856,
+  "saved_at": "2026-01-07T22:30:12.063177"
+}

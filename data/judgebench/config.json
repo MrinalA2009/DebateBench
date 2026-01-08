@@ -1,0 +1,17 @@
+{
+  "judge_models": [
+    "anthropic/claude-sonnet-4.5",
+    "x-ai/grok-4.1-fast",
+    "openai/gpt-4o-mini"
+  ],
+  "judge_prompts": [
+    "p0",
+    "p1",
+    "p2"
+  ],
+  "num_debates": 50,
+  "runs_per_debate": 3,
+  "temperature": 0.1,
+  "created_at": "2026-01-07T20:55:55.790665",
+  "saved_at": "2026-01-07T20:55:55.790964"
+}

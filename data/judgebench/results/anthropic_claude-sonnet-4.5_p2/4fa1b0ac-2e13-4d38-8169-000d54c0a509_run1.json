@@ -1,0 +1,30 @@
+{
+  "debate_id": "4fa1b0ac-2e13-4d38-8169-000d54c0a509",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.72,\n  \"short_reason\": \"CON won by effectively challenging PRO's foundational 82-cent statistic with the controlled 4.9% Glassdoor figure, demonstrating the gap is largely explained by non-discriminatory factors. CON provided superior impact weighing by articulating specific harms of mandates (job losses, reduced flexibility, harm to small businesses) while PRO failed to adequately respond to the adjusted pay gap argument or weigh why their smaller remaining disparity justifies mandate costs. CON's framework of efficacy and unintended consequences was more consistently applied throughout.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.72,
+  "short_reason": "CON won by effectively challenging PRO's foundational 82-cent statistic with the controlled 4.9% Glassdoor figure, demonstrating the gap is largely explained by non-discriminatory factors. CON provided superior impact weighing by articulating specific harms of mandates (job losses, reduced flexibility, harm to small businesses) while PRO failed to adequately respond to the adjusted pay gap argument or weigh why their smaller remaining disparity justifies mandate costs. CON's framework of efficacy and unintended consequences was more consistently applied throughout.",
+  "timestamp": 1767855321.571928,
+  "saved_at": "2026-01-07T22:55:21.572126"
+}

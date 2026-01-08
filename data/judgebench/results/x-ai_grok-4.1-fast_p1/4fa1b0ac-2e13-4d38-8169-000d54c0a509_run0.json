@@ -1,0 +1,30 @@
+{
+  "debate_id": "4fa1b0ac-2e13-4d38-8169-000d54c0a509",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON wins by directly refuting PRO's gap statistics with superior adjusted evidence (Glassdoor 4.9% vs. AAUW 7%) and weighing mandate harms (job losses, stagnation) as outweighing benefits for a small remaining gap.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON wins by directly refuting PRO's gap statistics with superior adjusted evidence (Glassdoor 4.9% vs. AAUW 7%) and weighing mandate harms (job losses, stagnation) as outweighing benefits for a small remaining gap.",
+  "timestamp": 1767859414.5278652,
+  "saved_at": "2026-01-08T00:03:34.528222"
+}

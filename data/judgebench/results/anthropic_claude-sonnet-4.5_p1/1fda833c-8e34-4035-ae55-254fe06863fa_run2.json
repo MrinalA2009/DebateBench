@@ -1,0 +1,30 @@
+{
+  "debate_id": "1fda833c-8e34-4035-ae55-254fe06863fa",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically through multiple passes to ensure stability.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Strongest Arguments:**\n1. Wage instability - Supported by One Fair Wage study showing tipped workers twice as likely to experience poverty\n2. Discrimination/harassment - Backed by ROC United studies showing higher rates for women and people of color\n3. Power imbalance created by income dependence on customer subjective judgment\n\n**CON's Strongest Arguments:**\n1. Service quality incentive - Cornell study cited\n2. Income flexibility during peak periods\n3. Potential job losses from increased labor costs\n\n**After Clash:**\n- PRO effectively reframed CON's \"flexibility\" as instability, directly addressing the contradiction\n- PRO countered job loss concerns with examples of successful transitions\n- CON's rebuttal largely echoed PRO's points rather than defending their own position effectively\n- CON failed to adequately defend against the discrimination/harassment argument\n- CON's service quality argument was weakened by PRO's point about inconsistent service to different customers\n\n## Stage 2: Comparative Evaluation\n\n**PRO's surviving impacts:**\n- Economic security for workers (poverty reduction)\n- Reduction in harassment/discrimination\n- Systemic equity improvement\n\n**CON's surviving impacts:**\n- Service quality incentive (weakened by inconsistency concerns)\n- Worker preference for current system (assertion without strong evidence)\n\n**Impact Weighing:**\nPRO provided clearer magnitude (twice poverty rate) and scope (millions of workers). CON's impacts were more speculative and less quantified.\n\n## Scoring Analysis\n\n**Argument Quality:**\n- PRO: 4 (Clear, logical structure with two main contentions)\n- CON: 3 (Coherent but less developed, rebuttal contradicted own position)\n\n**Evidence & Grounding:**\n- PRO: 4 (Specific studies cited: One Fair Wage 2021, ROC United)\n- CON: 3 (Cornell study mentioned but less integration, National Restaurant Association study cited)\n\n**Clash & Refutation:**\n- PRO: 4 (Directly engaged CON's flexibility and job loss arguments, reframed effectively)\n- CON: 2 (Rebuttal largely agreed with PRO's framing, weak defense of own position)\n\n**Impact Weighing:**\n- PRO: 4 (Clear comparison: stability vs. instability, quantified poverty impact)\n- CON: 2 (Limited comparative weighing, mostly defensive)\n\n## Decision\n\nPRO wins through superior clash engagement and clearer impact weighing. The discrimination/harassment argument went largely uncontested, and PRO successfully reframed CON's \"flexibility\" as the very instability they were critiquing. CON's rebuttal weakened their own position by echoing PRO's arguments about inconsistent service and wage instability.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO won through superior clash and impact weighing. They effectively reframed CON's flexibility argument as wage instability and provided quantified impacts (2x poverty rate). CON's discrimination argument went largely uncontested, and their rebuttal inadvertently strengthened PRO's case by echoing concerns about inconsistent service and unpredictable income. PRO's evidence was better integrated with clearer comparative analysis.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO won through superior clash and impact weighing. They effectively reframed CON's flexibility argument as wage instability and provided quantified impacts (2x poverty rate). CON's discrimination argument went largely uncontested, and their rebuttal inadvertently strengthened PRO's case by echoing concerns about inconsistent service and unpredictable income. PRO's evidence was better integrated with clearer comparative analysis.",
+  "timestamp": 1767852763.5592902,
+  "saved_at": "2026-01-07T22:12:43.559580"
+}

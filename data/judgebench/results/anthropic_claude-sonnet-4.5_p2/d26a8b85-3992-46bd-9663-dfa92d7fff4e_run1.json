@@ -1,0 +1,30 @@
+{
+  "debate_id": "d26a8b85-3992-46bd-9663-dfa92d7fff4e",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n- PRO: Presents three clear contentions (conflict/violence, impeding social progress, intellectual stagnation). Arguments are logically structured and internally consistent. Score: 4\n- CON: Presents two main contentions (moral framework/altruism, social cohesion). Arguments are coherent but less developed in the constructive. Score: 3\n\n**EVIDENCE & GROUNDING**\n- PRO: Provides specific examples (ISIS, Boko Haram), references concrete issues (reproductive rights, stem cell research, climate change). Well-integrated support throughout. Score: 4\n- CON: References studies about charitable activities and disaster relief but lacks specific citations. More general assertions about religious contributions. Score: 3\n\n**CLASH & REFUTATION**\n- PRO: Directly engages CON's \"misinterpretation\" argument, challenges the charity claim with conditional aid critique, addresses the social cohesion point by highlighting sectarian violence. Strong engagement throughout rebuttal. Score: 4\n- CON: Responds to PRO's charity critique and addresses the \"other\" argument, but doesn't effectively counter PRO's core claim about systemic harm being inherent to religious texts. Less direct engagement with specific examples. Score: 3\n\n**IMPACT WEIGHING**\n- PRO: Explicitly weighs impacts in summary, comparing \"widespread violence, human rights abuses, and suppression of critical thought\" against \"localized benefits.\" Clear comparative framework about magnitude and scope. Score: 4\n- CON: Mentions \"billions of people\" finding meaning and religious organizations doing charitable work, but doesn't provide clear comparative weighing against PRO's harms. More defensive than comparative. Score: 2\n\n**WINNER DETERMINATION**\nPRO wins on balance. While CON presents legitimate positive contributions of religion, PRO more effectively:\n1. Demonstrates systemic harm through specific examples\n2. Refutes the \"misinterpretation\" defense by arguing harm is inherent to religious texts\n3. Provides clearer comparative weighing of impacts (widespread vs. localized)\n4. Engages more directly with opponent's arguments\n\nCON's main weakness is failing to adequately address PRO's claim that religious harm is systemic rather than exceptional, and not providing sufficient comparative weighing to overcome PRO's impact calculus.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior impact weighing and more effective refutation. PRO successfully argued that religious harm is systemic rather than exceptional, provided specific examples of widespread violence and discrimination, and clearly compared magnitude of harms against benefits. CON's defense that harms are merely misinterpretations was insufficiently developed, and CON failed to provide comparative weighing showing religious benefits outweigh documented harms.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior impact weighing and more effective refutation. PRO successfully argued that religious harm is systemic rather than exceptional, provided specific examples of widespread violence and discrimination, and clearly compared magnitude of harms against benefits. CON's defense that harms are merely misinterpretations was insufficiently developed, and CON failed to provide comparative weighing showing religious benefits outweigh documented harms.",
+  "timestamp": 1767855599.499104,
+  "saved_at": "2026-01-07T22:59:59.499320"
+}

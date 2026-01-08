@@ -1,0 +1,30 @@
+{
+  "debate_id": "6b1ebe4a-a202-45de-9f74-58057eded9c0",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and refutation, directly exposing PRO's vague integration claims, lack of concrete plans for inequality, and conflation of ScratchJr with formal programming. CON more effectively weighs immediate practical harms like overload and disengagement over PRO's future-oriented benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash and refutation, directly exposing PRO's vague integration claims, lack of concrete plans for inequality, and conflation of ScratchJr with formal programming. CON more effectively weighs immediate practical harms like overload and disengagement over PRO's future-oriented benefits.",
+  "timestamp": 1767862153.024826,
+  "saved_at": "2026-01-08T00:49:13.025099"
+}

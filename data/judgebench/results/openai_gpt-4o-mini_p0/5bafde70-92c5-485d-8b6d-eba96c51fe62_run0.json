@@ -1,0 +1,30 @@
+{
+  "debate_id": "5bafde70-92c5-485d-8b6d-eba96c51fe62",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively highlighted systemic biases and the benefits of stable wages, while CON's arguments on worker autonomy and accountability were less compelling and did not sufficiently counter PRO's points on fairness and service quality.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively highlighted systemic biases and the benefits of stable wages, while CON's arguments on worker autonomy and accountability were less compelling and did not sufficiently counter PRO's points on fairness and service quality.",
+  "timestamp": 1767862620.620784,
+  "saved_at": "2026-01-08T00:57:00.620920"
+}

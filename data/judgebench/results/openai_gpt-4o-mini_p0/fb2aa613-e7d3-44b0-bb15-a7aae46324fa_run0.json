@@ -1,0 +1,30 @@
+{
+  "debate_id": "fb2aa613-e7d3-44b0-bb15-a7aae46324fa",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively emphasized the necessity of in-person examinations and the importance of personal connections in healthcare, while PRO's arguments on convenience and cost were less compelling in addressing these critical issues.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively emphasized the necessity of in-person examinations and the importance of personal connections in healthcare, while PRO's arguments on convenience and cost were less compelling in addressing these critical issues.",
+  "timestamp": 1767862425.968025,
+  "saved_at": "2026-01-08T00:53:45.968277"
+}

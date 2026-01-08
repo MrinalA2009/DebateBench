@@ -1,0 +1,30 @@
+{
+  "debate_id": "61ef77cd-8b0e-4266-8364-2d34ebb3f5bb",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with stronger evidence (HRC report on 50% discrimination, APA on mental health) that CON drops and fails to refute. PRO's direct clash on coexistence of rights and legal evolution outperforms CON's unsupported assertions of conflicts.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with stronger evidence (HRC report on 50% discrimination, APA on mental health) that CON drops and fails to refute. PRO's direct clash on coexistence of rights and legal evolution outperforms CON's unsupported assertions of conflicts.",
+  "timestamp": 1767858468.744663,
+  "saved_at": "2026-01-07T23:47:48.745019"
+}

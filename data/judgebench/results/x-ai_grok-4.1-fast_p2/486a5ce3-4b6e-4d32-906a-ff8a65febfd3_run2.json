@@ -1,0 +1,30 @@
+{
+  "debate_id": "486a5ce3-4b6e-4d32-906a-ff8a65febfd3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.85,\n  \"short_reason\": \"PRO wins with superior evidence (AAUW study, Iceland specifics) directly refuting CON's generalized NBER claims and voluntary efficacy, while better clashing on systemic discrimination vs. personal choices and proving mandates' economic benefits outweigh risks.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.85,
+  "short_reason": "PRO wins with superior evidence (AAUW study, Iceland specifics) directly refuting CON's generalized NBER claims and voluntary efficacy, while better clashing on systemic discrimination vs. personal choices and proving mandates' economic benefits outweigh risks.",
+  "timestamp": 1767860968.229446,
+  "saved_at": "2026-01-08T00:29:28.229687"
+}

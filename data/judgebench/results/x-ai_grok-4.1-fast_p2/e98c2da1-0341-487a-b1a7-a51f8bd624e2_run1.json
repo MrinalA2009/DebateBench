@@ -1,0 +1,30 @@
+{
+  "debate_id": "e98c2da1-0341-487a-b1a7-a51f8bd624e2",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with superior evidence like Australia statistics and CDC/AAP citations, which CON dismisses via unproven contextual claims without counter-evidence. PRO's direct clash via Heller and universal mechanisms outperforms CON's speculative rebuttals, prioritizing quantified lives saved.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with superior evidence like Australia statistics and CDC/AAP citations, which CON dismisses via unproven contextual claims without counter-evidence. PRO's direct clash via Heller and universal mechanisms outperforms CON's speculative rebuttals, prioritizing quantified lives saved.",
+  "timestamp": 1767861442.48503,
+  "saved_at": "2026-01-08T00:37:22.485380"
+}

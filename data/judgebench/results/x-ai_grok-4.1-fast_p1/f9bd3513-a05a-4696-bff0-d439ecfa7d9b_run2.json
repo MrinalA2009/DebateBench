@@ -1,0 +1,30 @@
+{
+  "debate_id": "f9bd3513-a05a-4696-bff0-d439ecfa7d9b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO's specific evidence (NIJ cost savings, Treatment Advocacy Center) better grounds root-cause crime reduction over CON's general claims on police training and immediate safety; stronger argument survival on reallocating for long-term impacts.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO's specific evidence (NIJ cost savings, Treatment Advocacy Center) better grounds root-cause crime reduction over CON's general claims on police training and immediate safety; stronger argument survival on reallocating for long-term impacts.",
+  "timestamp": 1767859255.938359,
+  "saved_at": "2026-01-08T00:00:55.938672"
+}

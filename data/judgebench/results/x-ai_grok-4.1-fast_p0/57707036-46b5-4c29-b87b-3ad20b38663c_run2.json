@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior clash, directly countering CON's unity claim with McCarthyism and global cooperation with COVID hoarding, while CON's 'misuse' defense fails to refute modern destructive patterns like Orb\u00e1n.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior clash, directly countering CON's unity claim with McCarthyism and global cooperation with COVID hoarding, while CON's 'misuse' defense fails to refute modern destructive patterns like Orb\u00e1n.",
+  "timestamp": 1767856980.1479318,
+  "saved_at": "2026-01-07T23:23:00.148249"
+}

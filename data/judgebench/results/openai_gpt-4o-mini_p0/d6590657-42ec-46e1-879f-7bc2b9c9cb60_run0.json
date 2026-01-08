@@ -1,0 +1,30 @@
+{
+  "debate_id": "d6590657-42ec-46e1-879f-7bc2b9c9cb60",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively argued that ownership incentivizes investment and innovation, countering PRO's claims of monopolization and conflict. Their rebuttals provided a clearer framework for property rights in space, which strengthened their position.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively argued that ownership incentivizes investment and innovation, countering PRO's claims of monopolization and conflict. Their rebuttals provided a clearer framework for property rights in space, which strengthened their position.",
+  "timestamp": 1767862660.623636,
+  "saved_at": "2026-01-08T00:57:40.623956"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "69323fb1-fedf-4bc6-84fd-d8b0be02cb90",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear, structured contentions about aviation emissions (2.5% of global CO2, projected to double/triple by 2050) and rationing mechanisms (frequent flyer levy, personal carbon allowance). Arguments are internally consistent and logically developed. Score: 4\n\nCON: Raises concerns about equity, technological alternatives, and unintended consequences. However, some arguments lack precision (e.g., claiming rationing affects \"essential travel\" without clearly distinguishing from PRO's targeted approach). Score: 3\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites specific sources (ICAO projections, Global Environmental Change 2020 study showing 1% causes 50% of emissions). Evidence is directly integrated to support claims about both the problem and solution. Score: 5\n\nCON: References sustainable aviation fuels and technological developments but provides no specific data, studies, or quantification of potential emission reductions. Claims about \"up to 80%\" reduction are unsupported. Score: 2\n\n**CLASH & REFUTATION**\n\nPRO: Directly addresses CON's equity concerns by explaining the progressive nature of targeting high-frequency flyers. Refutes technology argument by emphasizing timeline gaps and ICAO projections. Engages substantively with opponent's case. Score: 4\n\nCON: Attempts to engage but largely reasserts original position without directly addressing PRO's evidence about the 1%/50% statistic. Doesn't effectively counter PRO's timeline argument about technology being \"decades away.\" Score: 3\n\n**IMPACT WEIGHING**\n\nPRO: Explicitly weighs climate catastrophe against inconvenience of reduced non-essential flights. Emphasizes immediacy of crisis versus future technology. Clear comparative framing in summary. Score: 4\n\nCON: Mentions \"social equity and economic viability\" but doesn't comparatively weigh these against climate impacts. No clear framework for why their impacts outweigh PRO's. Score: 2\n\n**WINNER DETERMINATION**\n\nPRO wins on evidence strength (specific studies vs. general claims), clash (directly refutes key CON arguments), and weighing (clear prioritization of climate urgency). CON's equity argument is undermined by PRO's evidence about targeting the 1%, and CON's technology argument lacks the evidentiary support and timeline analysis to overcome PRO's case about immediate need.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence grounding (specific studies showing 1% causes 50% of emissions) and effective refutation of CON's equity concerns by demonstrating the progressive nature of targeting high-frequency flyers. CON's reliance on future technologies lacks evidentiary support and fails to address PRO's timeline arguments about immediate climate urgency versus decades-away solutions.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence grounding (specific studies showing 1% causes 50% of emissions) and effective refutation of CON's equity concerns by demonstrating the progressive nature of targeting high-frequency flyers. CON's reliance on future technologies lacks evidentiary support and fails to address PRO's timeline arguments about immediate climate urgency versus decades-away solutions.",
+  "timestamp": 1767855414.38675,
+  "saved_at": "2026-01-07T22:56:54.386990"
+}

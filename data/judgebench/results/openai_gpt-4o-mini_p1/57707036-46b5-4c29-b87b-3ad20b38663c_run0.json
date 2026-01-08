@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively argued that nationalism can be a unifying force and is not inherently destructive, providing historical examples and countering PRO's claims about authoritarianism and division. Their nuanced approach and emphasis on the potential positive aspects of nationalism outweighed PRO's arguments.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively argued that nationalism can be a unifying force and is not inherently destructive, providing historical examples and countering PRO's claims about authoritarianism and division. Their nuanced approach and emphasis on the potential positive aspects of nationalism outweighed PRO's arguments.",
+  "timestamp": 1767862747.645351,
+  "saved_at": "2026-01-08T00:59:07.645595"
+}

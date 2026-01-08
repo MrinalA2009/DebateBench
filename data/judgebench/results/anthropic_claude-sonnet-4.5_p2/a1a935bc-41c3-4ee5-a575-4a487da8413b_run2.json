@@ -1,0 +1,30 @@
+{
+  "debate_id": "a1a935bc-41c3-4ee5-a575-4a487da8413b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "I will evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear arguments about cultural preservation and national sovereignty. Uses Bali and Bhutan as examples. Arguments are coherent but somewhat repetitive across speeches. Score: 4\n\nCON: Offers three distinct contentions: cultural exchange, economic harm, and dynamic nature of culture. Arguments are well-structured and logically developed throughout. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Provides two concrete examples (Bali, Bhutan) with specific details about impacts and policies. However, relies heavily on these same examples throughout without expanding evidence base. Score: 3\n\nCON: Uses reasoning and mechanisms effectively (people-to-people diplomacy, economic dependency, cultural evolution). Less reliant on specific examples but provides strong logical grounding for claims about economic impacts and cultural dynamics. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's arguments about cultural exchange and economic harm. Distinguishes between \"unregulated\" vs. restricted tourism. Addresses the \"high-value, low-impact\" criticism. Score: 4\n\nCON: Effectively challenges PRO's examples by distinguishing \"unmanaged\" from \"restricted\" tourism. Directly refutes the cultural preservation framing by arguing it leads to stagnation. Engages with economic arguments comprehensively. Score: 4\n\n**IMPACT WEIGHING**\n\nPRO: Emphasizes cultural preservation and future generations but doesn't clearly compare magnitude/probability against CON's impacts. Asserts priority of local communities but doesn't explain why cultural preservation outweighs economic harm. Score: 2\n\nCON: Explicitly weighs economic \"lifeline\" against \"abstract notion of cultural purity.\" Compares isolation vs. understanding, stagnation vs. evolution. Provides clearer comparative framework for why their impacts matter more. Score: 4\n\n**WINNER DETERMINATION**\n\nThe debate is close on argument quality, evidence, and clash (both sides score 3-4 in these areas). The decisive difference is in impact weighing. CON consistently explains why their impacts (economic survival, cultural exchange, dynamic evolution) outweigh PRO's concerns, while PRO largely asserts the importance of cultural preservation without comparative analysis. CON's distinction between \"unmanaged tourism\" and \"restricted tourism\" also creates a middle-ground alternative that PRO never adequately addresses.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins on superior impact weighing. While both sides clashed effectively, CON clearly explained why economic survival and cultural exchange outweigh preservation concerns, and successfully distinguished between unmanaged tourism versus outright restriction. PRO asserted cultural preservation's importance but failed to comparatively weigh why it matters more than CON's economic and exchange impacts.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins on superior impact weighing. While both sides clashed effectively, CON clearly explained why economic survival and cultural exchange outweigh preservation concerns, and successfully distinguished between unmanaged tourism versus outright restriction. PRO asserted cultural preservation's importance but failed to comparatively weigh why it matters more than CON's economic and exchange impacts.",
+  "timestamp": 1767854164.7337558,
+  "saved_at": "2026-01-07T22:36:04.734063"
+}

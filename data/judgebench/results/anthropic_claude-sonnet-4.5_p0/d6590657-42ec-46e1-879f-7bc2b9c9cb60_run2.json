@@ -1,0 +1,30 @@
+{
+  "debate_id": "d6590657-42ec-46e1-879f-7bc2b9c9cb60",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents three clear contentions (common heritage, conflict prevention, scientific advancement). Arguments are coherent and well-structured. Score: 4\n- CON: Also presents three clear contentions (investment incentives, resource security, human expansion). Equally coherent structure. Score: 4\n\n**Evidence & Grounding:**\n- PRO: References Outer Space Treaty (1967), International Space Station as example, mentions historical patterns of territorial disputes. Moderate grounding. Score: 3\n- CON: References Outer Space Treaty's limitations, discusses capital-intensive nature of space exploration, mentions resource scarcity and rare earth elements. Similar level of grounding. Score: 3\n\n**Clash & Refutation:**\n- PRO: In rebuttal, directly addresses CON's investment argument, challenges resource security claim, counters expansion argument with ISS example. Good engagement. Score: 4\n- CON: In rebuttal, directly refutes monopolization concerns, addresses conflict argument with legal framework solution, distinguishes ISS from economic models. Strong engagement. Score: 4\n\n**Impact Weighing:**\n- PRO: Emphasizes preventing inequality, avoiding conflict, and promoting collaboration. Some comparative weighing but limited magnitude/probability analysis. Score: 3\n- CON: Weighs survival and resource security against stagnation, frames choice as \"stagnation vs. progress,\" provides clearer comparative framework in summary. Score: 4\n\n## Second Pass Verification\n\nReviewing the debate again:\n\nPRO's strongest point is the common heritage principle and conflict prevention, backed by the Outer Space Treaty. However, PRO doesn't effectively counter CON's argument that the current framework has led to stagnation.\n\nCON's strongest point is the economic incentive argument - that ownership drives investment. CON also effectively distinguishes between regulated ownership and unchecked monopolization, which PRO conflates.\n\nThe key clash point is whether the Outer Space Treaty framework is working. CON argues it has led to stagnation; PRO doesn't adequately defend against this claim, instead pointing to the ISS (which CON correctly notes is government-funded, not an economic model).\n\nCON's weighing is stronger - framing the debate as \"stagnation vs. progress\" and \"survival through resource diversification\" provides clearer impact comparison than PRO's more general appeals to cooperation.\n\n## Final Scores\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"CON wins on superior impact weighing, framing the debate as stagnation versus progress and survival through resource diversification. CON effectively refuted PRO's monopolization concerns by distinguishing regulated ownership from unchecked control, while PRO failed to adequately defend the current framework against CON's stagnation argument. The ISS example, while relevant, doesn't address CON's economic sustainability point.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "CON wins on superior impact weighing, framing the debate as stagnation versus progress and survival through resource diversification. CON effectively refuted PRO's monopolization concerns by distinguishing regulated ownership from unchecked control, while PRO failed to adequately defend the current framework against CON's stagnation argument. The ISS example, while relevant, doesn't address CON's economic sustainability point.",
+  "timestamp": 1767851208.503042,
+  "saved_at": "2026-01-07T21:46:48.504167"
+}

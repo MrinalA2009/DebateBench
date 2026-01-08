@@ -1,0 +1,30 @@
+{
+  "debate_id": "bc47387f-1e58-4d81-a46d-90f58bd7dc0b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through stronger clash refuting PRO's safeguards with empirical Netherlands evidence of slippery slope expansion, and clearer impact weighing of protecting vulnerable lives over individual autonomy.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through stronger clash refuting PRO's safeguards with empirical Netherlands evidence of slippery slope expansion, and clearer impact weighing of protecting vulnerable lives over individual autonomy.",
+  "timestamp": 1767861508.4079201,
+  "saved_at": "2026-01-08T00:38:28.408267"
+}

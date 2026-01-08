@@ -1,0 +1,30 @@
+{
+  "debate_id": "c3d16edf-6f24-4be5-aacf-349174fad006",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.72,\n  \"short_reason\": \"CON won through superior impact weighing and clash. While PRO identified problems with diplomatic immunity, CON effectively demonstrated that limiting immunity would destabilize international relations through retaliation cycles and politically motivated prosecutions. CON's argument that the Vienna Convention provides essential protection against harassment was more compelling than PRO's vague proposal to distinguish official from personal acts. CON also better engaged PRO's mechanism, showing it would be subjectively interpreted and exploited. PRO failed to adequately weigh their accountability benefits against CON's systemic stability concerns.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.72,
+  "short_reason": "CON won through superior impact weighing and clash. While PRO identified problems with diplomatic immunity, CON effectively demonstrated that limiting immunity would destabilize international relations through retaliation cycles and politically motivated prosecutions. CON's argument that the Vienna Convention provides essential protection against harassment was more compelling than PRO's vague proposal to distinguish official from personal acts. CON also better engaged PRO's mechanism, showing it would be subjectively interpreted and exploited. PRO failed to adequately weigh their accountability benefits against CON's systemic stability concerns.",
+  "timestamp": 1767856477.731833,
+  "saved_at": "2026-01-07T23:14:37.732156"
+}

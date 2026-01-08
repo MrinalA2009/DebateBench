@@ -1,0 +1,30 @@
+{
+  "debate_id": "f9bd3513-a05a-4696-bff0-d439ecfa7d9b",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the complexities of public safety and the role of police, providing strong rebuttals to PRO's claims about over-policing and the immediate need for safety. Their arguments were more coherent and better supported overall.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the complexities of public safety and the role of police, providing strong rebuttals to PRO's claims about over-policing and the immediate need for safety. Their arguments were more coherent and better supported overall.",
+  "timestamp": 1767862365.4576168,
+  "saved_at": "2026-01-08T00:52:45.457877"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "d91e8c3a-7908-4fa2-b0a6-b88c10c73011",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins due to superior clash, directly refuting routine visits' need for physical exams (75% diagnoses per Journal of Family Medicine) that PRO fails to counter effectively, with clearer weighing of diagnostic risks outweighing PRO's accessibility and efficiency gains.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins due to superior clash, directly refuting routine visits' need for physical exams (75% diagnoses per Journal of Family Medicine) that PRO fails to counter effectively, with clearer weighing of diagnostic risks outweighing PRO's accessibility and efficiency gains.",
+  "timestamp": 1767859609.655319,
+  "saved_at": "2026-01-08T00:06:49.655627"
+}

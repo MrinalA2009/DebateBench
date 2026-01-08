@@ -1,0 +1,30 @@
+{
+  "debate_id": "bc47387f-1e58-4d81-a46d-90f58bd7dc0b",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively argued for individual autonomy and the necessity of assisted suicide in cases of unbearable suffering, while CON's slippery slope argument lacked sufficient grounding. PRO's impact weighing on dignity and choice was more compelling than CON's focus on potential risks.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively argued for individual autonomy and the necessity of assisted suicide in cases of unbearable suffering, while CON's slippery slope argument lacked sufficient grounding. PRO's impact weighing on dignity and choice was more compelling than CON's focus on potential risks.",
+  "timestamp": 1767863111.1471832,
+  "saved_at": "2026-01-08T01:05:11.147399"
+}

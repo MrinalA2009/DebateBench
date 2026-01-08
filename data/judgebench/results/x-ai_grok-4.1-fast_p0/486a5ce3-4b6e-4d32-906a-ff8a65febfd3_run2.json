@@ -1,0 +1,30 @@
+{
+  "debate_id": "486a5ce3-4b6e-4d32-906a-ff8a65febfd3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with stronger, specific evidence (AAUW study, Iceland success) and direct refutation of CON's job loss claims via economic stimulation, while CON relies on generalized NBER application and unproven complexities.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with stronger, specific evidence (AAUW study, Iceland success) and direct refutation of CON's job loss claims via economic stimulation, while CON relies on generalized NBER application and unproven complexities.",
+  "timestamp": 1767857394.687992,
+  "saved_at": "2026-01-07T23:29:54.688231"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "6b1ebe4a-a202-45de-9f74-58057eded9c0",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and refutation, directly exposing PRO's lack of concrete implementation plans for resources and inequality while highlighting dilution of core subjects, outweighing PRO's evidence advantages.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash and refutation, directly exposing PRO's lack of concrete implementation plans for resources and inequality while highlighting dilution of core subjects, outweighing PRO's evidence advantages.",
+  "timestamp": 1767858585.7230122,
+  "saved_at": "2026-01-07T23:49:45.723322"
+}

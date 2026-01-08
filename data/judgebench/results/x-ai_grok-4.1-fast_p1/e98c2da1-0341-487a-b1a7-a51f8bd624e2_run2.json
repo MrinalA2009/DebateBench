@@ -1,0 +1,30 @@
+{
+  "debate_id": "e98c2da1-0341-487a-b1a7-a51f8bd624e2",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with superior evidence (Australia stats, CDC, AAP) demonstrating regulation reduces deaths, directly refuting CON's contextual dismissals and underground claims without counter-evidence. PRO's quantified life-saving impacts outweigh CON's qualitative rights arguments.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with superior evidence (Australia stats, CDC, AAP) demonstrating regulation reduces deaths, directly refuting CON's contextual dismissals and underground claims without counter-evidence. PRO's quantified life-saving impacts outweigh CON's qualitative rights arguments.",
+  "timestamp": 1767859669.209439,
+  "saved_at": "2026-01-08T00:07:49.209871"
+}

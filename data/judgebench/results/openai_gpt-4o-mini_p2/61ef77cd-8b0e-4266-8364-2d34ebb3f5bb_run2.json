@@ -1,0 +1,30 @@
+{
+  "debate_id": "61ef77cd-8b0e-4266-8364-2d34ebb3f5bb",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively argued for the necessity of legal protections for gender identity, providing strong evidence and addressing concerns raised by CON. The impact weighing favored PRO's arguments on equality and mental health, while CON's arguments lacked sufficient depth and clarity.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively argued for the necessity of legal protections for gender identity, providing strong evidence and addressing concerns raised by CON. The impact weighing favored PRO's arguments on equality and mental health, while CON's arguments lacked sufficient depth and clarity.",
+  "timestamp": 1767863867.044656,
+  "saved_at": "2026-01-08T01:17:47.044910"
+}

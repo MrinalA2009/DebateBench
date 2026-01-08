@@ -1,0 +1,30 @@
+{
+  "debate_id": "483ad6a8-e83d-43f9-a0a1-2abbf09425de",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively argued for the necessity of audits for transparency and accountability, while CON's concerns about privacy and complexity were less compelling and did not sufficiently outweigh PRO's points on the importance of oversight.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively argued for the necessity of audits for transparency and accountability, while CON's concerns about privacy and complexity were less compelling and did not sufficiently outweigh PRO's points on the importance of oversight.",
+  "timestamp": 1767862456.9280589,
+  "saved_at": "2026-01-08T00:54:16.928341"
+}

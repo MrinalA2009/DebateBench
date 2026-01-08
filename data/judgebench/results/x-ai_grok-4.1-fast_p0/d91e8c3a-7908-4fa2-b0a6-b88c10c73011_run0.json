@@ -1,0 +1,30 @@
+{
+  "debate_id": "d91e8c3a-7908-4fa2-b0a6-b88c10c73011",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON wins through stronger clash refuting PRO on diagnostic accuracy via 75% physical exam evidence and superior impact weighing prioritizing misdiagnosis risks over accessibility benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON wins through stronger clash refuting PRO on diagnostic accuracy via 75% physical exam evidence and superior impact weighing prioritizing misdiagnosis risks over accessibility benefits.",
+  "timestamp": 1767857832.1494741,
+  "saved_at": "2026-01-07T23:37:12.149997"
+}

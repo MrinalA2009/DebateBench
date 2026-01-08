@@ -1,0 +1,30 @@
+{
+  "debate_id": "03ce0a6d-2850-4fd3-aec5-de96f737f6e3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 1\n    }\n  },\n  \"confidence\": 1.0,\n  \"short_reason\": \"PRO wins through effective direct refutation of CON's innovation, cooperation, and stewardship claims using historical precedents and the Outer Space Treaty, while CON's rebuttal and summary incoherently conceded by arguing against its own constructive case.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 1
+    }
+  },
+  "confidence": 1.0,
+  "short_reason": "PRO wins through effective direct refutation of CON's innovation, cooperation, and stewardship claims using historical precedents and the Outer Space Treaty, while CON's rebuttal and summary incoherently conceded by arguing against its own constructive case.",
+  "timestamp": 1767856911.6258528,
+  "saved_at": "2026-01-07T23:21:51.626155"
+}

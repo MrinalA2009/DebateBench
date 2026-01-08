@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c904e3b-464b-4d06-9c09-1d40c66da79f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON won through superior weighing and clash. While PRO identified harms from religious extremism, CON effectively argued these represent fringe elements rather than religion's overall impact. CON's comparative framework\u2014distinguishing between extremist deviations and widespread religious practice\u2014was more compelling than PRO's failure to weigh systemic good against isolated harms. CON's examples of charitable organizations and community building remained largely unrefuted in terms of scale and scope.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON won through superior weighing and clash. While PRO identified harms from religious extremism, CON effectively argued these represent fringe elements rather than religion's overall impact. CON's comparative framework\u2014distinguishing between extremist deviations and widespread religious practice\u2014was more compelling than PRO's failure to weigh systemic good against isolated harms. CON's examples of charitable organizations and community building remained largely unrefuted in terms of scale and scope.",
+  "timestamp": 1767853459.44894,
+  "saved_at": "2026-01-07T22:24:19.449234"
+}

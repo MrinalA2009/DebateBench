@@ -1,0 +1,30 @@
+{
+  "debate_id": "beae7811-052d-4489-b1c7-63c21a60c9f5",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents three clear contentions (societal impact, economic consequences, ethical implications) with logical structure. Arguments are coherent and consistently developed throughout. Score: 4\n\nCON: Also presents three clear contentions (individual freedom, public revenue, black market concerns). Arguments are well-structured and logically consistent. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites National Council on Problem Gambling (2 million pathological gamblers, 4-6 million problem gamblers), University of Massachusetts study ($3 social cost per $1 revenue). Specific statistics support claims. Score: 4\n\nCON: Cites North American Association of State and Provincial Lotteries ($29 billion in 2022). However, challenges opponent's study without providing counter-evidence. Less specific grounding overall. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's freedom argument by explaining addiction undermines true freedom. Addresses revenue claims with social cost comparison. Responds to black market argument. Score: 4\n\nCON: Challenges PRO's addiction framing, questions study methodology, and addresses prohibition concerns. However, criticism of the Massachusetts study lacks substantive counter-evidence (\"widely criticized\" is asserted without proof). Score: 3\n\n**IMPACT WEIGHING**\n\nPRO: Consistently emphasizes the 3:1 cost-to-revenue ratio as a comparative weighing mechanism. Frames impacts in terms of magnitude (millions affected) and explains why protection outweighs revenue. Clear prioritization of societal harm over economic benefit. Score: 4\n\nCON: Argues for weighing individual liberty and economic benefits against social costs. However, doesn't provide clear comparative framework for why freedom outweighs the specific harms cited. The \"vast majority of responsible adults\" claim lacks quantification against PRO's specific addiction numbers. Score: 3\n\n**WINNER DETERMINATION**\n\nPRO maintains stronger evidence grounding with specific, unchallenged statistics. The 3:1 cost-revenue ratio provides clear comparative weighing that CON challenges but doesn't effectively refute with counter-evidence. PRO's engagement with CON's freedom argument (addiction undermines freedom) is more substantive than CON's dismissal of the Massachusetts study without providing alternative data. While CON raises valid points about individual liberty and black markets, these remain more theoretical against PRO's concrete evidence of harm.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior evidence grounding and comparative weighing. The 3:1 cost-revenue ratio provides concrete impact comparison that CON challenges but fails to refute with counter-evidence. PRO's specific statistics on addiction (2 million pathological gamblers) and social costs remain largely uncontested, while CON's freedom argument doesn't adequately address how addiction undermines autonomy.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior evidence grounding and comparative weighing. The 3:1 cost-revenue ratio provides concrete impact comparison that CON challenges but fails to refute with counter-evidence. PRO's specific statistics on addiction (2 million pathological gamblers) and social costs remain largely uncontested, while CON's freedom argument doesn't adequately address how addiction undermines autonomy.",
+  "timestamp": 1767855118.418464,
+  "saved_at": "2026-01-07T22:51:58.418889"
+}

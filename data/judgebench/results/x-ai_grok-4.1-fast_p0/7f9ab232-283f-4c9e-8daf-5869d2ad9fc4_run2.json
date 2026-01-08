@@ -1,0 +1,30 @@
+{
+  "debate_id": "7f9ab232-283f-4c9e-8daf-5869d2ad9fc4",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by superior clash through direct refutation of PRO's key arguments (tech feasibility, fine-tuning, Fermi) and stronger evidence grounding via alternatives like multiverse and current simulation limits, while PRO relies on unsubstantiated speculation.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by superior clash through direct refutation of PRO's key arguments (tech feasibility, fine-tuning, Fermi) and stronger evidence grounding via alternatives like multiverse and current simulation limits, while PRO relies on unsubstantiated speculation.",
+  "timestamp": 1767857139.601241,
+  "saved_at": "2026-01-07T23:25:39.601621"
+}

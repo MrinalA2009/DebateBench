@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c904e3b-464b-4d06-9c09-1d40c66da79f",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the positive aspects of religion, countering PRO's claims of harm with strong arguments about community, ethics, and charity, while PRO's rebuttals lacked sufficient engagement with CON's points.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the positive aspects of religion, countering PRO's claims of harm with strong arguments about community, ethics, and charity, while PRO's rebuttals lacked sufficient engagement with CON's points.",
+  "timestamp": 1767862590.65632,
+  "saved_at": "2026-01-08T00:56:30.656591"
+}

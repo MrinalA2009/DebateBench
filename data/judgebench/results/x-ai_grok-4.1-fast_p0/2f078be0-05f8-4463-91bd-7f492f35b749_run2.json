@@ -1,0 +1,30 @@
+{
+  "debate_id": "2f078be0-05f8-4463-91bd-7f492f35b749",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with superior evidence, citing specific Nature Biotechnology study, National Academies report, and 2018 incident, which CON reframes but fails to counter with comparable support. PRO better grounds safety and ethics claims.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with superior evidence, citing specific Nature Biotechnology study, National Academies report, and 2018 incident, which CON reframes but fails to counter with comparable support. PRO better grounds safety and ethics claims.",
+  "timestamp": 1767857991.525514,
+  "saved_at": "2026-01-07T23:39:51.526279"
+}

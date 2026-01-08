@@ -1,0 +1,30 @@
+{
+  "debate_id": "ab1790d8-15f2-4907-beea-02f17c0402f1",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins by superior clash refuting PRO's recycling alternatives as insufficient for global mineral demand (citing EU report), while weighing climate impacts from hindered renewables as greater magnitude and scope than deep-sea ecosystem risks.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins by superior clash refuting PRO's recycling alternatives as insufficient for global mineral demand (citing EU report), while weighing climate impacts from hindered renewables as greater magnitude and scope than deep-sea ecosystem risks.",
+  "timestamp": 1767859393.489682,
+  "saved_at": "2026-01-08T00:03:13.490073"
+}

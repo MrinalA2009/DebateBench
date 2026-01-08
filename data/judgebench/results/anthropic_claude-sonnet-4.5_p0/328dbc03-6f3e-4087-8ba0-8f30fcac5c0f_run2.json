@@ -1,0 +1,30 @@
+{
+  "debate_id": "328dbc03-6f3e-4087-8ba0-8f30fcac5c0f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "I will evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents clear, structured contentions about physical health harms and cognitive/socio-emotional impacts. Arguments are logically coherent and well-organized. Score: 4\n- CON: Presents clear counter-arguments about parental autonomy and complexity of screen use. Arguments are coherent but somewhat repetitive across speeches. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites AAP recommendations, 2019 JAMA Pediatrics study, NIH research with specific findings. Evidence is integrated and relevant. Score: 5\n- CON: References Joan Ganz Cooney Center study but provides less specific data. More reliant on logical reasoning than empirical support. Score: 3\n\n**Clash & Refutation:**\n- PRO: Directly engages CON's autonomy argument with car seat/vaccination analogy. Addresses the \"not all screen time is equal\" point by clarifying the resolution allows for limits, not bans. Score: 4\n- CON: Engages with PRO's arguments but responses are somewhat surface-level. Calls the car seat comparison \"misleading\" but doesn't fully develop why. Score: 3\n\n**Impact Weighing:**\n- PRO: Emphasizes magnitude (entire generation's health), timeframe (long-term development), and systemic burden (healthcare system). Clear comparative weighing. Score: 4\n- CON: Focuses on potential harms of legal intervention but doesn't comparatively weigh against PRO's health impacts. Limited magnitude/probability analysis. Score: 2\n\n## Second Pass Verification\n\nReviewing the debate again:\n- PRO consistently maintains burden of proof with specific harms\n- CON's autonomy argument is valid but doesn't outweigh demonstrated harms\n- PRO's analogy to existing child protection laws is effective and not adequately refuted\n- CON's \"not all screen time is equal\" point is acknowledged but doesn't negate the need for limits\n- PRO provides clearer impact calculus throughout\n\nWinner remains PRO with similar scoring.\n\n## Final Judgment\n\nPRO wins because they established concrete, evidence-based harms from excessive screen time and effectively compared the resolution to existing child protection laws. While CON raised valid concerns about parental autonomy, they failed to adequately weigh these concerns against PRO's demonstrated health impacts. PRO's car seat/vaccination analogy was particularly effective in showing precedent for limiting autonomy for child welfare, and CON's dismissal of this comparison lacked sufficient development.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO won through superior evidence grounding and impact weighing. Their specific health harms backed by AAP, JAMA, and NIH studies outweighed CON's autonomy concerns. PRO's car seat/vaccination analogy effectively established precedent for child protection laws, which CON failed to adequately refute. CON's argument that not all screen time is harmful didn't negate the need for limits.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO won through superior evidence grounding and impact weighing. Their specific health harms backed by AAP, JAMA, and NIH studies outweighed CON's autonomy concerns. PRO's car seat/vaccination analogy effectively established precedent for child protection laws, which CON failed to adequately refute. CON's argument that not all screen time is harmful didn't negate the need for limits.",
+  "timestamp": 1767848291.1685069,
+  "saved_at": "2026-01-07T20:58:11.168800"
+}

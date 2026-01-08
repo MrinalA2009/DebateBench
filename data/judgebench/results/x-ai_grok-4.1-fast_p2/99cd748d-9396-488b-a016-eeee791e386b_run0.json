@@ -1,0 +1,30 @@
+{
+  "debate_id": "99cd748d-9396-488b-a016-eeee791e386b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with superior argument quality via coherent Bostrom trilemma and tech trajectory, plus better evidence integration, outweighing CON's clash advantage on dropped consciousness point lacking support.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with superior argument quality via coherent Bostrom trilemma and tech trajectory, plus better evidence integration, outweighing CON's clash advantage on dropped consciousness point lacking support.",
+  "timestamp": 1767860986.888469,
+  "saved_at": "2026-01-08T00:29:46.888849"
+}

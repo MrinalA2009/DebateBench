@@ -1,0 +1,30 @@
+{
+  "debate_id": "a7e01c3b-01a7-43aa-86c3-3d7069f9bd7b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Main Arguments:**\n1. Environmental impact (5-14x more polluting than commercial, 50x more than trains)\n2. Social inequity and resource misallocation\n\n**CON's Main Arguments:**\n1. Economic impact (jobs, revenue, related industries)\n2. Essential functions (medical emergencies, humanitarian aid)\n3. Future green technologies as alternative to ban\n\n**Clash Analysis:**\n\nPRO effectively refutes CON's economic argument by noting resources could be redirected to sustainable infrastructure creating more jobs. CON's rebuttal actually concedes this point (\"Redirecting resources...can create far more jobs\"), which significantly weakens their economic position.\n\nPRO directly challenges the \"essential functions\" claim as exceptions not justifying the rule, noting commercial/dedicated services handle these needs. CON doesn't provide evidence that private jets are necessary for these functions.\n\nPRO attacks the green technology argument as \"dangerous deferral\" requiring immediate action. CON doesn't defend the timeline issue effectively.\n\nCON's strongest surviving argument is the economic disruption concern, though weakened by their own concession. PRO's environmental impact argument remains largely uncontested - CON never disputes the pollution statistics.\n\n## Stage 2: Comparative Evaluation\n\nPRO's environmental argument (5-14x more polluting) with immediate climate action framing vs. CON's weakened economic argument and speculative future solutions.\n\nPRO provides specific quantitative evidence (Transport & Environment 2023 report). CON provides no counter-evidence on emissions or economic figures.\n\nPRO's impact weighing emphasizes urgency and magnitude of climate crisis. CON's weighing is less developed and undermined by their own concession about job creation through alternative investments.\n\n## Scoring\n\n**Argument Quality:**\n- PRO: 4 (Clear, logical, well-structured with specific claims)\n- CON: 3 (Coherent but contains self-contradictory concession in rebuttal)\n\n**Evidence & Grounding:**\n- PRO: 4 (Specific statistics, named source, clear mechanisms)\n- CON: 2 (Mostly assertions without supporting data or sources)\n\n**Clash & Refutation:**\n- PRO: 4 (Directly engages all major arguments, effective rebuttals)\n- CON: 2 (Weak engagement, concedes key economic point)\n\n**Impact Weighing:**\n- PRO: 4 (Clear urgency framing, magnitude comparison, timeframe emphasis)\n- CON: 2 (Limited weighing, doesn't compare impacts effectively)\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.85,\n  \"short_reason\": \"PRO wins decisively through superior evidence (quantified pollution data), effective refutation of CON's economic and essential functions claims, and clear impact weighing emphasizing climate urgency. CON's critical concession that alternative investments create more jobs undermines their primary economic argument, while their reliance on future technologies fails to address PRO's immediacy framing. PRO's environmental impact argument survives largely uncontested.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.85,
+  "short_reason": "PRO wins decisively through superior evidence (quantified pollution data), effective refutation of CON's economic and essential functions claims, and clear impact weighing emphasizing climate urgency. CON's critical concession that alternative investments create more jobs undermines their primary economic argument, while their reliance on future technologies fails to address PRO's immediacy framing. PRO's environmental impact argument survives largely uncontested.",
+  "timestamp": 1767851834.7619321,
+  "saved_at": "2026-01-07T21:57:14.763433"
+}

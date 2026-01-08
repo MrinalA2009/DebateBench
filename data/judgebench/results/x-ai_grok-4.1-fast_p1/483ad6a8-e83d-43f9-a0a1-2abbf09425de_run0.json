@@ -1,0 +1,30 @@
+{
+  "debate_id": "483ad6a8-e83d-43f9-a0a1-2abbf09425de",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins with stronger evidence (Pew study, COMPAS example) grounding transparency and bias arguments, plus direct refutation of CON's privacy and complexity claims via privacy-preserving techniques and expert oversight. PRO's societal impacts on democracy outweigh CON's risk assertions.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins with stronger evidence (Pew study, COMPAS example) grounding transparency and bias arguments, plus direct refutation of CON's privacy and complexity claims via privacy-preserving techniques and expert oversight. PRO's societal impacts on democracy outweigh CON's risk assertions.",
+  "timestamp": 1767859545.503621,
+  "saved_at": "2026-01-08T00:05:45.504086"
+}

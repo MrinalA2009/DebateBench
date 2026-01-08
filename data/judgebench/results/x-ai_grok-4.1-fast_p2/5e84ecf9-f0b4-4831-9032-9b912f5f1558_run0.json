@@ -1,0 +1,30 @@
+{
+  "debate_id": "5e84ecf9-f0b4-4831-9032-9b912f5f1558",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash directly refuting PRO's Australia evidence and stats via criminal non-compliance and cultural differences, combined with clearer impact weighing prioritizing self-defense rights and root causes over superficial regulations that disarm law-abiding citizens.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash directly refuting PRO's Australia evidence and stats via criminal non-compliance and cultural differences, combined with clearer impact weighing prioritizing self-defense rights and root causes over superficial regulations that disarm law-abiding citizens.",
+  "timestamp": 1767860612.790516,
+  "saved_at": "2026-01-08T00:23:32.790911"
+}

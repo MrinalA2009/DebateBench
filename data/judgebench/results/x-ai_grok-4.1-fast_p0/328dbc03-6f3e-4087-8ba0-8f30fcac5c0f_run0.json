@@ -1,0 +1,30 @@
+{
+  "debate_id": "328dbc03-6f3e-4087-8ba0-8f30fcac5c0f",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with superior evidence from specific studies (JAMA, NIH, AAP) on health harms and stronger clash refuting autonomy via car seat/vaccine analogies, while better weighing generational health crisis over CON's vaguer unintended consequences.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with superior evidence from specific studies (JAMA, NIH, AAP) on health harms and stronger clash refuting autonomy via car seat/vaccine analogies, while better weighing generational health crisis over CON's vaguer unintended consequences.",
+  "timestamp": 1767856804.0087621,
+  "saved_at": "2026-01-07T23:20:04.008983"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "c3d16edf-6f24-4be5-aacf-349174fad006",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins by superior clash directly refuting PRO's official/personal distinction as subjective and harassment-prone, while defending Vienna Convention mechanisms as effective. CON's impact weighing prioritizes diplomatic stability and retaliation risks over PRO's unsupported impunity claims.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins by superior clash directly refuting PRO's official/personal distinction as subjective and harassment-prone, while defending Vienna Convention mechanisms as effective. CON's impact weighing prioritizes diplomatic stability and retaliation risks over PRO's unsupported impunity claims.",
+  "timestamp": 1767860205.101114,
+  "saved_at": "2026-01-08T00:16:45.101381"
+}

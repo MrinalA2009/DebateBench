@@ -1,0 +1,30 @@
+{
+  "debate_id": "aa217d64-ce24-4808-8186-b5d03c28155c",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively argued that victim involvement undermines fairness and objectivity in sentencing, while PRO's rebuttals did not sufficiently counter these concerns. CON's emphasis on the potential for biased outcomes and the importance of maintaining legal principles was more compelling.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively argued that victim involvement undermines fairness and objectivity in sentencing, while PRO's rebuttals did not sufficiently counter these concerns. CON's emphasis on the potential for biased outcomes and the importance of maintaining legal principles was more compelling.",
+  "timestamp": 1767862320.332097,
+  "saved_at": "2026-01-08T00:52:00.332218"
+}

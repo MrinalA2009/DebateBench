@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO won through superior impact weighing and concrete examples. PRO provided specific evidence (Orb\u00e1n, COVID-19, McCarthyism) demonstrating nationalism's destructive effects, while CON relied heavily on theoretical possibilities without adequately refuting PRO's empirical claims. PRO's framework of division, authoritarianism, and obstructed cooperation remained largely uncontested, while CON's EU example was insufficiently developed to counter PRO's pandemic evidence. PRO's comparative weighing of real-world harms outweighed CON's abstract potential benefits.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO won through superior impact weighing and concrete examples. PRO provided specific evidence (Orb\u00e1n, COVID-19, McCarthyism) demonstrating nationalism's destructive effects, while CON relied heavily on theoretical possibilities without adequately refuting PRO's empirical claims. PRO's framework of division, authoritarianism, and obstructed cooperation remained largely uncontested, while CON's EU example was insufficiently developed to counter PRO's pandemic evidence. PRO's comparative weighing of real-world harms outweighed CON's abstract potential benefits.",
+  "timestamp": 1767851677.650838,
+  "saved_at": "2026-01-07T21:54:37.651143"
+}

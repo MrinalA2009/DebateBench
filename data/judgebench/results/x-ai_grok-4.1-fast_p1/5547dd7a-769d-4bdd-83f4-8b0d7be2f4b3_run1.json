@@ -1,0 +1,30 @@
+{
+  "debate_id": "5547dd7a-769d-4bdd-83f4-8b0d7be2f4b3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins by showing societal costs (tens of billions) exceed CON's $41B revenue claim, with stronger refutation of choice and regulation arguments. PRO's net impact weighing on addiction and inequality prevails over CON's unrefuted alternatives.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins by showing societal costs (tens of billions) exceed CON's $41B revenue claim, with stronger refutation of choice and regulation arguments. PRO's net impact weighing on addiction and inequality prevails over CON's unrefuted alternatives.",
+  "timestamp": 1767860327.425062,
+  "saved_at": "2026-01-08T00:18:47.425494"
+}

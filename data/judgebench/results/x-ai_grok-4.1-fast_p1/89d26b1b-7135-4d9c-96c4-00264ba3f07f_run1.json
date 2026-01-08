@@ -1,0 +1,30 @@
+{
+  "debate_id": "89d26b1b-7135-4d9c-96c4-00264ba3f07f",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins as strongest arguments on privacy vulnerabilities and innovation stagnation survive refutation better; CON demonstrates greater impact magnitude through inherent risks of exploitation and R&D disincentives versus PRO's aspirational benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins as strongest arguments on privacy vulnerabilities and innovation stagnation survive refutation better; CON demonstrates greater impact magnitude through inherent risks of exploitation and R&D disincentives versus PRO's aspirational benefits.",
+  "timestamp": 1767860263.432394,
+  "saved_at": "2026-01-08T00:17:43.432996"
+}

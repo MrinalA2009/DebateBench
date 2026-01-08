@@ -1,0 +1,30 @@
+{
+  "debate_id": "beae7811-052d-4489-b1c7-63c21a60c9f5",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents three clear contentions (societal impact, economic consequences, ethical implications) with logical structure. Arguments are coherent and well-organized throughout. Score: 4\n\nCON: Also presents three clear contentions (individual freedom, public revenue, black market concerns). Arguments are logically structured and internally consistent. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites National Council on Problem Gambling (2 million pathological gamblers, 4-6 million problem gamblers), University of Massachusetts study ($3 social cost per $1 revenue). Specific statistics support claims. Score: 4\n\nCON: Cites North American Association of State and Provincial Lotteries ($29 billion in 2022). However, challenges opponent's study without providing counter-evidence beyond assertion. Less specific grounding overall. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's freedom argument by explaining addiction undermines true freedom. Addresses revenue claims with social cost comparison. Responds to black market argument. Score: 4\n\nCON: Challenges PRO's addiction framing, questions study methodology, and addresses prohibition concerns. However, criticism of University of Massachusetts study is unsupported (\"widely criticized\" without evidence). Score: 3\n\n**IMPACT WEIGHING**\n\nPRO: Consistently emphasizes the $3-to-$1 cost-benefit ratio as comparative weighing. Explains magnitude of harm (bankruptcy, domestic violence, suicide) versus economic benefits. Clear prioritization of societal wellbeing. Score: 4\n\nCON: Argues individual liberty should outweigh paternalism, mentions budget shortfalls and black market dangers. However, less explicit comparative analysis of why freedom outweighs addiction harms. Final summary attempts weighing but less developed than PRO. Score: 3\n\n**WINNER DETERMINATION**\n\nPRO maintains stronger evidence grounding throughout (specific studies with quantifiable claims), engages more directly with opponent's arguments, and provides clearer comparative weighing (the $3-to-$1 ratio is repeatedly emphasized as a direct comparison). CON's strongest argument on individual liberty is somewhat undermined by PRO's addiction response, and CON's challenge to PRO's evidence lacks supporting documentation. While CON raises valid concerns about prohibition and freedom, PRO more effectively demonstrates why their impacts (addiction, social costs) outweigh CON's impacts (revenue loss, freedom restrictions).\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior evidence grounding and comparative weighing. The $3-to-$1 social cost ratio provides clear quantitative comparison that CON challenges but cannot effectively refute. PRO's engagement with addiction undermining freedom directly addresses CON's liberty argument, while CON's criticism of PRO's evidence lacks supporting documentation. PRO demonstrates more effectively why their impacts outweigh.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior evidence grounding and comparative weighing. The $3-to-$1 social cost ratio provides clear quantitative comparison that CON challenges but cannot effectively refute. PRO's engagement with addiction undermining freedom directly addresses CON's liberty argument, while CON's criticism of PRO's evidence lacks supporting documentation. PRO demonstrates more effectively why their impacts outweigh.",
+  "timestamp": 1767855098.566834,
+  "saved_at": "2026-01-07T22:51:38.567151"
+}

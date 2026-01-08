@@ -1,0 +1,30 @@
+{
+  "debate_id": "aa217d64-ce24-4808-8186-b5d03c28155c",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins because evidence of successful victim impact statements and restorative justice reducing recidivism survives CON's theoretical bias claims, which lack support and go unrefuted on existing implementations.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins because evidence of successful victim impact statements and restorative justice reducing recidivism survives CON's theoretical bias claims, which lack support and go unrefuted on existing implementations.",
+  "timestamp": 1767859113.694877,
+  "saved_at": "2026-01-07T23:58:33.695177"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "e98c2da1-0341-487a-b1a7-a51f8bd624e2",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively demonstrated that strict gun regulation reduces gun violence with strong evidence and clear arguments, while CON's focus on individual rights lacked sufficient counter-evidence and did not adequately address the impacts of gun violence.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively demonstrated that strict gun regulation reduces gun violence with strong evidence and clear arguments, while CON's focus on individual rights lacked sufficient counter-evidence and did not adequately address the impacts of gun violence.",
+  "timestamp": 1767863703.9628859,
+  "saved_at": "2026-01-08T01:15:03.962969"
+}

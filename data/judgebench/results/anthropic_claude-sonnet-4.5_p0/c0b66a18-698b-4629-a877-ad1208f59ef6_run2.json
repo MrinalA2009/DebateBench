@@ -1,0 +1,30 @@
+{
+  "debate_id": "c0b66a18-698b-4629-a877-ad1208f59ef6",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents clear structure with three main contentions (discrimination prevention, cultural acceptance, human rights). Arguments are coherent and logically connected. Score: 4\n- CON: Offers four distinct concerns (free speech conflicts, sports fairness, legal ambiguity, preference for education). Arguments are clear but somewhat repetitive across speeches. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites Human Rights Campaign study, Universal Declaration of Human Rights, and International Olympic Committee policies. Evidence is specific and integrated. Score: 4\n- CON: References \"numerous studies\" without specifics, mentions IOC policies but doesn't provide detail. More assertion-based than PRO. Score: 3\n\n**Clash & Refutation:**\n- PRO: Directly addresses CON's free speech, sports, and ambiguity concerns. Provides specific rebuttals (IOC policies, scientific evidence). Score: 4\n- CON: Engages with PRO's points but largely reasserts original positions without deeply engaging PRO's evidence (e.g., doesn't address the HRC study). Score: 3\n\n**Impact Weighing:**\n- PRO: Frames impacts around human rights, dignity, and preventing discrimination/violence. Explicitly weighs urgency of protecting marginalized communities. Score: 4\n- CON: Discusses risks to rights, fairness, and safety but doesn't comparatively weigh these against PRO's discrimination impacts. Score: 3\n\n## Second Pass Verification\n\nReviewing the debate again:\n- PRO consistently grounds arguments in cited evidence and directly refutes CON's concerns\n- CON raises legitimate concerns but relies more on hypothetical risks without comparative weighing\n- PRO's use of the Universal Declaration and specific studies provides stronger grounding\n- CON's \"numerous studies\" claim lacks specificity, weakening evidence score\n- PRO better engages with opponent's arguments while CON often reasserts positions\n\nScores remain stable across passes.\n\n## Winner Determination\n\nPRO wins on balance due to:\n1. Superior evidence integration (specific citations vs. vague references)\n2. More effective clash (directly addressing CON's concerns with evidence)\n3. Better impact weighing (comparing discrimination harms to hypothetical risks)\n4. CON's failure to engage with PRO's core evidence (HRC study, UDHR)\n\nConfidence: 0.75 (Clear winner, though CON raised legitimate concerns that weren't fully dismissed)\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence integration, citing specific studies and international frameworks while directly refuting CON's concerns. CON raised legitimate issues but relied on vague references and failed to engage PRO's core evidence or comparatively weigh discrimination harms against hypothetical risks. PRO's impact weighing and clash were notably stronger.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence integration, citing specific studies and international frameworks while directly refuting CON's concerns. CON raised legitimate issues but relied on vague references and failed to engage PRO's core evidence or comparatively weigh discrimination harms against hypothetical risks. PRO's impact weighing and clash were notably stronger.",
+  "timestamp": 1767849485.140703,
+  "saved_at": "2026-01-07T21:18:05.140998"
+}

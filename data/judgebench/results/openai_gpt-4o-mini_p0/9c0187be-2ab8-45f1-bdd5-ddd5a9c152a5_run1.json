@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c0187be-2ab8-45f1-bdd5-ddd5a9c152a5",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the complexities of tourism's impact on culture and provided a stronger case for sustainable practices over restrictions, addressing potential discrimination and economic concerns raised by PRO.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the complexities of tourism's impact on culture and provided a stronger case for sustainable practices over restrictions, addressing potential discrimination and economic concerns raised by PRO.",
+  "timestamp": 1767862549.077835,
+  "saved_at": "2026-01-08T00:55:49.078084"
+}

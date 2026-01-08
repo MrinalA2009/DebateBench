@@ -1,0 +1,30 @@
+{
+  "debate_id": "dfeac310-4808-411f-89cd-0ef967852ffe",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through stronger clash, directly refuting CON's education and community standards as insufficient against rogue actors and spreading GMOs, while CON largely reiterates points without addressing enforcement gaps.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through stronger clash, directly refuting CON's education and community standards as insufficient against rogue actors and spreading GMOs, while CON largely reiterates points without addressing enforcement gaps.",
+  "timestamp": 1767858247.360854,
+  "saved_at": "2026-01-07T23:44:07.361172"
+}

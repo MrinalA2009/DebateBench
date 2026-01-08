@@ -1,0 +1,30 @@
+{
+  "debate_id": "728adb42-7ae4-4aed-b301-273b85c828e1",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON effectively highlighted the logistical and financial impracticalities of mandatory bilingual education, countering PRO's claims of existing successful models. Their arguments on the dilution of educational quality and local control were more compelling and better supported, leading to a stronger overall case.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON effectively highlighted the logistical and financial impracticalities of mandatory bilingual education, countering PRO's claims of existing successful models. Their arguments on the dilution of educational quality and local control were more compelling and better supported, leading to a stronger overall case.",
+  "timestamp": 1767862761.107677,
+  "saved_at": "2026-01-08T00:59:21.107935"
+}

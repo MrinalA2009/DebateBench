@@ -1,0 +1,30 @@
+{
+  "debate_id": "ab1790d8-15f2-4907-beea-02f17c0402f1",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior clash directly refuting PRO's alternatives as unscalable and recycling insufficient, plus stronger impact weighing prioritizing climate transition and lesser terrestrial harms over uncertain deep-sea risks.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior clash directly refuting PRO's alternatives as unscalable and recycling insufficient, plus stronger impact weighing prioritizing climate transition and lesser terrestrial harms over uncertain deep-sea risks.",
+  "timestamp": 1767861195.653572,
+  "saved_at": "2026-01-08T00:33:15.653915"
+}

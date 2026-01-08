@@ -1,0 +1,30 @@
+{
+  "debate_id": "fb2aa613-e7d3-44b0-bb15-a7aae46324fa",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior clash, directly refuting CON's physical exams, connection, and disparities claims with evidence and distinctions on routine visits, while advancing unrefuted advantages in convenience, costs, and satisfaction; CON largely restates without engaging PRO's offense.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 2
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior clash, directly refuting CON's physical exams, connection, and disparities claims with evidence and distinctions on routine visits, while advancing unrefuted advantages in convenience, costs, and satisfaction; CON largely restates without engaging PRO's offense.",
+  "timestamp": 1767857675.5403352,
+  "saved_at": "2026-01-07T23:34:35.540792"
+}

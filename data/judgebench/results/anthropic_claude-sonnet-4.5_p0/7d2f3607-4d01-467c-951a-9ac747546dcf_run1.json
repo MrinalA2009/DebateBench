@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents three clear pillars (environment, equity, resources) with logical structure. Arguments are coherent and well-organized. Score: 4\n- CON: Provides structured counter-arguments with economic focus, innovation points, and equity rebuttals. Clear logical flow. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites ICCT study (14x CO2 emissions), provides specific comparative data. However, limited depth beyond this key statistic. Score: 3\n- CON: Provides NBAA data ($247B economy, 1.2M jobs), mentions 2.5% aviation emissions figure, references SAFs and electric aircraft development. More comprehensive grounding. Score: 4\n\n**Clash & Refutation:**\n- PRO: Directly engages CON's economic arguments, addresses innovation claims, responds to equity points. Good engagement but somewhat defensive. Score: 3\n- CON: Systematically dismantles PRO's arguments, challenges \"speculative leap\" of green jobs, addresses each pillar directly, questions practicality. More aggressive and thorough refutation. Score: 4\n\n**Impact Weighing:**\n- PRO: Emphasizes climate urgency and \"every sector must contribute,\" but doesn't comparatively weigh against economic impacts. Limited comparative analysis. Score: 2\n- CON: Weighs immediate economic harm (1.2M jobs) against \"negligible\" climate impact, compares ban vs. innovation pathways, addresses timeframe and magnitude. Clearer comparative weighing. Score: 4\n\n## Second Pass Verification\n\nReviewing for consistency:\n- CON provides more concrete data points and economic mechanisms\n- CON more effectively challenges PRO's causal claims (green jobs speculation)\n- PRO's strongest point (14x emissions) is contextualized by CON (minuscule fraction of global emissions)\n- CON's weighing of immediate economic harm vs. speculative benefits is more developed\n- PRO doesn't adequately respond to the innovation funding argument\n\n## Final Judgment\n\nCON wins through superior evidence grounding, more effective clash, and clearer impact weighing. The economic data (1.2M jobs, $247B) is more concrete than PRO's resource reallocation claims. CON successfully frames the ban as counterproductive to environmental goals by removing innovation incentives, while PRO doesn't adequately weigh climate urgency against immediate economic costs.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior evidence grounding (concrete economic data vs. speculative green jobs), more effective refutation of causal mechanisms, and clearer comparative weighing of immediate economic harm against negligible climate impact. CON's innovation funding argument went largely unaddressed, while PRO failed to adequately weigh climate urgency against demonstrated economic costs.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior evidence grounding (concrete economic data vs. speculative green jobs), more effective refutation of causal mechanisms, and clearer comparative weighing of immediate economic harm against negligible climate impact. CON's innovation funding argument went largely unaddressed, while PRO failed to adequately weigh climate urgency against demonstrated economic costs.",
+  "timestamp": 1767848204.639513,
+  "saved_at": "2026-01-07T20:56:44.639885"
+}

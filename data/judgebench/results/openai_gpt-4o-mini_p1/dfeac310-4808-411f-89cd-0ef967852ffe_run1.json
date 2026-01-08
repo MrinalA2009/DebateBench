@@ -1,0 +1,30 @@
+{
+  "debate_id": "dfeac310-4808-411f-89cd-0ef967852ffe",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively emphasized the risks of unregulated gene editing, providing strong arguments about safety and ethical concerns, while CON's focus on innovation and personal freedom lacked sufficient counter to PRO's impact weighing on public safety.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively emphasized the risks of unregulated gene editing, providing strong arguments about safety and ethical concerns, while CON's focus on innovation and personal freedom lacked sufficient counter to PRO's impact weighing on public safety.",
+  "timestamp": 1767863228.686712,
+  "saved_at": "2026-01-08T01:07:08.687034"
+}

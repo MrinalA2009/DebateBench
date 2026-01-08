@@ -1,0 +1,30 @@
+{
+  "debate_id": "5547dd7a-769d-4bdd-83f4-8b0d7be2f4b3",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively highlighted the societal harms of gambling, emphasizing addiction and financial ruin, while CON's arguments on personal choice and economic benefits were less impactful. PRO's evidence on societal costs outweighed CON's claims of economic benefits, leading to a stronger overall case.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively highlighted the societal harms of gambling, emphasizing addiction and financial ruin, while CON's arguments on personal choice and economic benefits were less impactful. PRO's evidence on societal costs outweighed CON's claims of economic benefits, leading to a stronger overall case.",
+  "timestamp": 1767863320.151901,
+  "saved_at": "2026-01-08T01:08:40.152166"
+}

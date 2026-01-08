@@ -1,0 +1,30 @@
+{
+  "debate_id": "5547dd7a-769d-4bdd-83f4-8b0d7be2f4b3",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n**Stage 1 \u2014 Argument Survival Analysis:**\n\nPRO's strongest arguments:\n- Addiction statistics (2M pathological, 4-6M problem gamblers)\n- Societal costs exceed revenue (tens of billions vs. $41B)\n- Regressive taxation disproportionately affecting poor\n\nCON's strongest arguments:\n- Personal freedom and responsible majority participation\n- $41B tax revenue supporting public services\n- Regulation as alternative to prohibition\n\n**Clash Assessment:**\n\nPRO effectively challenged CON's economic argument by introducing the societal cost comparison (tens of billions in costs vs. $41B revenue), which CON never directly refuted. CON dropped this critical cost-benefit analysis.\n\nCON's personal freedom argument was weakened by PRO's addiction rebuttal, though not eliminated. PRO argued addiction compromises choice, but CON maintained that the majority gamble responsibly.\n\nCON's regulation alternative was challenged by PRO citing UK persistence of problems, but CON countered with UK success claims - this clash remained unresolved with competing assertions.\n\n**Stage 2 \u2014 Comparative Evaluation:**\n\nPRO's net economic loss argument (societal costs > revenue) is more decisive because:\n- It directly undermines CON's primary economic justification\n- CON never contested the cost figures\n- Magnitude: tens of billions in losses vs. claimed benefits\n\nCON's personal freedom argument is weakened by:\n- PRO's addiction statistics showing millions affected\n- No weighing of freedom against harm to vulnerable populations\n\n**Scoring Rationale:**\n\nPRO provided specific statistics, introduced comparative cost analysis, and directly engaged CON's arguments. CON relied more on general principles without addressing PRO's cost-benefit comparison.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO won by introducing unrefuted comparative weighing showing societal costs (tens of billions) exceed gambling revenue ($41B), directly undermining CON's economic justification. CON dropped this critical cost-benefit analysis and failed to weigh personal freedom against documented harms to millions of addicted individuals. PRO's impact calculus was more developed and decisive.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO won by introducing unrefuted comparative weighing showing societal costs (tens of billions) exceed gambling revenue ($41B), directly undermining CON's economic justification. CON dropped this critical cost-benefit analysis and failed to weigh personal freedom against documented harms to millions of addicted individuals. PRO's impact calculus was more developed and decisive.",
+  "timestamp": 1767853922.590977,
+  "saved_at": "2026-01-07T22:32:02.591141"
+}

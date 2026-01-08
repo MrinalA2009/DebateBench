@@ -1,0 +1,30 @@
+{
+  "debate_id": "03ce0a6d-2850-4fd3-aec5-de96f737f6e3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 1\n    }\n  },\n  \"confidence\": 0.9,\n  \"short_reason\": \"PRO wins with consistent logic, direct refutation of CON's constructive claims on innovation/cooperation/stewardship, and clear impact weighing on conflict/inequality. CON's rebuttal/summary fail to clash, adopting PRO's arguments instead.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 1
+    }
+  },
+  "confidence": 0.9,
+  "short_reason": "PRO wins with consistent logic, direct refutation of CON's constructive claims on innovation/cooperation/stewardship, and clear impact weighing on conflict/inequality. CON's rebuttal/summary fail to clash, adopting PRO's arguments instead.",
+  "timestamp": 1767856925.600993,
+  "saved_at": "2026-01-07T23:22:05.601615"
+}

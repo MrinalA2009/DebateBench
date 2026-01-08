@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c904e3b-464b-4d06-9c09-1d40c66da79f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents three clear contentions (violence/intolerance, scientific hindrance, social inequality) with logical structure. Arguments are coherent and well-organized. Score: 4\n- CON: Offers three counter-contentions (community building, ethical guidance, charitable work) that are equally clear and well-structured. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Provides historical examples (Crusades, Inquisition) and contemporary issues (LGBTQ+ persecution, vaccine resistance, climate denial). However, lacks specific data or mechanisms. Score: 3\n- CON: Cites specific organizations (Doctors Without Borders, Islamic Relief, Catholic Relief Services, Salvation Army) as concrete examples. Slightly more grounded. Score: 3.5 \u2192 4\n\n**Clash & Refutation:**\n- PRO: Directly engages CON's arguments, calling out \"cherry-picking\" and addressing the extremism dismissal. Challenges the moral compass claim with discrimination examples. Score: 4\n- CON: Effectively counters by identifying logical fallacies (comparing extremism to corrupt governments), distinguishes between fringe groups and mainstream practice, and addresses the science claim. Score: 4\n\n**Impact Weighing:**\n- PRO: Emphasizes \"systemic and institutionalized harm\" and urges consideration of \"full spectrum.\" Uses magnitude framing but limited comparative analysis. Score: 3\n- CON: Argues about \"overwhelming evidence\" and \"consistent, widespread good\" versus \"isolated incidents.\" Provides scope comparison (billions benefiting vs. fringe elements). Score: 4\n\n## Second Pass Verification\n\nReviewing the debate again:\n\nPRO's strongest moment: Pointing out that CON dismisses extremism as \"deviations\" while these actions stem from religious texts themselves. This is a substantive clash point.\n\nCON's strongest moment: The logical fallacy identification and the concrete organizational examples that demonstrate scale of charitable work.\n\nKey dropped arguments:\n- PRO's claim about scientific hindrance is addressed but not fully refuted by CON\n- CON's community cohesion argument is not directly refuted by PRO\n\nThe weighing battle: CON more explicitly compares scale (billions vs. fringe elements) while PRO focuses on systemic nature. CON's weighing is slightly clearer.\n\n## Final Determination\n\nCON edges ahead primarily on evidence grounding (specific organizations) and impact weighing (clearer scope comparison). While both sides clash effectively, CON's framing of \"widespread good vs. isolated harm\" provides a clearer comparative framework than PRO's \"systemic harm\" argument, which needed more development of why systemic nature outweighs scale.\n\nThis is a close debate where both sides performed well, but CON's slightly superior evidence specificity and weighing framework tips the balance.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"CON wins on superior evidence grounding with specific organizational examples and clearer impact weighing comparing billions benefiting versus fringe extremism. While PRO effectively challenged CON's dismissal of extremism, CON's scope-based weighing (widespread consistent good vs. isolated harm) provided a more developed comparative framework than PRO's systemic harm argument.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "CON wins on superior evidence grounding with specific organizational examples and clearer impact weighing comparing billions benefiting versus fringe extremism. While PRO effectively challenged CON's dismissal of extremism, CON's scope-based weighing (widespread consistent good vs. isolated harm) provided a more developed comparative framework than PRO's systemic harm argument.",
+  "timestamp": 1767850686.972748,
+  "saved_at": "2026-01-07T21:38:06.973871"
+}

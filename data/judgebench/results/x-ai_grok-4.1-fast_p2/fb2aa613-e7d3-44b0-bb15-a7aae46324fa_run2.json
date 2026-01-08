@@ -1,0 +1,30 @@
+{
+  "debate_id": "fb2aa613-e7d3-44b0-bb15-a7aae46324fa",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior clash, directly refuting CON's physical exams, personal connection, and digital divide with targeted evidence and reasoning, while CON mostly restated arguments without engaging PRO's cost savings and accessibility impacts. PRO better weighed overall benefits as outweighing drawbacks.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior clash, directly refuting CON's physical exams, personal connection, and digital divide with targeted evidence and reasoning, while CON mostly restated arguments without engaging PRO's cost savings and accessibility impacts. PRO better weighed overall benefits as outweighing drawbacks.",
+  "timestamp": 1767861274.721389,
+  "saved_at": "2026-01-08T00:34:34.721749"
+}

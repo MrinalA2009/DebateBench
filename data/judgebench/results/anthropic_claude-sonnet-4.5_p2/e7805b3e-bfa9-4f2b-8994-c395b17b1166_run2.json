@@ -1,0 +1,30 @@
+{
+  "debate_id": "e7805b3e-bfa9-4f2b-8994-c395b17b1166",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "I will evaluate this debate systematically across all four criteria.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear, structured arguments about cognitive maturity, existing responsibilities of 16-year-olds, civic education, and international examples. Arguments are logically coherent and well-organized throughout. Score: 4\n\nCON: Also presents clear arguments about cognitive development, concerns about informed voting, and electoral integrity. Arguments are well-structured and internally consistent. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: References National Center for Education Statistics study, mentions citizenship/government classes, cites Scotland and Austria as examples with increased youth engagement. Provides specific mechanisms (civic education, existing responsibilities). Score: 4\n\nCON: Cites \"Developmental Psychology\" journal study, references research on cognitive maturity and mid-20s brain development, discusses Austria and Scotland data. Evidence is relevant and integrated into arguments. Score: 4\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's cognitive development argument by pointing out 16-year-olds already make significant decisions. Addresses the Austria/Scotland turnout claim by distinguishing between overall turnout and youth engagement specifically. Responds to populist rhetoric concern by noting it applies to all ages. Score: 4\n\nCON: Directly refutes PRO's maturity argument by distinguishing between life decisions and voting complexity. Challenges the civic education claim by arguing knowledge doesn't guarantee informed voting. Addresses the international examples by emphasizing low overall youth turnout. Score: 4\n\n**IMPACT WEIGHING**\n\nPRO: In summary, explicitly weighs benefits (civic engagement, participatory democracy, voice on issues affecting youth) against risks. States \"benefits outweigh the potential risks\" and explains why recognition of maturity matters. Score: 3\n\nCON: In summary, explicitly states \"risks far outweigh the potential benefits\" and prioritizes \"robust and informed democracy.\" Emphasizes the magnitude of electoral integrity concerns. Provides clear comparative weighing. Score: 4\n\n**ANALYSIS**\n\nThis is an extremely close debate. Both sides present quality arguments with solid evidence and effective clash. The key differentiator is in the weighing phase. CON provides slightly clearer comparative impact analysis, emphasizing the magnitude of electoral integrity and the importance of informed decision-making capacity. CON also more effectively challenges PRO's international examples by distinguishing engagement from meaningful participation. PRO's weighing, while present, is less developed in explaining why their impacts should be prioritized over CON's concerns about cognitive maturity and electoral integrity.\n\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.55,\n  \"short_reason\": \"Both sides presented strong arguments with solid evidence and effective clash. CON wins narrowly on superior impact weighing, more clearly prioritizing electoral integrity and informed decision-making over increased engagement. CON's distinction between engagement and meaningful participation effectively challenged PRO's international examples, while PRO's comparative weighing remained underdeveloped.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.55,
+  "short_reason": "Both sides presented strong arguments with solid evidence and effective clash. CON wins narrowly on superior impact weighing, more clearly prioritizing electoral integrity and informed decision-making over increased engagement. CON's distinction between engagement and meaningful participation effectively challenged PRO's international examples, while PRO's comparative weighing remained underdeveloped.",
+  "timestamp": 1767856312.21839,
+  "saved_at": "2026-01-07T23:11:52.218598"
+}

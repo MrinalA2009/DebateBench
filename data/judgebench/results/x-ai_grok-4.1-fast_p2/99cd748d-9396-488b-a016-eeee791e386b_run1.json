@@ -1,0 +1,30 @@
+{
+  "debate_id": "99cd748d-9396-488b-a016-eeee791e386b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with stronger evidence via Bostrom's detailed trilemma and specific tech examples, plus more effective direct refutation of CON's points on assumptions and dichotomy, outweighing CON's repetitive assertions.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with stronger evidence via Bostrom's detailed trilemma and specific tech examples, plus more effective direct refutation of CON's points on assumptions and dichotomy, outweighing CON's repetitive assertions.",
+  "timestamp": 1767861003.9940438,
+  "saved_at": "2026-01-08T00:30:03.994373"
+}

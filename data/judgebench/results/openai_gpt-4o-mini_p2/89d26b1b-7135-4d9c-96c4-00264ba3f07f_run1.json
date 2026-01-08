@@ -1,0 +1,30 @@
+{
+  "debate_id": "89d26b1b-7135-4d9c-96c4-00264ba3f07f",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the risks of privacy breaches and intellectual property theft, providing strong rebuttals to PRO's claims about accountability and innovation. Their arguments were more coherent and impactful, outweighing PRO's points on transparency.\" \n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the risks of privacy breaches and intellectual property theft, providing strong rebuttals to PRO's claims about accountability and innovation. Their arguments were more coherent and impactful, outweighing PRO's points on transparency.",
+  "timestamp": 1767863873.341671,
+  "saved_at": "2026-01-08T01:17:53.341933"
+}

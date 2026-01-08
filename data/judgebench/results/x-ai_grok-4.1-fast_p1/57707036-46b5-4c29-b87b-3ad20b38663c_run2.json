@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.6,\n  \"short_reason\": \"PRO wins as strongest arguments on modern destructive impacts (division via US/UK polarization, authoritarianism via Orb\u00e1n, COVID cooperation failure) survive CON's 'misuse' claims. PRO's harms to democracy and global issues outweigh CON's conditional unity/sovereignty benefits in magnitude and probability.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.6,
+  "short_reason": "PRO wins as strongest arguments on modern destructive impacts (division via US/UK polarization, authoritarianism via Orb\u00e1n, COVID cooperation failure) survive CON's 'misuse' claims. PRO's harms to democracy and global issues outweigh CON's conditional unity/sovereignty benefits in magnitude and probability.",
+  "timestamp": 1767858814.422127,
+  "saved_at": "2026-01-07T23:53:34.422456"
+}

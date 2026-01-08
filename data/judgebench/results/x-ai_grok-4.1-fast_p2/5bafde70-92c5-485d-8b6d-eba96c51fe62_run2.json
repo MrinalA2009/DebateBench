@@ -1,0 +1,30 @@
+{
+  "debate_id": "5bafde70-92c5-485d-8b6d-eba96c51fe62",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by better weighing short-term business closures and worker earning caps against PRO's long-term turnover benefits, while effectively clashing on tipping's incentives outweighing bias concerns.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by better weighing short-term business closures and worker earning caps against PRO's long-term turnover benefits, while effectively clashing on tipping's incentives outweighing bias concerns.",
+  "timestamp": 1767861970.440439,
+  "saved_at": "2026-01-08T00:46:10.440704"
+}

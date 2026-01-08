@@ -1,0 +1,30 @@
+{
+  "debate_id": "a7e01c3b-01a7-43aa-86c3-3d7069f9bd7b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria.\n\n**ARGUMENT QUALITY**\n\nPRO presents clear, structured arguments: (1) environmental impact with specific pollution comparisons, (2) social inequity and resource allocation. Arguments are internally consistent and well-organized.\n\nCON presents four main points: economic impact, essential functions, innovation potential, and social equity complexity. However, CON's rebuttal appears to contradict their constructive by agreeing with PRO's points about redirecting resources and minimal essential use cases, creating internal inconsistency.\n\nPRO: 5, CON: 3\n\n**EVIDENCE & GROUNDING**\n\nPRO cites specific data (Transport & Environment 2023 report, 5-14x more polluting than commercial, 50x more than trains). This grounds their environmental claims concretely.\n\nCON makes claims about \"billions in revenue\" and \"hundreds of thousands of jobs\" but provides no specific data or sources. References to sustainable aviation fuels and electric aircraft lack supporting evidence about timeline or feasibility.\n\nPRO: 5, CON: 2\n\n**CLASH & REFUTATION**\n\nPRO directly engages CON's arguments, calling the economic argument a \"red herring,\" addressing the essential functions claim as \"gross exaggeration,\" and challenging the green technology timeline as \"dangerous deferral.\"\n\nCON's rebuttal is problematic - it appears to concede PRO's points (agreeing resources should be redirected, that private jets are primarily for luxury, that waiting for technology is dangerous) while still opposing the resolution. This creates confusion rather than effective clash.\n\nPRO: 5, CON: 2\n\n**IMPACT WEIGHING**\n\nPRO clearly prioritizes immediate climate action over economic concerns, emphasizes the disproportionate pollution relative to benefit, and frames the debate as \"immediate action vs. speculative future solutions.\"\n\nCON attempts weighing by discussing economic trade-offs but undermines this in rebuttal by conceding key points. The weighing becomes incoherent when CON agrees that waiting for technology is \"dangerous\" yet still opposes the ban.\n\nPRO: 5, CON: 2\n\n**WINNER DETERMINATION**\n\nPRO maintains consistent argumentation throughout, provides concrete evidence, directly refutes opposition claims, and clearly weighs impacts favoring immediate action. CON's rebuttal critically weakens their position by appearing to agree with PRO's core arguments while maintaining opposition to the resolution, creating logical inconsistency that undermines their entire case.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.95,\n  \"short_reason\": \"PRO wins decisively through superior evidence (specific pollution data), consistent argumentation, and effective refutation. CON critically undermined their case in rebuttal by conceding PRO's key arguments about resource reallocation, minimal essential use, and dangers of delay while still opposing the resolution, creating fatal internal inconsistency.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 2
+    }
+  },
+  "confidence": 0.95,
+  "short_reason": "PRO wins decisively through superior evidence (specific pollution data), consistent argumentation, and effective refutation. CON critically undermined their case in rebuttal by conceding PRO's key arguments about resource reallocation, minimal essential use, and dangers of delay while still opposing the resolution, creating fatal internal inconsistency.",
+  "timestamp": 1767854514.2163332,
+  "saved_at": "2026-01-07T22:41:54.216510"
+}

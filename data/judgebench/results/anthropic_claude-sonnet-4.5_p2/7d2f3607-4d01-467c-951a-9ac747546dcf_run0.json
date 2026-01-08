@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY ANALYSIS:**\n\nPRO presents three clear contentions: environmental impact (14x more CO2 per passenger), social equity (wealth gap symbolism), and resource misallocation. Arguments are structured and internally consistent.\n\nCON counters with economic impact ($247B, 1.2M jobs), proportionality of emissions (2.5% of aviation, small fraction overall), and innovation incentives (SAFs, electric aircraft). Arguments are well-developed and logically coherent.\n\nBoth sides maintain clarity throughout. CON provides slightly more nuanced framing by distinguishing between banning vs. regulating/innovating.\n\nPRO: 4, CON: 4\n\n**EVIDENCE & GROUNDING:**\n\nPRO cites International Council on Clean Transportation (14x CO2 emissions) - specific, relevant evidence supporting their core claim.\n\nCON cites National Business Aviation Association ($247B economic contribution, 1.2M jobs) and provides context (2.5% global aviation emissions). CON also references specific technological solutions (SAFs, electric aircraft).\n\nCON provides more varied evidence types and contextualizes their data more effectively.\n\nPRO: 3, CON: 4\n\n**CLASH & REFUTATION:**\n\nPRO engages CON's economic argument by claiming green jobs would replace lost jobs, addresses the \"minimal impact\" claim by arguing all sectors must contribute, and responds to equity concerns.\n\nCON directly refutes PRO's job creation claims as \"speculative,\" challenges the environmental logic by arguing bans eliminate innovation incentives, and contests the equity framing as \"utopian.\"\n\nCON more effectively dismantles opponent arguments by highlighting internal contradictions (banning removes innovation funding) while PRO's responses are more defensive.\n\nPRO: 3, CON: 4\n\n**IMPACT WEIGHING:**\n\nPRO emphasizes magnitude of climate crisis (\"existential threat\") and frames private jets as symbolic of broader inequality. However, limited comparative analysis of why their impacts outweigh economic harms.\n\nCON explicitly compares immediate economic damage (1.2M jobs lost) vs. negligible climate impact, argues their solution (innovation) addresses both concerns while ban addresses neither effectively, and weighs certainty of economic harm vs. speculative benefits.\n\nCON provides clearer comparative weighing between competing impacts.\n\nPRO: 2, CON: 4\n\n**OVERALL ASSESSMENT:**\n\nCON wins on three of four categories and provides superior comparative weighing. CON effectively argues that: (1) the economic harm is immediate and certain while environmental benefit is minimal given private jets' small emissions share, (2) banning eliminates rather than enables the innovation needed for decarbonization, and (3) PRO's alternative solutions don't require destroying the industry.\n\nPRO's strongest argument (14x emissions per passenger) is contextualized by CON as affecting a tiny fraction of overall emissions, making the tradeoff unfavorable. PRO never adequately responds to the innovation incentive argument.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior impact weighing, demonstrating that immediate economic harm (1.2M jobs, $247B) outweighs negligible climate benefit given private jets' small emissions share. CON effectively argues banning eliminates innovation incentives for sustainable aviation fuels and electric aircraft, while PRO fails to address how their solution enables decarbonization. CON's comparative analysis of certainty vs. speculation proves decisive.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior impact weighing, demonstrating that immediate economic harm (1.2M jobs, $247B) outweighs negligible climate benefit given private jets' small emissions share. CON effectively argues banning eliminates innovation incentives for sustainable aviation fuels and electric aircraft, while PRO fails to address how their solution enables decarbonization. CON's comparative analysis of certainty vs. speculation proves decisive.",
+  "timestamp": 1767854001.305705,
+  "saved_at": "2026-01-07T22:33:21.306698"
+}

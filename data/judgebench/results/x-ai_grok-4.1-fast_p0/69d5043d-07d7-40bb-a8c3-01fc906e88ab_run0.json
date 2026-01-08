@@ -1,0 +1,30 @@
+{
+  "debate_id": "69d5043d-07d7-40bb-a8c3-01fc906e88ab",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with stronger clash refuting regulations as inadequate for irreversible biodiversity loss and superior weighing of permanent ecological harms over speculative mineral benefits.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with stronger clash refuting regulations as inadequate for irreversible biodiversity loss and superior weighing of permanent ecological harms over speculative mineral benefits.",
+  "timestamp": 1767858183.1282492,
+  "saved_at": "2026-01-07T23:43:03.128465"
+}

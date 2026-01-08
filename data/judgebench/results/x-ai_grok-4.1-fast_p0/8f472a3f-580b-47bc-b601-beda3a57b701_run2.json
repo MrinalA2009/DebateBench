@@ -1,0 +1,30 @@
+{
+  "debate_id": "8f472a3f-580b-47bc-b601-beda3a57b701",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with stronger evidence of harms (world wars, Brexit hate crimes, America First) that CON largely drops or minimally acknowledges, plus effective clash labeling CON benefits as exceptional or exclusionary. PRO superiorly weighs systemic destructiveness over CON's aspirational upsides.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with stronger evidence of harms (world wars, Brexit hate crimes, America First) that CON largely drops or minimally acknowledges, plus effective clash labeling CON benefits as exceptional or exclusionary. PRO superiorly weighs systemic destructiveness over CON's aspirational upsides.",
+  "timestamp": 1767858043.6735082,
+  "saved_at": "2026-01-07T23:40:43.673828"
+}

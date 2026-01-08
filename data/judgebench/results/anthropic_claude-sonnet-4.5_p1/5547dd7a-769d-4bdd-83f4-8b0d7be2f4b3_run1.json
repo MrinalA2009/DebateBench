@@ -1,0 +1,30 @@
+{
+  "debate_id": "5547dd7a-769d-4bdd-83f4-8b0d7be2f4b3",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n**Stage 1 - Argument Survival Analysis:**\n\nPRO's strongest arguments:\n- Addiction statistics (2M pathological, 4-6M problem gamblers)\n- Societal costs exceed revenue (tens of billions vs $41B)\n- Regressive taxation exploiting vulnerable populations\n\nCON's strongest arguments:\n- Personal freedom and responsible majority participation\n- $41B tax revenue supporting public services\n- Regulation as alternative to prohibition\n\n**Clash Analysis:**\n\nPRO effectively challenged CON's economic argument by introducing societal cost data that exceeds the revenue figure. CON never refuted or engaged with the \"tens of billions in societal costs\" claim, leaving PRO's net-loss argument standing.\n\nCON's personal freedom argument was weakened by PRO's addiction framing - that choice is compromised when addiction is present. CON responded but didn't adequately address how freedom applies when millions lack capacity for free choice due to addiction.\n\nCON's regulation argument was challenged by PRO citing UK as example where problems persist despite regulation. CON reasserted UK success but provided no specific evidence to counter PRO's claim.\n\n**Stage 2 - Comparative Evaluation:**\n\nPRO's surviving argument: Net societal harm (costs exceed benefits, regressive taxation, addiction compromises choice)\n\nCON's surviving argument: Personal freedom for responsible majority, economic benefits\n\nThe critical distinction: PRO provided comparative weighing (societal costs > revenue), while CON largely reasserted benefits without engaging the cost-benefit comparison. PRO's impact weighing on magnitude (tens of billions in costs vs $41B revenue) went largely uncontested.\n\n**Scoring Rationale:**\n\nArgument Quality: Both sides presented clear, structured arguments. PRO=4, CON=4\n\nEvidence: PRO cited specific statistics and cost comparisons. CON cited revenue figures but didn't engage cost data. PRO=4, CON=3\n\nClash: PRO directly refuted economic and freedom arguments with comparative data. CON reasserted positions but didn't engage cost-benefit analysis. PRO=4, CON=3\n\nWeighing: PRO explicitly compared costs to benefits, magnitude of harm. CON emphasized benefits but didn't comparatively weigh against costs. PRO=4, CON=2\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO won through superior impact weighing, introducing unrefuted evidence that societal costs exceed revenue benefits by tens of billions. CON failed to engage this cost-benefit comparison, instead reasserting economic benefits without comparative analysis. PRO's addiction framing effectively challenged the personal choice argument by demonstrating compromised decision-making capacity.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO won through superior impact weighing, introducing unrefuted evidence that societal costs exceed revenue benefits by tens of billions. CON failed to engage this cost-benefit comparison, instead reasserting economic benefits without comparative analysis. PRO's addiction framing effectively challenged the personal choice argument by demonstrating compromised decision-making capacity.",
+  "timestamp": 1767853905.874302,
+  "saved_at": "2026-01-07T22:31:45.874582"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "8f472a3f-580b-47bc-b601-beda3a57b701",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with stronger evidence of destructive impacts (world wars, Brexit, America First) that CON did not directly refute, paired with effective rebuttals to CON's unity claims, outweighing CON's thinner, more generic support and weaker weighing.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with stronger evidence of destructive impacts (world wars, Brexit, America First) that CON did not directly refute, paired with effective rebuttals to CON's unity claims, outweighing CON's thinner, more generic support and weaker weighing.",
+  "timestamp": 1767858010.708828,
+  "saved_at": "2026-01-07T23:40:10.709240"
+}

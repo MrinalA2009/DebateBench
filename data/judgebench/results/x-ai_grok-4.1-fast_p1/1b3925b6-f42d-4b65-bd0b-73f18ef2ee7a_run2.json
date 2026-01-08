@@ -1,0 +1,30 @@
+{
+  "debate_id": "1b3925b6-f42d-4b65-bd0b-73f18ef2ee7a",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins by directly refuting and flipping CON's developmental and inequality arguments with age-appropriate tools and universal literacy analogies, supported by stronger evidence like the 2014 study, outweighing CON's resource diversion claims.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins by directly refuting and flipping CON's developmental and inequality arguments with age-appropriate tools and universal literacy analogies, supported by stronger evidence like the 2014 study, outweighing CON's resource diversion claims.",
+  "timestamp": 1767858737.1808572,
+  "saved_at": "2026-01-07T23:52:17.181280"
+}

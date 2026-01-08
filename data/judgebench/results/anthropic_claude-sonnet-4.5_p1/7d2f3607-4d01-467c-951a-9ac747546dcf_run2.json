@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n## Stage 1 \u2014 Argument Survival Analysis\n\n**PRO's Main Arguments:**\n1. Environmental impact (14x more CO2 per passenger)\n2. Social equity (wealth gap symbolism)\n3. Resource misallocation (could fund public transit)\n\n**CON's Main Arguments:**\n1. Economic damage ($247B industry, 1.2M jobs)\n2. Environmental impact overstated (small fraction of emissions, innovation incentive)\n3. Social equity misguided (doesn't redistribute wealth)\n\n**Clash Assessment:**\n- PRO's environmental argument remains standing but is contested by CON's point about innovation incentives and small overall impact\n- CON's economic argument is partially addressed by PRO's green jobs claim but remains largely unrefuted with concrete counter-evidence\n- PRO's social equity argument is challenged but not eliminated\n- CON's innovation argument (SAFs, electric aircraft) is not directly refuted by PRO\n\n## Stage 2 \u2014 Comparative Evaluation\n\n**Strongest Remaining Arguments:**\n- **PRO:** Environmental impact (14x emissions per passenger) with urgency framing\n- **CON:** Economic impact (concrete figures: $247B, 1.2M jobs) and innovation incentive removal\n\n**Impact Weighing:**\n- CON provides specific, quantifiable economic impacts (immediate, certain)\n- PRO provides environmental rationale but CON effectively argues the ban's negligible overall climate impact\n- CON's innovation argument (that banning removes incentive for SAFs/electric aircraft) is a strong turn that PRO never addresses\n- PRO's resource reallocation argument remains speculative vs. CON's concrete economic data\n\n## Scoring Analysis\n\n**Argument Quality:**\n- PRO: Clear structure, coherent claims (4)\n- CON: Well-developed, addresses complexity (5)\n\n**Evidence & Grounding:**\n- PRO: Specific statistic (14x emissions) but limited concrete support elsewhere (3)\n- CON: Multiple specific figures ($247B, 1.2M jobs, 2.5% aviation emissions) (5)\n\n**Clash & Refutation:**\n- PRO: Engages CON's points but doesn't refute economic data or innovation argument (3)\n- CON: Directly addresses PRO's claims with counter-evidence and turns (4)\n\n**Impact Weighing:**\n- PRO: Some weighing on urgency but doesn't compare magnitudes effectively (3)\n- CON: Clear comparison of immediate economic harm vs. negligible climate benefit (4)\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior evidence grounding (specific economic figures vs. speculative green jobs) and an unrefuted innovation turn argument. While PRO establishes environmental harm, CON effectively demonstrates the ban's negligible climate impact relative to immediate economic damage and loss of decarbonization incentives. PRO never addresses how eliminating industry funding undermines sustainable aviation development.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior evidence grounding (specific economic figures vs. speculative green jobs) and an unrefuted innovation turn argument. While PRO establishes environmental harm, CON effectively demonstrates the ban's negligible climate impact relative to immediate economic damage and loss of decarbonization incentives. PRO never addresses how eliminating industry funding undermines sustainable aviation development.",
+  "timestamp": 1767851410.590799,
+  "saved_at": "2026-01-07T21:50:10.591030"
+}

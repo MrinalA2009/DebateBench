@@ -1,0 +1,30 @@
+{
+  "debate_id": "2f078be0-05f8-4463-91bd-7f492f35b749",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with superior evidence and grounding via specific studies (Nature Biotechnology, NAS) and the 2018 incident, which CON countered only with reinterpretations lacking support, making PRO's safety case more coherent overall.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with superior evidence and grounding via specific studies (Nature Biotechnology, NAS) and the 2018 incident, which CON countered only with reinterpretations lacking support, making PRO's safety case more coherent overall.",
+  "timestamp": 1767857980.830367,
+  "saved_at": "2026-01-07T23:39:40.830690"
+}

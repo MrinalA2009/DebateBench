@@ -1,0 +1,30 @@
+{
+  "debate_id": "483ad6a8-e83d-43f9-a0a1-2abbf09425de",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.9,\n  \"short_reason\": \"PRO wins with superior evidence (Pew study, COMPAS example) supporting transparency and bias claims, plus direct clash refuting CON's privacy and complexity args via privacy techniques and expert oversight, while CON relies on unsupported assertions.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.9,
+  "short_reason": "PRO wins with superior evidence (Pew study, COMPAS example) supporting transparency and bias claims, plus direct clash refuting CON's privacy and complexity args via privacy techniques and expert oversight, while CON relies on unsupported assertions.",
+  "timestamp": 1767857771.607032,
+  "saved_at": "2026-01-07T23:36:11.607274"
+}

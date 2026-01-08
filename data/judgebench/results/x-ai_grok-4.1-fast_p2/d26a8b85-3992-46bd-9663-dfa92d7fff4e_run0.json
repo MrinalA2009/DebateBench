@@ -1,0 +1,30 @@
+{
+  "debate_id": "d26a8b85-3992-46bd-9663-dfa92d7fff4e",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins through stronger evidence with specific examples like ISIS and systemic oppression, superior clash refuting misinterpretation claims, and clearer impact weighing prioritizing global violence over CON's conditional charity.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins through stronger evidence with specific examples like ISIS and systemic oppression, superior clash refuting misinterpretation claims, and clearer impact weighing prioritizing global violence over CON's conditional charity.",
+  "timestamp": 1767861369.698591,
+  "saved_at": "2026-01-08T00:36:09.698898"
+}

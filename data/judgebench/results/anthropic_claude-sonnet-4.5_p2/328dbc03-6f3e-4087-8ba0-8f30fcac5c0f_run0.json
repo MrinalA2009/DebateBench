@@ -1,0 +1,30 @@
+{
+  "debate_id": "328dbc03-6f3e-4087-8ba0-8f30fcac5c0f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear, structured arguments about health harms (obesity, sleep, vision) and cognitive/socio-emotional impacts. Arguments are logically coherent and well-organized. The analogy to existing laws (car seats, vaccinations) is internally consistent. Score: 4\n\nCON: Presents coherent arguments about parental autonomy and complexity of screen use. However, the distinction between \"immediate dangers\" and \"nuanced issues\" is somewhat underdeveloped. Arguments are clear but less tightly structured than PRO. Score: 3\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites specific sources (AAP recommendations, 2019 JAMA Pediatrics study, NIH research) with concrete details (1 hour limit for ages 2-5, performance on developmental tests). Evidence is well-integrated into arguments. Score: 5\n\nCON: References Joan Ganz Cooney Center study but provides less specific detail. Makes claims about educational benefits but with limited concrete support. More reliant on logical reasoning than empirical grounding. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's autonomy argument by comparing to existing laws. Addresses the \"not all screen time is equal\" point by clarifying the resolution allows for limits, not bans. Responds to the resentment claim by reframing legal limits as empowering. Score: 4\n\nCON: Engages with PRO's comparison to car seats/vaccinations but the rebuttal is somewhat weak (\"misleading\" without fully explaining why). Acknowledges PRO's points about educational content but doesn't fully resolve the tension. Less direct engagement with specific health harms cited. Score: 3\n\n**IMPACT WEIGHING**\n\nPRO: Explicitly weighs public health crisis against parental autonomy. Frames impacts in terms of \"entire generation\" and \"long-term health and cognitive well-being.\" Provides clear prioritization of child welfare over autonomy concerns. Score: 4\n\nCON: Attempts to weigh parental rights against health concerns but doesn't clearly explain why autonomy should outweigh the health harms PRO identifies. The weighing is more implicit than explicit. Score: 2\n\n**WINNER DETERMINATION**\n\nPRO wins on evidence (5 vs 3), clash (4 vs 3), and weighing (4 vs 2). While CON makes reasonable autonomy arguments, they fail to adequately address why parental autonomy should override the specific, evidence-backed health harms PRO presents. PRO's analogy to existing child safety laws effectively neutralizes the autonomy objection. CON's strongest point about educational screen time is addressed by PRO's clarification that limits don't mean bans. The debate hinges on whether the health crisis justifies intervention, and PRO provides stronger evidence and weighing on this central question.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence grounding and impact weighing. PRO effectively neutralizes CON's autonomy argument by analogizing to existing child safety laws, while CON fails to adequately address the specific health harms PRO documents. PRO's comparative weighing of public health crisis versus parental autonomy is clearer and more compelling than CON's implicit prioritization of rights.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence grounding and impact weighing. PRO effectively neutralizes CON's autonomy argument by analogizing to existing child safety laws, while CON fails to adequately address the specific health harms PRO documents. PRO's comparative weighing of public health crisis versus parental autonomy is clearer and more compelling than CON's implicit prioritization of rights.",
+  "timestamp": 1767854064.131188,
+  "saved_at": "2026-01-07T22:34:24.131469"
+}

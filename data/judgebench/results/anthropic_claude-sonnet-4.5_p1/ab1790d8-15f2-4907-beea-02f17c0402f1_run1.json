@@ -1,0 +1,30 @@
+{
+  "debate_id": "ab1790d8-15f2-4907-beea-02f17c0402f1",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior impact weighing and evidence integration. CON effectively argued deep-sea mining is necessary for renewable energy transition with specific IEA projections and ISA regulatory frameworks, while directly refuting PRO's recycling alternative as insufficient. PRO's environmental concerns, while valid, lacked comparative weighing against climate change impacts and failed to provide scalable alternatives. CON's framework of regulated mining versus outright prohibition proved more compelling than PRO's preservation argument.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior impact weighing and evidence integration. CON effectively argued deep-sea mining is necessary for renewable energy transition with specific IEA projections and ISA regulatory frameworks, while directly refuting PRO's recycling alternative as insufficient. PRO's environmental concerns, while valid, lacked comparative weighing against climate change impacts and failed to provide scalable alternatives. CON's framework of regulated mining versus outright prohibition proved more compelling than PRO's preservation argument.",
+  "timestamp": 1767852538.572584,
+  "saved_at": "2026-01-07T22:08:58.572676"
+}

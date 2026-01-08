@@ -1,0 +1,30 @@
+{
+  "debate_id": "1b3925b6-f42d-4b65-bd0b-73f18ef2ee7a",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins through superior clash and evidence, directly refuting CON's developmental, inequality, and universality claims with specific studies, tools like Scratch, and math/English analogies, while CON repeats assertions without strong counters.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 2
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins through superior clash and evidence, directly refuting CON's developmental, inequality, and universality claims with specific studies, tools like Scratch, and math/English analogies, while CON repeats assertions without strong counters.",
+  "timestamp": 1767856899.69484,
+  "saved_at": "2026-01-07T23:21:39.695143"
+}

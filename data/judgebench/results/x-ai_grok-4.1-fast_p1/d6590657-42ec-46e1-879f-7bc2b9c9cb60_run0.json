@@ -1,0 +1,30 @@
+{
+  "debate_id": "d6590657-42ec-46e1-879f-7bc2b9c9cb60",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash, turning PRO's Outer Space Treaty and ISS examples into evidence of stagnation, while comparatively weighing ownership's long-term survival and multi-planetary impacts as outweighing mitigated conflict risks.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash, turning PRO's Outer Space Treaty and ISS examples into evidence of stagnation, while comparatively weighing ownership's long-term survival and multi-planetary impacts as outweighing mitigated conflict risks.",
+  "timestamp": 1767860286.005585,
+  "saved_at": "2026-01-08T00:18:06.005757"
+}

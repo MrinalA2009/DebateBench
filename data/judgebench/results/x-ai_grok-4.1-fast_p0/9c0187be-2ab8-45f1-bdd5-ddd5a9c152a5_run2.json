@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c0187be-2ab8-45f1-bdd5-ddd5a9c152a5",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins through superior clash, reframing CON's sustainable tourism examples (Japan, Bhutan) as enabled by restrictions, while directly refuting economic benefits as short-term and dependency-creating versus cultural erosion.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 2
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins through superior clash, reframing CON's sustainable tourism examples (Japan, Bhutan) as enabled by restrictions, while directly refuting economic benefits as short-term and dependency-creating versus cultural erosion.",
+  "timestamp": 1767858114.736722,
+  "saved_at": "2026-01-07T23:41:54.737102"
+}

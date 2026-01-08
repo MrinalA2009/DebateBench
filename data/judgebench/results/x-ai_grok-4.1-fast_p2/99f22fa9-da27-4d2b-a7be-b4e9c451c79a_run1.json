@@ -1,0 +1,30 @@
+{
+  "debate_id": "99f22fa9-da27-4d2b-a7be-b4e9c451c79a",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins with superior evidence, citing JAMA study and Oregon/Switzerland data showing no coercion or trust erosion, which CON dismissed without counter-evidence. PRO's clash effectively refuted CON's key claims using real-world support.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins with superior evidence, citing JAMA study and Oregon/Switzerland data showing no coercion or trust erosion, which CON dismissed without counter-evidence. PRO's clash effectively refuted CON's key claims using real-world support.",
+  "timestamp": 1767861706.680088,
+  "saved_at": "2026-01-08T00:41:46.680432"
+}

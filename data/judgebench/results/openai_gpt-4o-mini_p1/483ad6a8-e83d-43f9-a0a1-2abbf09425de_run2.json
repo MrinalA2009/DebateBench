@@ -1,0 +1,30 @@
+{
+  "debate_id": "483ad6a8-e83d-43f9-a0a1-2abbf09425de",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively argued for the necessity of public audits, addressing privacy concerns and algorithm complexity, while CON's arguments were less coherent and failed to outweigh PRO's emphasis on accountability and transparency.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively argued for the necessity of public audits, addressing privacy concerns and algorithm complexity, while CON's arguments were less coherent and failed to outweigh PRO's emphasis on accountability and transparency.",
+  "timestamp": 1767863059.536682,
+  "saved_at": "2026-01-08T01:04:19.536940"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "69323fb1-fedf-4bc6-84fd-d8b0be02cb90",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with stronger evidence (ICAO projections, 1% cause half emissions study) surviving clash, proving equitable targeting and immediate emissions cuts outweigh CON's generic tech claims and equity concerns.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with stronger evidence (ICAO projections, 1% cause half emissions study) surviving clash, proving equitable targeting and immediate emissions cuts outweigh CON's generic tech claims and equity concerns.",
+  "timestamp": 1767859488.004019,
+  "saved_at": "2026-01-08T00:04:48.004186"
+}

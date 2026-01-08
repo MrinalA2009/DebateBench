@@ -1,0 +1,30 @@
+{
+  "debate_id": "aa217d64-ce24-4808-8186-b5d03c28155c",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively argued that victim involvement undermines fairness and objectivity in sentencing, emphasizing the risk of biased outcomes. Their rebuttals highlighted flaws in PRO's claims about structured programs, making a stronger case overall despite PRO's solid arguments for restorative justice.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively argued that victim involvement undermines fairness and objectivity in sentencing, emphasizing the risk of biased outcomes. Their rebuttals highlighted flaws in PRO's claims about structured programs, making a stronger case overall despite PRO's solid arguments for restorative justice.",
+  "timestamp": 1767862864.976334,
+  "saved_at": "2026-01-08T01:01:04.976593"
+}

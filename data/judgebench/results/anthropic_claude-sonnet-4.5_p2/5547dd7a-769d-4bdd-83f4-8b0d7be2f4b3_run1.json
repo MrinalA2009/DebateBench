@@ -1,0 +1,30 @@
+{
+  "debate_id": "5547dd7a-769d-4bdd-83f4-8b0d7be2f4b3",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear, structured arguments about addiction (2M pathological gamblers, 4-6M problem gamblers), financial ruin, and regressive taxation. Arguments are internally consistent and logically developed. Score: 4\n\nCON: Offers coherent counter-arguments about personal freedom, economic benefits ($41B tax revenue), and responsible regulation. Arguments are clear but somewhat less developed in establishing mechanisms. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites National Council on Problem Gambling statistics, provides specific numbers (2M pathological, 4-6M problem gamblers), references social costs in \"tens of billions,\" and mentions UK regulation failures. Well-integrated support. Score: 4\n\nCON: Cites American Gaming Association ($41B revenue figure), references UK as successful regulation example, mentions majority gamble responsibly. Evidence is present but less detailed than PRO's. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's personal choice argument (addiction compromises choice), challenges economic benefit claim (social costs exceed revenue), and refutes regulation alternative (UK still has problems). Strong, direct engagement. Score: 5\n\nCON: Responds to addiction concerns (majority gamble responsibly), addresses economic criticism (revenue supports services), and defends regulation. However, doesn't directly address PRO's specific cost-benefit calculation or the \"tens of billions\" in social costs claim. Score: 3\n\n**IMPACT WEIGHING**\n\nPRO: Explicitly compares $41B revenue to \"tens of billions\" in social costs, frames as net economic loss, emphasizes magnitude of harm to vulnerable populations, and argues human well-being outweighs corporate profits. Clear comparative weighing. Score: 5\n\nCON: Mentions economic benefits and personal freedom but doesn't directly compare magnitude of impacts. Doesn't engage with PRO's cost-benefit comparison or explain why freedom/revenue outweighs addiction harms quantitatively. Score: 2\n\n**WINNER DETERMINATION**\n\nPRO wins on clash (5 vs 3) and weighing (5 vs 2) decisively. These are critical categories in close debates. PRO's cost-benefit analysis (tens of billions in costs vs $41B revenue) was never effectively refuted by CON. While CON maintained argument quality, they failed to engage the comparative impact calculus that PRO established. PRO's argument that addiction compromises choice also went largely unrefuted beyond assertion that \"most gamble responsibly.\"\n\nThe debate hinges on whether regulation can address harms versus whether gambling is inherently exploitative. PRO won this clash by showing regulation fails (UK example) and by demonstrating net negative economic impact.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior clash and impact weighing. PRO's cost-benefit analysis showing tens of billions in social costs exceeding $41B revenue was never refuted. CON failed to engage this comparative calculus or effectively defend regulation against PRO's UK counterexample. PRO's argument that addiction compromises choice also went largely unaddressed beyond assertions about responsible gambling.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior clash and impact weighing. PRO's cost-benefit analysis showing tens of billions in social costs exceeding $41B revenue was never refuted. CON failed to engage this comparative calculus or effectively defend regulation against PRO's UK counterexample. PRO's argument that addiction compromises choice also went largely unaddressed beyond assertions about responsible gambling.",
+  "timestamp": 1767856706.0927129,
+  "saved_at": "2026-01-07T23:18:26.092966"
+}

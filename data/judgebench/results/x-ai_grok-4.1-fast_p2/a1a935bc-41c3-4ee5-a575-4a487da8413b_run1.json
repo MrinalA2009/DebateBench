@@ -1,0 +1,30 @@
+{
+  "debate_id": "a1a935bc-41c3-4ee5-a575-4a487da8413b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins via superior clash distinguishing unmanaged tourism from tourism itself and stronger impact weighing on economic paradoxes accelerating erosion and xenophobia risks over PRO's preservation examples.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins via superior clash distinguishing unmanaged tourism from tourism itself and stronger impact weighing on economic paradoxes accelerating erosion and xenophobia risks over PRO's preservation examples.",
+  "timestamp": 1767860454.9292958,
+  "saved_at": "2026-01-08T00:20:54.929436"
+}

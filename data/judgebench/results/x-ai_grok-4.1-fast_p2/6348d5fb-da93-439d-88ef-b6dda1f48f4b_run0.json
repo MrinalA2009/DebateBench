@@ -1,0 +1,30 @@
+{
+  "debate_id": "6348d5fb-da93-439d-88ef-b6dda1f48f4b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by superior clash distinguishing voting complexity from daily responsibilities and refuting international examples via US civic education gaps, while framing electoral integrity risks as outweighing PRO's engagement benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by superior clash distinguishing voting complexity from daily responsibilities and refuting international examples via US civic education gaps, while framing electoral integrity risks as outweighing PRO's engagement benefits.",
+  "timestamp": 1767861660.583254,
+  "saved_at": "2026-01-08T00:41:00.583485"
+}

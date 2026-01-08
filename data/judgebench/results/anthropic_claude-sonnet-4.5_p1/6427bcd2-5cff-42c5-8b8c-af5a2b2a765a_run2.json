@@ -1,0 +1,30 @@
+{
+  "debate_id": "6427bcd2-5cff-42c5-8b8c-af5a2b2a765a",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"CON wins through superior clash and weighing. While PRO established benefits of victim involvement, CON effectively challenged the core assumption that victims can provide objective input, arguing emotional investment leads to bias and revenge-seeking. CON's framework prioritizing systemic fairness over individual empowerment remained largely unrefuted. PRO's rehabilitation claim was directly contested with evidence about willingness to accept responsibility being the key factor, not punishment level. CON's consistency argument about arbitrary outcomes was not adequately answered by PRO's assertion that current systems also have bias.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "CON wins through superior clash and weighing. While PRO established benefits of victim involvement, CON effectively challenged the core assumption that victims can provide objective input, arguing emotional investment leads to bias and revenge-seeking. CON's framework prioritizing systemic fairness over individual empowerment remained largely unrefuted. PRO's rehabilitation claim was directly contested with evidence about willingness to accept responsibility being the key factor, not punishment level. CON's consistency argument about arbitrary outcomes was not adequately answered by PRO's assertion that current systems also have bias.",
+  "timestamp": 1767853632.987989,
+  "saved_at": "2026-01-07T22:27:12.988269"
+}

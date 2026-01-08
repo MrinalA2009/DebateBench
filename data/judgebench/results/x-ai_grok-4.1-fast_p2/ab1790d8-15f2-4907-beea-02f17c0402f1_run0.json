@@ -1,0 +1,30 @@
+{
+  "debate_id": "ab1790d8-15f2-4907-beea-02f17c0402f1",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins with superior clash and weighing, directly refuting PRO's recycling alternatives as insufficient per cited reports while prioritizing decarbonization impacts over ecosystem risks.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins with superior clash and weighing, directly refuting PRO's recycling alternatives as insufficient per cited reports while prioritizing decarbonization impacts over ecosystem risks.",
+  "timestamp": 1767861188.8781419,
+  "saved_at": "2026-01-08T00:33:08.878465"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "483ad6a8-e83d-43f9-a0a1-2abbf09425de",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.72,\n  \"short_reason\": \"PRO won through superior evidence (Pew Research, ProPublica COMPAS study) and more effective clash. PRO directly refuted CON's privacy concerns with specific technical solutions (differential privacy, synthetic data), while CON largely repeated assertions without substantive evidence. PRO's weighing emphasized systemic democratic harms and accountability mechanisms, which CON failed to adequately counter. CON's alternative of voluntary best practices lacked enforcement mechanisms, which PRO effectively exploited.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.72,
+  "short_reason": "PRO won through superior evidence (Pew Research, ProPublica COMPAS study) and more effective clash. PRO directly refuted CON's privacy concerns with specific technical solutions (differential privacy, synthetic data), while CON largely repeated assertions without substantive evidence. PRO's weighing emphasized systemic democratic harms and accountability mechanisms, which CON failed to adequately counter. CON's alternative of voluntary best practices lacked enforcement mechanisms, which PRO effectively exploited.",
+  "timestamp": 1767855528.22892,
+  "saved_at": "2026-01-07T22:58:48.229205"
+}

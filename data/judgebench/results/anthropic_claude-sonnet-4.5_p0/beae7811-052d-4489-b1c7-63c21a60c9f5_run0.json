@@ -1,0 +1,30 @@
+{
+  "debate_id": "beae7811-052d-4489-b1c7-63c21a60c9f5",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents three clear contentions (societal impact, economic consequences, ethical implications) with logical structure. Arguments are coherent and well-organized. Score: 4\n- CON: Offers three distinct contentions (individual freedom, public revenue, black market concerns) that are clearly articulated and internally consistent. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites National Council on Problem Gambling (2M pathological gamblers, 4-6M problem gamblers), University of Massachusetts study ($3 social cost per $1 revenue). Specific statistics strengthen claims. Score: 4\n- CON: References North American Association of State and Provincial Lotteries ($29B in 2022), critiques opponent's study methodology. Less specific evidence overall. Score: 3\n\n**Clash & Refutation:**\n- PRO: Directly addresses freedom argument by highlighting addiction reality, challenges economic benefits with cost analysis, refutes black market argument. Strong engagement. Score: 4\n- CON: Responds to addiction concerns with \"nanny state\" framing, challenges study methodology, addresses prohibition concerns. Good engagement but less specific refutation of PRO's statistics. Score: 3\n\n**Impact Weighing:**\n- PRO: Consistently emphasizes magnitude (2M pathological gamblers, $3 cost ratio), connects to broader societal harms (bankruptcy, domestic violence, suicide). Clear comparative weighing in summary. Score: 4\n- CON: Weighs individual liberty against paternalism, mentions budget shortfalls and job losses, but less specific quantification of impacts. Score: 3\n\n## Second Pass Verification\n\nReviewing the debate again:\n- PRO maintains consistent statistical grounding throughout\n- CON's strongest point is the liberty argument, but lacks comparable empirical support\n- PRO's $3-to-$1 cost ratio is challenged but not effectively refuted with counter-evidence\n- CON's black market argument is theoretical without supporting data\n- PRO more effectively weighs concrete harms against abstract benefits\n\n## Final Judgment\n\nPRO wins through superior evidence grounding and impact weighing. While CON presents philosophically coherent arguments about individual liberty, PRO's specific statistics (2M pathological gamblers, $3 social cost ratio) and concrete harms (bankruptcy, domestic violence) outweigh CON's more abstract claims. CON's critique of the Massachusetts study lacks counter-evidence, and the $29B revenue figure doesn't address PRO's net cost argument. PRO's consistent quantification of harms and effective refutation of economic benefits gives them the edge.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior evidence and impact weighing. Specific statistics on addiction rates and the 3-to-1 social cost ratio effectively counter CON's revenue arguments. While CON presents coherent liberty-based arguments, they lack comparable empirical grounding. PRO's quantification of concrete harms (bankruptcy, domestic violence) outweighs CON's more abstract claims about individual freedom and theoretical black market concerns.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior evidence and impact weighing. Specific statistics on addiction rates and the 3-to-1 social cost ratio effectively counter CON's revenue arguments. While CON presents coherent liberty-based arguments, they lack comparable empirical grounding. PRO's quantification of concrete harms (bankruptcy, domestic violence) outweighs CON's more abstract claims about individual freedom and theoretical black market concerns.",
+  "timestamp": 1767849380.8576572,
+  "saved_at": "2026-01-07T21:16:20.858002"
+}

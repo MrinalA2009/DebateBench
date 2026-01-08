@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c0187be-2ab8-45f1-bdd5-ddd5a9c152a5",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents a clear thesis about sovereign rights and cultural preservation. Arguments are coherent about commodification and social disruption. Uses specific examples (Maasai, Venice). Score: 4\n- CON: Presents counter-arguments about economic benefits and sustainable tourism alternatives. Arguments are logical but sometimes conflate \"right to restrict\" with \"total bans.\" Score: 3\n\n**Evidence & Grounding:**\n- PRO: Uses concrete examples (Maasai ceremonies, Venice overtourism) with specific mechanisms of harm (staged authenticity, pricing out residents). Score: 4\n- CON: References Japan and Bhutan as counter-examples but provides less specific detail about mechanisms. Economic claims are somewhat generic. Score: 3\n\n**Clash & Refutation:**\n- PRO: Directly engages CON's sustainable tourism argument by noting that restrictions enable sustainable practices. Addresses the discrimination concern as a \"red herring.\" Effectively turns CON's examples (Japan/Bhutan) to support their case. Score: 4\n- CON: Engages with PRO's examples but doesn't fully address the sovereignty argument. The paternalism concern is raised but not deeply developed. Score: 3\n\n**Impact Weighing:**\n- PRO: Clearly weighs cultural preservation as fundamental, frames economic benefits as short-term vs. long-term cultural costs. Establishes clear priority between cultural integrity and economic gain. Score: 4\n- CON: Discusses economic benefits and human rights concerns but doesn't clearly weigh why these outweigh cultural preservation. Less comparative analysis. Score: 2\n\n## Second Pass Verification\n\nReviewing the debate again:\n\nPRO's key strength: Successfully reframes the debate by arguing that \"right to restrict\" doesn't mean total bans but enables the sustainable practices CON advocates. This is a crucial turn that CON never fully addresses.\n\nCON's weakness: Conflates having the \"right\" to restrict with mandatory restrictions. Never adequately responds to PRO's point that Japan and Bhutan use restrictions as part of their sustainable tourism model.\n\nPRO dropped argument check: None significant - addresses economics, discrimination, and sustainable tourism.\n\nCON dropped argument check: Doesn't adequately respond to the sovereignty framing or the turn on Japan/Bhutan examples.\n\nImpact comparison: PRO more clearly establishes why cultural preservation matters more than economic benefits (irreversibility, authenticity, community meaning). CON's economic argument lacks comparative weighing.\n\n## Final Judgment\n\nPRO wins through superior clash and weighing. The critical moment was PRO's rebuttal showing that CON's own examples (Japan, Bhutan) support the resolution by demonstrating that restrictions enable sustainable tourism. CON never recovered from this turn and failed to clearly weigh why economic benefits or anti-discrimination concerns outweigh cultural preservation rights.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins by effectively turning CON's sustainable tourism examples (Japan, Bhutan) to demonstrate that restrictions enable cultural protection. PRO provided clearer impact weighing between cultural preservation and economic benefits, while CON failed to adequately respond to the sovereignty framework and never established why their impacts outweigh cultural erosion. PRO's reframing of 'right to restrict' as enabling sustainable practices was decisive.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins by effectively turning CON's sustainable tourism examples (Japan, Bhutan) to demonstrate that restrictions enable cultural protection. PRO provided clearer impact weighing between cultural preservation and economic benefits, while CON failed to adequately respond to the sovereignty framework and never established why their impacts outweigh cultural erosion. PRO's reframing of 'right to restrict' as enabling sustainable practices was decisive.",
+  "timestamp": 1767850408.799957,
+  "saved_at": "2026-01-07T21:33:28.802088"
+}

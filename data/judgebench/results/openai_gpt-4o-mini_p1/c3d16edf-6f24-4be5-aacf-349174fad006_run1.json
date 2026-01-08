@@ -1,0 +1,30 @@
+{
+  "debate_id": "c3d16edf-6f24-4be5-aacf-349174fad006",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON effectively argued that limiting diplomatic immunity would destabilize international relations and lead to retaliation, while PRO's arguments lacked sufficient grounding and did not adequately address the risks posed by their proposal.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON effectively argued that limiting diplomatic immunity would destabilize international relations and lead to retaliation, while PRO's arguments lacked sufficient grounding and did not adequately address the risks posed by their proposal.",
+  "timestamp": 1767863274.892715,
+  "saved_at": "2026-01-08T01:07:54.892978"
+}

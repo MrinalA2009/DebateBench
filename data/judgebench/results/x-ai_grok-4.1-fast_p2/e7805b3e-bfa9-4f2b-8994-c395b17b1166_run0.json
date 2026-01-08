@@ -1,0 +1,30 @@
+{
+  "debate_id": "e7805b3e-bfa9-4f2b-8994-c395b17b1166",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins with superior evidence citing specific studies on impulse control deficits until mid-20s and stronger clash refuting PRO's maturity analogies and country examples as insufficient for informed voting.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins with superior evidence citing specific studies on impulse control deficits until mid-20s and stronger clash refuting PRO's maturity analogies and country examples as insufficient for informed voting.",
+  "timestamp": 1767861828.7182689,
+  "saved_at": "2026-01-08T00:43:48.718432"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c904e3b-464b-4d06-9c09-1d40c66da79f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON won through superior comparative weighing and clash engagement. While PRO identified harms, CON effectively argued these were fringe manifestations versus widespread benefits. CON's framework distinguishing extremism from core religious practice and their comparative analysis of scale (billions benefiting versus isolated extremism) provided clearer impact prioritization. PRO failed to adequately weigh why harms outweigh benefits quantitatively or qualitatively, relying primarily on assertion that harm exists rather than comparative magnitude analysis.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON won through superior comparative weighing and clash engagement. While PRO identified harms, CON effectively argued these were fringe manifestations versus widespread benefits. CON's framework distinguishing extremism from core religious practice and their comparative analysis of scale (billions benefiting versus isolated extremism) provided clearer impact prioritization. PRO failed to adequately weigh why harms outweigh benefits quantitatively or qualitatively, relying primarily on assertion that harm exists rather than comparative magnitude analysis.",
+  "timestamp": 1767856194.145013,
+  "saved_at": "2026-01-07T23:09:54.145297"
+}

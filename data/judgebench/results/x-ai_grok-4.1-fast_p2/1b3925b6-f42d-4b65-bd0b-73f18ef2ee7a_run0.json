@@ -1,0 +1,30 @@
+{
+  "debate_id": "1b3925b6-f42d-4b65-bd0b-73f18ef2ee7a",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins with superior evidence (specific 2014 study, WEF) and stronger clash, directly refuting CON's developmental and inequality args via age-appropriate tools and access-leveling, while CON largely reiterates without fully addressing PRO's counters.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins with superior evidence (specific 2014 study, WEF) and stronger clash, directly refuting CON's developmental and inequality args via age-appropriate tools and access-leveling, while CON largely reiterates without fully addressing PRO's counters.",
+  "timestamp": 1767860478.874888,
+  "saved_at": "2026-01-08T00:21:18.875109"
+}

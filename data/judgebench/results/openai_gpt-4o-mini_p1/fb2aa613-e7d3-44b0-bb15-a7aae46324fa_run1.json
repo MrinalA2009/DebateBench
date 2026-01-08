@@ -1,0 +1,30 @@
+{
+  "debate_id": "fb2aa613-e7d3-44b0-bb15-a7aae46324fa",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the necessity of in-person examinations and the importance of personal connections in healthcare, while PRO's arguments about telemedicine's benefits were less impactful in comparison. CON's evidence and rebuttals were stronger and more coherent, leading to a clearer overall argument.\" \n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the necessity of in-person examinations and the importance of personal connections in healthcare, while PRO's arguments about telemedicine's benefits were less impactful in comparison. CON's evidence and rebuttals were stronger and more coherent, leading to a clearer overall argument.",
+  "timestamp": 1767863009.825753,
+  "saved_at": "2026-01-08T01:03:29.826003"
+}

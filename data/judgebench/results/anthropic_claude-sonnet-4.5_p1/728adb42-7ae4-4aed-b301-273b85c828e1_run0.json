@@ -1,0 +1,30 @@
+{
+  "debate_id": "728adb42-7ae4-4aed-b301-273b85c828e1",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior clash and weighing. CON effectively distinguished between voluntary well-resourced programs (PRO's evidence base) and mandatory underfunded systems, directly refuting PRO's core mechanism. PRO failed to adequately respond to the feasibility critique regarding 350+ languages and teacher shortages, instead offering surface-level solutions. CON's impact weighing emphasized the difference between idealism and practical implementation, which PRO never effectively countered.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 2,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior clash and weighing. CON effectively distinguished between voluntary well-resourced programs (PRO's evidence base) and mandatory underfunded systems, directly refuting PRO's core mechanism. PRO failed to adequately respond to the feasibility critique regarding 350+ languages and teacher shortages, instead offering surface-level solutions. CON's impact weighing emphasized the difference between idealism and practical implementation, which PRO never effectively countered.",
+  "timestamp": 1767851683.817863,
+  "saved_at": "2026-01-07T21:54:43.818174"
+}

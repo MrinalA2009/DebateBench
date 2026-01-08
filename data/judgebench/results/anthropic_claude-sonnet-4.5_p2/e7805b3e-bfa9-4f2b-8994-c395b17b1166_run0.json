@@ -1,0 +1,30 @@
+{
+  "debate_id": "e7805b3e-bfa9-4f2b-8994-c395b17b1166",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear, structured arguments about cognitive maturity, existing responsibilities of 16-year-olds, civic education, and international examples. Arguments are logically coherent and well-organized. Score: 4\n\nCON: Also presents clear arguments about cognitive development, concerns about informed decision-making, and electoral integrity. Arguments are logical and well-structured. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: References National Center for Education Statistics study, mentions citizenship/government classes, cites Scotland and Austria as examples. Provides specific mechanisms (civic education, existing responsibilities). Score: 4\n\nCON: Cites \"Developmental Psychology\" journal study, references research on cognitive maturity and mid-20s brain development, discusses Austria and Scotland data. Provides scientific grounding for claims. Score: 4\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's cognitive development argument by pointing out 16-year-olds already make significant decisions. Addresses the Austria/Scotland turnout claim by distinguishing between overall turnout and youth engagement. Responds to populist rhetoric concern by noting it applies to all ages. Score: 4\n\nCON: Directly refutes PRO's maturity argument by distinguishing between life decisions and voting decisions. Challenges the civic education claim by arguing knowledge doesn't guarantee informed voting. Addresses the international examples by emphasizing low overall youth turnout. Score: 4\n\n**IMPACT WEIGHING**\n\nPRO: In summary, explicitly states \"benefits outweigh the potential risks.\" Emphasizes direct impact on youth lives (education policy, climate change). Frames issue as inclusivity and participatory democracy. However, doesn't deeply compare magnitude/probability of impacts. Score: 3\n\nCON: In summary, explicitly states \"risks far outweigh the potential benefits.\" Emphasizes electoral integrity and informed democracy as paramount concerns. Prioritizes \"robust and informed\" democracy over inclusivity. Provides clearer comparative weighing of why their impacts (electoral integrity, informed decision-making) matter more than PRO's (youth engagement). Score: 4\n\n**OVERALL ASSESSMENT**\n\nThis is a very close debate. Both sides presented quality arguments with reasonable evidence and engaged effectively. The key differentiator is in the weighing phase. CON more clearly articulated why their impacts (electoral integrity, cognitive maturity concerns) should be prioritized over PRO's impacts (youth engagement, inclusivity). CON's framing of \"informed democracy\" as a prerequisite for legitimate electoral outcomes provides a stronger comparative weighing mechanism than PRO's assertion that benefits outweigh risks without detailed comparison.\n\nPRO's strongest moment was the rebuttal pointing out that concerns about populist rhetoric apply to all ages, but this wasn't fully developed into a weighing argument. CON maintained consistent focus on why cognitive development concerns should outweigh engagement benefits.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.55,\n  \"short_reason\": \"CON wins in a very close debate. Both sides presented strong arguments with comparable evidence and clash. The decisive factor was CON's superior impact weighing, clearly prioritizing electoral integrity and informed decision-making over youth engagement. CON articulated why cognitive maturity concerns should outweigh inclusivity benefits, while PRO's weighing remained more assertive than comparative.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.55,
+  "short_reason": "CON wins in a very close debate. Both sides presented strong arguments with comparable evidence and clash. The decisive factor was CON's superior impact weighing, clearly prioritizing electoral integrity and informed decision-making over youth engagement. CON articulated why cognitive maturity concerns should outweigh inclusivity benefits, while PRO's weighing remained more assertive than comparative.",
+  "timestamp": 1767856271.310246,
+  "saved_at": "2026-01-07T23:11:11.310485"
+}

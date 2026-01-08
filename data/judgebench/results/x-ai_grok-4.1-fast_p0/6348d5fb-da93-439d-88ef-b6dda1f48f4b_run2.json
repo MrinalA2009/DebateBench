@@ -1,0 +1,30 @@
+{
+  "debate_id": "6348d5fb-da93-439d-88ef-b6dda1f48f4b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and refutation, directly distinguishing 16-year-olds' life decisions from voting's complexity and exposing flaws in PRO's international examples due to U.S. civic education gaps, which PRO inadequately addressed.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash and refutation, directly distinguishing 16-year-olds' life decisions from voting's complexity and exposing flaws in PRO's international examples due to U.S. civic education gaps, which PRO inadequately addressed.",
+  "timestamp": 1767858147.623461,
+  "saved_at": "2026-01-07T23:42:27.623810"
+}

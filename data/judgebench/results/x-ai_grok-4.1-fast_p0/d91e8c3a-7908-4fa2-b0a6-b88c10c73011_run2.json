@@ -1,0 +1,30 @@
+{
+  "debate_id": "d91e8c3a-7908-4fa2-b0a6-b88c10c73011",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by superior clash refuting PRO's routine visit claims with evidence on physical exam necessity (75% diagnoses) and clearer weighing of diagnostic risks outweighing convenience benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by superior clash refuting PRO's routine visit claims with evidence on physical exam necessity (75% diagnoses) and clearer weighing of diagnostic risks outweighing convenience benefits.",
+  "timestamp": 1767857861.295567,
+  "saved_at": "2026-01-07T23:37:41.295997"
+}

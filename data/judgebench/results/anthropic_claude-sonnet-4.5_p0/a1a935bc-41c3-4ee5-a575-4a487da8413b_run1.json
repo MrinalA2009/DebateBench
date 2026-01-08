@@ -1,0 +1,30 @@
+{
+  "debate_id": "a1a935bc-41c3-4ee5-a575-4a487da8413b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "I will evaluate this debate through multiple passes to ensure consistency and accuracy.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents clear arguments about cultural preservation and sovereignty, uses concrete examples (Bali, Bhutan). Arguments are coherent but somewhat repetitive. Score: 4\n- CON: Offers three distinct contentions (cultural exchange, economic harm, dynamic culture). Well-structured and logically developed. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Uses Bali and Bhutan as examples, but relies heavily on these two cases without deep mechanistic explanation. Score: 3\n- CON: References similar examples but provides more mechanistic reasoning about how tourism restrictions harm economies and cultural evolution. Score: 4\n\n**Clash & Refutation:**\n- PRO: Engages with CON's economic argument and cultural exchange point, but doesn't fully address the \"dynamic culture\" argument or the distinction between unmanaged vs. restricted tourism. Score: 3\n- CON: Directly addresses PRO's examples, distinguishes between unmanaged tourism and tourism itself, challenges the \"high-value, low-impact\" model's universality. Score: 4\n\n**Impact Weighing:**\n- PRO: Focuses on cultural preservation as paramount but doesn't comparatively weigh against economic harms or isolation effects. Score: 2\n- CON: Explicitly weighs economic lifelines, cultural exchange benefits, and addresses timeframe (immediate economic needs vs. abstract preservation). Score: 4\n\n## Second Pass Verification\n\nReviewing the debate again:\n\nPRO's core weakness is failing to address CON's central distinction: the difference between restricting tourism entirely versus regulating it. CON repeatedly emphasizes they advocate for \"responsible, regulated tourism\" not unrestricted tourism, which PRO never directly refutes.\n\nCON effectively turns PRO's cultural preservation argument by showing restrictions can paradoxically harm culture through economic pressure and stagnation.\n\nPRO concedes difficulty of regulation (\"challenging and often ineffective\") but doesn't explain why restriction is more feasible than regulation.\n\nThe scores remain stable across both passes.\n\n## Final Decision\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior clash and weighing. CON effectively distinguished between unmanaged tourism and their advocacy for regulated tourism, which PRO never adequately refuted. CON's comparative weighing of economic lifelines, cultural exchange benefits, and dynamic cultural evolution outweighed PRO's preservation arguments. PRO's failure to engage with the regulation versus restriction distinction and weak impact comparison proved decisive.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior clash and weighing. CON effectively distinguished between unmanaged tourism and their advocacy for regulated tourism, which PRO never adequately refuted. CON's comparative weighing of economic lifelines, cultural exchange benefits, and dynamic cultural evolution outweighed PRO's preservation arguments. PRO's failure to engage with the regulation versus restriction distinction and weak impact comparison proved decisive.",
+  "timestamp": 1767848332.3419771,
+  "saved_at": "2026-01-07T20:58:52.342211"
+}

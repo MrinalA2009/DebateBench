@@ -1,0 +1,30 @@
+{
+  "debate_id": "9824eb35-a476-45a7-b197-ca68d0347d2f",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively demonstrated that decriminalization enables access to health services, supported by evidence from Portugal, while CON's arguments about increased drug use lacked strong evidence and failed to address the benefits of decriminalization adequately.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively demonstrated that decriminalization enables access to health services, supported by evidence from Portugal, while CON's arguments about increased drug use lacked strong evidence and failed to address the benefits of decriminalization adequately.",
+  "timestamp": 1767862827.623316,
+  "saved_at": "2026-01-08T01:00:27.623565"
+}

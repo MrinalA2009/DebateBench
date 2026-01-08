@@ -1,0 +1,30 @@
+{
+  "debate_id": "69d5043d-07d7-40bb-a8c3-01fc906e88ab",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior impact weighing, highlighting irreversible biodiversity loss with millennial recovery timescales outweighing CON's speculative benefits and regulations. PRO's strongest argument on ecosystem fragility survives unrefuted.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior impact weighing, highlighting irreversible biodiversity loss with millennial recovery timescales outweighing CON's speculative benefits and regulations. PRO's strongest argument on ecosystem fragility survives unrefuted.",
+  "timestamp": 1767859976.689932,
+  "saved_at": "2026-01-08T00:12:56.690084"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "4fa1b0ac-2e13-4d38-8169-000d54c0a509",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON survives with stronger adjusted gap evidence (Glassdoor 4.9%) and mandate harms (job losses, stagnation), outweighing PRO's remaining disparity claims due to superior weighing of efficacy risks versus unrefuted economic downsides.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON survives with stronger adjusted gap evidence (Glassdoor 4.9%) and mandate harms (job losses, stagnation), outweighing PRO's remaining disparity claims due to superior weighing of efficacy risks versus unrefuted economic downsides.",
+  "timestamp": 1767859423.730029,
+  "saved_at": "2026-01-08T00:03:43.730338"
+}

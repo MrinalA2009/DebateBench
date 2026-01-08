@@ -1,0 +1,30 @@
+{
+  "debate_id": "2f078be0-05f8-4463-91bd-7f492f35b749",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins with superior evidence quality, citing specific studies (Nature Biotechnology, National Academies) and the 2018 incident, while CON relies on generic claims about community practices without comparable support. PRO's direct clash on safety outweighs CON's reframing.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins with superior evidence quality, citing specific studies (Nature Biotechnology, National Academies) and the 2018 incident, while CON relies on generic claims about community practices without comparable support. PRO's direct clash on safety outweighs CON's reframing.",
+  "timestamp": 1767861516.667565,
+  "saved_at": "2026-01-08T00:38:36.667896"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "99cd748d-9396-488b-a016-eeee791e386b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.6,\n  \"short_reason\": \"PRO wins with stronger evidence grounding via Bostrom reference and tech examples, providing coherent offense that CON's repetitive speculation critiques fail to outweigh despite solid clash.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 2
+    }
+  },
+  "confidence": 0.6,
+  "short_reason": "PRO wins with stronger evidence grounding via Bostrom reference and tech examples, providing coherent offense that CON's repetitive speculation critiques fail to outweigh despite solid clash.",
+  "timestamp": 1767857410.201578,
+  "saved_at": "2026-01-07T23:30:10.201750"
+}

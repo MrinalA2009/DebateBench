@@ -1,0 +1,30 @@
+{
+  "debate_id": "ddb94ea5-a78d-4249-af47-317911259ddd",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "I will evaluate this debate systematically using the required framework.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Core Arguments:**\n1. Decriminalization reduces harm (Portuguese model: decreased overdose deaths, HIV infections)\n2. Shifts resources from criminal justice to treatment\n3. Reduces stigma, encourages help-seeking\n4. Evidence-based harm reduction programs are effective\n\n**CON's Core Arguments:**\n1. Decriminalization increases drug use/addiction without adequate infrastructure\n2. Portugal's success requires robust support systems not easily replicated\n3. Oregon's Measure 110 shows negative outcomes (increased overdoses, public drug use)\n4. Removes legal deterrents, emboldens traffickers, increases crime\n\n**Clash Analysis:**\n- CON effectively challenges PRO's Portuguese model by distinguishing between decriminalization with infrastructure vs. without\n- PRO fails to provide a concrete implementation plan or address infrastructure concerns\n- CON introduces Oregon as counter-evidence; PRO dismisses it but doesn't refute the specific outcomes\n- PRO's \"correlation vs. causation\" argument on crime is asserted but not developed with evidence\n- CON's infrastructure distinction remains largely unrefuted throughout\n\n## Stage 2: Comparative Evaluation\n\n**Strongest Remaining Arguments:**\n- PRO: Portuguese model shows health benefits (but weakened by infrastructure critique)\n- CON: Infrastructure requirement + Oregon counter-example demonstrate implementation risks\n\nCON's argument about infrastructure requirements is more decisive because:\n1. PRO never provides a plan for replication\n2. Oregon evidence directly contradicts PRO's empirical claims\n3. The distinction between \"decriminalization with support\" vs. \"without\" is never adequately addressed by PRO\n\n## Scoring\n\n**Argument Quality:**\n- PRO: 3 (Clear initial framing but fails to address infrastructure distinction)\n- CON: 4 (Consistent focus on implementation requirements and real-world consequences)\n\n**Evidence & Grounding:**\n- PRO: 3 (Portugal cited but mechanism not fully explained; Oregon dismissed without refutation)\n- CON: 4 (Portugal contextualized, Oregon introduced with specific outcomes)\n\n**Clash & Refutation:**\n- PRO: 2 (Dismisses Oregon, doesn't address infrastructure critique, uses straw man accusation)\n- CON: 4 (Directly engages Portuguese model, introduces counter-evidence, maintains focus on unaddressed infrastructure gap)\n\n**Impact Weighing:**\n- PRO: 3 (Mentions benefits but doesn't comparatively weigh against CON's risks)\n- CON: 4 (Weighs public safety risks, overdose deaths, crime against benefits; emphasizes implementation feasibility)\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins by effectively distinguishing Portugal's infrastructure-supported model from blanket decriminalization, introducing Oregon as unrefuted counter-evidence, and exploiting PRO's failure to provide an implementation plan. PRO's Portuguese model is weakened by the infrastructure critique that remains unaddressed throughout the debate. CON's comparative weighing of implementation risks against theoretical benefits proves more decisive.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 2,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins by effectively distinguishing Portugal's infrastructure-supported model from blanket decriminalization, introducing Oregon as unrefuted counter-evidence, and exploiting PRO's failure to provide an implementation plan. PRO's Portuguese model is weakened by the infrastructure critique that remains unaddressed throughout the debate. CON's comparative weighing of implementation risks against theoretical benefits proves more decisive.",
+  "timestamp": 1767852200.984559,
+  "saved_at": "2026-01-07T22:03:20.985220"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "03ce0a6d-2850-4fd3-aec5-de96f737f6e3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 1\n    }\n  },\n  \"confidence\": 0.95,\n  \"short_reason\": \"PRO wins as CON's rebuttal and summary abandon their constructive case by conceding PRO's arguments on conflict, inequality, and stewardship flaws, while PRO directly refutes CON's claims on innovation and cooperation with superior historical analogies and impact weighing.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 1
+    }
+  },
+  "confidence": 0.95,
+  "short_reason": "PRO wins as CON's rebuttal and summary abandon their constructive case by conceding PRO's arguments on conflict, inequality, and stewardship flaws, while PRO directly refutes CON's claims on innovation and cooperation with superior historical analogies and impact weighing.",
+  "timestamp": 1767860515.056748,
+  "saved_at": "2026-01-08T00:21:55.056946"
+}

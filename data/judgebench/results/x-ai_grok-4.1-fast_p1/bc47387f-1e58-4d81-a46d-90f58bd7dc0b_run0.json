@@ -1,0 +1,30 @@
+{
+  "debate_id": "bc47387f-1e58-4d81-a46d-90f58bd7dc0b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins as autonomy and intractable suffering arguments, supported by AMA and Angell citations, survive clash better than CON's slippery slope, which PRO effectively refutes as non-inevitable via specific safeguards; individual rights outweigh generalized risks.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins as autonomy and intractable suffering arguments, supported by AMA and Angell citations, survive clash better than CON's slippery slope, which PRO effectively refutes as non-inevitable via specific safeguards; individual rights outweigh generalized risks.",
+  "timestamp": 1767859693.024735,
+  "saved_at": "2026-01-08T00:08:13.026192"
+}

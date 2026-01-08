@@ -1,0 +1,30 @@
+{
+  "debate_id": "6427bcd2-5cff-42c5-8b8c-af5a2b2a765a",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively argued for victim involvement by emphasizing empowerment and rehabilitation, while CON's concerns about bias and fairness were less compelling and lacked strong evidence.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively argued for victim involvement by emphasizing empowerment and rehabilitation, while CON's concerns about bias and fairness were less compelling and lacked strong evidence.",
+  "timestamp": 1767862610.1560829,
+  "saved_at": "2026-01-08T00:56:50.156323"
+}

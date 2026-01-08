@@ -1,0 +1,30 @@
+{
+  "debate_id": "8b6103d0-c3c9-442a-9c12-bedf8b61b741",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash refuting PRO's Eugene example as integrating rather than replacing police, and clearer weighing of immediate safety impacts from police presence outweighing reallocation risks, as shown in Minneapolis.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash refuting PRO's Eugene example as integrating rather than replacing police, and clearer weighing of immediate safety impacts from police presence outweighing reallocation risks, as shown in Minneapolis.",
+  "timestamp": 1767861619.15736,
+  "saved_at": "2026-01-08T00:40:19.157715"
+}

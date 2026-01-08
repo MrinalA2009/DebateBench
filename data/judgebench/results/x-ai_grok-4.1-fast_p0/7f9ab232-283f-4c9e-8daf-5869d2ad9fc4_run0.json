@@ -1,0 +1,30 @@
+{
+  "debate_id": "7f9ab232-283f-4c9e-8daf-5869d2ad9fc4",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 1,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior clash refuting PRO's tech, fine-tuning, and Fermi args with alternatives like multiverse and space vastness, plus stronger evidence grounding and burden emphasis.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 1,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior clash refuting PRO's tech, fine-tuning, and Fermi args with alternatives like multiverse and space vastness, plus stronger evidence grounding and burden emphasis.",
+  "timestamp": 1767857114.690798,
+  "saved_at": "2026-01-07T23:25:14.691533"
+}

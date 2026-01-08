@@ -1,0 +1,30 @@
+{
+  "debate_id": "6348d5fb-da93-439d-88ef-b6dda1f48f4b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash distinguishing everyday responsibilities from voting complexity and 'cart before horse' on civic education, while clearly weighing electoral integrity risks over PRO's civic engagement benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash distinguishing everyday responsibilities from voting complexity and 'cart before horse' on civic education, while clearly weighing electoral integrity risks over PRO's civic engagement benefits.",
+  "timestamp": 1767861683.994377,
+  "saved_at": "2026-01-08T00:41:23.994713"
+}

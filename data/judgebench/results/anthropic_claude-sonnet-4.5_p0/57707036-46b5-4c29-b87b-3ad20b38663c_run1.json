@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "I will evaluate this debate through multiple passes to ensure consistency.\n\n## First Pass Analysis\n\n**Argument Quality:**\n- PRO: Presents three clear, structured claims (division, authoritarianism, global cooperation). Arguments are coherent and logically connected. Score: 4\n- CON: Offers counter-framework with three responses, but relies heavily on \"when practiced correctly\" qualifications that weaken definitional clarity. Score: 3\n\n**Evidence & Grounding:**\n- PRO: Provides specific examples (US/UK polarization, Orb\u00e1n in Hungary, COVID-19 pandemic, McCarthyism). Examples are relevant and integrated into arguments. Score: 4\n- CON: Offers fewer concrete examples (post-WWII US, EU), and the EU example actually supports PRO's point about cooperation being possible without strong nationalism. Score: 3\n\n**Clash & Refutation:**\n- PRO: Directly engages CON's examples, pointing out McCarthyism contradicts the unity claim, and challenges the EU example's relevance. Score: 4\n- CON: Acknowledges PRO's points but primarily argues \"it's not inherent to nationalism\" without fully addressing why modern manifestations are predominantly negative. Score: 3\n\n**Impact Weighing:**\n- PRO: Consistently emphasizes real-world harms (erosion of democracy, obstruction of pandemic response) with clear magnitude and timeframe. Score: 4\n- CON: Argues for potential benefits but doesn't effectively weigh why theoretical good nationalism outweighs demonstrated harms. Score: 2\n\n## Second Pass Verification\n\nReviewing the debate again:\n- PRO maintains consistent pressure on CON's \"healthy nationalism\" framework by showing historical and contemporary examples where nationalism manifests destructively\n- CON's main defense is that nationalism \"can be\" constructive, but doesn't adequately address why the resolution (about modern politics specifically) should be negated given PRO's examples\n- PRO's COVID-19 example is particularly strong and largely unrefuted\n- CON's EU example is problematic because the EU represents supranational cooperation that often conflicts with nationalist movements\n\nThe scores remain stable across passes.\n\n## Final Decision\n\nPRO wins by demonstrating that nationalism in modern politics predominantly manifests as destructive, with concrete examples across multiple contexts. CON's theoretical framework about \"healthy nationalism\" doesn't overcome PRO's empirical evidence of actual harms.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior impact weighing and concrete evidence of nationalism's destructive manifestations in modern politics. CON's theoretical framework about 'healthy nationalism' fails to overcome PRO's specific examples of division, authoritarianism, and obstructed cooperation. PRO effectively refutes CON's historical examples while CON inadequately addresses contemporary harms like COVID-19 resource hoarding and Orb\u00e1n's democratic erosion.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior impact weighing and concrete evidence of nationalism's destructive manifestations in modern politics. CON's theoretical framework about 'healthy nationalism' fails to overcome PRO's specific examples of division, authoritarianism, and obstructed cooperation. PRO effectively refutes CON's historical examples while CON inadequately addresses contemporary harms like COVID-19 resource hoarding and Orb\u00e1n's democratic erosion.",
+  "timestamp": 1767848505.093699,
+  "saved_at": "2026-01-07T21:01:45.094020"
+}

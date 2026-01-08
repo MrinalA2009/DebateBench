@@ -1,0 +1,30 @@
+{
+  "debate_id": "f9bd3513-a05a-4696-bff0-d439ecfa7d9b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria.\n\n**ARGUMENT QUALITY**\nPRO presents clear, structured arguments about reallocating funds to social services, with consistent internal logic about addressing root causes. CON offers coherent counterarguments about balanced approaches and police reform. Both sides maintain logical consistency throughout. PRO: 4, CON: 4\n\n**EVIDENCE & GROUNDING**\nPRO cites specific evidence (National Institute of Justice study showing $1 spent saves $4, Treatment Advocacy Center report). CON references community policing initiatives and crisis intervention training but provides less specific sourcing. PRO integrates evidence more directly into arguments. PRO: 4, CON: 3\n\n**CLASH & REFUTATION**\nBoth sides engage directly with opponent's arguments. PRO addresses CON's points about police training and reform effectiveness. CON responds to PRO's claims about over-policing and mental health responses. Both demonstrate substantive engagement, though CON's rebuttal is slightly more comprehensive in addressing multiple PRO claims. PRO: 4, CON: 4\n\n**IMPACT WEIGHING**\nPRO consistently emphasizes comparative impacts: cost savings ($4 per $1), better outcomes from specialized professionals, and systemic equity. CON argues for balanced approaches but doesn't clearly weigh why maintaining police funding matters more than PRO's proposed reallocation benefits. PRO provides clearer magnitude comparisons (financial savings, better crisis outcomes). PRO: 4, CON: 3\n\n**WINNER DETERMINATION**\nPRO wins on stronger evidence grounding and superior impact weighing. While both sides clash effectively, PRO's specific evidence (cost-benefit ratios, professional outcomes) and clearer comparative weighing (why social services produce better results) outweigh CON's more general appeals to balance and reform. CON's argument that reform without defunding is sufficient lacks the comparative impact analysis that PRO provides.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"PRO wins through superior evidence integration and impact weighing. While both sides clashed effectively, PRO's specific cost-benefit data and clear comparative analysis of why social services produce better outcomes outweighed CON's general appeals to balanced reform. PRO demonstrated why reallocation matters more through magnitude and probability comparisons that CON failed to adequately contest.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "PRO wins through superior evidence integration and impact weighing. While both sides clashed effectively, PRO's specific cost-benefit data and clear comparative analysis of why social services produce better outcomes outweighed CON's general appeals to balanced reform. PRO demonstrated why reallocation matters more through magnitude and probability comparisons that CON failed to adequately contest.",
+  "timestamp": 1767855056.322798,
+  "saved_at": "2026-01-07T22:50:56.323016"
+}

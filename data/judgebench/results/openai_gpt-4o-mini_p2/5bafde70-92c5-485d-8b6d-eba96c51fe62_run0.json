@@ -1,0 +1,30 @@
+{
+  "debate_id": "5bafde70-92c5-485d-8b6d-eba96c51fe62",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively countered PRO's claims about fairness and service quality, emphasizing the benefits of tipping for worker autonomy and consumer accountability. Their arguments were well-supported and directly addressed PRO's points, making a stronger overall case.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively countered PRO's claims about fairness and service quality, emphasizing the benefits of tipping for worker autonomy and consumer accountability. Their arguments were well-supported and directly addressed PRO's points, making a stronger overall case.",
+  "timestamp": 1767863836.049869,
+  "saved_at": "2026-01-08T01:17:16.050129"
+}

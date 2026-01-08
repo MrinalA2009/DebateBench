@@ -1,0 +1,30 @@
+{
+  "debate_id": "4fa1b0ac-2e13-4d38-8169-000d54c0a509",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON won by effectively challenging PRO's foundational 82-cent statistic with the Glassdoor study showing a 4.9% adjusted gap, forcing PRO to concede to a 7% figure. CON provided superior weighing on unintended consequences of mandates versus market solutions, while PRO failed to adequately defend against the controlled-variables critique or demonstrate why mandates are necessary for the smaller adjusted gap.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON won by effectively challenging PRO's foundational 82-cent statistic with the Glassdoor study showing a 4.9% adjusted gap, forcing PRO to concede to a 7% figure. CON provided superior weighing on unintended consequences of mandates versus market solutions, while PRO failed to adequately defend against the controlled-variables critique or demonstrate why mandates are necessary for the smaller adjusted gap.",
+  "timestamp": 1767852566.9645178,
+  "saved_at": "2026-01-07T22:09:26.964784"
+}

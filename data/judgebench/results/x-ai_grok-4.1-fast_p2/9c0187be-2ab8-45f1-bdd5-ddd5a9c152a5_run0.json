@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c0187be-2ab8-45f1-bdd5-ddd5a9c152a5",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior clash and refutation, directly addressing CON's economic and sustainable tourism arguments by showing the 'right to restrict' enables those practices while turning CON's examples (Japan, Bhutan) in PRO's favor. PRO better weighs long-term cultural erosion over short-term economics.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior clash and refutation, directly addressing CON's economic and sustainable tourism arguments by showing the 'right to restrict' enables those practices while turning CON's examples (Japan, Bhutan) in PRO's favor. PRO better weighs long-term cultural erosion over short-term economics.",
+  "timestamp": 1767861628.087817,
+  "saved_at": "2026-01-08T00:40:28.088160"
+}

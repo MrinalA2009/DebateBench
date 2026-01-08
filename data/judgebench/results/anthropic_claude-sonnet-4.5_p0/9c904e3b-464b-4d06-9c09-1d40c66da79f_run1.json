@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c904e3b-464b-4d06-9c09-1d40c66da79f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents three clear contentions (violence/intolerance, scientific hindrance, social inequality) with logical structure. Arguments are coherent and well-organized. Score: 4\n- CON: Offers three counter-contentions (community building, ethical guidance, charitable work) that are equally clear and well-structured. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Provides historical examples (Crusades, Inquisition) and contemporary issues (LGBTQ+ persecution, vaccine resistance, climate denial). However, lacks specific data or mechanisms. Score: 3\n- CON: Cites specific organizations (Doctors Without Borders, Islamic Relief, Catholic Relief Services, Salvation Army) as concrete examples. Slightly more grounded. Score: 3.5 \u2192 4\n\n**Clash & Refutation:**\n- PRO: Directly engages CON's arguments, challenges the \"deviation\" claim, questions the moral compass argument with counter-examples. Strong engagement. Score: 4\n- CON: Addresses PRO's extremism argument with the government analogy, challenges generalizations about charity discrimination, refutes scientific hindrance claim. Equally strong engagement. Score: 4\n\n**Impact Weighing:**\n- PRO: Emphasizes \"systemic and institutionalized harm\" and urges consideration of \"full spectrum\" but doesn't clearly compare magnitude/scope against CON's impacts. Score: 3\n- CON: Argues about \"widespread, consistent good\" vs. \"isolated acts\" and \"fringe elements,\" providing clearer comparative weighing of scope and frequency. Score: 4\n\n## Second Pass Verification\n\nRe-examining key moments:\n- CON's government analogy effectively challenges PRO's logic about extremism defining religion\n- PRO's point about discrimination in religious charities is countered by CON's claim of \"indiscriminate\" aid\n- CON provides more concrete organizational examples\n- CON's weighing of \"widespread good\" vs. \"isolated harm\" is more explicit than PRO's weighing\n- PRO's \"systemic harm\" claim is asserted but not comparatively weighed against CON's scale arguments\n\nThe critical difference: CON more effectively weighs by emphasizing the scale disparity (billions benefiting vs. fringe extremists), while PRO asserts systemic harm without clearly comparing magnitude.\n\n## Final Judgment\n\nCON wins on superior impact weighing and slightly better evidence grounding. While both sides clash effectively, CON's comparative framework (widespread vs. isolated) provides clearer weighing than PRO's assertions of systemic harm.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"CON wins through superior impact weighing, explicitly comparing widespread religious benefits against isolated extremism. CON's concrete organizational examples and comparative framework (billions served vs. fringe actors) outweighed PRO's assertions of systemic harm, which lacked clear magnitude comparison. Both sides clashed effectively, but CON's weighing mechanism proved more persuasive.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "CON wins through superior impact weighing, explicitly comparing widespread religious benefits against isolated extremism. CON's concrete organizational examples and comparative framework (billions served vs. fringe actors) outweighed PRO's assertions of systemic harm, which lacked clear magnitude comparison. Both sides clashed effectively, but CON's weighing mechanism proved more persuasive.",
+  "timestamp": 1767850664.956823,
+  "saved_at": "2026-01-07T21:37:44.957117"
+}

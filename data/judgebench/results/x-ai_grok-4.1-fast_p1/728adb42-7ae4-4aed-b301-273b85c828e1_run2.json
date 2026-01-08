@@ -1,0 +1,30 @@
+{
+  "debate_id": "728adb42-7ae4-4aed-b301-273b85c828e1",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by more effectively refuting PRO's feasibility responses on logistics and teacher shortages while weighing practical harms to educational quality and resources as more immediate and systemic than PRO's cognitive and economic benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by more effectively refuting PRO's feasibility responses on logistics and teacher shortages while weighing practical harms to educational quality and resources as more immediate and systemic than PRO's cognitive and economic benefits.",
+  "timestamp": 1767858847.987953,
+  "saved_at": "2026-01-07T23:54:07.988116"
+}

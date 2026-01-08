@@ -1,0 +1,30 @@
+{
+  "debate_id": "99f22fa9-da27-4d2b-a7be-b4e9c451c79a",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins by providing superior evidence from Oregon and Switzerland showing no significant coercion or trust erosion, directly refuting CON's core risk claims. CON's responses rely on unsubstantiated speculation about subtle pressures without counter-evidence.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins by providing superior evidence from Oregon and Switzerland showing no significant coercion or trust erosion, directly refuting CON's core risk claims. CON's responses rely on unsubstantiated speculation about subtle pressures without counter-evidence.",
+  "timestamp": 1767859929.5915892,
+  "saved_at": "2026-01-08T00:12:09.592023"
+}

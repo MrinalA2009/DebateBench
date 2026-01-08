@@ -1,0 +1,30 @@
+{
+  "debate_id": "6427bcd2-5cff-42c5-8b8c-af5a2b2a765a",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"CON wins through superior clash and weighing. While PRO established benefits of victim involvement, CON effectively challenged the core assumption that victims can provide objective input, arguing this leads to bias and inconsistent outcomes. CON's framework prioritizing systemic fairness over individual empowerment was more compelling when directly compared. PRO's rehabilitation argument was adequately refuted by CON's point that willingness to accept responsibility, not punishment level, drives rehabilitation. CON maintained clearer impact comparison throughout.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "CON wins through superior clash and weighing. While PRO established benefits of victim involvement, CON effectively challenged the core assumption that victims can provide objective input, arguing this leads to bias and inconsistent outcomes. CON's framework prioritizing systemic fairness over individual empowerment was more compelling when directly compared. PRO's rehabilitation argument was adequately refuted by CON's point that willingness to accept responsibility, not punishment level, drives rehabilitation. CON maintained clearer impact comparison throughout.",
+  "timestamp": 1767853608.4540238,
+  "saved_at": "2026-01-07T22:26:48.454313"
+}

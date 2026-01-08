@@ -1,0 +1,30 @@
+{
+  "debate_id": "6348d5fb-da93-439d-88ef-b6dda1f48f4b",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the maturity and understanding gaps in 16-year-olds, while PRO's arguments did not sufficiently counter these concerns. CON's emphasis on the need for civic education before voting was a strong point.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the maturity and understanding gaps in 16-year-olds, while PRO's arguments did not sufficiently counter these concerns. CON's emphasis on the need for civic education before voting was a strong point.",
+  "timestamp": 1767862558.8744352,
+  "saved_at": "2026-01-08T00:55:58.874701"
+}

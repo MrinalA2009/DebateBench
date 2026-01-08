@@ -1,0 +1,30 @@
+{
+  "debate_id": "d91e8c3a-7908-4fa2-b0a6-b88c10c73011",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins as strongest remaining argument on diagnostic risks (75% routine diagnoses from physical exams) survives unrefuted by specifics, outweighing PRO's accessibility via superior magnitude of life-risk impacts over convenience.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins as strongest remaining argument on diagnostic risks (75% routine diagnoses from physical exams) survives unrefuted by specifics, outweighing PRO's accessibility via superior magnitude of life-risk impacts over convenience.",
+  "timestamp": 1767859640.202625,
+  "saved_at": "2026-01-08T00:07:20.203916"
+}

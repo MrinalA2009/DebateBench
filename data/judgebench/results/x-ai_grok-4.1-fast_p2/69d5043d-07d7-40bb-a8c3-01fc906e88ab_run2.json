@@ -1,0 +1,30 @@
+{
+  "debate_id": "69d5043d-07d7-40bb-a8c3-01fc906e88ab",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins through superior clash and impact weighing, directly refuting CON's regulatory optimism with evidence of irreversible biodiversity loss over millennia, which outweighs CON's speculative benefits for minerals and phased approaches.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins through superior clash and impact weighing, directly refuting CON's regulatory optimism with evidence of irreversible biodiversity loss over millennia, which outweighs CON's speculative benefits for minerals and phased approaches.",
+  "timestamp": 1767861748.035289,
+  "saved_at": "2026-01-08T00:42:28.035819"
+}

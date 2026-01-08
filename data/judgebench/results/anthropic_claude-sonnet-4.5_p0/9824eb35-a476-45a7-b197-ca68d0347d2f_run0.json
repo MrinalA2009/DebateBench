@@ -1,0 +1,30 @@
+{
+  "debate_id": "9824eb35-a476-45a7-b197-ca68d0347d2f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "I will evaluate this debate through multiple passes to ensure consistency.\n\n## First Pass Analysis\n\n**Argument Quality:**\n- PRO: Clear framework (public health, harm reduction, social justice), two well-structured contentions with logical flow. Score: 4\n- CON: Presents counterarguments but less structured; relies heavily on \"complexity\" without fully developing alternative framework. Score: 3\n\n**Evidence & Grounding:**\n- PRO: Cites specific studies (British Journal of Criminology, Cato Institute), Portugal data on HIV, overdose deaths, drug use rates among youth. Score: 4\n- CON: References Portugal but provides no counter-evidence or studies; makes claims about \"long-term effects\" and \"vulnerable populations\" without support. Score: 2\n\n**Clash & Refutation:**\n- PRO: Directly addresses CON's Portugal critique, refutes youth drug use concern with evidence, acknowledges systemic inequality point while explaining how decriminalization enables solutions. Score: 4\n- CON: Engages with PRO's Portugal example but mainly through assertion rather than evidence; questions replicability without proving why. Score: 3\n\n**Impact Weighing:**\n- PRO: Clear comparative weighing - preventable deaths, disease spread, mass incarceration vs. CON's speculative concerns; explicitly weighs magnitude and probability. Score: 4\n- CON: Mentions \"unintended consequences\" and \"lives at risk\" but doesn't comparatively weigh against current system's harms; mostly defensive. Score: 2\n\n## Second Pass Verification\n\nReviewing key exchanges:\n- PRO's Portugal evidence stands largely uncontested by counter-evidence\n- CON's \"nuance\" argument doesn't overcome PRO's point that decriminalization enables the health infrastructure\n- CON's youth concern is directly refuted with Portuguese data showing decrease/stabilization\n- PRO consistently returns to concrete harms (deaths, disease, incarceration) while CON relies on speculative risks\n- CON never provides alternative solution to current system's documented failures\n\n## Third Pass - Final Consistency Check\n\nWinner determination factors:\n1. Evidence advantage clearly to PRO (specific studies vs. assertions)\n2. Clash advantage to PRO (direct refutation with evidence)\n3. Weighing advantage to PRO (concrete vs. speculative impacts)\n4. CON's main argument (Portugal not replicable) insufficiently developed without evidence\n\nThe decision is stable across passes. PRO wins on superior evidence, more effective refutation, and clearer impact comparison.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins through superior evidence grounding, particularly Portugal data showing reduced deaths and disease without increased youth use. CON's complexity argument lacks counter-evidence and fails to weigh speculative risks against PRO's documented harms of current criminalization. PRO effectively refutes key objections while maintaining clear impact comparison throughout.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins through superior evidence grounding, particularly Portugal data showing reduced deaths and disease without increased youth use. CON's complexity argument lacks counter-evidence and fails to weigh speculative risks against PRO's documented harms of current criminalization. PRO effectively refutes key objections while maintaining clear impact comparison throughout.",
+  "timestamp": 1767848932.809812,
+  "saved_at": "2026-01-07T21:08:52.810215"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c0187be-2ab8-45f1-bdd5-ddd5a9c152a5",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins by superior clash, turning CON's Japan/Bhutan examples as reliant on restrictions, and clearer weighing of irreversible cultural erosion over short-term economic gains.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins by superior clash, turning CON's Japan/Bhutan examples as reliant on restrictions, and clearer weighing of irreversible cultural erosion over short-term economic gains.",
+  "timestamp": 1767859869.0158489,
+  "saved_at": "2026-01-08T00:11:09.016230"
+}

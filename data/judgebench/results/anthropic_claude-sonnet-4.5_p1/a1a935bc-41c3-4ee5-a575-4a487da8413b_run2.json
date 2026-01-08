@@ -1,0 +1,30 @@
+{
+  "debate_id": "a1a935bc-41c3-4ee5-a575-4a487da8413b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I will evaluate this debate systematically using the required framework.\n\n## Stage 1 \u2014 Argument Survival Analysis\n\n**PRO's Strongest Remaining Arguments:**\n- Cultural preservation through restriction (Bali example of temple commercialization and displacement)\n- National sovereignty to control cultural presentation\n- Bhutan's \"high-value, low-impact\" model as successful example\n- Unregulated tourism causes cultural homogenization and exploitation\n\n**CON's Strongest Remaining Arguments:**\n- Tourism enables cultural exchange and reduces xenophobia\n- Economic dependence of communities on tourism revenue\n- Restriction creates static/museum-like culture vs. dynamic evolution\n- Distinction between unmanaged vs. regulated tourism\n\n**Clash Analysis:**\n- PRO argues restrictions ensure sustainable exchange; CON counters this is isolation, not sustainability\n- CON argues for regulated tourism as alternative; PRO responds regulation is difficult to enforce\n- Both sides contest whether tourism harms or helps culture economically\n\n## Stage 2 \u2014 Comparative Evaluation\n\n**Impact Weighing:**\n\nPRO emphasizes:\n- Cultural erosion and displacement (magnitude: loss of heritage)\n- Long-term preservation for future generations\n- Protection from exploitation\n\nCON emphasizes:\n- Economic hardship from lost revenue (magnitude: community survival)\n- Increased xenophobia from isolation (probability: high in isolated societies)\n- Cultural stagnation vs. natural evolution\n\n**Critical Distinction:**\nCON effectively distinguishes between *unmanaged* tourism (which PRO criticizes) and *regulated* tourism (which CON advocates). PRO's response that regulation is \"difficult to enforce\" is weaker than demonstrating why restriction is superior to regulation. CON's framework allows for both cultural protection AND economic benefits, while PRO's restriction model sacrifices economic welfare.\n\n**Weighing Analysis:**\nCON provides clearer comparative weighing by showing their alternative (regulated tourism) addresses PRO's concerns while avoiding PRO's harms. PRO does not adequately weigh why complete restriction is necessary when regulation could address exploitation concerns.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by effectively distinguishing unmanaged tourism from regulated tourism, providing a middle-ground solution that addresses PRO's cultural concerns while avoiding economic harms. CON's comparative weighing showed their alternative preserves culture without isolation or economic devastation. PRO's dismissal of regulation as 'difficult to enforce' was insufficient to justify complete restriction over CON's more nuanced approach.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by effectively distinguishing unmanaged tourism from regulated tourism, providing a middle-ground solution that addresses PRO's cultural concerns while avoiding economic harms. CON's comparative weighing showed their alternative preserves culture without isolation or economic devastation. PRO's dismissal of regulation as 'difficult to enforce' was insufficient to justify complete restriction over CON's more nuanced approach.",
+  "timestamp": 1767851522.08914,
+  "saved_at": "2026-01-07T21:52:02.090146"
+}

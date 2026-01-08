@@ -1,0 +1,30 @@
+{
+  "debate_id": "4dc661f2-b8a3-4acc-b1ff-71ae4b16273b",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively argued against government overreach and the impracticality of enforcement, while PRO's arguments, though valid, did not sufficiently counter these points. CON's emphasis on parental autonomy and the subjective nature of screen time limits resonated more strongly.\" \n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively argued against government overreach and the impracticality of enforcement, while PRO's arguments, though valid, did not sufficiently counter these points. CON's emphasis on parental autonomy and the subjective nature of screen time limits resonated more strongly.",
+  "timestamp": 1767863499.6236002,
+  "saved_at": "2026-01-08T01:11:39.623855"
+}

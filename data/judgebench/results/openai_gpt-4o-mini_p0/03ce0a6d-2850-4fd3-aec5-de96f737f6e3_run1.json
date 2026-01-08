@@ -1,0 +1,30 @@
+{
+  "debate_id": "03ce0a6d-2850-4fd3-aec5-de96f737f6e3",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively demonstrated that ownership leads to conflict and exploitation, using historical examples and addressing CON's claims about innovation and cooperation. CON's arguments lacked sufficient evidence and failed to counter PRO's impacts convincingly.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively demonstrated that ownership leads to conflict and exploitation, using historical examples and addressing CON's claims about innovation and cooperation. CON's arguments lacked sufficient evidence and failed to counter PRO's impacts convincingly.",
+  "timestamp": 1767862218.015438,
+  "saved_at": "2026-01-08T00:50:18.015715"
+}

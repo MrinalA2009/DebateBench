@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON wins with superior evidence via specific economic stats ($247B, 1.2M jobs) and stronger clash/refutation targeting PRO's speculative green jobs/innovation claims against immediate tangible harms and innovation incentives.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON wins with superior evidence via specific economic stats ($247B, 1.2M jobs) and stronger clash/refutation targeting PRO's speculative green jobs/innovation claims against immediate tangible harms and innovation incentives.",
+  "timestamp": 1767856785.8774421,
+  "saved_at": "2026-01-07T23:19:45.877745"
+}

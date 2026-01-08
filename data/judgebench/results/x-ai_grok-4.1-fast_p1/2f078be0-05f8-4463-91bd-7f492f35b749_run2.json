@@ -1,0 +1,30 @@
+{
+  "debate_id": "2f078be0-05f8-4463-91bd-7f492f35b749",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins as strongest safety arguments (Nature study, 2018 incident, NAS) survive refutation with superior evidence and clearer weighing of catastrophic health/ecological risks over CON's less-supported innovation benefits.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins as strongest safety arguments (Nature study, 2018 incident, NAS) survive refutation with superior evidence and clearer weighing of catastrophic health/ecological risks over CON's less-supported innovation benefits.",
+  "timestamp": 1767859750.3914828,
+  "saved_at": "2026-01-08T00:09:10.391745"
+}

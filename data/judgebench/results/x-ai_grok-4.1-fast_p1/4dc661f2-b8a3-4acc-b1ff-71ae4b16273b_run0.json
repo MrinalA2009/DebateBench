@@ -1,0 +1,30 @@
+{
+  "debate_id": "4dc661f2-b8a3-4acc-b1ff-71ae4b16273b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by superior clash on enforcement impracticality and weighing intrusion harms as outweighing PRO's health risks, leaving PRO's solvency unresolved.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by superior clash on enforcement impracticality and weighing intrusion harms as outweighing PRO's health risks, leaving PRO's solvency unresolved.",
+  "timestamp": 1767859044.990175,
+  "saved_at": "2026-01-07T23:57:24.990579"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "8f472a3f-580b-47bc-b601-beda3a57b701",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with superior evidence from specific historical (world wars) and contemporary (Brexit, America First) examples of destruction, which CON does not directly refute, outweighing CON's more general and exceptional cases like Canada.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with superior evidence from specific historical (world wars) and contemporary (Brexit, America First) examples of destruction, which CON does not directly refute, outweighing CON's more general and exceptional cases like Canada.",
+  "timestamp": 1767861582.844835,
+  "saved_at": "2026-01-08T00:39:42.845187"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "99cd748d-9396-488b-a016-eeee791e386b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins by superior clash, directly refuting PRO's tech trajectory and stats via unaddressed consciousness complexity and empirical deficits, leaving PRO's arguments speculative.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins by superior clash, directly refuting PRO's tech trajectory and stats via unaddressed consciousness complexity and empirical deficits, leaving PRO's arguments speculative.",
+  "timestamp": 1767859222.819724,
+  "saved_at": "2026-01-08T00:00:22.820097"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "6348d5fb-da93-439d-88ef-b6dda1f48f4b",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the maturity gap and the complexities of voting, arguing that civic education must precede voting rights. Their rebuttals were strong and directly addressed PRO's claims, making their position more compelling overall.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the maturity gap and the complexities of voting, arguing that civic education must precede voting rights. Their rebuttals were strong and directly addressed PRO's claims, making their position more compelling overall.",
+  "timestamp": 1767863176.217761,
+  "saved_at": "2026-01-08T01:06:16.218051"
+}

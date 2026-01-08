@@ -1,0 +1,30 @@
+{
+  "debate_id": "486a5ce3-4b6e-4d32-906a-ff8a65febfd3",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear, structured contentions about systemic discrimination, enforcement mechanisms, and economic benefits. Arguments are logically coherent and well-organized. Score: 4\n\nCON: Presents three distinct arguments about unintended consequences, complexity, and voluntary alternatives. Arguments are understandable but less tightly structured. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites specific statistics (82 cents on the dollar), references AAUW 2020 study with specific findings about controlling for factors, and provides Iceland as a concrete example of successful implementation. Evidence is well-integrated. Score: 5\n\nCON: References NBER study but admits it focuses on minimum wage (different mechanism), questions Iceland's replicability without counter-evidence, and makes claims about job losses without substantiation. Evidence is weaker and less specific. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly addresses CON's job loss argument by challenging the NBER study's relevance, refutes the \"personal choices\" argument with the AAUW study showing discrimination persists after controlling for factors, and challenges voluntary initiatives as insufficient. Strong engagement. Score: 5\n\nCON: Responds to PRO's rebuttal but largely reasserts original positions. Acknowledges Iceland example but dismisses it as non-replicable without evidence. Doesn't effectively counter PRO's discrimination evidence. Moderate engagement. Score: 3\n\n**IMPACT WEIGHING**\n\nPRO: Explicitly weighs economic stimulation from increased purchasing power, frames mandates as creating \"level playing field,\" and emphasizes \"real, measurable change\" versus decades of stagnation. Clear comparative framing. Score: 4\n\nCON: Mentions job losses and economic shock but doesn't comparatively weigh these against PRO's impacts. Argues flexibility is valuable but doesn't explain why this outweighs pay equity benefits. Limited comparative weighing. Score: 2\n\n**WINNER DETERMINATION**\n\nPRO wins on evidence quality (5 vs 3), clash (5 vs 3), and weighing (4 vs 2). PRO effectively challenged CON's central claims about job losses by questioning the relevance of the NBER study and providing Iceland as a counter-example. PRO's discrimination evidence (AAUW study controlling for factors) was never effectively refuted by CON. CON's reliance on \"personal choices\" was directly undermined by PRO's evidence. The debate hinges on whether voluntary measures are sufficient versus mandates being necessary - PRO established both the insufficiency of voluntary measures and the effectiveness of mandates, while CON failed to provide concrete evidence for either job losses or voluntary success.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence and clash. The AAUW study showing discrimination after controlling for factors was never effectively refuted. PRO successfully challenged CON's job loss claims by questioning the NBER study's relevance and providing Iceland as counter-evidence. CON's reliance on voluntary measures failed to address PRO's core argument about decades of insufficient progress under that approach.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence and clash. The AAUW study showing discrimination after controlling for factors was never effectively refuted. PRO successfully challenged CON's job loss claims by questioning the NBER study's relevance and providing Iceland as counter-evidence. CON's reliance on voluntary measures failed to address PRO's core argument about decades of insufficient progress under that approach.",
+  "timestamp": 1767854931.4199831,
+  "saved_at": "2026-01-07T22:48:51.420161"
+}

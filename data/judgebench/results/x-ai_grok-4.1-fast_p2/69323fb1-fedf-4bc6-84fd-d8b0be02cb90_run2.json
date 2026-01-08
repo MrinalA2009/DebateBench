@@ -1,0 +1,30 @@
+{
+  "debate_id": "69323fb1-fedf-4bc6-84fd-d8b0be02cb90",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins through stronger evidence (ICAO projections, GEC study) directly refuting CON's equity and tech viability claims, while superior clash and weighing prioritize immediate climate crisis over speculative innovations and unintended shifts.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins through stronger evidence (ICAO projections, GEC study) directly refuting CON's equity and tech viability claims, while superior clash and weighing prioritize immediate climate crisis over speculative innovations and unintended shifts.",
+  "timestamp": 1767861304.3849652,
+  "saved_at": "2026-01-08T00:35:04.385313"
+}

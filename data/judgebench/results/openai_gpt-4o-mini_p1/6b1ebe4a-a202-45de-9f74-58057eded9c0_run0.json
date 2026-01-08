@@ -1,0 +1,30 @@
+{
+  "debate_id": "6b1ebe4a-a202-45de-9f74-58057eded9c0",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the drawbacks of mandating programming, particularly regarding curriculum overload and developmental appropriateness, while PRO's arguments lacked sufficient counter to these concerns. CON's emphasis on practical implications and educational inequality resonated more strongly.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the drawbacks of mandating programming, particularly regarding curriculum overload and developmental appropriateness, while PRO's arguments lacked sufficient counter to these concerns. CON's emphasis on practical implications and educational inequality resonated more strongly.",
+  "timestamp": 1767863331.8895109,
+  "saved_at": "2026-01-08T01:08:51.889606"
+}

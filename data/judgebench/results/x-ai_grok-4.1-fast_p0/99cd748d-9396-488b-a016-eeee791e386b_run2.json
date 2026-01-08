@@ -1,0 +1,30 @@
+{
+  "debate_id": "99cd748d-9396-488b-a016-eeee791e386b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with clearer argument structure around Bostrom's trilemma and statistical likelihood, better grounded than CON's repetitive assertions on speculation and consciousness, which PRO engages without concession.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 2
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with clearer argument structure around Bostrom's trilemma and statistical likelihood, better grounded than CON's repetitive assertions on speculation and consciousness, which PRO engages without concession.",
+  "timestamp": 1767857437.0597382,
+  "saved_at": "2026-01-07T23:30:37.060196"
+}

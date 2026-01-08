@@ -1,0 +1,30 @@
+{
+  "debate_id": "e7805b3e-bfa9-4f2b-8994-c395b17b1166",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n**Stage 1 - Argument Survival Analysis:**\n\nPRO's strongest remaining arguments:\n- 16-year-olds already handle significant responsibilities (driving, employment)\n- Civic education provides foundation for informed voting\n- Evidence from Scotland/Austria shows increased youth engagement\n\nCON's strongest remaining arguments:\n- Cognitive development (impulse control, long-term planning) incomplete until mid-20s\n- Knowledge doesn't guarantee informed voting due to emotional/impulsive nature\n- Susceptibility to peer pressure and social media trends\n\n**Stage 2 - Comparative Evaluation:**\n\nPRO effectively argues that 16-year-olds possess necessary maturity through existing responsibilities and education. However, they don't adequately refute CON's central claim about cognitive development differences between decision-making capacity and electoral judgment.\n\nCON maintains consistent focus on the distinction between making personal decisions and voting on complex societal issues. They effectively counter PRO's Austria/Scotland examples by noting that increased engagement doesn't equal informed participation. CON's argument about emotional decision-making and susceptibility to influence remains largely unrefuted - PRO only claims this applies to all ages without addressing why incomplete cognitive development matters specifically.\n\n**Weighing:**\nCON provides clearer impact weighing by emphasizing \"integrity of electoral process\" and \"informed democracy\" as fundamental values at stake. PRO focuses on inclusivity and engagement but doesn't adequately weigh why these outweigh potential risks to electoral integrity. CON's timeframe argument (waiting until mid-20s for full development) is more concrete than PRO's general claims about current maturity.\n\n**Clash Analysis:**\nCON more directly engages PRO's specific claims (civic education, international examples, responsibility argument) with targeted refutations. PRO's rebuttals are more general, often asserting that concerns apply to all voters without addressing the developmental distinction.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.72,\n  \"short_reason\": \"CON wins by maintaining focus on cognitive development distinctions that PRO never adequately refutes. CON effectively counters PRO's international examples and provides superior impact weighing around electoral integrity versus inclusivity. PRO's claim that concerns apply to all ages doesn't address why incomplete development matters specifically for 16-year-olds. CON's argument about informed decision-making capacity survives stronger than PRO's engagement-focused case.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.72,
+  "short_reason": "CON wins by maintaining focus on cognitive development distinctions that PRO never adequately refutes. CON effectively counters PRO's international examples and provides superior impact weighing around electoral integrity versus inclusivity. PRO's claim that concerns apply to all ages doesn't address why incomplete development matters specifically for 16-year-olds. CON's argument about informed decision-making capacity survives stronger than PRO's engagement-focused case.",
+  "timestamp": 1767853601.817921,
+  "saved_at": "2026-01-07T22:26:41.818160"
+}

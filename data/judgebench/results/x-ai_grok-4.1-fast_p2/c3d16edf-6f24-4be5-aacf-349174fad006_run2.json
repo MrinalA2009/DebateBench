@@ -1,0 +1,30 @@
+{
+  "debate_id": "c3d16edf-6f24-4be5-aacf-349174fad006",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON wins through superior evidence grounding via Vienna Convention and mechanisms, plus clearer impact weighing contrasting real retaliation risks against PRO's speculative accountability gains.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON wins through superior evidence grounding via Vienna Convention and mechanisms, plus clearer impact weighing contrasting real retaliation risks against PRO's speculative accountability gains.",
+  "timestamp": 1767861992.152087,
+  "saved_at": "2026-01-08T00:46:32.152329"
+}

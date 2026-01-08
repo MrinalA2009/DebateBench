@@ -1,0 +1,30 @@
+{
+  "debate_id": "8b6103d0-c3c9-442a-9c12-bedf8b61b741",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the importance of police in public safety and provided a balanced approach, while PRO's arguments on reallocating funds lacked sufficient counter to the risks of increased crime and the necessity of police presence.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the importance of police in public safety and provided a balanced approach, while PRO's arguments on reallocating funds lacked sufficient counter to the risks of increased crime and the necessity of police presence.",
+  "timestamp": 1767863145.861294,
+  "saved_at": "2026-01-08T01:05:45.861518"
+}

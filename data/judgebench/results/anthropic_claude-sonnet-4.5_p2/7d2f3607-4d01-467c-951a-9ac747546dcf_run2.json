@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents three clear pillars (environmental impact, social equity, resource allocation) with logical structure. Arguments are coherent and consistently developed throughout. Score: 4\n\nCON: Offers well-structured counterarguments focusing on economic impact, environmental nuance, and equity critique. Arguments are clear and internally consistent, with specific economic data integrated effectively. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites the International Council on Clean Transportation study (14x CO2 emissions) as primary evidence. Other claims about resource allocation and social equity rely more on reasoning than concrete data. Score: 3\n\nCON: Provides specific economic figures ($247 billion, 1.2 million jobs from NBAA), contextualizes aviation emissions (2.5% of global CO2), and references SAFs and electric aircraft development. More comprehensive evidentiary support. Score: 4\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's economic arguments, challenges the dismissal of environmental impact, and responds to equity concerns. However, doesn't fully address the SAF/innovation argument or the jobs data. Score: 3\n\nCON: Systematically refutes PRO's job creation claims, challenges the environmental prioritization logic, and directly confronts the equity argument. Engages more comprehensively with opponent's case. Score: 4\n\n**IMPACT WEIGHING**\n\nPRO: Emphasizes climate change as \"existential threat\" and frames environmental impact as paramount. Some weighing present but doesn't comparatively analyze why climate impact outweighs economic harm. Score: 3\n\nCON: Explicitly weighs immediate economic damage (1.2M jobs) against speculative benefits, argues ban would undermine innovation needed for actual solutions, and compares private jet emissions to larger sources. More developed comparative weighing. Score: 4\n\n**WINNER DETERMINATION**\n\nCON wins on three of four criteria (Evidence, Clash, Weighing) while tying on Argument Quality. Key factors:\n\n1. CON provided more concrete, quantified evidence throughout\n2. CON more effectively engaged PRO's arguments, particularly on the innovation/SAF point which PRO largely dropped\n3. CON's comparative weighing (immediate economic harm vs. negligible environmental benefit) was more developed than PRO's assertion of environmental priority\n4. PRO's strongest argument (14x emissions) was contextualized by CON's point about overall sector size, which PRO didn't adequately counter\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior evidence grounding, more effective clash, and clearer comparative weighing. CON's economic data and innovation argument were inadequately addressed by PRO, while CON successfully contextualized PRO's environmental claims within broader emissions landscape. CON's weighing of immediate economic harm against negligible climate impact from this specific ban proved more compelling than PRO's assertion of environmental priority.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior evidence grounding, more effective clash, and clearer comparative weighing. CON's economic data and innovation argument were inadequately addressed by PRO, while CON successfully contextualized PRO's environmental claims within broader emissions landscape. CON's weighing of immediate economic harm against negligible climate impact from this specific ban proved more compelling than PRO's assertion of environmental priority.",
+  "timestamp": 1767854043.5343559,
+  "saved_at": "2026-01-07T22:34:03.534596"
+}

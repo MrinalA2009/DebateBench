@@ -1,0 +1,30 @@
+{
+  "debate_id": "d6590657-42ec-46e1-879f-7bc2b9c9cb60",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively argued that ownership incentivizes investment and innovation, addressing the limitations of the current framework. Their rebuttals to PRO's claims about conflict and stagnation were more compelling, emphasizing the potential for legal frameworks to govern ownership and drive progress.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively argued that ownership incentivizes investment and innovation, addressing the limitations of the current framework. Their rebuttals to PRO's claims about conflict and stagnation were more compelling, emphasizing the potential for legal frameworks to govern ownership and drive progress.",
+  "timestamp": 1767863310.280393,
+  "saved_at": "2026-01-08T01:08:30.280654"
+}

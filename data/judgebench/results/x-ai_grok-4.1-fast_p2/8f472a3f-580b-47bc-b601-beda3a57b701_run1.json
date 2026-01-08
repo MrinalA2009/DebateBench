@@ -1,0 +1,30 @@
+{
+  "debate_id": "8f472a3f-580b-47bc-b601-beda3a57b701",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.6,\n  \"short_reason\": \"PRO wins due to superior evidence with specific historical impacts like world wars and recent examples (Brexit, America First) that CON largely fails to refute directly, outweighing CON's more conditional and fewer counterexamples.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.6,
+  "short_reason": "PRO wins due to superior evidence with specific historical impacts like world wars and recent examples (Brexit, America First) that CON largely fails to refute directly, outweighing CON's more conditional and fewer counterexamples.",
+  "timestamp": 1767861568.5068421,
+  "saved_at": "2026-01-08T00:39:28.507155"
+}

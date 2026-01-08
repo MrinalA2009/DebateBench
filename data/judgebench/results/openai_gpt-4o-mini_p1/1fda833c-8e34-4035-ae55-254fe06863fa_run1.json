@@ -1,0 +1,30 @@
+{
+  "debate_id": "1fda833c-8e34-4035-ae55-254fe06863fa",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively demonstrated that tipping creates wage instability and fosters discrimination, while providing strong evidence for the benefits of a higher wage system. CON's arguments about service incentives and flexibility were less compelling and did not adequately counter PRO's impact weighing.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively demonstrated that tipping creates wage instability and fosters discrimination, while providing strong evidence for the benefits of a higher wage system. CON's arguments about service incentives and flexibility were less compelling and did not adequately counter PRO's impact weighing.",
+  "timestamp": 1767863039.8845289,
+  "saved_at": "2026-01-08T01:03:59.884789"
+}

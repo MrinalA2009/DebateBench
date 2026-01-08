@@ -1,0 +1,30 @@
+{
+  "debate_id": "8bd8e8fe-58cb-4610-886f-a54a76d24e33",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively demonstrated the long-term benefits of bilingual education, countering CON's resource strain argument with evidence of cognitive and economic advantages. While both sides engaged well, PRO's arguments were more coherent and supported by stronger evidence.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively demonstrated the long-term benefits of bilingual education, countering CON's resource strain argument with evidence of cognitive and economic advantages. While both sides engaged well, PRO's arguments were more coherent and supported by stronger evidence.",
+  "timestamp": 1767862293.086327,
+  "saved_at": "2026-01-08T00:51:33.086574"
+}

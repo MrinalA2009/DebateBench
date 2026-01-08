@@ -1,0 +1,30 @@
+{
+  "debate_id": "e98c2da1-0341-487a-b1a7-a51f8bd624e2",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively demonstrated the life-saving impacts of strict gun regulation with strong evidence, while CON's arguments about individual rights lacked sufficient grounding and did not adequately refute PRO's claims.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively demonstrated the life-saving impacts of strict gun regulation with strong evidence, while CON's arguments about individual rights lacked sufficient grounding and did not adequately refute PRO's claims.",
+  "timestamp": 1767862487.871809,
+  "saved_at": "2026-01-08T00:54:47.872067"
+}

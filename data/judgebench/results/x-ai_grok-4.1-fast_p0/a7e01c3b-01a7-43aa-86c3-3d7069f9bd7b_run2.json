@@ -1,0 +1,30 @@
+{
+  "debate_id": "a7e01c3b-01a7-43aa-86c3-3d7069f9bd7b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.9,\n  \"short_reason\": \"PRO wins through stronger argument quality and clash, directly refuting CON's economic and essential use claims while CON's rebuttal incoherently adopts PRO's positions, undermining CON's coherence and refutation.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.9,
+  "short_reason": "PRO wins through stronger argument quality and clash, directly refuting CON's economic and essential use claims while CON's rebuttal incoherently adopts PRO's positions, undermining CON's coherence and refutation.",
+  "timestamp": 1767857099.172114,
+  "saved_at": "2026-01-07T23:24:59.172293"
+}

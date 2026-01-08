@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins by advancing stronger modern examples of destructive nationalism (Orb\u00e1n's authoritarianism, COVID hoarding), which survive CON's misuse defenses and demonstrate greater immediate impacts to democracy and global cooperation than CON's qualified historical positives.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins by advancing stronger modern examples of destructive nationalism (Orb\u00e1n's authoritarianism, COVID hoarding), which survive CON's misuse defenses and demonstrate greater immediate impacts to democracy and global cooperation than CON's qualified historical positives.",
+  "timestamp": 1767858799.9587252,
+  "saved_at": "2026-01-07T23:53:19.959081"
+}

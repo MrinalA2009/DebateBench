@@ -1,0 +1,30 @@
+{
+  "debate_id": "4fa1b0ac-2e13-4d38-8169-000d54c0a509",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON effectively challenged the validity of the PRO's statistics and demonstrated that the gender pay gap is largely influenced by individual choices rather than systemic discrimination, making their argument for market-based solutions more compelling.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON effectively challenged the validity of the PRO's statistics and demonstrated that the gender pay gap is largely influenced by individual choices rather than systemic discrimination, making their argument for market-based solutions more compelling.",
+  "timestamp": 1767862994.689417,
+  "saved_at": "2026-01-08T01:03:14.689673"
+}

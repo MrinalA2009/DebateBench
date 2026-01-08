@@ -1,0 +1,30 @@
+{
+  "debate_id": "1b3925b6-f42d-4b65-bd0b-73f18ef2ee7a",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins through superior clash and refutation, directly addressing and turning CON's arguments on development and inequality with specific tools like Scratch, while CON repeats claims without effectively countering PRO's evidence or universal skill analogies.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 2
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins through superior clash and refutation, directly addressing and turning CON's arguments on development and inequality with specific tools like Scratch, while CON repeats claims without effectively countering PRO's evidence or universal skill analogies.",
+  "timestamp": 1767860496.96535,
+  "saved_at": "2026-01-08T00:21:36.965718"
+}

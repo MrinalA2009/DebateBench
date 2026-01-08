@@ -1,0 +1,30 @@
+{
+  "debate_id": "99f22fa9-da27-4d2b-a7be-b4e9c451c79a",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the risks of coercion and the ethical implications of assisted suicide, providing a stronger framework for the debate. Their arguments on the integrity of medical care and the potential for exploitation were more compelling than PRO's claims of autonomy and safeguards.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the risks of coercion and the ethical implications of assisted suicide, providing a stronger framework for the debate. Their arguments on the integrity of medical care and the potential for exploitation were more compelling than PRO's claims of autonomy and safeguards.",
+  "timestamp": 1767862570.774286,
+  "saved_at": "2026-01-08T00:56:10.774558"
+}

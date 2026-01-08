@@ -1,0 +1,30 @@
+{
+  "debate_id": "5bafde70-92c5-485d-8b6d-eba96c51fe62",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.6,\n  \"short_reason\": \"CON wins as strongest remaining argument\u2014higher earning potential via Cornell study\u2014survives PRO's bias rebuttal without counter-evidence. CON better clashes on bias solvency and weighs short-term business harms over PRO's long-term claims.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.6,
+  "short_reason": "CON wins as strongest remaining argument\u2014higher earning potential via Cornell study\u2014survives PRO's bias rebuttal without counter-evidence. CON better clashes on bias solvency and weighs short-term business harms over PRO's long-term claims.",
+  "timestamp": 1767860164.816183,
+  "saved_at": "2026-01-08T00:16:04.816460"
+}

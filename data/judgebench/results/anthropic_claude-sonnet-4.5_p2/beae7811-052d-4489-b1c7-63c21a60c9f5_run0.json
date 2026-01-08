@@ -1,0 +1,30 @@
+{
+  "debate_id": "beae7811-052d-4489-b1c7-63c21a60c9f5",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents three clear contentions (societal impact, economic consequences, ethical implications) with logical structure. Arguments are coherent and consistently developed throughout. Score: 4\n\nCON: Offers three distinct contentions (individual freedom, public revenue, black market concerns) that are well-articulated and logically consistent. Effectively frames the debate around liberty vs. paternalism. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites National Council on Problem Gambling (2M pathological gamblers, 4-6M problem gamblers) and University of Massachusetts study ($3 social cost per $1 revenue). Evidence is specific and integrated into arguments. Score: 4\n\nCON: References North American Association of State and Provincial Lotteries ($29B in proceeds, 2022). Challenges PRO's study methodology but doesn't provide counter-evidence. Less specific grounding overall. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's freedom argument by highlighting addiction's impact on choice. Addresses revenue claims with social cost comparison. Responds to black market argument but less effectively. Score: 4\n\nCON: Challenges PRO's addiction framing by comparing to other legal activities. Critiques the Massachusetts study's methodology and age. Addresses prohibition concerns with historical parallels. Strong engagement throughout. Score: 4\n\n**IMPACT WEIGHING**\n\nPRO: Emphasizes magnitude of harm (2M pathological gamblers, $3:$1 cost ratio, family devastation). Attempts comparative weighing but doesn't fully engage with CON's liberty framework or explain why harms outweigh freedom. Score: 3\n\nCON: Explicitly weighs individual liberty against paternalism. Compares regulated vs. unregulated markets. In final speech, directly states \"benefits of individual freedom, economic contribution, and avoidance of black market far outweigh\" PRO's concerns. More explicit comparative weighing. Score: 4\n\n**ANALYSIS**\n\nThis is a close debate. PRO has slightly stronger evidence specificity, but CON provides more explicit comparative weighing. The critical clash is whether addiction harms justify restricting liberty for all. CON more effectively frames this as a choice between regulation and prohibition, arguing the latter is counterproductive. PRO's $3:$1 cost ratio is powerful but CON challenges its validity without PRO defending it. CON's black market argument gains traction as PRO doesn't adequately explain how prohibition would be enforced or why it wouldn't create underground activity.\n\nThe weighing dimension favors CON, who explicitly compares frameworks and explains why their impacts matter more in the final summary.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"CON wins on superior impact weighing, explicitly comparing liberty versus paternalism and explaining why regulation outweighs prohibition. While PRO presented strong evidence on addiction harms, CON effectively challenged the economic analysis and framed the black market risk. CON's comparative framework in final speeches proved decisive in a close debate.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "CON wins on superior impact weighing, explicitly comparing liberty versus paternalism and explaining why regulation outweighs prohibition. While PRO presented strong evidence on addiction harms, CON effectively challenged the economic analysis and framed the black market risk. CON's comparative framework in final speeches proved decisive in a close debate.",
+  "timestamp": 1767855078.512507,
+  "saved_at": "2026-01-07T22:51:18.513166"
+}

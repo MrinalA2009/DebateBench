@@ -1,0 +1,30 @@
+{
+  "debate_id": "f9bd3513-a05a-4696-bff0-d439ecfa7d9b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with stronger evidence, including specific NIJ and Treatment Advocacy Center studies supporting crime reduction via social services, outperforming CON's general claims on policing efficacy. PRO's root-cause arguments survive clash better than CON's immediate safety focus.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with stronger evidence, including specific NIJ and Treatment Advocacy Center studies supporting crime reduction via social services, outperforming CON's general claims on policing efficacy. PRO's root-cause arguments survive clash better than CON's immediate safety focus.",
+  "timestamp": 1767859234.530358,
+  "saved_at": "2026-01-08T00:00:34.530714"
+}

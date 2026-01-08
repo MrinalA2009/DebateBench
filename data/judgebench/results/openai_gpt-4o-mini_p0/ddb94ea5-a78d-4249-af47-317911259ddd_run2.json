@@ -1,0 +1,30 @@
+{
+  "debate_id": "ddb94ea5-a78d-4249-af47-317911259ddd",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the flaws in the PRO's arguments, particularly regarding the necessity of a robust support system for decriminalization, and provided compelling evidence from Oregon's experience to support their claims about increased risks associated with decriminalization.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the flaws in the PRO's arguments, particularly regarding the necessity of a robust support system for decriminalization, and provided compelling evidence from Oregon's experience to support their claims about increased risks associated with decriminalization.",
+  "timestamp": 1767862337.4820101,
+  "saved_at": "2026-01-08T00:52:17.482275"
+}

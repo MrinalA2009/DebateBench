@@ -1,0 +1,30 @@
+{
+  "debate_id": "03ce0a6d-2850-4fd3-aec5-de96f737f6e3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.95,\n  \"short_reason\": \"PRO wins as CON's rebuttal and summary fail to defend its constructive arguments for innovation and cooperation, instead adopting PRO's conflict and exploitation claims, leaving PRO's superior impacts on war, inequality, and degradation unchallenged and decisive in magnitude.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.95,
+  "short_reason": "PRO wins as CON's rebuttal and summary fail to defend its constructive arguments for innovation and cooperation, instead adopting PRO's conflict and exploitation claims, leaving PRO's superior impacts on war, inequality, and degradation unchallenged and decisive in magnitude.",
+  "timestamp": 1767858766.834479,
+  "saved_at": "2026-01-07T23:52:46.834727"
+}

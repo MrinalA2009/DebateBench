@@ -1,0 +1,30 @@
+{
+  "debate_id": "89d26b1b-7135-4d9c-96c4-00264ba3f07f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and impact weighing. PRO's central claim that audits can evaluate algorithms without accessing data mechanisms was effectively challenged as a false dichotomy. CON's arguments about reverse-engineering vulnerabilities, IP disincentives, and practical implementation challenges remained largely unrefuted. CON provided clearer comparative weighing on why privacy risks and innovation stagnation outweigh PRO's transparency benefits, while PRO offered mostly reassertions without addressing the core tension between algorithmic transparency and data security.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash and impact weighing. PRO's central claim that audits can evaluate algorithms without accessing data mechanisms was effectively challenged as a false dichotomy. CON's arguments about reverse-engineering vulnerabilities, IP disincentives, and practical implementation challenges remained largely unrefuted. CON provided clearer comparative weighing on why privacy risks and innovation stagnation outweigh PRO's transparency benefits, while PRO offered mostly reassertions without addressing the core tension between algorithmic transparency and data security.",
+  "timestamp": 1767853787.3322518,
+  "saved_at": "2026-01-07T22:29:47.332575"
+}

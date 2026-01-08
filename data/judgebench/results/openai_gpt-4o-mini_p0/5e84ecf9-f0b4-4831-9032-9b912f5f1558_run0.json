@@ -1,0 +1,30 @@
+{
+  "debate_id": "5e84ecf9-f0b4-4831-9032-9b912f5f1558",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively argued for the necessity of strict regulations by providing strong evidence and addressing the impact on public safety, while CON's arguments focused more on rights without sufficiently countering the effectiveness of regulations.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively argued for the necessity of strict regulations by providing strong evidence and addressing the impact on public safety, while CON's arguments focused more on rights without sufficiently countering the effectiveness of regulations.",
+  "timestamp": 1767862246.685365,
+  "saved_at": "2026-01-08T00:50:46.685610"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "2f078be0-05f8-4463-91bd-7f492f35b749",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively highlighted the critical risks of unregulated gene editing, supported by strong evidence and clear impact weighing, while CON's arguments on innovation lacked sufficient grounding and did not adequately counter PRO's safety concerns.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively highlighted the critical risks of unregulated gene editing, supported by strong evidence and clear impact weighing, while CON's arguments on innovation lacked sufficient grounding and did not adequately counter PRO's safety concerns.",
+  "timestamp": 1767863125.4156659,
+  "saved_at": "2026-01-08T01:05:25.415930"
+}

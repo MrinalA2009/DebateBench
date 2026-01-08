@@ -1,0 +1,30 @@
+{
+  "debate_id": "bc47387f-1e58-4d81-a46d-90f58bd7dc0b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through stronger evidence and clash on slippery slope, citing empirical expansions in Netherlands and Belgium that PRO dismissed as fallacy without substantive refutation, prioritizing long-term risks to vulnerable populations over PRO's autonomy claims.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through stronger evidence and clash on slippery slope, citing empirical expansions in Netherlands and Belgium that PRO dismissed as fallacy without substantive refutation, prioritizing long-term risks to vulnerable populations over PRO's autonomy claims.",
+  "timestamp": 1767861467.177129,
+  "saved_at": "2026-01-08T00:37:47.177493"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "61ef77cd-8b0e-4266-8364-2d34ebb3f5bb",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins with superior evidence and grounding via specific HRC and APA citations, outpacing CON's unsupported hypotheticals on conflicts. PRO's direct clash refutes key CON claims on women's rights and speech more effectively.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins with superior evidence and grounding via specific HRC and APA citations, outpacing CON's unsupported hypotheticals on conflicts. PRO's direct clash refutes key CON claims on women's rights and speech more effectively.",
+  "timestamp": 1767862003.265564,
+  "saved_at": "2026-01-08T00:46:43.265814"
+}

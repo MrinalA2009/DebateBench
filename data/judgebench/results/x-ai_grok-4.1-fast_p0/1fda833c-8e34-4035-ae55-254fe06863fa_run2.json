@@ -1,0 +1,30 @@
+{
+  "debate_id": "1fda833c-8e34-4035-ae55-254fe06863fa",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.95,\n  \"short_reason\": \"PRO wins through clear, logical arguments, strong evidence like One Fair Wage study, direct refutation of CON's incentives and flexibility claims, and superior impact weighing on stability vs. exploitation. CON's rebuttal incoherently adopts PRO's positions, failing clash entirely.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.95,
+  "short_reason": "PRO wins through clear, logical arguments, strong evidence like One Fair Wage study, direct refutation of CON's incentives and flexibility claims, and superior impact weighing on stability vs. exploitation. CON's rebuttal incoherently adopts PRO's positions, failing clash entirely.",
+  "timestamp": 1767857762.2547982,
+  "saved_at": "2026-01-07T23:36:02.255296"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "d6590657-42ec-46e1-879f-7bc2b9c9cb60",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior impact weighing, contrasting OST stagnation and limited progress against ownership's incentives for innovation, resource security, and multi-planetary survival, while effectively refuting conflict risks with legal frameworks.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior impact weighing, contrasting OST stagnation and limited progress against ownership's incentives for innovation, resource security, and multi-planetary survival, while effectively refuting conflict risks with legal frameworks.",
+  "timestamp": 1767862070.6727538,
+  "saved_at": "2026-01-08T00:47:50.673029"
+}

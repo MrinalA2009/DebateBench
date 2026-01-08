@@ -1,0 +1,30 @@
+{
+  "debate_id": "a7e01c3b-01a7-43aa-86c3-3d7069f9bd7b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.9,\n  \"short_reason\": \"PRO wins with superior argument coherence, specific evidence on emissions, direct refutation of CON's economic and essential use claims, and clear weighing of immediate environmental impacts over speculative innovation. CON's rebuttal contradicted its case by conceding key points.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.9,
+  "short_reason": "PRO wins with superior argument coherence, specific evidence on emissions, direct refutation of CON's economic and essential use claims, and clear weighing of immediate environmental impacts over speculative innovation. CON's rebuttal contradicted its case by conceding key points.",
+  "timestamp": 1767860667.616034,
+  "saved_at": "2026-01-08T00:24:27.616248"
+}

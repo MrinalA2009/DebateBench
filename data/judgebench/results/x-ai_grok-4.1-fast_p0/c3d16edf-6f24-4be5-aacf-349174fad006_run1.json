@@ -1,0 +1,30 @@
+{
+  "debate_id": "c3d16edf-6f24-4be5-aacf-349174fad006",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins with superior evidence grounding in Vienna Convention and mechanisms like waivers/persona non grata, direct clash refuting PRO's official/personal distinction as subjective and unworkable, and clearer weighing of retaliation risks over PRO's vague accountability gains.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 2,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins with superior evidence grounding in Vienna Convention and mechanisms like waivers/persona non grata, direct clash refuting PRO's official/personal distinction as subjective and unworkable, and clearer weighing of retaliation risks over PRO's vague accountability gains.",
+  "timestamp": 1767858440.460254,
+  "saved_at": "2026-01-07T23:47:20.460576"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "a1a935bc-41c3-4ee5-a575-4a487da8413b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.72,\n  \"short_reason\": \"CON won through superior impact weighing and clash. While PRO established cultural preservation concerns with Bali/Bhutan examples, CON effectively distinguished between unmanaged versus regulated tourism, argued PRO's approach creates isolation rather than preservation, and demonstrated economic harms outweigh PRO's preservation benefits. CON's framework of dynamic culture versus static museum-culture went largely unrefuted. PRO failed to adequately defend against CON's central distinction that regulation, not restriction, solves their harms while preserving economic and cultural exchange benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.72,
+  "short_reason": "CON won through superior impact weighing and clash. While PRO established cultural preservation concerns with Bali/Bhutan examples, CON effectively distinguished between unmanaged versus regulated tourism, argued PRO's approach creates isolation rather than preservation, and demonstrated economic harms outweigh PRO's preservation benefits. CON's framework of dynamic culture versus static museum-culture went largely unrefuted. PRO failed to adequately defend against CON's central distinction that regulation, not restriction, solves their harms while preserving economic and cultural exchange benefits.",
+  "timestamp": 1767851482.533227,
+  "saved_at": "2026-01-07T21:51:22.533847"
+}

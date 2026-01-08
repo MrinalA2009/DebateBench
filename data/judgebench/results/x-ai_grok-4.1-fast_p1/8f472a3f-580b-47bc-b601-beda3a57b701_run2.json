@@ -1,0 +1,30 @@
+{
+  "debate_id": "8f472a3f-580b-47bc-b601-beda3a57b701",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins as their strongest argument\u2014nationalism's 'us vs them' leading to historical wars and modern xenophobia (Brexit, America First)\u2014survives with greater magnitude than CON's conditional benefits (Canada example), which PRO refutes as exceptions lacking broad evidence.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins as their strongest argument\u2014nationalism's 'us vs them' leading to historical wars and modern xenophobia (Brexit, America First)\u2014survives with greater magnitude than CON's conditional benefits (Canada example), which PRO refutes as exceptions lacking broad evidence.",
+  "timestamp": 1767859789.445298,
+  "saved_at": "2026-01-08T00:09:49.445729"
+}

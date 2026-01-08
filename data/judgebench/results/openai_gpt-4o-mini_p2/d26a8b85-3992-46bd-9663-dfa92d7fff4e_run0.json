@@ -1,0 +1,30 @@
+{
+  "debate_id": "d26a8b85-3992-46bd-9663-dfa92d7fff4e",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively demonstrated that the harms of religion are systemic and inherent, while CON's arguments about positive contributions were less compelling and often dismissed as exceptions. The impact weighing favored PRO's focus on widespread violence and discrimination over localized benefits.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively demonstrated that the harms of religion are systemic and inherent, while CON's arguments about positive contributions were less compelling and often dismissed as exceptions. The impact weighing favored PRO's focus on widespread violence and discrimination over localized benefits.",
+  "timestamp": 1767863672.705015,
+  "saved_at": "2026-01-08T01:14:32.705273"
+}

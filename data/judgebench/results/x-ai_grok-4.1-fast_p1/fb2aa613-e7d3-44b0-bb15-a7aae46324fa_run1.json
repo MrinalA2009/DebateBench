@@ -1,0 +1,30 @@
+{
+  "debate_id": "fb2aa613-e7d3-44b0-bb15-a7aae46324fa",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins by better clash, directly refuting CON's physical exam necessity (many routine visits like follow-ups don't require it) and personal connection (citing satisfaction/trust studies), while defending accessibility/costs. CON largely restates without refuting PRO's core advantages. PRO's efficiency impacts survive stronger.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 2
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins by better clash, directly refuting CON's physical exam necessity (many routine visits like follow-ups don't require it) and personal connection (citing satisfaction/trust studies), while defending accessibility/costs. CON largely restates without refuting PRO's core advantages. PRO's efficiency impacts survive stronger.",
+  "timestamp": 1767859459.0568519,
+  "saved_at": "2026-01-08T00:04:19.057093"
+}

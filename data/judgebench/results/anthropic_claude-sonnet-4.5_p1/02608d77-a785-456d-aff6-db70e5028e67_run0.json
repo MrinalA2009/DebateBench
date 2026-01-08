@@ -1,0 +1,30 @@
+{
+  "debate_id": "02608d77-a785-456d-aff6-db70e5028e67",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Strongest Arguments:**\n1. Current immunity enables serious crimes without consequence (5,000+ crimes in UK with virtually no prosecutions)\n2. System undermines equality before the law\n3. Targeted limitation (for serious non-official acts only) preserves diplomatic function while ensuring accountability\n\n**CON's Strongest Arguments:**\n1. Sending states retain jurisdiction and can prosecute\n2. Expulsion/persona non grata provides sufficient checks\n3. Limiting immunity would set dangerous precedent for political exploitation\n4. Difficulty distinguishing official vs. non-official acts\n\n**After Clash:**\n- PRO effectively refutes CON's \"sufficient checks\" argument by pointing to the empirical evidence (5,000 crimes, virtually no prosecutions), showing the gap between theory and practice\n- CON's \"dangerous precedent\" argument remains largely unrefuted but is somewhat weakened by PRO's clarification that they propose targeted limitations, not abolition\n- CON's complexity argument (distinguishing official/non-official acts) goes largely unaddressed by PRO\n- PRO's equality before law argument stands relatively unchallenged\n\n## Stage 2: Comparative Evaluation\n\n**PRO's Impact:** Justice for victims, accountability, maintaining trust in international cooperation through fairness\n**CON's Impact:** Stability of diplomatic relations, preventing political exploitation, maintaining centuries-old system\n\n**Weighing Analysis:**\nPRO provides concrete evidence (BBC report, 5,000 crimes) while CON relies more on theoretical concerns. PRO's distinction between targeted limitation vs. abolition addresses CON's stability concerns. CON's argument about complexity is valid but doesn't outweigh the demonstrated harm PRO identifies.\n\n## Scoring\n\n**Argument Quality:**\n- PRO: 4 (Clear structure, logical progression, well-defined proposal)\n- CON: 4 (Coherent defense, clear framework, though somewhat reactive)\n\n**Evidence & Grounding:**\n- PRO: 5 (Specific BBC report, concrete numbers, empirical support)\n- CON: 3 (Theoretical arguments, limited concrete evidence, relies on general principles)\n\n**Clash & Refutation:**\n- PRO: 4 (Directly addresses CON's main points about existing mechanisms, provides counter-evidence)\n- CON: 3 (Engages with PRO's arguments but doesn't effectively counter the empirical evidence)\n\n**Impact Weighing:**\n- PRO: 4 (Clear comparison: trust through accountability vs. fear of instability; explains why targeted approach addresses concerns)\n- CON: 3 (Identifies impacts but doesn't comparatively weigh against PRO's justice/accountability framework)\n\n**Winner Determination:**\nPRO wins because their empirical evidence (5,000 crimes with virtually no prosecutions) directly refutes CON's claim that existing mechanisms are sufficient. PRO's targeted limitation proposal addresses CON's stability concerns while maintaining the core argument about accountability. CON's theoretical concerns about complexity and precedent don't outweigh the demonstrated harm PRO identifies.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence and effective refutation. The BBC report showing 5,000 crimes with virtually no prosecutions directly undermines CON's claim that existing mechanisms are sufficient. PRO's targeted limitation proposal addresses stability concerns while maintaining accountability. CON's theoretical arguments about complexity and precedent don't outweigh PRO's demonstrated harms with concrete evidence.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence and effective refutation. The BBC report showing 5,000 crimes with virtually no prosecutions directly undermines CON's claim that existing mechanisms are sufficient. PRO's targeted limitation proposal addresses stability concerns while maintaining accountability. CON's theoretical arguments about complexity and precedent don't outweigh PRO's demonstrated harms with concrete evidence.",
+  "timestamp": 1767851910.7864919,
+  "saved_at": "2026-01-07T21:58:30.786902"
+}

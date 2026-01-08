@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"PRO wins through superior clash directly refuting CON's unity claim with McCarthyism and emphasizing modern authoritarian examples like Orb\u00e1n, outweighing CON's conditional positives on destructiveness in modern politics.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "PRO wins through superior clash directly refuting CON's unity claim with McCarthyism and emphasizing modern authoritarian examples like Orb\u00e1n, outweighing CON's conditional positives on destructiveness in modern politics.",
+  "timestamp": 1767858787.281249,
+  "saved_at": "2026-01-07T23:53:07.281577"
+}

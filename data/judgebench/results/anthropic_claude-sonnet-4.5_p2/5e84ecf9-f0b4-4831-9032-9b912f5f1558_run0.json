@@ -1,0 +1,30 @@
+{
+  "debate_id": "5e84ecf9-f0b4-4831-9032-9b912f5f1558",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I will evaluate this debate systematically across all four criteria.\n\n**ARGUMENT QUALITY**\n\nPRO presents clear, structured arguments: strict regulation reduces gun deaths (citing CDC data), international evidence (Australia), and constitutional permissibility of reasonable regulations. Arguments are logically coherent and well-organized.\n\nCON presents clear counter-arguments: Second Amendment rights, criminals don't follow laws, root causes of violence matter more, and Australia comparisons are flawed. Arguments are also logically structured and internally consistent.\n\nBoth sides: 4/5\n\n**EVIDENCE & GROUNDING**\n\nPRO cites specific evidence: CDC statistics (39,000 deaths in 2019), Australia's 42% reduction in gun homicides, Supreme Court precedent on reasonable regulations. Evidence is concrete and integrated into arguments.\n\nCON relies more on logical reasoning and constitutional arguments but lacks specific statistical evidence. Claims about criminals obtaining weapons illegally and mixed results from Australia studies are asserted without specific data or citations.\n\nPRO: 4/5, CON: 3/5\n\n**CLASH & REFUTATION**\n\nPRO directly engages CON's Second Amendment argument (reasonable regulations), addresses the false dichotomy claim, and responds to Australia comparison concerns. However, doesn't fully engage with the \"criminals don't follow laws\" argument.\n\nCON directly refutes PRO's Supreme Court interpretation, challenges the effectiveness claims about preventing dangerous individuals from obtaining guns, and repeatedly attacks the Australia comparison. Strong engagement throughout.\n\nPRO: 4/5, CON: 4/5\n\n**IMPACT WEIGHING**\n\nPRO emphasizes magnitude (39,000 deaths annually, thousands of lives lost), frames as \"value of human life,\" and argues impacts of inaction outweigh Second Amendment concerns. Clear comparative weighing in summary.\n\nCON frames as \"fundamental rights\" vs \"false promise of safety,\" argues PRO creates \"dangerous imbalance\" by disarming law-abiding citizens, and emphasizes \"genuine safety\" through root cause solutions. Provides comparative framework but less concrete impact quantification.\n\nPRO: 4/5, CON: 3/5\n\n**WINNER DETERMINATION**\n\nPRO wins on evidence strength with concrete statistics and international examples. Both sides clash effectively, but PRO's empirical grounding gives their weighing more force. CON's \"criminals don't follow laws\" argument, while intuitive, lacks empirical support to counter PRO's data showing regulation effectiveness. PRO's impact weighing (thousands of lives) is more tangible than CON's abstract rights-based framework.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior evidence grounding and impact weighing. While both sides clashed effectively, PRO's concrete statistics (39,000 deaths, Australia's 42% reduction) and clear magnitude-based weighing outweighed CON's primarily theoretical arguments about rights and criminal behavior. CON's lack of empirical support for key claims weakened their comparative case.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior evidence grounding and impact weighing. While both sides clashed effectively, PRO's concrete statistics (39,000 deaths, Australia's 42% reduction) and clear magnitude-based weighing outweighed CON's primarily theoretical arguments about rights and criminal behavior. CON's lack of empirical support for key claims weakened their comparative case.",
+  "timestamp": 1767854418.93371,
+  "saved_at": "2026-01-07T22:40:18.933888"
+}

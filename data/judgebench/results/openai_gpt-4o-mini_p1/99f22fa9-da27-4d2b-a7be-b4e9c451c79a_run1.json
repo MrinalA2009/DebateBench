@@ -1,0 +1,30 @@
+{
+  "debate_id": "99f22fa9-da27-4d2b-a7be-b4e9c451c79a",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the risks of coercion and the ethical implications of assisted suicide, providing a stronger framework for protecting vulnerable patients. Their arguments on the erosion of trust and the distinction between palliative care and assisted suicide were more compelling and better supported than PRO's rebuttals.\" \n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the risks of coercion and the ethical implications of assisted suicide, providing a stronger framework for protecting vulnerable patients. Their arguments on the erosion of trust and the distinction between palliative care and assisted suicide were more compelling and better supported than PRO's rebuttals.",
+  "timestamp": 1767863188.399256,
+  "saved_at": "2026-01-08T01:06:28.399513"
+}

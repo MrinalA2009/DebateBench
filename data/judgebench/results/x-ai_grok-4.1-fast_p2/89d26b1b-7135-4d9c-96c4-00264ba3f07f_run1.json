@@ -1,0 +1,30 @@
+{
+  "debate_id": "89d26b1b-7135-4d9c-96c4-00264ba3f07f",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins via superior clash and refutation, directly exposing flaws in PRO's privacy safeguards and feasibility claims by emphasizing algorithms' data integration and dynamic nature, while comparatively weighing tangible harms like exploitation and stagnation over PRO's speculative benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins via superior clash and refutation, directly exposing flaws in PRO's privacy safeguards and feasibility claims by emphasizing algorithms' data integration and dynamic nature, while comparatively weighing tangible harms like exploitation and stagnation over PRO's speculative benefits.",
+  "timestamp": 1767862047.653295,
+  "saved_at": "2026-01-08T00:47:27.653540"
+}

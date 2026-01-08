@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior clash and impact weighing, refuting PRO's claims with specific economic evidence ($247B, 1.2M jobs) and negligible emissions fraction, while PRO's green jobs and precedent arguments remain speculative and underdeveloped.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior clash and impact weighing, refuting PRO's claims with specific economic evidence ($247B, 1.2M jobs) and negligible emissions fraction, while PRO's green jobs and precedent arguments remain speculative and underdeveloped.",
+  "timestamp": 1767860388.093409,
+  "saved_at": "2026-01-08T00:19:48.094211"
+}

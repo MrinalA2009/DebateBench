@@ -1,0 +1,30 @@
+{
+  "debate_id": "1fda833c-8e34-4035-ae55-254fe06863fa",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.9,\n  \"short_reason\": \"PRO wins as strongest arguments on wage instability and discrimination survive intact with strong evidence, while CON's rebuttal fails to clash effectively and instead echoes PRO's points, leaving CON's incentives and flexibility claims undefended and outweighed in worker impacts.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.9,
+  "short_reason": "PRO wins as strongest arguments on wage instability and discrimination survive intact with strong evidence, while CON's rebuttal fails to clash effectively and instead echoes PRO's points, leaving CON's incentives and flexibility claims undefended and outweighed in worker impacts.",
+  "timestamp": 1767859527.7639859,
+  "saved_at": "2026-01-08T00:05:27.764312"
+}

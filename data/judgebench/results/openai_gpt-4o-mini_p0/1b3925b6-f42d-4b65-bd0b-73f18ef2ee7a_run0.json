@@ -1,0 +1,30 @@
+{
+  "debate_id": "1b3925b6-f42d-4b65-bd0b-73f18ef2ee7a",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively argued the necessity of programming as foundational literacy, countering CON's concerns about developmental appropriateness and resource allocation. Their rebuttals were strong, emphasizing the benefits of early coding education and addressing the opposition's points directly.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively argued the necessity of programming as foundational literacy, countering CON's concerns about developmental appropriateness and resource allocation. Their rebuttals were strong, emphasizing the benefits of early coding education and addressing the opposition's points directly.",
+  "timestamp": 1767862202.643431,
+  "saved_at": "2026-01-08T00:50:02.643688"
+}

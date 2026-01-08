@@ -1,0 +1,30 @@
+{
+  "debate_id": "69d5043d-07d7-40bb-a8c3-01fc906e88ab",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively articulated the irreversible environmental impacts of deep-sea mining, while CON's arguments about regulation and resource needs lacked sufficient grounding and failed to adequately counter the precautionary principle emphasized by PRO.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively articulated the irreversible environmental impacts of deep-sea mining, while CON's arguments about regulation and resource needs lacked sufficient grounding and failed to adequately counter the precautionary principle emphasized by PRO.",
+  "timestamp": 1767862582.427021,
+  "saved_at": "2026-01-08T00:56:22.427275"
+}

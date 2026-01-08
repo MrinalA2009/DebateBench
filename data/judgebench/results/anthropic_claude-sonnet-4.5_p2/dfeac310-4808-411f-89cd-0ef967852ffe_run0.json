@@ -1,0 +1,30 @@
+{
+  "debate_id": "dfeac310-4808-411f-89cd-0ef967852ffe",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins through superior impact weighing and clash. PRO effectively argued that public safety risks outweigh innovation benefits, directly engaged CON's voluntary compliance argument by highlighting rogue actors and lack of enforcement, and consistently weighed harms to broader society. CON failed to adequately respond to the externality argument\u2014that unregulated gene editing affects others beyond the individual\u2014and provided insufficient comparative weighing between innovation benefits and safety risks.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins through superior impact weighing and clash. PRO effectively argued that public safety risks outweigh innovation benefits, directly engaged CON's voluntary compliance argument by highlighting rogue actors and lack of enforcement, and consistently weighed harms to broader society. CON failed to adequately respond to the externality argument\u2014that unregulated gene editing affects others beyond the individual\u2014and provided insufficient comparative weighing between innovation benefits and safety risks.",
+  "timestamp": 1767856208.2176719,
+  "saved_at": "2026-01-07T23:10:08.218000"
+}

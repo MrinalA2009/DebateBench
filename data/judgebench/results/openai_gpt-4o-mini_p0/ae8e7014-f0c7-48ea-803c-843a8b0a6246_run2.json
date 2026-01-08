@@ -1,0 +1,30 @@
+{
+  "debate_id": "ae8e7014-f0c7-48ea-803c-843a8b0a6246",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively refuted PRO's arguments by highlighting the economic consequences of rationing and emphasizing the importance of technological innovation, which provided a clearer path to sustainability without sacrificing economic growth.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively refuted PRO's arguments by highlighting the economic consequences of rationing and emphasizing the importance of technological innovation, which provided a clearer path to sustainability without sacrificing economic growth.",
+  "timestamp": 1767862394.8936691,
+  "saved_at": "2026-01-08T00:53:14.893930"
+}

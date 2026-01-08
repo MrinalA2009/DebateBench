@@ -1,0 +1,30 @@
+{
+  "debate_id": "c0b66a18-698b-4629-a877-ad1208f59ef6",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through multiple passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents clear structure with three main contentions (discrimination prevention, cultural acceptance, human rights). Arguments are coherent and logically connected. Score: 4\n- CON: Offers four distinct concerns (free speech, sports fairness, legal ambiguity, preference for education). Arguments are clear but somewhat repetitive across speeches. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites Human Rights Campaign study, Universal Declaration of Human Rights, and International Olympic Committee policies. Provides specific mechanisms. Score: 4\n- CON: References \"numerous studies\" without specifics, mentions IOC policies but doesn't detail them. More assertion-based than PRO. Score: 3\n\n**Clash & Refutation:**\n- PRO: Directly addresses all CON concerns (free speech, sports, legal ambiguity). Provides counter-evidence on sports policies. Score: 4\n- CON: Engages with PRO's points but largely reasserts original positions without deeply engaging PRO's evidence. Score: 3\n\n**Impact Weighing:**\n- PRO: Frames impacts as human rights violations, discrimination, and violence. Compares legal protection necessity vs. education alone. Score: 3\n- CON: Discusses magnitude of free speech concerns and safety issues but doesn't comparatively weigh against PRO's discrimination impacts. Score: 3\n\n## Second Pass Verification\n\nReviewing the debate flow:\n- PRO establishes framework of human rights and discrimination prevention\n- CON raises legitimate concerns about conflicts with other rights\n- PRO responds with specific evidence (IOC policies, UDHR)\n- CON reasserts concerns but doesn't effectively counter PRO's evidence\n\nKey differences:\n- PRO provides more specific evidence citations\n- PRO more directly refutes opponent's claims\n- CON's \"numerous studies\" claim remains unsubstantiated\n- Both sides engage in weighing but neither dominates\n\nWinner determination: PRO edges ahead on evidence quality and clash engagement, though the debate is competitive.\n\n## Third Pass - Final Verification\n\nChecking consistency:\n- Evidence gap remains clear (PRO cites specific sources, CON doesn't)\n- Clash advantage to PRO (addresses all four CON points with counter-evidence)\n- Argument quality roughly equal\n- Weighing roughly equal\n\nConfidence: This is a clear but contestable decision. PRO wins on superior evidence grounding and more effective refutation, but CON raises legitimate concerns that aren't fully dismissed.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins on superior evidence grounding, citing specific sources like the Human Rights Campaign study and IOC policies, while CON relies on unsubstantiated claims about 'numerous studies.' PRO also more effectively engages CON's arguments with direct refutation, particularly on sports fairness and free speech concerns. Though both sides present clear arguments, PRO's evidence advantage and stronger clash performance are decisive.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins on superior evidence grounding, citing specific sources like the Human Rights Campaign study and IOC policies, while CON relies on unsubstantiated claims about 'numerous studies.' PRO also more effectively engages CON's arguments with direct refutation, particularly on sports fairness and free speech concerns. Though both sides present clear arguments, PRO's evidence advantage and stronger clash performance are decisive.",
+  "timestamp": 1767849444.720475,
+  "saved_at": "2026-01-07T21:17:24.720794"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "beae7811-052d-4489-b1c7-63c21a60c9f5",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Strongest Arguments:**\n1. Addiction impact: 2 million pathological gamblers, social costs including bankruptcy, domestic violence, suicide\n2. Economic net loss: $3 in social costs per $1 of revenue (University of Massachusetts study)\n3. Ethical exploitation of vulnerable populations\n\n**CON's Strongest Arguments:**\n1. Individual liberty: Adults should have autonomy over personal choices\n2. Public revenue: $29 billion in net proceeds (2022 NASPL data), funds essential services\n3. Black market risk: Prohibition drives activity underground\n\n## Stage 2: Clash Evaluation\n\n**On Individual Liberty:**\nPRO responds that addiction undermines true freedom - 2M+ pathological gamblers lack genuine choice. CON counters that minority addiction doesn't justify restricting majority rights, advocates regulation over prohibition.\n\n**On Economics:**\nPRO cites 3:1 cost-to-revenue ratio. CON dismisses this study as \"outdated\" and \"widely criticized\" but provides no counter-evidence on the methodology. CON's $29B revenue figure is uncontested but doesn't address the net cost calculation.\n\n**On Black Market:**\nPRO argues prohibition protects vulnerable populations from predatory targeting. CON asserts prohibition creates dangerous unregulated markets but provides no evidence of this occurring with gambling bans.\n\n## Comparative Impact Weighing\n\n**PRO's weighing:** Focuses on magnitude (millions affected by addiction) and irreversibility (bankruptcy, family breakdown, suicide). Emphasizes net economic loss.\n\n**CON's weighing:** Emphasizes scope (majority rights vs. minority harm), revenue magnitude ($29B), and probability (black market will emerge). However, lacks comparative analysis of why their impacts outweigh PRO's.\n\n## Critical Evaluation\n\nPRO provides specific evidence (2M pathological gamblers, 4-6M problem gamblers, 3:1 cost ratio) that remains largely unrefuted. CON dismisses the cost study as \"outdated\" without substantiation and doesn't provide counter-evidence on net economic impact.\n\nCON's liberty argument is philosophically strong but doesn't adequately address PRO's point that addiction compromises genuine freedom. CON's black market argument lacks evidentiary support compared to PRO's documented harms.\n\nPRO more effectively engages with CON's arguments (addressing liberty through addiction, revenue through net costs) while CON relies more on assertions (study is \"widely criticized,\" black market \"will\" emerge).\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins on stronger evidence and comparative weighing. While CON presents coherent liberty arguments, PRO's specific data on addiction rates and net economic costs (3:1 ratio) remains largely unrefuted. CON dismisses PRO's economic study without counter-evidence and provides no data supporting black market claims. PRO more effectively engages opponent's arguments and demonstrates why magnitude of documented harms outweighs theoretical benefits.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins on stronger evidence and comparative weighing. While CON presents coherent liberty arguments, PRO's specific data on addiction rates and net economic costs (3:1 ratio) remains largely unrefuted. CON dismisses PRO's economic study without counter-evidence and provides no data supporting black market claims. PRO more effectively engages opponent's arguments and demonstrates why magnitude of documented harms outweighs theoretical benefits.",
+  "timestamp": 1767852439.921725,
+  "saved_at": "2026-01-07T22:07:19.922438"
+}

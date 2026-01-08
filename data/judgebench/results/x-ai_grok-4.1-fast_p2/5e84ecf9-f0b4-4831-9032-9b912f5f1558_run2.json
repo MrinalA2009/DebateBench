@@ -1,0 +1,30 @@
+{
+  "debate_id": "5e84ecf9-f0b4-4831-9032-9b912f5f1558",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and impact weighing, directly refuting PRO's Australia evidence as non-comparable and demonstrating regulations disarm law-abiding citizens while failing to deter criminals.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash and impact weighing, directly refuting PRO's Australia evidence as non-comparable and demonstrating regulations disarm law-abiding citizens while failing to deter criminals.",
+  "timestamp": 1767860656.397349,
+  "saved_at": "2026-01-08T00:24:16.397556"
+}

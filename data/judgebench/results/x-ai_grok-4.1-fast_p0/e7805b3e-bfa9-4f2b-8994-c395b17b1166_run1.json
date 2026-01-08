@@ -1,0 +1,30 @@
+{
+  "debate_id": "e7805b3e-bfa9-4f2b-8994-c395b17b1166",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.6,\n  \"short_reason\": \"CON wins through stronger specificity on cognitive risks like impulse control and peer influence via Developmental Psychology study, plus effective clash refuting PRO's Austria/Scotland turnout claims.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 3
+    }
+  },
+  "confidence": 0.6,
+  "short_reason": "CON wins through stronger specificity on cognitive risks like impulse control and peer influence via Developmental Psychology study, plus effective clash refuting PRO's Austria/Scotland turnout claims.",
+  "timestamp": 1767858300.718048,
+  "saved_at": "2026-01-07T23:45:00.718281"
+}

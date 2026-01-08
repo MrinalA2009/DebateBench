@@ -1,0 +1,30 @@
+{
+  "debate_id": "9c904e3b-464b-4d06-9c09-1d40c66da79f",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "I will evaluate this debate through multiple passes to ensure consistency.\n\n## First Pass Analysis\n\n**Argument Quality:**\n- PRO: Presents three clear contentions (violence/intolerance, scientific hindrance, social inequality) with specific examples. Structure is coherent. Score: 4\n- CON: Presents three counter-contentions (community building, ethical guidance, charitable work) with concrete examples. Well-organized. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites historical examples (Crusades, Inquisition), contemporary issues (LGBTQ+ persecution, vaccine resistance, climate denial). Moderate specificity. Score: 3\n- CON: Names specific organizations (Doctors Without Borders, Islamic Relief, Catholic Relief Services, Salvation Army). More concrete examples. Score: 4\n\n**Clash & Refutation:**\n- PRO: Directly addresses CON's points about extremism being \"deviations,\" challenges the moral compass claim with discrimination examples, questions charitable work's redemptive value. Score: 4\n- CON: Identifies logical fallacy in PRO's argument, distinguishes extremism from core tenets, refutes scientific hindrance claim with religious scientists example, challenges discrimination generalization. Score: 4\n\n**Impact Weighing:**\n- PRO: Argues systemic harm outweighs individual good, emphasizes \"full spectrum\" consideration, but limited comparative analysis of magnitude/scope. Score: 3\n- CON: Argues widespread good outweighs isolated extremism, emphasizes scale (\"billions,\" \"millions\"), provides comparative framing (fringe vs. mainstream). Score: 4\n\n## Second Pass Analysis\n\nReviewing for consistency:\n\nPRO's main weakness is relying on assertions about systemic harm without fully quantifying or comparing the scale. They claim extremism is \"rooted in literal interpretations\" but don't prove this represents the majority impact.\n\nCON effectively uses scale arguments (\"billions of believers,\" \"millions served\") and distinguishes between fringe and mainstream practices. The \"cherry-picking\" accusation against PRO is substantiated by CON's broader evidence base.\n\nCON's rebuttal that \"most major religions emphasize peace\" combined with concrete charitable examples creates stronger comparative weighing than PRO's assertion that harm \"outweighs\" good without detailed magnitude comparison.\n\n## Final Evaluation\n\nCON wins on superior impact weighing and evidence grounding. While both sides clash effectively, CON better demonstrates scale and scope of religious benefit versus harm, and more successfully challenges PRO's generalizations about systemic problems.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior impact weighing and evidence specificity. While both sides clashed effectively, CON better demonstrated the scale of religious benefit (billions served, concrete organizations) versus PRO's reliance on extremism examples without proving these represent majority impact. CON successfully framed PRO's case as cherry-picking negative instances while ignoring widespread positive contributions.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior impact weighing and evidence specificity. While both sides clashed effectively, CON better demonstrated the scale of religious benefit (billions served, concrete organizations) versus PRO's reliance on extremism examples without proving these represent majority impact. CON successfully framed PRO's case as cherry-picking negative instances while ignoring widespread positive contributions.",
+  "timestamp": 1767850645.2144918,
+  "saved_at": "2026-01-07T21:37:25.215713"
+}

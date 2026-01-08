@@ -1,0 +1,30 @@
+{
+  "debate_id": "486a5ce3-4b6e-4d32-906a-ff8a65febfd3",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively argued that government mandates are necessary to address systemic discrimination in the gender pay gap, supported by strong evidence like the AAUW study. CON's arguments about job losses and personal choices lacked sufficient grounding and did not adequately counter PRO's claims about the effectiveness of mandates.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively argued that government mandates are necessary to address systemic discrimination in the gender pay gap, supported by strong evidence like the AAUW study. CON's arguments about job losses and personal choices lacked sufficient grounding and did not adequately counter PRO's claims about the effectiveness of mandates.",
+  "timestamp": 1767862892.503581,
+  "saved_at": "2026-01-08T01:01:32.503832"
+}

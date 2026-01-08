@@ -1,0 +1,30 @@
+{
+  "debate_id": "61ef77cd-8b0e-4266-8364-2d34ebb3f5bb",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.72,\n  \"short_reason\": \"PRO won through stronger evidence-based arguments and superior impact weighing. PRO cited specific data (HRC report, APA findings) and provided concrete examples of successful coexistence of protections. CON relied primarily on speculative harms without substantiating claims about conflicts with women's rights or speech suppression. PRO effectively refuted CON's concerns by demonstrating jurisdictions where protections coexist, while CON failed to provide evidence for claimed negative consequences. PRO's weighing of mental health benefits and equality principles outweighed CON's unsubstantiated fears.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.72,
+  "short_reason": "PRO won through stronger evidence-based arguments and superior impact weighing. PRO cited specific data (HRC report, APA findings) and provided concrete examples of successful coexistence of protections. CON relied primarily on speculative harms without substantiating claims about conflicts with women's rights or speech suppression. PRO effectively refuted CON's concerns by demonstrating jurisdictions where protections coexist, while CON failed to provide evidence for claimed negative consequences. PRO's weighing of mental health benefits and equality principles outweighed CON's unsubstantiated fears.",
+  "timestamp": 1767853738.7067971,
+  "saved_at": "2026-01-07T22:28:58.707018"
+}

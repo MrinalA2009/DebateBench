@@ -1,0 +1,30 @@
+{
+  "debate_id": "d26a8b85-3992-46bd-9663-dfa92d7fff4e",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins as strongest remaining argument\u2014dogma-driven violence and oppression\u2014is better supported with specific examples (ISIS, systemic discrimination) and directly refutes CON's misinterpretation claim, outweighing CON's charity impacts in global magnitude and pervasiveness.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins as strongest remaining argument\u2014dogma-driven violence and oppression\u2014is better supported with specific examples (ISIS, systemic discrimination) and directly refutes CON's misinterpretation claim, outweighing CON's charity impacts in global magnitude and pervasiveness.",
+  "timestamp": 1767859598.248867,
+  "saved_at": "2026-01-08T00:06:38.249004"
+}

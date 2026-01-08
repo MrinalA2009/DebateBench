@@ -1,0 +1,30 @@
+{
+  "debate_id": "d26a8b85-3992-46bd-9663-dfa92d7fff4e",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n- PRO: Presents three clear contentions (conflict/violence, impeding social progress, intellectual stagnation). Arguments are logically structured and internally consistent. Score: 4\n- CON: Presents two main contentions (moral framework/altruism, social cohesion). Arguments are coherent but less developed in the constructive. Score: 3\n\n**EVIDENCE & GROUNDING**\n- PRO: Provides specific examples (ISIS, Boko Haram), references concrete issues (reproductive rights, LGBTQ+ discrimination, stem cell research). Well-integrated support. Score: 4\n- CON: References studies about charitable activities and disaster relief but lacks specific citations. More general assertions about religious contributions. Score: 3\n\n**CLASH & REFUTATION**\n- PRO: Directly engages CON's \"misinterpretation\" argument, challenges the charity claim with conditional aid critique, addresses the social cohesion point by highlighting the \"other\" problem. Strong engagement. Score: 4\n- CON: Responds to PRO's points but often defensively. Acknowledges some religious conflicts exist but doesn't effectively counter PRO's systemic harm argument. Partial engagement. Score: 3\n\n**IMPACT WEIGHING**\n- PRO: Explicitly weighs impacts in summary, comparing \"widespread violence, human rights abuses, and suppression of critical thought\" against \"localized benefits.\" Clear comparative framework emphasizing magnitude and scope. Score: 4\n- CON: Mentions \"billions of people\" benefiting but doesn't comparatively weigh this against PRO's harms. Lacks explicit impact comparison or prioritization framework. Score: 2\n\n**WINNER DETERMINATION**\nPRO wins on superior clash, clearer impact weighing, and more specific evidence. PRO effectively argues that harms are systemic rather than exceptional, while CON struggles to defend against the \"inherent vs. misinterpretation\" distinction. PRO's comparative weighing in the summary (widespread/systemic harms vs. localized benefits) goes largely uncontested by CON.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior impact weighing and more effective clash. PRO successfully argued harms are systemic rather than exceptional, provided specific examples of religious violence and discrimination, and explicitly compared widespread harms against localized benefits. CON's defense that negative impacts are merely misinterpretations was effectively countered, and CON failed to provide comparative weighing of impacts.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior impact weighing and more effective clash. PRO successfully argued harms are systemic rather than exceptional, provided specific examples of religious violence and discrimination, and explicitly compared widespread harms against localized benefits. CON's defense that negative impacts are merely misinterpretations was effectively countered, and CON failed to provide comparative weighing of impacts.",
+  "timestamp": 1767855584.9017038,
+  "saved_at": "2026-01-07T22:59:44.902020"
+}

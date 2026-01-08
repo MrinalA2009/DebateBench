@@ -1,0 +1,30 @@
+{
+  "debate_id": "8bd8e8fe-58cb-4610-886f-a54a76d24e33",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with superior evidence (Bialystok study, ACTFL) and direct refutation of CON's resource strain and one-size-fits-all claims, while better weighing long-term cognitive/economic impacts over short-term costs.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with superior evidence (Bialystok study, ACTFL) and direct refutation of CON's resource strain and one-size-fits-all claims, while better weighing long-term cognitive/economic impacts over short-term costs.",
+  "timestamp": 1767857201.459192,
+  "saved_at": "2026-01-07T23:26:41.459424"
+}

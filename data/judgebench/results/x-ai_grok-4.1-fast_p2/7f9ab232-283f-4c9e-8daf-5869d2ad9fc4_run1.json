@@ -1,0 +1,30 @@
+{
+  "debate_id": "7f9ab232-283f-4c9e-8daf-5869d2ad9fc4",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash and refutation, directly countering each PRO argument with alternatives like multiverse theory and emphasizing PRO's unmet burden of proof for likelihood, while PRO offers only speculative responses without stronger grounding.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash and refutation, directly countering each PRO argument with alternatives like multiverse theory and emphasizing PRO's unmet burden of proof for likelihood, while PRO offers only speculative responses without stronger grounding.",
+  "timestamp": 1767860708.73261,
+  "saved_at": "2026-01-08T00:25:08.732795"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "6427bcd2-5cff-42c5-8b8c-af5a2b2a765a",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively argued that victim involvement enhances justice and rehabilitation, while CON's concerns about bias and emotional impact were less compelling. PRO's arguments were clearer and better supported, leading to a stronger overall case.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively argued that victim involvement enhances justice and rehabilitation, while CON's concerns about bias and emotional impact were less compelling. PRO's arguments were clearer and better supported, leading to a stronger overall case.",
+  "timestamp": 1767863254.833461,
+  "saved_at": "2026-01-08T01:07:34.833712"
+}

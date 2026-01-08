@@ -1,0 +1,30 @@
+{
+  "debate_id": "5e84ecf9-f0b4-4831-9032-9b912f5f1558",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash refuting Australia's comparability and PRO's mechanisms with criminal disregard logic, plus clearer weighing of self-defense vulnerabilities over superficial reductions in violence.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash refuting Australia's comparability and PRO's mechanisms with criminal disregard logic, plus clearer weighing of self-defense vulnerabilities over superficial reductions in violence.",
+  "timestamp": 1767857059.846577,
+  "saved_at": "2026-01-07T23:24:19.846869"
+}

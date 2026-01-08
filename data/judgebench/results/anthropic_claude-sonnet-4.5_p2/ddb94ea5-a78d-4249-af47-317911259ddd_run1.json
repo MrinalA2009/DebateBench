@@ -1,0 +1,30 @@
+{
+  "debate_id": "ddb94ea5-a78d-4249-af47-317911259ddd",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.72,\n  \"short_reason\": \"CON won through superior clash and weighing. CON effectively distinguished Portugal's comprehensive infrastructure from blanket decriminalization and introduced Oregon's Measure 110 as concrete counter-evidence that PRO never adequately refuted. CON's comparative weighing of public safety risks versus health benefits was more developed, while PRO largely reasserted Portugal without addressing the infrastructure gap or Oregon's contradictory outcomes. CON's balanced approach argument provided clearer impact comparison.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.72,
+  "short_reason": "CON won through superior clash and weighing. CON effectively distinguished Portugal's comprehensive infrastructure from blanket decriminalization and introduced Oregon's Measure 110 as concrete counter-evidence that PRO never adequately refuted. CON's comparative weighing of public safety risks versus health benefits was more developed, while PRO largely reasserted Portugal without addressing the infrastructure gap or Oregon's contradictory outcomes. CON's balanced approach argument provided clearer impact comparison.",
+  "timestamp": 1767854887.016036,
+  "saved_at": "2026-01-07T22:48:07.016331"
+}

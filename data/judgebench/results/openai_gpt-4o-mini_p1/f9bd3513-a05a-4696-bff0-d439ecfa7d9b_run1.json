@@ -1,0 +1,30 @@
+{
+  "debate_id": "f9bd3513-a05a-4696-bff0-d439ecfa7d9b",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively highlighted the complexities of public safety and the role of police, providing a balanced approach that addressed both law enforcement and social services. Their arguments on the necessity of police in crisis situations and community safety were more compelling than PRO's claims about over-policing and systemic inequalities.\" \n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively highlighted the complexities of public safety and the role of police, providing a balanced approach that addressed both law enforcement and social services. Their arguments on the necessity of police in crisis situations and community safety were more compelling than PRO's claims about over-policing and systemic inequalities.",
+  "timestamp": 1767862916.431112,
+  "saved_at": "2026-01-08T01:01:56.431453"
+}

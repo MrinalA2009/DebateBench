@@ -1,0 +1,30 @@
+{
+  "debate_id": "61ef77cd-8b0e-4266-8364-2d34ebb3f5bb",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO wins with stronger evidence like HRC discrimination stats and APA health data, directly clashing and refuting CON's hypothetical risks to women's rights and speech without concession, while CON relies on unsupported assertions.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO wins with stronger evidence like HRC discrimination stats and APA health data, directly clashing and refuting CON's hypothetical risks to women's rights and speech without concession, while CON relies on unsupported assertions.",
+  "timestamp": 1767860228.603853,
+  "saved_at": "2026-01-08T00:17:08.604129"
+}

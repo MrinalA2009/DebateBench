@@ -1,0 +1,30 @@
+{
+  "debate_id": "c0b66a18-698b-4629-a877-ad1208f59ef6",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively argued for the necessity of legal protections for gender identity, providing strong evidence and clear impacts on equality and human rights, while CON's concerns about free speech and fairness in sports were less compelling and not as well-supported.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively argued for the necessity of legal protections for gender identity, providing strong evidence and clear impacts on equality and human rights, while CON's concerns about free speech and fairness in sports were less compelling and not as well-supported.",
+  "timestamp": 1767862948.0547352,
+  "saved_at": "2026-01-08T01:02:28.054980"
+}

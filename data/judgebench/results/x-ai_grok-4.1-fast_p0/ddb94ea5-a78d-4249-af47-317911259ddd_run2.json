@@ -1,0 +1,30 @@
+{
+  "debate_id": "ddb94ea5-a78d-4249-af47-317911259ddd",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior evidence via Oregon's overdose increases and persistent refutation of PRO's Portuguese model by emphasizing unreplicable infrastructure, which PRO inadequately addressed.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior evidence via Oregon's overdose increases and persistent refutation of PRO's Portuguese model by emphasizing unreplicable infrastructure, which PRO inadequately addressed.",
+  "timestamp": 1767857362.844157,
+  "saved_at": "2026-01-07T23:29:22.844449"
+}

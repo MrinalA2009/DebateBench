@@ -1,0 +1,30 @@
+{
+  "debate_id": "7f9ab232-283f-4c9e-8daf-5869d2ad9fc4",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON effectively challenged PRO's claims, emphasizing the burden of proof and the speculative nature of the simulation hypothesis, while providing coherent counterarguments and alternative explanations.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON effectively challenged PRO's claims, emphasizing the burden of proof and the speculative nature of the simulation hypothesis, while providing coherent counterarguments and alternative explanations.",
+  "timestamp": 1767862269.2597241,
+  "saved_at": "2026-01-08T00:51:09.259978"
+}

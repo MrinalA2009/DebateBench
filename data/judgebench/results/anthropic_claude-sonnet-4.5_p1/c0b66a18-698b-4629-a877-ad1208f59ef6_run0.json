@@ -1,0 +1,30 @@
+{
+  "debate_id": "c0b66a18-698b-4629-a877-ad1208f59ef6",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO won through superior impact weighing and more effective clash. PRO directly addressed CON's concerns about free speech, sports fairness, and legal ambiguity with specific rebuttals (IOC policies, clear legal frameworks). CON's arguments about potential conflicts remained largely hypothetical without concrete evidence of harm, while PRO grounded their case in documented discrimination and human rights frameworks. PRO's weighing of preventing actual discrimination against hypothetical concerns was more compelling.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO won through superior impact weighing and more effective clash. PRO directly addressed CON's concerns about free speech, sports fairness, and legal ambiguity with specific rebuttals (IOC policies, clear legal frameworks). CON's arguments about potential conflicts remained largely hypothetical without concrete evidence of harm, while PRO grounded their case in documented discrimination and human rights frameworks. PRO's weighing of preventing actual discrimination against hypothetical concerns was more compelling.",
+  "timestamp": 1767852445.3447402,
+  "saved_at": "2026-01-07T22:07:25.344879"
+}

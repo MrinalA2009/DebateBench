@@ -1,0 +1,30 @@
+{
+  "debate_id": "69323fb1-fedf-4bc6-84fd-d8b0be02cb90",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively argued that rationing targets high-frequency flyers responsible for emissions, while CON's concerns about equity were less substantiated. PRO's emphasis on immediate action against climate change outweighed CON's reliance on future technologies.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively argued that rationing targets high-frequency flyers responsible for emissions, while CON's concerns about equity were less substantiated. PRO's emphasis on immediate action against climate change outweighed CON's reliance on future technologies.",
+  "timestamp": 1767863022.0324302,
+  "saved_at": "2026-01-08T01:03:42.032632"
+}

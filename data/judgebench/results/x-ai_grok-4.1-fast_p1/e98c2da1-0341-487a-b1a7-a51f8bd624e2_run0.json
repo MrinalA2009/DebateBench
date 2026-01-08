@@ -1,0 +1,30 @@
+{
+  "debate_id": "e98c2da1-0341-487a-b1a7-a51f8bd624e2",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with stronger empirical evidence (Australia's 59%/65% reductions, CDC/AAP data) surviving CON's contextual dismissals, better refuting rights claims via Heller, and clearer weighing of life-saving impacts over abstract self-defense.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with stronger empirical evidence (Australia's 59%/65% reductions, CDC/AAP data) surviving CON's contextual dismissals, better refuting rights claims via Heller, and clearer weighing of life-saving impacts over abstract self-defense.",
+  "timestamp": 1767859649.56389,
+  "saved_at": "2026-01-08T00:07:29.564339"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "02608d77-a785-456d-aff6-db70e5028e67",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through multiple passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Clear structure with two contentions (criminal behavior without consequence, equality before law). Logical progression and coherent claims. Score: 4\n- CON: Structured defense of status quo, but relies heavily on theoretical mechanisms without addressing their practical failures. Score: 3\n\n**Evidence & Grounding:**\n- PRO: Cites specific BBC report (5,000+ crimes in UK over 5 years with virtually no prosecutions). Concrete, relevant evidence. Score: 4\n- CON: Makes claims about sending state prosecution and expulsion but provides no evidence these mechanisms work in practice. Largely assertions. Score: 2\n\n**Clash & Refutation:**\n- PRO: Directly engages CON's claims about sending state jurisdiction and expulsion, showing they're insufficient in practice. Addresses retaliation concerns. Score: 4\n- CON: Engages with PRO's evidence but dismisses it as \"rare\" without counter-evidence. Doesn't adequately respond to the 5,000 crimes statistic. Score: 3\n\n**Impact Weighing:**\n- PRO: Compares justice for victims vs. diplomatic functionality, argues limited immunity strengthens rather than weakens cooperation by building trust. Score: 4\n- CON: Warns of precedent and political exploitation but doesn't weigh these against victim justice or quantify likelihood. Score: 2\n\n## Second Pass Verification\n\nReviewing the debate again:\n\nPRO's core argument: Current immunity is too broad, enabling 5,000+ serious crimes without prosecution. Limited immunity for non-official acts preserves diplomatic function while ensuring accountability.\n\nCON's core argument: Current system has checks (sending state prosecution, expulsion), limiting immunity risks retaliation and political exploitation.\n\nThe critical clash: PRO provides concrete evidence (BBC report) that current mechanisms fail in practice. CON asserts these mechanisms work but provides no evidence, and dismisses PRO's statistics as \"rare\" without justification.\n\nPRO effectively turns CON's cooperation argument by explaining how accountability builds trust. CON's slippery slope argument about political exploitation is speculative and unweighted.\n\n## Third Pass - Stability Check\n\nWinner determination remains consistent: PRO wins on superior evidence, effective clash, and comparative weighing. CON's reliance on theoretical mechanisms without addressing their practical failure is a critical weakness.\n\nConfidence: 0.75 - Clear winner but CON made reasonable structural arguments about precedent that weren't completely dismantled.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence (BBC report of 5,000+ unprosecuted crimes) demonstrating current mechanisms fail in practice, while CON relied on theoretical assertions without proof. PRO effectively turned CON's cooperation argument by showing accountability builds trust, and directly refuted claims about sending state prosecution being sufficient. CON's warnings about political exploitation remained speculative and unweighted against concrete victim harm.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence (BBC report of 5,000+ unprosecuted crimes) demonstrating current mechanisms fail in practice, while CON relied on theoretical assertions without proof. PRO effectively turned CON's cooperation argument by showing accountability builds trust, and directly refuted claims about sending state prosecution being sufficient. CON's warnings about political exploitation remained speculative and unweighted against concrete victim harm.",
+  "timestamp": 1767848829.0971599,
+  "saved_at": "2026-01-07T21:07:09.097384"
+}

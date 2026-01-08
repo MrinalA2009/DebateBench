@@ -1,0 +1,30 @@
+{
+  "debate_id": "03ce0a6d-2850-4fd3-aec5-de96f737f6e3",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 1.0,\n  \"short_reason\": \"PRO maintains coherent affirmative case on conflict, inequality, and exploitation throughout. CON's rebuttal and summary contradict its constructive by arguing against ownership, resulting in poor clash and self-refutation.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 1.0,
+  "short_reason": "PRO maintains coherent affirmative case on conflict, inequality, and exploitation throughout. CON's rebuttal and summary contradict its constructive by arguing against ownership, resulting in poor clash and self-refutation.",
+  "timestamp": 1767860528.4860291,
+  "saved_at": "2026-01-08T00:22:08.486238"
+}

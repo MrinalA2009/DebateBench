@@ -1,0 +1,30 @@
+{
+  "debate_id": "f9bd3513-a05a-4696-bff0-d439ecfa7d9b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria.\n\n**ARGUMENT QUALITY**\nPRO presents clear, structured arguments about reallocating funds to social services, with logical flow from effectiveness to systemic issues. Arguments are coherent and well-organized.\nCON provides nuanced counterarguments about police roles, community policing, and balanced approaches. Also clear and logically structured.\nBoth sides: 4/5\n\n**EVIDENCE & GROUNDING**\nPRO cites specific evidence: National Institute of Justice study ($1 saves $4), Treatment Advocacy Center report. Provides concrete mechanisms for how reallocation works.\nCON references \"studies\" and \"research\" but provides no specific citations or data. Claims about training programs and effectiveness lack concrete support.\nPRO: 4/5, CON: 3/5\n\n**CLASH & REFUTATION**\nPRO directly engages CON's points about police necessity, crisis response, and reform sufficiency. Addresses each major argument with specific rebuttals.\nCON engages PRO's arguments but responses are more general. Claims PRO \"oversimplifies\" without fully developing counterarguments. Less direct engagement with PRO's specific evidence.\nPRO: 4/5, CON: 3/5\n\n**IMPACT WEIGHING**\nPRO consistently emphasizes magnitude (cost savings, systemic inequality), probability (evidence-based outcomes), and moral imperative. Compares punitive vs. preventive approaches.\nCON mentions \"balanced approach\" but doesn't clearly weigh why maintaining police funding outweighs PRO's impacts. Lacks comparative analysis of competing priorities.\nPRO: 4/5, CON: 2/5\n\n**WINNER DETERMINATION**\nPRO wins on superior evidence grounding (specific citations vs. general claims), stronger clash (direct engagement with opponent's arguments), and clearer impact weighing (comparative analysis of approaches). While CON presents coherent arguments, they lack the evidentiary support and comparative weighing needed to overcome PRO's case.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence grounding with specific citations and stronger impact weighing. While both sides presented coherent arguments, PRO's concrete data from National Institute of Justice and Treatment Advocacy Center, combined with clear comparative analysis of preventive versus punitive approaches, outweighed CON's more general claims and limited weighing of competing priorities.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence grounding with specific citations and stronger impact weighing. While both sides presented coherent arguments, PRO's concrete data from National Institute of Justice and Treatment Advocacy Center, combined with clear comparative analysis of preventive versus punitive approaches, outweighed CON's more general claims and limited weighing of competing priorities.",
+  "timestamp": 1767855040.045186,
+  "saved_at": "2026-01-07T22:50:40.045848"
+}

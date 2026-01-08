@@ -1,0 +1,30 @@
+{
+  "debate_id": "8b6103d0-c3c9-442a-9c12-bedf8b61b741",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins due to superior clash undermining PRO's Eugene example (retains police) and highlighting unresolved Minneapolis crime surge risks. CON's immediate safety impacts have greater magnitude and probability than PRO's long-term root cause claims.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins due to superior clash undermining PRO's Eugene example (retains police) and highlighting unresolved Minneapolis crime surge risks. CON's immediate safety impacts have greater magnitude and probability than PRO's long-term root cause claims.",
+  "timestamp": 1767859818.866237,
+  "saved_at": "2026-01-08T00:10:18.866573"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "4fa1b0ac-2e13-4d38-8169-000d54c0a509",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents clear framework (moral, economic, social implications), structured arguments about government mandates. Arguments are coherent but somewhat general. Score: 3\n- CON: Provides specific counterframework (efficacy and unintended consequences), challenges PRO's statistical foundation with nuanced analysis. More sophisticated argumentation. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites US Census Bureau (82 cents), AAUW study (7% gap), Equal Pay Act, Lilly Ledbetter Act. Evidence is relevant but limited depth. Score: 3\n- CON: Cites Glassdoor study (4.9% adjusted gap), provides specific methodology critique, explains variables controlled. More rigorous evidentiary engagement. Score: 4\n\n**Clash & Refutation:**\n- PRO: Responds to CON's statistical critique but doesn't fully engage with the \"adjusted vs. unadjusted\" distinction. Addresses unintended consequences claim but superficially. Score: 3\n- CON: Directly engages PRO's 82-cent statistic, distinguishes between overt discrimination laws and broader mandates, challenges AAUW methodology. Strong engagement. Score: 4\n\n**Impact Weighing:**\n- PRO: Mentions economic growth, poverty reduction, gender equality but doesn't comparatively weigh against CON's concerns. Score: 2\n- CON: Weighs innovation loss, business flexibility, job losses against PRO's equity claims. Provides comparative framework. Score: 4\n\n## Second Pass Verification\n\nReviewing the debate again:\n- CON consistently challenges PRO's foundational premise (the size and cause of the gap)\n- PRO defends but doesn't adequately address the adjusted vs. unadjusted gap distinction\n- CON's framework of \"efficacy and unintended consequences\" is more directly applied\n- PRO's examples (Equal Pay Act, Lilly Ledbetter) are countered as addressing different issues\n- CON provides more comparative analysis throughout\n\nScores remain stable across both passes.\n\n## Final Determination\n\nCON wins by effectively challenging PRO's foundational statistics, providing more rigorous evidence about the adjusted pay gap, and demonstrating stronger comparative weighing of consequences. PRO's failure to adequately distinguish between the unadjusted gap (82 cents) and the adjusted gap (4.9-7%) after controlling for variables significantly weakens their case for broad mandates. CON's argument that existing laws address overt discrimination while mandates would create unintended consequences for a much smaller adjusted gap goes largely unrefuted.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins by effectively challenging PRO's foundational 82-cent statistic with adjusted gap analysis (4.9%), demonstrating that most disparity stems from non-discriminatory factors. CON provided superior comparative weighing of unintended consequences versus equity gains, while PRO failed to adequately address the adjusted versus unadjusted gap distinction that undermines their case for broad mandates.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins by effectively challenging PRO's foundational 82-cent statistic with adjusted gap analysis (4.9%), demonstrating that most disparity stems from non-discriminatory factors. CON provided superior comparative weighing of unintended consequences versus equity gains, while PRO failed to adequately address the adjusted versus unadjusted gap distinction that undermines their case for broad mandates.",
+  "timestamp": 1767849622.507048,
+  "saved_at": "2026-01-07T21:20:22.507368"
+}

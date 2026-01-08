@@ -1,0 +1,30 @@
+{
+  "debate_id": "7f9ab232-283f-4c9e-8daf-5869d2ad9fc4",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 2,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by superior clash on burden of proof, effectively refuting PRO's speculative claims with alternative explanations for fine-tuning and Fermi Paradox while PRO fails to substantiate likelihood.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 2,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by superior clash on burden of proof, effectively refuting PRO's speculative claims with alternative explanations for fine-tuning and Fermi Paradox while PRO fails to substantiate likelihood.",
+  "timestamp": 1767857128.717637,
+  "saved_at": "2026-01-07T23:25:28.717958"
+}

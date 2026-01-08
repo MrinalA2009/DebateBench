@@ -1,0 +1,30 @@
+{
+  "debate_id": "a7e01c3b-01a7-43aa-86c3-3d7069f9bd7b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 1.0,\n  \"short_reason\": \"PRO wins through consistent logic, specific evidence like the Transport & Environment report, and direct refutation of CON's economic and essential use claims. CON's rebuttal fatally undermines itself by adopting PRO's arguments for a ban, resulting in poor clash and coherence.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 1.0,
+  "short_reason": "PRO wins through consistent logic, specific evidence like the Transport & Environment report, and direct refutation of CON's economic and essential use claims. CON's rebuttal fatally undermines itself by adopting PRO's arguments for a ban, resulting in poor clash and coherence.",
+  "timestamp": 1767857089.061697,
+  "saved_at": "2026-01-07T23:24:49.062505"
+}

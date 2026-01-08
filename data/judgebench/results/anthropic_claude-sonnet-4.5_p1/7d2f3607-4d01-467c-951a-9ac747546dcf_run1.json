@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "I will evaluate this debate systematically using the required framework.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Main Arguments:**\n1. Environmental impact (14x more CO2 per passenger)\n2. Social equity (wealth gap symbolism)\n3. Resource misallocation (could fund public transit)\n\n**CON's Main Arguments:**\n1. Economic damage ($247B industry, 1.2M jobs)\n2. Environmental impact overstated (small fraction of emissions, innovation incentives)\n3. Social equity misguided (doesn't redistribute wealth)\n\n**Clash Assessment:**\n- PRO's environmental argument partially survives but is weakened by CON's point about innovation incentives and relative scale\n- CON's economic argument survives strongly - PRO offers only speculative \"green jobs\" without concrete evidence\n- PRO's social equity argument remains largely symbolic; CON effectively challenges its practical impact\n- CON's innovation argument (SAFs, electric aircraft) goes largely unrefuted by PRO\n\n## Stage 2: Comparative Evaluation\n\n**Strongest Remaining Arguments:**\n- **PRO**: Environmental accountability across all sectors\n- **CON**: Economic devastation (concrete figures) + innovation incentives for sustainable solutions\n\nCON provides specific economic data ($247B, 1.2M jobs) while PRO's counter relies on speculation about future green jobs. CON's innovation argument (that the industry funds SAF and electric aircraft development) is never adequately addressed by PRO. PRO's environmental impact claim, while supported, is undermined by CON's point about relative scale and alternative solutions.\n\n## Scoring Rationale\n\n**Argument Quality:**\n- PRO: 4 (clear structure, coherent claims)\n- CON: 4 (well-organized, logical progression)\n\n**Evidence & Grounding:**\n- PRO: 3 (one specific statistic, but limited concrete support for alternatives)\n- CON: 4 (specific economic data, industry contribution figures)\n\n**Clash & Refutation:**\n- PRO: 3 (engages but doesn't adequately address innovation/jobs arguments)\n- CON: 4 (directly refutes key claims, addresses speculation vs. concrete harm)\n\n**Impact Weighing:**\n- PRO: 3 (emphasizes urgency but doesn't comparatively weigh against economic harm)\n- CON: 4 (compares immediate tangible harm vs. speculative benefits, addresses timeframe)\n\nCON wins by demonstrating that the immediate, concrete economic harm outweighs the marginal environmental benefit, while offering alternative solutions (innovation in SAFs/electric aircraft) that PRO never effectively refutes.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins by providing concrete economic data ($247B, 1.2M jobs) that PRO never adequately refutes with comparable evidence. CON's innovation argument (SAFs, electric aircraft) goes largely unaddressed, while effectively demonstrating that a ban removes incentives for sustainable solutions. PRO's environmental claims, though valid, are outweighed by immediate, tangible economic harm versus speculative future benefits.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins by providing concrete economic data ($247B, 1.2M jobs) that PRO never adequately refutes with comparable evidence. CON's innovation argument (SAFs, electric aircraft) goes largely unaddressed, while effectively demonstrating that a ban removes incentives for sustainable solutions. PRO's environmental claims, though valid, are outweighed by immediate, tangible economic harm versus speculative future benefits.",
+  "timestamp": 1767851391.067034,
+  "saved_at": "2026-01-07T21:49:51.070662"
+}

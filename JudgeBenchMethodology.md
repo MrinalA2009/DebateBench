@@ -68,9 +68,27 @@ We selected three model pairs representing different capability tiers:
 **Total**: 25 debate topics
 
 **Model Selection Rationale**:
-- **GPT-4o-mini**: Efficient reasoning, strong analytical capabilities
-- **LLaMA-3.3-70B**: Open-source alternative, balanced performance
-- **Gemini-2.5-Flash**: Fast inference, competitive quality
+
+The three models were selected to ensure **competitive balance** and **ecosystem diversity**:
+
+**Balanced Performance**:
+- All three models demonstrate comparable debating capabilities in preliminary testing
+- No single model dominates across all topic categories
+- Performance parity ensures judges evaluate meaningful argumentation differences rather than capability gaps
+- Competitive debates better test judge discrimination ability than mismatched contests
+
+**Open-Source vs. Commercial Diversity**:
+- **GPT-4o-mini (OpenAI)**: Commercial flagship - efficient reasoning, strong analytical capabilities
+- **LLaMA-3.3-70B (Meta)**: Open-source alternative - community-accessible, transparent architecture, balanced performance
+- **Gemini-2.5-Flash (Google)**: Commercial competitor - fast inference, competitive quality, different training paradigm
+
+**Why This Matters**:
+1. **Generalizability**: Results apply across different model architectures and training approaches
+2. **Accessibility**: Including open-source ensures reproducibility without proprietary dependencies
+3. **Robustness**: Diverse training methods test judge stability across varied argumentation styles
+4. **Fairness**: Balanced capabilities prevent systematic winner bias that could mask judge instability
+
+This configuration ensures JudgeBench measures genuine judge reliability rather than model-specific evaluation patterns.
 
 #### 2.1.3 Paired Debate Design
 
@@ -101,9 +119,30 @@ Each debate follows a standardized format:
 **Total**: 6 speeches per debate
 
 **Debate Generation Parameters**:
-- **Temperature**: 1.0 (balanced creativity and coherence)
-- **Prompt Style**: "analytical" (emphasizing logical reasoning)
+- **Temperature**: 0.1 (high consistency, minimal randomness for reproducible arguments)
+- **Prompt Style**: "analytical" (emphasizing logical reasoning and structured argumentation)
 - **Turn Structure**: Sequential speech generation with full context
+
+#### 2.1.5 Prompt Style Selection
+
+We selected the **"analytical"** prompt style for debate generation to ensure consistent, logic-focused argumentation across all debates.
+
+**Prompt Style Options**:
+
+| Style | Characteristics | Trade-offs |
+|-------|----------------|------------|
+| **Analytical** | Structured reasoning, evidence-based claims, logical flow | More formal, less creative but highly consistent |
+| Creative | Diverse rhetorical strategies, narrative elements, varied tone | More engaging but less predictable across runs |
+| Persuasive | Emotional appeals, rhetorical devices, audience-focused | Effective but introduces stylistic variance |
+| Technical | Domain-specific terminology, detailed analysis, precision | Deep but potentially less accessible |
+
+**Rationale for Analytical Style**:
+1. **Consistency**: Minimizes stylistic variance that could confound judge evaluation
+2. **Logical Structure**: Facilitates fair comparison across different model capabilities
+3. **Reproducibility**: Structured arguments are more stable across temperature settings
+4. **Judge Compatibility**: Aligns with rubric criteria emphasizing argument quality and logical reasoning
+
+This choice ensures that measured judge instability reflects genuine evaluation inconsistency rather than debate content randomness.
 
 ### 2.2 Judge Configurations
 
@@ -339,7 +378,7 @@ data/
   "resolution": "Resolved: ...",
   "pro_model": "openai/gpt-4o-mini",
   "con_model": "meta-llama/llama-3.3-70b-instruct",
-  "temperature": 1.0,
+  "temperature": 0.1,
   "prompt_style": "analytical",
   "status": "complete",
   "speeches": [
@@ -395,7 +434,7 @@ data/
 | Debate Topics | 25 fixed | Pre-selected from curated list |
 | Model Pairs | 3 pairs | Fixed assignment across experiments |
 | Debate Structure | 6 speeches | Enforced format with word limits |
-| Debate Temperature | 1.0 | Constant across all debates |
+| Debate Temperature | 0.1 | Constant across all debates for high consistency |
 | Judge Temperature | 0.1 | Constant across all judgments |
 | Runs per Debate | 3 | Fixed repetition for variance measurement |
 

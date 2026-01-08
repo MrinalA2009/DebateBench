@@ -1,0 +1,30 @@
+{
+  "debate_id": "7d2f3607-4d01-467c-951a-9ac747546dcf",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY ANALYSIS:**\n\nPRO presents three clear contentions: environmental impact (14x more CO2 per passenger), social equity (wealth gap symbolism), and resource misallocation. Arguments are logically structured and internally consistent.\n\nCON counters with economic impact ($247B, 1.2M jobs), proportionality of emissions (2.5% of aviation, small fraction of that), and innovation incentives (SAFs, electric aircraft). Arguments are coherent and well-developed.\n\nBoth sides maintain logical consistency throughout. PRO: 4, CON: 4\n\n**EVIDENCE & GROUNDING:**\n\nPRO cites International Council on Clean Transportation study (14x CO2 emissions) but provides limited additional quantitative support for other claims.\n\nCON provides National Business Aviation Association data ($247B economic contribution, 1.2M jobs), contextualizes aviation emissions (2.5% global CO2), and references specific technological solutions (SAFs, electric aircraft).\n\nCON provides more comprehensive evidentiary support. PRO: 3, CON: 4\n\n**CLASH & REFUTATION:**\n\nPRO engages CON's economic argument by claiming green jobs would offset losses, addresses the proportionality argument by asserting all sectors must contribute, and counters the equity point by emphasizing cultural shift.\n\nCON directly refutes PRO's green jobs claim as \"speculative,\" challenges the environmental logic by highlighting innovation funding, and systematically dismantles the equity argument as \"utopian.\"\n\nCON provides more direct and effective refutation of opponent's core claims. PRO: 3, CON: 4\n\n**IMPACT WEIGHING:**\n\nPRO emphasizes climate change as \"existential threat\" and frames the debate around urgency and collective well-being, but doesn't explicitly compare magnitude of impacts.\n\nCON explicitly weighs economic harm (immediate, tangible) against speculative benefits, argues their solution (innovation) is superior to ban, and emphasizes negligible climate impact of private jets relative to other sources.\n\nCON provides clearer comparative weighing between competing impacts. PRO: 3, CON: 4\n\n**WINNER DETERMINATION:**\n\nCON wins on three key comparative factors:\n1. More comprehensive evidence grounding their economic claims\n2. More effective refutation, particularly exposing PRO's green jobs argument as speculative\n3. Superior impact weighing by comparing immediate economic harm against negligible environmental benefit\n\nWhile PRO maintains consistent argumentation, CON's comparative analysis (private jets as \"minuscule fraction\" of emissions vs. $247B economic impact) provides clearer prioritization of why their impacts matter more.\n\n```json\n{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"CON wins through superior evidence grounding, more effective refutation of PRO's speculative green jobs claim, and clearer comparative weighing. CON successfully demonstrated that private jets represent a minuscule environmental impact while contributing substantially to the economy, and that innovation incentives offer better solutions than an outright ban. PRO's environmental arguments, while valid, lacked comparative analysis against CON's economic impacts.\"\n}\n```",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "CON wins through superior evidence grounding, more effective refutation of PRO's speculative green jobs claim, and clearer comparative weighing. CON successfully demonstrated that private jets represent a minuscule environmental impact while contributing substantially to the economy, and that innovation incentives offer better solutions than an outright ban. PRO's environmental arguments, while valid, lacked comparative analysis against CON's economic impacts.",
+  "timestamp": 1767854022.130698,
+  "saved_at": "2026-01-07T22:33:42.130977"
+}

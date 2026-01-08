@@ -1,0 +1,30 @@
+{
+  "debate_id": "6b1ebe4a-a202-45de-9f74-58057eded9c0",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO wins with superior evidence (BLS job growth, UC study, ScratchJr, Finland/Singapore examples) supporting integration and benefits, which CON largely ignores or asserts against without support. PRO's strongest arguments on future skills and cognition survive clash more persuasively.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO wins with superior evidence (BLS job growth, UC study, ScratchJr, Finland/Singapore examples) supporting integration and benefits, which CON largely ignores or asserts against without support. PRO's strongest arguments on future skills and cognition survive clash more persuasively.",
+  "timestamp": 1767860356.8481228,
+  "saved_at": "2026-01-08T00:19:16.848452"
+}

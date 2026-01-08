@@ -1,0 +1,30 @@
+{
+  "debate_id": "02608d77-a785-456d-aff6-db70e5028e67",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Strongest Arguments:**\n1. Current immunity enables serious crimes without consequence (5,000+ crimes in UK with virtually no prosecutions)\n2. System undermines equality before the law\n3. Targeted limitation (for serious non-official acts only) preserves diplomatic function while ensuring accountability\n\n**CON's Strongest Arguments:**\n1. Sending states retain jurisdiction and can prosecute\n2. Expulsion/persona non grata provides sufficient checks\n3. Limiting immunity would set dangerous precedent for political exploitation\n4. Distinguishing official/non-official acts is complex and contentious\n\n**Clash Analysis:**\n- PRO directly refutes CON's \"sufficient checks\" argument with the BBC evidence showing rare prosecution and that expulsion doesn't deliver justice\n- CON's rebuttal that crimes are \"extremely rare\" is weakened by PRO's specific evidence of 5,000 crimes\n- CON's \"dangerous precedent\" argument remains largely unrefuted by PRO\n- PRO's distinction between official/non-official acts is challenged by CON as \"naive\" and \"complex,\" but PRO doesn't fully address this complexity concern\n\n## Stage 2: Comparative Evaluation\n\n**Impact Weighing:**\n- PRO emphasizes: Justice for victims, equality before law, trust in international cooperation\n- CON emphasizes: Stability of international relations, preventing political exploitation, diplomatic functionality\n\nPRO provides concrete evidence (5,000 crimes, virtually no prosecutions) while CON relies more on theoretical mechanisms. However, CON raises valid concerns about implementation complexity that PRO doesn't fully resolve.\n\n**Key Distinction:** PRO's targeted approach (limiting only for serious non-official acts) is crucial but CON effectively challenges its practicality.\n\n## Scoring Rationale\n\n**Argument Quality:** PRO presents clearer, more structured arguments with specific proposals. CON's arguments are coherent but more defensive.\n\n**Evidence:** PRO provides specific, quantified evidence (BBC report, 5,000 crimes). CON relies on theoretical frameworks without counter-evidence.\n\n**Clash:** PRO directly engages CON's main arguments and refutes them with evidence. CON engages but relies more on theoretical concerns.\n\n**Weighing:** PRO explicitly weighs impacts (justice vs. functionality) and argues their proposal preserves both. CON weighs stability concerns but less explicitly compares impacts.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence-based argumentation. The BBC report of 5,000 unprosecuted crimes directly refutes CON's claim that existing mechanisms are sufficient. While CON raises valid concerns about implementation complexity and political exploitation, these remain theoretical against PRO's concrete evidence of systemic failure. PRO's targeted limitation approach adequately addresses functionality concerns while establishing clear need for reform.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence-based argumentation. The BBC report of 5,000 unprosecuted crimes directly refutes CON's claim that existing mechanisms are sufficient. While CON raises valid concerns about implementation complexity and political exploitation, these remain theoretical against PRO's concrete evidence of systemic failure. PRO's targeted limitation approach adequately addresses functionality concerns while establishing clear need for reform.",
+  "timestamp": 1767851929.090341,
+  "saved_at": "2026-01-07T21:58:49.090829"
+}

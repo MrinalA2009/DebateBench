@@ -1,0 +1,30 @@
+{
+  "debate_id": "f9bd3513-a05a-4696-bff0-d439ecfa7d9b",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.65,\n  \"short_reason\": \"CON wins through superior clash and weighing. While PRO established the benefits of social services with the $1-to-$4 cost savings claim, CON effectively challenged the core mechanism by arguing defunding doesn't address root causes and that police play essential first-responder roles. CON's balanced approach argument\u2014supporting both police reform and social services\u2014directly undermined PRO's either/or framing. PRO failed to adequately respond to CON's point that removing police doesn't solve underlying societal problems, leaving CON's comparative framework standing.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 3,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.65,
+  "short_reason": "CON wins through superior clash and weighing. While PRO established the benefits of social services with the $1-to-$4 cost savings claim, CON effectively challenged the core mechanism by arguing defunding doesn't address root causes and that police play essential first-responder roles. CON's balanced approach argument\u2014supporting both police reform and social services\u2014directly undermined PRO's either/or framing. PRO failed to adequately respond to CON's point that removing police doesn't solve underlying societal problems, leaving CON's comparative framework standing.",
+  "timestamp": 1767852361.7685602,
+  "saved_at": "2026-01-07T22:06:01.768767"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "57707036-46b5-4c29-b87b-3ad20b38663c",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "I'll evaluate this debate systematically across all four criteria.\n\n**Argument Quality Analysis:**\nPRO presents three clear, structured contentions: division, authoritarianism, and undermining global cooperation. The arguments are logically coherent and well-organized.\nCON also presents three clear counter-arguments: nationalism as unifying, not inherently authoritarian, and compatible with global cooperation. Both sides maintain internal consistency.\nScore: PRO 4, CON 4\n\n**Evidence & Grounding Analysis:**\nPRO provides specific examples: US/UK polarization, Orb\u00e1n in Hungary, COVID-19 pandemic response, and McCarthyism. These are concrete and relevant.\nCON offers: post-WWII US civil rights, European Union as a model, but provides less specific detail about mechanisms. The EU example is mentioned but not deeply developed.\nScore: PRO 4, CON 3\n\n**Clash & Refutation Analysis:**\nPRO directly engages CON's post-WWII example by introducing McCarthyism as a counter-narrative. PRO addresses the authoritarianism claim by emphasizing patterns rather than anomalies.\nCON responds to PRO's examples but often deflects by arguing these are \"misuses\" of nationalism rather than inherent features. CON doesn't directly refute PRO's COVID-19 cooperation argument with specific counter-evidence.\nScore: PRO 4, CON 3\n\n**Impact Weighing Analysis:**\nPRO consistently emphasizes the magnitude of impacts: erosion of democracy, social fragmentation, failure to address global challenges. In the summary, PRO explicitly states \"overwhelming evidence\" and connects all impacts back to the resolution.\nCON attempts weighing in the final summary (\"weighing the impacts, it's clear that a balanced approach offers more benefits\") but this is asserted rather than comparatively argued. CON doesn't explain WHY their impacts outweigh PRO's concerns about authoritarianism and failed cooperation.\nScore: PRO 4, CON 2\n\n**Winner Determination:**\nPRO maintains stronger evidence throughout, provides more specific examples, and offers clearer impact weighing. While CON presents a coherent theoretical framework about \"healthy nationalism,\" they struggle to demonstrate this outweighs PRO's concrete examples of harm. PRO's rebuttal effectively turns CON's post-WWII example, and CON's response that problems stem from \"misuse\" rather than nationalism itself is a defensive position that doesn't adequately address why the \"misuse\" is so prevalent in modern politics.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence and impact weighing. While both sides presented coherent arguments, PRO provided more specific examples (Orb\u00e1n, COVID-19, McCarthyism) and clearly explained why nationalist harms outweigh theoretical benefits. CON's defense that problems stem from nationalism's 'misuse' rather than its nature doesn't adequately address why such misuse is prevalent in modern politics, weakening their comparative weighing.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence and impact weighing. While both sides presented coherent arguments, PRO provided more specific examples (Orb\u00e1n, COVID-19, McCarthyism) and clearly explained why nationalist harms outweigh theoretical benefits. CON's defense that problems stem from nationalism's 'misuse' rather than its nature doesn't adequately address why such misuse is prevalent in modern politics, weakening their comparative weighing.",
+  "timestamp": 1767854292.836237,
+  "saved_at": "2026-01-07T22:38:12.836531"
+}

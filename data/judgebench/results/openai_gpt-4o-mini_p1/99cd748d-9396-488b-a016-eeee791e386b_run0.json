@@ -1,0 +1,30 @@
+{
+  "debate_id": "99cd748d-9396-488b-a016-eeee791e386b",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively presented a coherent argument supported by technological advancement, philosophical reasoning, and statistical likelihood, while CON's rebuttals lacked sufficient engagement and failed to convincingly undermine PRO's claims.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 2
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively presented a coherent argument supported by technological advancement, philosophical reasoning, and statistical likelihood, while CON's rebuttals lacked sufficient engagement and failed to convincingly undermine PRO's claims.",
+  "timestamp": 1767862896.910681,
+  "saved_at": "2026-01-08T01:01:36.910777"
+}

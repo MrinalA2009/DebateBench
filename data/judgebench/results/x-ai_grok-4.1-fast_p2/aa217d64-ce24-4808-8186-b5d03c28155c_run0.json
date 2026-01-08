@@ -1,0 +1,30 @@
+{
+  "debate_id": "aa217d64-ce24-4808-8186-b5d03c28155c",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.6,\n  \"short_reason\": \"PRO wins with superior evidence grounding via studies, existing programs, and recidivism reductions, better supporting claims than CON's speculative risks on bias and inconsistency.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 3
+    }
+  },
+  "confidence": 0.6,
+  "short_reason": "PRO wins with superior evidence grounding via studies, existing programs, and recidivism reductions, better supporting claims than CON's speculative risks on bias and inconsistency.",
+  "timestamp": 1767860863.9850838,
+  "saved_at": "2026-01-08T00:27:43.985682"
+}

@@ -1,0 +1,30 @@
+{
+  "debate_id": "4dc661f2-b8a3-4acc-b1ff-71ae4b16273b",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins through superior clash refuting PRO's enforcement claims as contradictory and impractical, while weighing governmental intrusion and autonomy erosion as outweighing PRO's health impacts lacking a credible implementation plan.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins through superior clash refuting PRO's enforcement claims as contradictory and impractical, while weighing governmental intrusion and autonomy erosion as outweighing PRO's health impacts lacking a credible implementation plan.",
+  "timestamp": 1767859055.971551,
+  "saved_at": "2026-01-07T23:57:35.971922"
+}

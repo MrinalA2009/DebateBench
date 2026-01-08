@@ -1,0 +1,30 @@
+{
+  "debate_id": "02608d77-a785-456d-aff6-db70e5028e67",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically using the required framework.\n\n## Stage 1: Argument Survival Analysis\n\n**PRO's Strongest Arguments:**\n1. Current immunity enables serious crimes without consequence (5,000+ crimes in UK with virtually no prosecutions)\n2. System undermines equality before the law\n3. Targeted limitation (for serious non-official acts only) preserves diplomatic function while ensuring accountability\n\n**CON's Strongest Arguments:**\n1. Sending states retain jurisdiction and can prosecute\n2. Expulsion/persona non grata provides sufficient checks\n3. Limiting immunity would create dangerous precedent for political exploitation\n4. Distinguishing official/non-official acts is complex and contentious\n\n**After Clash:**\n- PRO effectively refutes CON's \"sufficient checks\" argument by pointing to the empirical evidence (5,000 crimes, virtually no prosecutions)\n- CON's claim about sending state prosecution is weakened by PRO's evidence showing this rarely happens in practice\n- CON's \"dangerous precedent\" argument remains largely unrefuted but is somewhat abstract\n- PRO's distinction between official/non-official acts is challenged by CON as \"naive\" and complex, but PRO doesn't adequately defend the practicality\n\n## Stage 2: Comparative Evaluation\n\n**PRO's Impact:** Justice for victims, accountability, maintaining rule of law, building trust through accountability\n**CON's Impact:** Stability of international relations, preventing political exploitation, maintaining diplomatic functionality\n\n**Weighing Analysis:**\n- PRO provides concrete evidence (BBC report, 5,000 crimes) vs. CON's more theoretical concerns\n- CON's fear of \"breakdown in international relations\" is not substantiated with evidence\n- PRO's proposal is more targeted (serious non-official acts only) while preserving core diplomatic functions\n- CON's complexity argument about distinguishing acts is valid but not developed with examples\n\n## Scoring Rationale\n\n**Argument Quality:**\n- PRO: Clear structure, logical progression, specific proposal (4)\n- CON: Coherent but more defensive, some circular reasoning about \"refined over centuries\" (3)\n\n**Evidence & Grounding:**\n- PRO: Specific BBC report, concrete numbers, Vienna Convention reference (5)\n- CON: Relies on theoretical mechanisms without evidence they work (2)\n\n**Clash & Refutation:**\n- PRO: Directly addresses CON's main points with evidence (4)\n- CON: Engages but doesn't effectively counter PRO's empirical evidence (3)\n\n**Impact Weighing:**\n- PRO: Compares trust/accountability vs. functionality, argues limitation enhances cooperation (4)\n- CON: Mentions stability but doesn't comparatively weigh against PRO's justice concerns (2)\n\nThe decisive factor is PRO's empirical evidence showing current mechanisms fail in practice, which CON never effectively refutes. CON's theoretical concerns about complexity and precedent are not substantiated with evidence or examples.\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence and weighing. The BBC report showing 5,000 crimes with virtually no prosecutions directly refutes CON's claim that existing mechanisms are sufficient. PRO's targeted limitation proposal preserves diplomatic function while addressing accountability gaps. CON's concerns about complexity and precedent remain theoretical and unsubstantiated, while PRO demonstrates concrete harms under the current system.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 2
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence and weighing. The BBC report showing 5,000 crimes with virtually no prosecutions directly refutes CON's claim that existing mechanisms are sufficient. PRO's targeted limitation proposal preserves diplomatic function while addressing accountability gaps. CON's concerns about complexity and precedent remain theoretical and unsubstantiated, while PRO demonstrates concrete harms under the current system.",
+  "timestamp": 1767851950.74645,
+  "saved_at": "2026-01-07T21:59:10.746678"
+}

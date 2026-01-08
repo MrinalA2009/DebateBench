@@ -1,0 +1,30 @@
+{
+  "debate_id": "c0b66a18-698b-4629-a877-ad1208f59ef6",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.6,\n  \"short_reason\": \"CON wins through superior impact weighing emphasizing risks to free speech, sports fairness, and safety outweigh PRO's discrimination protections, despite PRO's stronger evidence.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.6,
+  "short_reason": "CON wins through superior impact weighing emphasizing risks to free speech, sports fairness, and safety outweigh PRO's discrimination protections, despite PRO's stronger evidence.",
+  "timestamp": 1767861113.819482,
+  "saved_at": "2026-01-08T00:31:53.819844"
+}

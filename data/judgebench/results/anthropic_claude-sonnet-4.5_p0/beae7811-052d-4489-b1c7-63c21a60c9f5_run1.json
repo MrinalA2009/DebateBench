@@ -1,0 +1,30 @@
+{
+  "debate_id": "beae7811-052d-4489-b1c7-63c21a60c9f5",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p0",
+  "run_number": 1,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then verify my judgment through consistency passes.\n\n## First Pass Evaluation\n\n**Argument Quality:**\n- PRO: Presents three clear contentions (societal impact, economic consequences, ethical implications) with logical structure. Arguments are coherent and well-organized. Score: 4\n- CON: Offers three clear counter-arguments (individual freedom, public revenue, black market concerns) with logical flow. Equally well-structured. Score: 4\n\n**Evidence & Grounding:**\n- PRO: Cites National Council on Problem Gambling (2M pathological gamblers, 4-6M problem gamblers), University of Massachusetts study ($3 social cost per $1 revenue). Specific statistics support claims. Score: 4\n- CON: Cites North American Association of State and Provincial Lotteries ($29B in proceeds, 2022). Challenges PRO's study methodology but doesn't provide counter-evidence. Less specific grounding. Score: 3\n\n**Clash & Refutation:**\n- PRO: Directly addresses freedom argument (addiction undermines true freedom), revenue argument (hidden costs), and black market argument (protection vs. underground activity). Strong engagement. Score: 4\n- CON: Challenges addiction statistics (minority vs. majority), disputes study validity (outdated/criticized methodology), addresses prohibition concerns. Good engagement but less specific refutation. Score: 3\n\n**Impact Weighing:**\n- PRO: Consistently emphasizes 3:1 cost-benefit ratio, magnitude of addiction (millions affected), and systemic harms (bankruptcy, violence, suicide). Clear comparative weighing. Score: 4\n- CON: Argues freedom outweighs harms, mentions budget shortfalls and job losses, but doesn't quantify or compare magnitude effectively. Less developed weighing. Score: 3\n\n## Second Pass Verification\n\nReviewing the debate again:\n- PRO maintains consistent messaging about the 3:1 cost ratio and specific harm statistics\n- CON's strongest point is individual liberty, but they don't effectively weigh this against PRO's quantified harms\n- CON challenges PRO's study but doesn't provide alternative data to support their revenue claims\n- PRO's refutation directly addresses each CON argument with evidence\n- CON's refutation is more defensive and less substantiated\n\nThe scores remain stable across both passes.\n\n## Winner Determination\n\nPRO wins on:\n- Superior evidence grounding (specific statistics vs. general claims)\n- More effective clash (direct responses with evidence)\n- Stronger impact weighing (quantified comparisons)\n\nCON's individual liberty argument is philosophically strong but not effectively weighed against PRO's quantified harms. The challenge to PRO's study methodology lacks counter-evidence.\n\nConfidence: 0.75 (Clear winner, though CON's liberty argument has merit)\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior evidence grounding and impact weighing. The 3:1 cost-benefit ratio and specific addiction statistics outweigh CON's individual liberty argument, which lacked quantified comparison. CON challenged PRO's study methodology but provided no counter-evidence, while PRO directly refuted each CON contention with specific data.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior evidence grounding and impact weighing. The 3:1 cost-benefit ratio and specific addiction statistics outweigh CON's individual liberty argument, which lacked quantified comparison. CON challenged PRO's study methodology but provided no counter-evidence, while PRO directly refuted each CON contention with specific data.",
+  "timestamp": 1767849401.9774132,
+  "saved_at": "2026-01-07T21:16:41.977789"
+}

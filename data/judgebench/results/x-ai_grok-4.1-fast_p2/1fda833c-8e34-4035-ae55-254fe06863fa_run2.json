@@ -1,0 +1,30 @@
+{
+  "debate_id": "1fda833c-8e34-4035-ae55-254fe06863fa",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 1\n    },\n    \"weighing\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.9,\n  \"short_reason\": \"PRO wins through superior clash and refutation, directly addressing CON's incentives, flexibility, and job loss claims. CON's rebuttal incoherently adopts PRO's arguments, failing to defend its case, while PRO better weighs stability and equity impacts over CON's service benefits.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 1
+    },
+    "weighing": {
+      "PRO": 4,
+      "CON": 3
+    }
+  },
+  "confidence": 0.9,
+  "short_reason": "PRO wins through superior clash and refutation, directly addressing CON's incentives, flexibility, and job loss claims. CON's rebuttal incoherently adopts PRO's arguments, failing to defend its case, while PRO better weighs stability and equity impacts over CON's service benefits.",
+  "timestamp": 1767861331.2784572,
+  "saved_at": "2026-01-08T00:35:31.278796"
+}

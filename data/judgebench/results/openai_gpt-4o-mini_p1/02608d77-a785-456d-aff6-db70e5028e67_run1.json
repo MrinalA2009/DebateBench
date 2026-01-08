@@ -1,0 +1,30 @@
+{
+  "debate_id": "02608d77-a785-456d-aff6-db70e5028e67",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 1,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"PRO effectively demonstrated that the current system of diplomatic immunity undermines justice and accountability, supported by compelling evidence of serious crimes. Their arguments about the necessity of limitations were clearer and more impactful than CON's defenses of the status quo, which lacked sufficient evidence and failed to address the core issues raised.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "PRO effectively demonstrated that the current system of diplomatic immunity undermines justice and accountability, supported by compelling evidence of serious crimes. Their arguments about the necessity of limitations were clearer and more impactful than CON's defenses of the status quo, which lacked sufficient evidence and failed to address the core issues raised.",
+  "timestamp": 1767862805.153047,
+  "saved_at": "2026-01-08T01:00:05.153272"
+}

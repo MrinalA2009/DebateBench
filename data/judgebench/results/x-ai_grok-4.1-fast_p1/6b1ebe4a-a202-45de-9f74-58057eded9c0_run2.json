@@ -1,0 +1,30 @@
+{
+  "debate_id": "6b1ebe4a-a202-45de-9f74-58057eded9c0",
+  "judge_model": "x-ai/grok-4.1-fast",
+  "judge_prompt": "p1",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 4\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"CON wins by more effectively refuting PRO's responses to overload and inequality as superficial and unplanned, with immediate impacts on curriculum dilution and equity outweighing PRO's evidenced but future-contingent job and cognitive benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 4
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "CON wins by more effectively refuting PRO's responses to overload and inequality as superficial and unplanned, with immediate impacts on curriculum dilution and equity outweighing PRO's evidenced but future-contingent job and cognitive benefits.",
+  "timestamp": 1767860378.955563,
+  "saved_at": "2026-01-08T00:19:38.955773"
+}

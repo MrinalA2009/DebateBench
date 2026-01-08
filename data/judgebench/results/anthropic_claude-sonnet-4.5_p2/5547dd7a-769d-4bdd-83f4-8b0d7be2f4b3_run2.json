@@ -1,0 +1,30 @@
+{
+  "debate_id": "5547dd7a-769d-4bdd-83f4-8b0d7be2f4b3",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "I'll evaluate this debate systematically across all four criteria, then determine the winner.\n\n**ARGUMENT QUALITY**\n\nPRO: Presents clear, structured arguments about addiction (2M pathological gamblers, 4-6M problem gamblers), financial ruin, and regressive taxation. Arguments are logically coherent and internally consistent throughout. Score: 4\n\nCON: Offers coherent counter-arguments about personal freedom, economic benefits ($41B tax revenue), and responsible regulation. Arguments are clear but somewhat repetitive across speeches. Score: 4\n\n**EVIDENCE & GROUNDING**\n\nPRO: Cites National Council on Problem Gambling statistics, provides specific numbers (2M pathological, 4-6M problem gamblers), references social costs in \"tens of billions,\" and mentions UK regulation failures. Well-integrated support. Score: 4\n\nCON: Cites American Gaming Association ($41B revenue figure), references UK as successful regulation example, mentions majority of gamblers are responsible. Less specific on quantifying claims. Score: 3\n\n**CLASH & REFUTATION**\n\nPRO: Directly engages CON's personal choice argument (addiction compromises choice), challenges economic benefit claim (social costs exceed revenue), and refutes regulation alternative (UK still has problems). Strong, direct engagement. Score: 5\n\nCON: Responds to addiction concerns (majority gamble responsibly) and addresses exploitation claims, but doesn't directly engage PRO's specific cost-benefit analysis or the \"tens of billions\" in social costs claim. Partial engagement. Score: 3\n\n**IMPACT WEIGHING**\n\nPRO: Explicitly compares $41B revenue to \"tens of billions\" in social costs, frames as net economic loss, emphasizes magnitude of harm to vulnerable populations, and argues human well-being outweighs revenue. Clear comparative weighing. Score: 5\n\nCON: Emphasizes importance of tax revenue for public services and personal freedom, but doesn't directly compare magnitude of benefits versus costs PRO raises. Limited comparative analysis. Score: 2\n\n**WINNER DETERMINATION**\n\nPRO wins on clash (5 vs 3) and weighing (5 vs 2) decisively. These are critical categories in close debates. PRO's cost-benefit comparison (tens of billions in costs vs $41B revenue) is a dropped argument that CON never directly refutes with competing numbers. While CON maintains argument quality parity, PRO's superior engagement and impact comparison are determinative. PRO effectively demonstrates why their impacts (addiction, financial ruin, net economic loss) outweigh CON's impacts (personal freedom, tax revenue).\n\n```json\n{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 2\n    }\n  },\n  \"confidence\": 0.75,\n  \"short_reason\": \"PRO wins through superior clash and impact weighing. PRO's cost-benefit analysis showing tens of billions in social costs exceeding $41B revenue was never directly refuted by CON. PRO effectively engaged all major CON arguments while CON failed to address PRO's central economic comparison, making PRO's case that gambling is a net societal harm more compelling.\"\n}\n```",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 2
+    }
+  },
+  "confidence": 0.75,
+  "short_reason": "PRO wins through superior clash and impact weighing. PRO's cost-benefit analysis showing tens of billions in social costs exceeding $41B revenue was never directly refuted by CON. PRO effectively engaged all major CON arguments while CON failed to address PRO's central economic comparison, making PRO's case that gambling is a net societal harm more compelling.",
+  "timestamp": 1767856726.202118,
+  "saved_at": "2026-01-07T23:18:46.202369"
+}

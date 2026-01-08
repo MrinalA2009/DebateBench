@@ -1,0 +1,30 @@
+{
+  "debate_id": "8bd8e8fe-58cb-4610-886f-a54a76d24e33",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p2",
+  "run_number": 2,
+  "judgment": "{\n  \"winner\": \"PRO\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 5,\n      \"CON\": 4\n    },\n    \"evidence\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    },\n    \"clash\": {\n      \"PRO\": 4,\n      \"CON\": 3\n    },\n    \"weighing\": {\n      \"PRO\": 5,\n      \"CON\": 3\n    }\n  },\n  \"confidence\": 0.7,\n  \"short_reason\": \"PRO effectively demonstrated the long-term cognitive, economic, and societal benefits of mandatory bilingual education, while CON's arguments about resource strain and linguistic diversity were less compelling and did not outweigh PRO's evidence and impact weighing.\"\n}",
+  "winner": "PRO",
+  "scores": {
+    "argument_quality": {
+      "PRO": 5,
+      "CON": 4
+    },
+    "evidence": {
+      "PRO": 5,
+      "CON": 3
+    },
+    "clash": {
+      "PRO": 4,
+      "CON": 3
+    },
+    "weighing": {
+      "PRO": 5,
+      "CON": 3
+    }
+  },
+  "confidence": 0.7,
+  "short_reason": "PRO effectively demonstrated the long-term cognitive, economic, and societal benefits of mandatory bilingual education, while CON's arguments about resource strain and linguistic diversity were less compelling and did not outweigh PRO's evidence and impact weighing.",
+  "timestamp": 1767863482.144947,
+  "saved_at": "2026-01-08T01:11:22.145077"
+}

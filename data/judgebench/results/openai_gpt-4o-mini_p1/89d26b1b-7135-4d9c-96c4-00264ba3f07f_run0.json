@@ -1,0 +1,30 @@
+{
+  "debate_id": "89d26b1b-7135-4d9c-96c4-00264ba3f07f",
+  "judge_model": "openai/gpt-4o-mini",
+  "judge_prompt": "p1",
+  "run_number": 0,
+  "judgment": "{\n  \"winner\": \"CON\",\n  \"scores\": {\n    \"argument_quality\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"evidence\": {\n      \"PRO\": 4,\n      \"CON\": 5\n    },\n    \"clash\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    },\n    \"weighing\": {\n      \"PRO\": 3,\n      \"CON\": 5\n    }\n  },\n  \"confidence\": 0.8,\n  \"short_reason\": \"CON effectively highlighted the risks of privacy breaches and intellectual property theft, providing strong arguments against the feasibility of public audits. Their rebuttals addressed PRO's claims about accountability and innovation, demonstrating that the potential harms outweigh the benefits.\"\n}",
+  "winner": "CON",
+  "scores": {
+    "argument_quality": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "evidence": {
+      "PRO": 4,
+      "CON": 5
+    },
+    "clash": {
+      "PRO": 3,
+      "CON": 5
+    },
+    "weighing": {
+      "PRO": 3,
+      "CON": 5
+    }
+  },
+  "confidence": 0.8,
+  "short_reason": "CON effectively highlighted the risks of privacy breaches and intellectual property theft, providing strong arguments against the feasibility of public audits. Their rebuttals addressed PRO's claims about accountability and innovation, demonstrating that the potential harms outweigh the benefits.",
+  "timestamp": 1767863293.652998,
+  "saved_at": "2026-01-08T01:08:13.653324"
+}
